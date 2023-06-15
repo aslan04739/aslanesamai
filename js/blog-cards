@@ -1,34 +1,16 @@
-// Blog articles data (you can replace this with your own data)
-const blogArticles = [
+const blogs = [
   {
-    title: "this is the first article 1",
-    description: "Description of Article 1",
     image: "path/to/image1.jpg",
-    url: "https://aslan04739.github.io/aslanesamai/news-detail.html"
+    title: "Blog 1",
+    description: "Description of Blog 1",
+    link: "https://aslan04739.github.io/aslanesamai/news-detail.html"
   },
   {
-    title: "Article 2",
-    description: "Description of Article 2",
     image: "path/to/image2.jpg",
-    url: "article2.html"
+    title: "Blog 2",
+    description: "Description of Blog 2",
+    link: "blog2.html"
   },
-  // Add more articles as needed
+  // Add more blogs as needed
 ];
 
-// Function to render the blog articles
-function renderBlogArticles() {
-  const blogList = document.querySelector('.blog-list');
-  const blogTemplate = document.querySelector('#blog-template');
-
-  blogArticles.forEach(article => {
-    const clone = blogTemplate.content.cloneNode(true);
-    clone.querySelector('.blog-link').href = article.url;
-    clone.querySelector('.blog-image').src = article.image;
-    clone.querySelector('.blog-title').textContent = article.title;
-    clone.querySelector('.blog-description').textContent = article.description;
-    blogList.appendChild(clone);
-  });
-}
-
-// Render the blog articles when the page loads
-window.addEventListener('load', renderBlogArticles);
