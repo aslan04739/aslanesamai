@@ -1,0 +1,34 @@
+// Blog articles data (you can replace this with your own data)
+const blogArticles = [
+  {
+    title: "Article 1",
+    description: "Description of Article 1",
+    image: "path/to/image1.jpg",
+    url: "article1.html"
+  },
+  {
+    title: "Article 2",
+    description: "Description of Article 2",
+    image: "path/to/image2.jpg",
+    url: "article2.html"
+  },
+  // Add more articles as needed
+];
+
+// Function to render the blog articles
+function renderBlogArticles() {
+  const blogList = document.querySelector('.blog-list');
+  const blogTemplate = document.querySelector('#blog-template');
+
+  blogArticles.forEach(article => {
+    const clone = blogTemplate.content.cloneNode(true);
+    clone.querySelector('.blog-link').href = article.url;
+    clone.querySelector('.blog-image').src = article.image;
+    clone.querySelector('.blog-title').textContent = article.title;
+    clone.querySelector('.blog-description').textContent = article.description;
+    blogList.appendChild(clone);
+  });
+}
+
+// Render the blog articles when the page loads
+window.addEventListener('load', renderBlogArticles);
