@@ -1,10 +1,10 @@
 // Blog articles data (you can replace this with your own data)
 const blogArticles = [
   {
-    title: "Article 1",
+    title: "this is the first article 1",
     description: "Description of Article 1",
     image: "path/to/image1.jpg",
-    url: "article1.html"
+    url: "https://aslan04739.github.io/aslanesamai/news-detail.html"
   },
   {
     title: "Article 2",
