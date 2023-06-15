@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>All Blog Articles</h2>
+  <div class="blog-list"></div>
+</div>
+
+<!-- Individual blog article template -->
+<template id="blog-template">
+  <div class="blog-item">
+    <a class="blog-link" href="#">
+      <img class="blog-image" src="" alt="">
+      <h3 class="blog-title"></h3>
+      <p class="blog-description"></p>
+    </a>
+  </div>
+</template>
