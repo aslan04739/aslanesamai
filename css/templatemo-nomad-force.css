@@ -605,6 +605,8 @@ strong {
 .site-footer .custom-link:hover,
 .site-footer .social-icon-link:hover {
   color: var(--white-color);
+  justify-content: center;
+
 }
 
 .copyright-text {
