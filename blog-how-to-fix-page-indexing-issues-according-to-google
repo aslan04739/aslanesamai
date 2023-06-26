@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Your pages aren't being indexed on Google SERP? Here's what to do according to people from Google ">
+    <meta name="author" content="Aslane Samai">
+
+    <title>Your pages aren't being indexed? Here's what to do according to Googlers</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="../../stylesheet" href="css/magnific-popup.css">
+    <link href="../../css/aos.css" rel="stylesheet">
+    <link href="../../css/templatemo-nomad-force.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="hero" id="hero">
+            <div class="heroText">
+                <h1>Your pages aren't being indexed? Here's what to do according to Googlers
+                </h1>
+            </div>
+
+            <div class="videoWrapper">
+                <img src="../../images/news/google-index.webp" class="img-fluid news-detail-image" alt="Google indexing process, credit to Semrush">
+            </div>
+
+            <div class="overlay"></div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html">
+                    <strong>Aslane Samai</strong>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../../index.html#hero">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#about">About me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#portfolio">Testimonials</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#news">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#contact">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="news-detail section-padding">
+            <div class="container">
+                <div class="row">
+                    <p> We all faced page indexing issues at some point. And when it happens, it can be tricky to troubleshoot it because you don't necessarily know what's the problem. Luckily, people have addressed the question to the top brass of Google.
+                    </p>
+                    <h2> Differentiate between page indexation and page ranking (visibility on the SERP)</h2>
+                    <p>The first great point Garry, Jhon, and Martin bring up is the difference between a page being indexed and a page being visible. They argue that most often than note, pages are indexed properly but are just not ranking.
+                    </p>
+                    <p>If you’re confused about whether your page is indexed or not, simply check on Google Search Console (Pages ⇒ indexed pages or Paste the URL in the search bar). <br><br> That out of the table. Let’s go through the different hurdles that would potentially stop a page from being indexed.</p>
+                    <h3>The page hasn’t been crawled. </h3>
+                    <p>In order to be indexed, your page needs to be discovered by Google crawlers. You can find out if your page has been crawled in Google Search Console.  <strong>Go to Pages ⇒ Why pages aren’t indexed. 
+</strong>
+                    </p>
+                    <h3>A bigger / different problem. </h3>
+                    <p>If all of your pages or most of them aren’t being indexed, you might be having a bigger problem than individual URL indexation.</p>
+                   <ul>
+                      <li>An unreachable server</li>
+                      <li>Misusage of Robots.txt</li>
+                      <li>Content problem: thin content, empty page, etc</li>
+                      <li>Unlinked page: orphan page that crawlers have no way of discovering</li>
+                      <li>Canonicalization</li>
+                      <li>A manual removal submission (people submit their entire websites to be de-indexed)</li>
+                      <li>Previous spammy content on the website (blacklisted)</li>
+                      <li>WWW and non-WWW pages indexation differences</li>
+                      <li>A canonical version of your website is already indexed</li>
+                      <li>Your page has a no index tag</li>
+                      <li>Coming soon pages will not be indexed</li>
+                    </ul>
+                <h3>How long should you wait before you start to worry about page indexation? </h3>
+                <p>The 3 experts say indexation time depends. That said, Google usually indexes pages pretty fast when it makes sense to have the content on the web. </p>
+                <p>Listen to the full episode here: </p>
+                <iframe width="560" height="315" src="https://youtube.com/embed/T2RwEr4bkBw" frameborder="0" allowfullscreen></iframe>
+                    <div class="social-share d-flex mt-5">
+                        <span class="me-4" data-aos="zoom-in">Share this article:</span>
+                        <a href="#" class="social-share-icon bi-facebook" data-aos="zoom-in"></a>
+                        <a href="#" class="social-share-icon bi-twitter mx-3" data-aos="zoom-in"></a>
+                        <a href="#" class="social-share-icon bi-envelope" data-aos="zoom-in"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-news section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-10 mx-auto text-center">
+                        <span class="d-block" data-aos="zoom-in">Next article</span>
+                        <h3 class="news-title" data-aos="fade-up">
+                            <a href="news-detail.html" class="news-title-link"></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="text-white">
+                        <i class="bi-geo-alt-fill me-2"></i>
+                        Algiers, Algeria
+                    </h5>
+                    <a href="mailto:samaiaslane7@gmail.com" class="custom-link mt-3 mb-5">
+                        samaiaslane7@gmail.com
+                    </a>
+                </div>
+                <div class="col-lg-3 col-5 ms-auto">
+                    <ul class="social-icon">
+                        <li><a href="https://twitter.com/this_is_aslan" class="social-icon-link bi-twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/aslane-samai/" class="social-icon-link bi-linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
