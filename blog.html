@@ -23,6 +23,47 @@
         height: auto;
     }
 </style>
+    <style>
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+        margin-bottom: 40px; /* Add spacing between cards */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+}
+
+.card-category {
+    padding: 0.25rem 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.card-link {
+    color: #007bff;
+    font-weight: bold;
+}
+
+</style>
 </head>
 <body>
     <main>
@@ -75,7 +116,7 @@
                     <div class="col-lg-9 col-md-8 col-12">
                         <div class="row">
                             <!-- Blog 1 -->
-                            <div class="col-lg-6 col-12 mb-4 blog-card tools">
+                            <div class="card">
                                 <div class="news-thumb shadow" data-aos="fade-up">
                                     <a href="blog/8-chrome-extensions-for-seo.html" class="news-image-hover news-image-hover-warning">
                                         <img src="../../images/news/extensions.png" class="img-fluid large-news-image news-image" alt="">
@@ -90,7 +131,7 @@
                                 </div>
                             </div>
                             <!-- Blog 2 -->
-                            <div class="col-lg-6 col-12 mb-4 blog-card news">
+                            <div class="card">
                                 <div class="news-thumb shadow news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
                                     <div class="news-top w-100">
                                         <a href="blog/i-tried-Google-bard.html" class="news-image-hover news-image-hover-primary">
