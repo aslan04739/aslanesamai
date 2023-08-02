@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Discover the impact of effective SEO strategies through a compelling case study. Unveil the journey of a website's transformation, showcasing how targeted optimizations and techniques led to significant improvements in search engine rankings and organic traffic. Gain valuable insights and inspiration for your own SEO efforts, and learn how to achieve remarkable results through proven strategies and best practices. Explore this SEO case study and unlock the secrets to success in optimizing your online presence."
+
+
+
+
+">
+    <meta name="author" content="Aslane Samai">
+
+    <title>Best online tools I came across (updated regularly)</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
+    <link href="../../css/aos.css" rel="stylesheet">
+    <link href="../../css/templatemo-nomad-force.css" rel="stylesheet">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th:first-child, td:first-child {
+            background-color: #333;
+            color: #fff;
+        }
+        .centered-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        h2 {
+            text-align: left;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            text-align: left;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="hero" id="hero">
+            <div class="heroText">
+                <h1>
+                   SEO case study: InterFast. And there was visibility... 
+                </h1>
+            </div>
+            <div class="overlay"></div>
+        </section>
+
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <strong>Aslane Samai</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#portfolio">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://aslanesamai.com/blog">My blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>The Problem</h2>
+                        <p>This SEO case study focuses on InterFast, a software company targeting construction professionals. With an underperforming website and several SEO challenges, the company sought to improve its online visibility and attract the right audience. Despite time constraints and limited team support, we implemented a targeted strategy that included keyword research, backlink analysis, content creation, technical improvements, and more. The case study highlights the step-by-step approach, challenges faced, and the remarkable results achieved, showcasing the power of a well-crafted SEO strategy. Let's dive into how InterFast defied expectations and achieved remarkable growth through strategic SEO initiatives.</p>
+                        <ul>
+                            <li>They had many (many) 404s</li>
+                            <img src="../../images/ressources/Capture-2023-07-10-180644.webp" alt="SEO case study illustration">
+                            <li>The lang attribute was set to EN (English). But the content (and the target) was French.</li>
+                            <li>The website had numerous irrelevant pages (template pages left behind)</li>
+                            <li>The website had some articles, but they were not indexed. The same goes for important pages such as pricing, about us, etc.</li>
+                            <li>Internal linking was absent from the pages.</li>
+                            <li>Pages had no or irrelevant meta descriptions.</li>
+                            <li>Pages had no H1 titles.</li>
+                            <li>Images had no alt text (some still don’t).</li>
+                            <li>Images weren’t served as next-gen pictures.</li>
+                            <li>Site health was low.</li>
+                            <li>The website had no backlinks.</li>
+                            <img src="../../images/ressources/Capture-2023-07-10-210707.webp" alt="SEO case study illustration">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>The Strategy</h2>
+                        <h3>Keywords</h3>
+                        <img src="../../images/ressources/Capture-2023-07-10-211029.webp" alt="SEO case study illustration">
+                        <p>My first step was finding the appropriate keywords for InterFast. I knew the team positioned their product as software for construction professionals. I did some research on Google and found a few competitors such as Vertioza, Obat, Axaunaut, etc.</p>
+                        <p>After that, I conducted a keyword gap analysis to see what sort of keywords everything was aiming for. Once I had the list of keywords, I exported the data as csv and crunched some numbers using SQL! I went for low KD (keyword difficulty) and average volume, as agreed with the team.</p>
+                        <p>From there, I proposed a few keywords I thought were relevant to the team.</p>
+
+                        <h3>Backlinks</h3>
+                        <p>Keywords aside, when it comes to SAAS SEO, backlinks from comparison websites were a must. So I worked on a backlink gap analysis with the same competitors.</p>
+                        <img src="../../images/ressources/Capture-2023-07-10-211029.webp" alt="SEO case study illustration">
+                        <p>The team didn’t want to pay for backlinks, so I went for organic backlink opportunities and provided them with a handpicked list.</p>
+
+                        <h3>Content Creation</h3>
+                        <p>Comparison pages are a big part of <a href = "https://www.rocktherankings.com/competitor-comparison-landing-pages/"> SAAS SEO</a>; That’s why I started working on blog posts in which I compare different software to InterFast. I made sure to do extensive research about the software I was “comparing” in order to signal EEAT to Google.</p>
+                        <p>I also included listicles and straight-to-the-point content to prompt rich results. Lastly, I included tables to make the blog articles more readable.</p>
+
+                        <h3>Guest Posting</h3>
+                        <p>Guest posting was another tactic I used. The team had some contacts, so we leveraged them to create helpful content for our common audiences.</p>
+
+                        <h3>Technical Tweaks</h3>
+                        <p>The first thing I did was ask the team to change the lang attribute to FR on all pages. It took a while, but it had to be done.</p>
+                        <p>Next, I started tinkering with Google Search Console. I submitted irrelevant pages to be removed. We fixed some 404s and we simply deleted some template pages that had no reason to be indexed.</p>
+                        <p>From there, I tackled the discovered and crawled but unindexed pages on Google Search Console. I manually submitted the most important pages such as Home, about us, pricing, etc.</p>
+                        <p>Knowing Google Search Console has a daily limit, I took things quickly...</p>
+                        <p><strong>After some time, Google started finally indexing our pages.</strong></p>
+                        <p>By nature, InterFast has many similar pages with the same content and different titles that they created in order to appeal to many targets. Sadly, these pages were seen by Google as duplicated pages, so I asked the team to put canonical tags to signal the original page.</p>
+                        <p>In a similar vein, most pages had no meta descriptions or irrelevant ones. So I worked with the team to add proper meta tags, <a href = "https://www.seoquake.com/blog/google-rewrites-meta-descriptions/#:~:text=Google%20Rewrites%20Meta%20Descriptions&text=If%20the%20search%20does%20not,case%20of%20long%2Dtail%20searches">even though I knew Google often changes them.</a></p>
+                        <p>Another thing I tried to improve was the images. Most of them were served as png or jpg and had no alt text. I tried to convince the team to convert them to webp, but to no avail. So I just added alt text to them and called it a win.</p>
+                        <p>Another thing I did with the team of InterFast excludes the team’s traffic from Google Analytics. I, for one, was visiting the website a lot (I worked on creating pages for them too). So I used this <a href="https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh" target="_blank">Google Chrome extension</a> to avoid skewing results. I suggest you do the same or ask your developer to do it directly from Google Analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>The Results</h2>
+                        <p>In SEO terms, I worked with InterFast for a short term. But that didn’t stop us from making progress and witnessing progress. Here’s a sneak peek at GSC results:</p>
+                        <img src="../../images/ressources/Capture-2023-07-10-211434.webp" alt="SEO case study illustration">
+                        <p>Our blog and website content was leading to so much additional traffic and growth, FBS had to expand their team — in just one year of putting our strategy into action.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>What This Means For Your Brand</h2>
+                        <p>There’s an SEO strategy for every business — including yours.</p>
+                        <p>Often — either due to past experiences or misconceptions — business owners feel that their company is the exception. Maybe they think that their field is too competitive, or that they’re searching for a particularly unique client. That, or they think that SEO might work, but that it’d just be too expensive for them to stack up to their competitors.</p>
+                        <p>InterFast fell into both of these traps — but it wasn’t entirely their fault!</p>
+                        <p>They’d been told in the past that SEO was “magic,” and that it was all about optimizations, not content. When that didn’t work, their befuddled past agencies threw in the towel, telling them that SEO just wasn’t for them.</p>
+                        <p>We proved that wrong.</p>
+                        <p>A couple of months later, InterFast has increased its traffic and it’s still climbing.</p>
+                        <p>All it takes for your business to find success is to use the right strategy, target the right keywords, and create the right content. To do that, you need the right SEO partner.</p>
+                        <p>Reach out to me — and we’ll get working on crafting an SEO strategy for you that’ll defy your expectations. The SEO Audit is free!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript files -->
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/jquery.magnific-popup.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
