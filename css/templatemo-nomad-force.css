@@ -338,6 +338,9 @@ strong {
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
+/*---------------------------------------
+  HERO              
+-----------------------------------------*/
 .hero {
   position: relative;
   overflow: hidden;
@@ -345,14 +348,14 @@ strong {
 
 @media screen and (min-width: 992px) {
   .hero {
-    height: 100vh;
+    height: 50vh; /* Set the height to 50% of the viewport height */
   }
 
   .custom-video,
-  .news-detail-image {
+  .heroImage {
     object-fit: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 100%; /* Set the width to 100% to make the image responsive */
+    height: 100%; /* Set the height to 100% to maintain the aspect ratio */
   }
 
   .sticky-wrapper {
@@ -370,7 +373,6 @@ strong {
   width: 85%;
   text-align: center;
 }
-
 /*---------------------------------------
   ABOUT & TEAM MEMBERS               
 -----------------------------------------*/
