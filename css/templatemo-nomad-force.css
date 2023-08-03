@@ -348,7 +348,7 @@ strong {
 
 @media screen and (min-width: 992px) {
   .hero {
-    height: 50vh; /* Set the height to 50% of the viewport height */
+    height: 60vh; /* Set the height to 50% of the viewport height */
   }
 
   .custom-video,
