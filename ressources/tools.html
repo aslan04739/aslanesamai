@@ -268,27 +268,38 @@
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/scrollspy.min.js"></script>
     <script src="js/custom.js"></script>
-    <script>#searchInput {
-      margin-bottom: 10px;
-      padding: 5px;
-      width: 100%;
-      box-sizing: border-box;
+    <script>
+    
+    // Get references to the input field and table
+const searchInput = document.getElementById("searchInput");
+const table = document.getElementById("myTable");
+
+// Add an event listener to the input field
+searchInput.addEventListener("keyup", function () {
+   const searchText = searchInput.value.toLowerCase();
+
+   // Loop through the table rows and hide/show based on search text
+   const rows = table.getElementsByTagName("tr");
+   for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      const rowData = row.getElementsByTagName("td");
+      let rowVisible = false;
+
+      for (let j = 0; j < rowData.length; j++) {
+         const cell = rowData[j];
+         if (cell.innerHTML.toLowerCase().includes(searchText)) {
+            rowVisible = true;
+            break;
+         }
+      }
+
+      if (rowVisible) {
+         row.style.display = "";
+      } else {
+         row.style.display = "none";
+      }
    }
-   
-   #myTable {
-      border-collapse: collapse;
-      width: 100%;
-   }
-   
-   #myTable th, #myTable td {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-   }
-   
-   #myTable th {
-      background-color: #f2f2f2;
-   }
+});
    </script>
 </body>
 </html>
