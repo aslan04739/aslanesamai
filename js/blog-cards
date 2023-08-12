@@ -1,16 +1,1 @@
-const blogs = [
-  {
-    image: "path/to/image1.jpg",
-    title: "Blog 1",
-    description: "Description of Blog 1",
-    link: "https://aslan04739.github.io/aslanesamai/news-detail.html"
-  },
-  {
-    image: "path/to/image2.jpg",
-    title: "Blog 2",
-    description: "Description of Blog 2",
-    link: "blog2.html"
-  },
-  // Add more blogs as needed
-];
-
+const blogs=[{image:"path/to/image1.jpg",title:"Blog 1",description:"Description of Blog 1",link:"https://aslan04739.github.io/aslanesamai/news-detail.html"},{image:"path/to/image2.jpg",title:"Blog 2",description:"Description of Blog 2",link:"blog2.html"}];
