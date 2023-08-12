@@ -1,0 +1,5 @@
+defaults:
+  - scope:
+      path: ""
+    values:
+      http_caching: "public, max-age=31536000"
