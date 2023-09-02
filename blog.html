@@ -300,6 +300,37 @@
       <script src="/js/aos.js"></script> 
       <script src="/js/magnific-popup.js"></script>
       <script src="/js/custom.js"></script>
-      <script src="search.js"></script>
+      <script>
+      // Get references to the input field and table
+      const searchInput = document.getElementById("searchInput");
+      const table = document.getElementById("myTable");
+      
+      // Add an event listener to the input field
+      searchInput.addEventListener("keyup", function () {
+         const searchText = searchInput.value.toLowerCase();
+      
+         // Loop through the table rows and hide/show based on search text
+         const rows = table.getElementsByTagName("tr");
+         for (let i = 1; i < rows.length; i++) {
+            const row = rows[i];
+            const rowData = row.getElementsByTagName("td");
+            let rowVisible = false;
+      
+            for (let j = 0; j < rowData.length; j++) {
+               const cell = rowData[j];
+               if (cell.innerHTML.toLowerCase().includes(searchText)) {
+                  rowVisible = true;
+                  break;
+               }
+            }
+      
+            if (rowVisible) {
+               row.style.display = "";
+            } else {
+               row.style.display = "none";
+            }
+         }
+      });
+         </script>
    </body>
 </html>
