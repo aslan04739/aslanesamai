@@ -56,6 +56,12 @@
             </div>
          </nav>
          <section class="news section-padding" id="news">
+             <!--search results -->
+            <input type="text" id="searchInput" placeholder="Search..." oninput="searchBlog()">
+        
+            <!-- Display search results here -->
+            <div id="searchResults"></div>
+            <!-- End of search results -->
             <div class="container">
                <div class="card">
                   <div class="row">
@@ -296,5 +302,6 @@
       <script src="/js/aos.js"></script> 
       <script src="/js/magnific-popup.js"></script>
       <script src="/js/custom.js"></script>
+      <script src="search.js"></script>
    </body>
 </html>
