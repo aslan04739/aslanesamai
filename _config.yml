@@ -3,3 +3,4 @@ defaults:
       path: ""
     values:
       http_caching: "public, max-age=31536000"
+      remote_theme: jekyll/minima
