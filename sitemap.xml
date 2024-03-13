@@ -1,177 +1,213 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://aslanesamai.com/</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/index</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/ressources</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/services</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/5-seo-podcasts-for-beginners-in-2023.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/how-to-fix-page-indexing-issues-according-to-google.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/8-chrome-extensions-for-seo.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/index.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/ressources.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/services.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/free-domain-and-ssl-checker-for-seo-in-2023.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/google-now-supports-rich-results-for-gated-content.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/google-search-console-page-indexing-issues.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/seo-redemption-elevate-your-site-quality-and-regain-google-trust.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/mastering-inp-for-better-website-performance-a-beginner-guide-to-seo-friendly-Interactions.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/quickly-audit-your-website-with-this-free-seo-audit-tool-for-beginners-from-hubspot.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/seo-games-for-beginners-in-2023.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/i-tried-google-sge-here-is-what-changes-in-seo.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/blog/i-tried-Google-bard.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/ressources/seo-case-study.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/ressources/seo-case-study-unimind.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/services/seo-the-driving-force-behind-my-passion.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/services/data-analysis.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/services/data-visualization.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://aslanesamai.com/services/seo-content-writing.html</loc>
-  <lastmod>2023-12-10T19:36:04+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://aslanesamai.com/</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/services</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/ressources</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/how-to-fix-page-indexing-issues-according-to-google.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/5-seo-podcasts-for-beginners-in-2023.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/index</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/8-chrome-extensions-for-seo.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/seo-games-for-beginners-in-2023.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/i-tried-Google-bard.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/mastering-inp-for-better-website-performance-a-beginner-guide-to-seo-friendly-Interactions.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/seo-redemption-elevate-your-site-quality-and-regain-google-trust.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/google-now-supports-rich-results-for-gated-content.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/quickly-audit-your-website-with-this-free-seo-audit-tool-for-beginners-from-hubspot.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/i-tried-google-sge-here-is-what-changes-in-seo.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/google-search-console-page-indexing-issues.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog/free-domain-and-ssl-checker-for-seo-in-2023.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/ressources/seo-case-study.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/ressources/seo-case-study-unimind.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/ressources/radco-seo-case-study.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/services/seo-the-driving-force-behind-my-passion.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/ressources.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/blog.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/services/seo-content-writing.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/services.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/services/data-analysis.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/services/data-visualization.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aslanesamai.com/index.html</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
