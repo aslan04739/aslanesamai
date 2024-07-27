@@ -17,22 +17,24 @@
       <link href="../../css/templatemo-nomad-force.css" rel="stylesheet">
       <style>
          h1, h2, h3 {
-         font-size: 20px; 
+            font-size: 20px; 
          }
          .news-detail-image {
-         position: relative;
-         width: 100%;
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full height */
+            background: url('https://misinate.sirv.com/perso/data%20analysis%20sql.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
          }
          .news-detail-image h1 {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         color: #fff;
-         font-size: 30px;
-         text-align: center;
-         width: 80%;
-         max-width: 600px;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px 20px;
          }
       </style>
       <script type="application/ld+json">
@@ -46,7 +48,7 @@
              "@type": "Organization",
              "name": "Aslane Samai",
              "description": "Experienced data analyst",
-             "url": "https://aslanesamai.com/",
+             "url": "https://aslane-samai.com/",
              "sameAs": [
                "http://www.linkedin.com/in/aslane-samai",
                "https://twitter.com/this_is_aslan",
@@ -66,15 +68,10 @@
    <body>
       <main>
          <section class="hero" id="hero">
-            <div class="heroText">
-            </div>
-            <div class="videoWrapper">
-                <img class="Sirv" data-src="https://misinate.sirv.com/perso/data%20analysis%20sql.jpg" alt="data analysis sql">
-                <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>   
-                <h1>Data Analysis for SEO - Empowering Search engine Optimization with SQL and Python</h1>         
+            <div class="news-detail-image">
+                <h1>Data Analysis for SEO - Empowering Search engine Optimization with SQL and Python</h1>
             </div>
             <div class="overlay"></div>
-         </section>
          </section>
          <nav class="navbar navbar-expand-lg bg-light shadow-lg">
             <div class="container">
@@ -93,7 +90,7 @@
                         <a class="nav-link" href="/blog.html">Blog</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="/ressources.html">Resources</a>
+                        <a class="nav-link" href="/resources.html">Resources</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="/services.html">Services</a>
@@ -103,25 +100,28 @@
             </div>
          </nav>
          <section class="news-detail section-padding">
-         <div class="container">
-         <div class="row">
-         <p>Besides SEO,  I have a passion for diving deep into the world of data analysis to unlock the true potential of your online presence. My mission is to help businesses like yours succeed in the vast and ever-evolving digital landscape.</p>
-         <h2>Unlocking the Power of Data</h2>
-         <p>In the realm of SEO, data is more than just numbers; it's the key that unlocks the door to success. With a keen eye for data-driven insights, I can uncover the hidden stories within your website's analytics. Every click, every keyword, and every user journey tells a unique tale, and I'm here to decipher them for you.</p>
-         <p>Whether you're a budding startup or an established enterprise, understanding your data is vital for making informed decisions. By delving deep into the data, I can identify what drives traffic to your site, what keeps users engaged, and how to optimize content for better search engine rankings.</p>
-         <h2>Google Data Analytics Certified</h2>
-         <p>As a Google Data Analytics certified professional, I'm equipped with the knowledge to harness Google's powerful analytics tools to extract meaningful insights. With Google Analytics as my trusted compass, I can navigate through the vast ocean of data and provide you with a clear roadmap for success.</p>
-         <p>From tracking the performance of your website to measuring the impact of marketing campaigns, I leave no stone unturned in understanding user behavior with precision. Let me be your data guide, as we steer your online presence toward growth and success.</p>
-         <h2>Corise SQL Advanced Certification</h2>
-         <p>In the realm of data, managing databases is a crucial skill. My Corise SQL Advanced certification showcases my expertise in handling and querying complex datasets with ease and efficiency. SQL is like the magic wand that brings forth the information you seek from the depths of databases.</p>
-         <p>With Corise SQL Advanced certification, I can craft powerful queries, uncover valuable insights, and present data in a clear and concise manner. The knowledge I've gained allows me to identify trends, discover untapped opportunities, and optimize your website's performance for better search engine visibility.</p>
-         <h2>Your Partner in Digital Growth</h2>
-         <p>Together, we embark on a data-driven journey that transforms your digital presence. From understanding user behavior to optimizing your content strategy, my expertise in data analysis serves as a guiding light in the vast landscape of SEO.</p>
-         <p>Let's not settle for mediocrity; let's empower your business with the magic of data analysis. Unleash the full potential of your online endeavors and watch as your website climbs the ranks, connects with your audience, and achieves the digital success it deserves.</p>
-         <p>Contact me today, and let's dive deep into the world of data analysis to make your SEO dreams a reality!</p>
-         <p>Remember, in the digital kingdom, the right data can be the key to unlocking endless possibilities.</p>
-         <P>check out my <a href="https://drive.google.com/drive/folders/1tCuOFpOOyVAZyFguRmhR4G-om5sdxBNI?usp=share_link">SEO portfolio here; you will find SEO case studies, SEO audits, SEO progress sheets and much more. </a></P>
-         <p>Interested in an SEO Audit ? Reach out to me by sending me an email here <a href="mailto:contact@aslanesamai.com">contact@aslanesamai.com</a>or by <a href="https://aslanesamai.com/#contact">filing the calendly form</a></p>
+            <div class="container">
+               <div class="row">
+                  <p>Besides SEO, I have a passion for diving deep into the world of data analysis to unlock the true potential of your online presence. My mission is to help businesses like yours succeed in the vast and ever-evolving digital landscape.</p>
+                  <h2>Unlocking the Power of Data</h2>
+                  <p>In the realm of SEO, data is more than just numbers; it's the key that unlocks the door to success. With a keen eye for data-driven insights, I can uncover the hidden stories within your website's analytics. Every click, every keyword, and every user journey tells a unique tale, and I'm here to decipher them for you.</p>
+                  <p>Whether you're a budding startup or an established enterprise, understanding your data is vital for making informed decisions. By delving deep into the data, I can identify what drives traffic to your site, what keeps users engaged, and how to optimize content for better search engine rankings.</p>
+                  <h2>Google Data Analytics Certified</h2>
+                  <p>As a Google Data Analytics certified professional, I'm equipped with the knowledge to harness Google's powerful analytics tools to extract meaningful insights. With Google Analytics as my trusted compass, I can navigate through the vast ocean of data and provide you with a clear roadmap for success.</p>
+                  <p>From tracking the performance of your website to measuring the impact of marketing campaigns, I leave no stone unturned in understanding user behavior with precision. Let me be your data guide, as we steer your online presence toward growth and success.</p>
+                  <h2>Corise SQL Advanced Certification</h2>
+                  <p>In the realm of data, managing databases is a crucial skill. My Corise SQL Advanced certification showcases my expertise in handling and querying complex datasets with ease and efficiency. SQL is like the magic wand that brings forth the information you seek from the depths of databases.</p>
+                  <p>With Corise SQL Advanced certification, I can craft powerful queries, uncover valuable insights, and present data in a clear and concise manner. The knowledge I've gained allows me to identify trends, discover untapped opportunities, and optimize your website's performance for better search engine visibility.</p>
+                  <h2>Your Partner in Digital Growth</h2>
+                  <p>Together, we embark on a data-driven journey that transforms your digital presence. From understanding user behavior to optimizing your content strategy, my expertise in data analysis serves as a guiding light in the vast landscape of SEO.</p>
+                  <p>Let's not settle for mediocrity; let's empower your business with the magic of data analysis. Unleash the full potential of your online endeavors and watch as your website climbs the ranks, connects with your audience, and achieves the digital success it deserves.</p>
+                  <p>Contact me today, and let's dive deep into the world of data analysis to make your SEO dreams a reality!</p>
+                  <p>Remember, in the digital kingdom, the right data can be the key to unlocking endless possibilities.</p>
+                  <p>Check out my <a href="https://drive.google.com/drive/folders/1tCuOFpOOyVAZyFguRmhR4G-om5sdxBNI?usp=share_link">SEO portfolio here; you will find SEO case studies, SEO audits, SEO progress sheets, and much more. </a></p>
+                  <p>Interested in an SEO Audit? Reach out to me by sending me an email here <a href="mailto:contact@aslanesamai.com">contact@aslanesamai.com</a> or by <a href="https://aslanesamai.com/#contact">filing the calendly form</a></p>
+               </div>
+            </div>
+         </section>
       </main>
       <footer class="site-footer">
          <div class="container">
@@ -143,13 +143,10 @@
          </div>
       </footer>
       <!-- JAVASCRIPT FILES -->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery.sticky.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/magnific-popup-options.js"></script>
-      <script src="js/scrollspy.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="../../js/jquery.min.js"></script>
+      <script src="../../js/bootstrap.bundle.min.js"></script>
+      <script src="../../js/jquery.magnific-popup.min.js"></script>
+      <script src="../../js/aos.js"></script>
+      <script src="../../js/templatemo-nomad-force.js"></script>
    </body>
 </html>
