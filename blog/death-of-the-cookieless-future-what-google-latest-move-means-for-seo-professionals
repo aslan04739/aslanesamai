@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Google's latest update signals the end of the cookieless future. Learn what this means for SEO experts, including impacts on online advertising strategies and evolving privacy standards.">
+      <meta name="author" content="Aslane Samai">
+      <title>Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals</title>
+      <!-- CSS FILES -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
+      <link href="../../css/bootstrap.min.css" rel="stylesheet">
+      <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+      <link href="../../css/magnific-popup.css" rel="stylesheet">
+      <link href="../../css/aos.css" rel="stylesheet">
+      <link href="../../css/templatemo-nomad-force.css" rel="stylesheet">
+   </head>
+   <body>
+      <main>
+         <section class="hero" id="hero">
+            <div class="heroText">
+               <h1 class="news-detail-title text-white mt-lg-5 mb-lg-4">Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals</h1>
+            </div>
+            <div class="videoWrapper">
+               <img class="Sirv" data-src="https://misinate.sirv.com/perso/harry-cunningham-_1J2AioiNC0-unsplash.jpg" alt="Podcast Setting">
+               <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+            </div>
+            <div class="overlay"></div>
+         </section>
+         <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+               <a class="navbar-brand" href="../../index.html">
+               <strong>Aslane Samai</strong>
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/ressources.html">Resources</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/services.html">Services</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <section class="news-detail section-padding">
+            <div class="container">
+                <h1>The Cookieless Future We’ve Been Promised Is Not Coming</h1>
+                <p>Google has long touted a future of enhanced privacy—a world without cookies. The tech giant introduced several ambitious yet ultimately fruitless initiatives to replace cookies, including Privacy Sandbox, FLoC, and Topics (anyone remember those?).</p>
+                <p>Throughout this saga, stakeholders such as advertisers, tech experts, and regulators like the UK’s Competition and Markets Authority (CMA) have voiced strong objections, albeit for varied reasons.</p>
+                <p>Google might’ve finally kneeled…</p>
+                <h2>A Few Days Ago Though, News Broke About the Same Topic. And It’s Not What You Think…</h2>
+                <p>Instead of a nudge from Google reminding us, once more, to prepare ourselves for the inevitable future, we got a shocking post announcing the death of the unbirthed calcified baby…</p>
+                <h2>What Did Google Actually Say in the Blog Post?</h2>
+                <ol>
+                    <li>
+                        <strong>They have been facing backlash from everyone. For different reasons…</strong>
+                        <p>Throughout this process… we’ve received feedback from a wide variety of stakeholders… This feedback has helped us craft solutions that aim to support a competitive and thriving marketplace that works for publishers and advertisers, and encourage the adoption of privacy-enhancing technologies.</p>
+                    </li>
+                    <li>
+                        <strong>There was no middle ground</strong>
+                        <p>We recognize this transition requires significant work by many participants and will have an impact on publishers, advertisers, and everyone involved in online advertising.</p>
+                    </li>
+                    <li>
+                        <strong>Previous tests revealed concerning results</strong>
+                        <p>According to Google, removing 3P cookies on their own would result in a 34% dip in programmatic revenue for advertisers using Ad Manager, and a 21% dip for those advertisers using AdSense. By enabling Privacy Sandbox APIs, revenues reportedly only dipped by 20% (Ad Manager) and 18% (AdSense).</p>
+                    </li>
+                    <li>
+                        <strong>Users will have the last word (à la Apple)</strong>
+                        <p>We would introduce a new experience in Chrome that lets people make an informed choice that applies across their web browsing, and they’d be able to adjust that choice at any time.</p>
+                    </li>
+                </ol>
+                <h2>What Does This Mean for SEOs, Marketers, and Advertisers?</h2>
+                <ol>
+                    <li><strong>First of all, we can all sigh of relief. Or can we really?</strong></li>
+                    <li><strong>That aside, I won't go so far as to say we knew the cookieless future we were promised was never going to be a real thing. At least not how it was tooted.</strong> But after repeatedly missing the self-imposed deadlines Google put to loose the cookies (or at least come up with a viable alternative and start the transition), we had our doubts...</li>
+                    <li><strong>The privacy trend. Pushed by Apple and backed by regulators isn’t going away anytime soon.</strong> Google, will, sooner or later have to come up with a more sustainable and satisfying solution to reassure everyone. Without putting at peril its business model.</li>
+                    <li><strong>No one won the war. Yet…</strong> Google is still working on its SGE SERP. With ramifications to be seen...</li>
+                </ol>
+            </div>
+         </section>
+      </main>
+      <footer class="site-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <h5 class="text-white">
+                     <i class="bi-geo-alt-fill me-2"></i>
+                     Algiers, Algeria
+                  </h5>
+                  <a href="mailto:contact@aslanesamai.com" class="custom-link mt-3 mb-5">
+                  contact@aslanesamai.com
+                  </a>
+               </div>
+               <div class="col-lg-3 col-5 ms-auto">
+                  <ul class="social-icon">
+                     <li><a href="https://twitter.com/this_is_aslan" class="social-icon-link bi-twitter"></a></li>
+                     <li><a href="https://www.linkedin.com/in/aslane-samai/" class="social-icon-link bi-linkedin"></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- JAVASCRIPT FILES -->
+      <script src="../../js/jquery.min.js"></script>
+      <script src="../../js/bootstrap.bundle.min.js"></script>
+      <script src="../../js/jquery.sticky.js"></script>
+      <script src="../../js/aos.js"></script>
+      <script src="../../js/jquery.magnific-popup.min.js"></script>
+      <script src="../../js/magnific-popup-options.js"></script>
+      <script src="../../js/scrollspy.min.js"></script>
+      <script src="../../js/custom.js"></script>
+   </body>
+</html>
