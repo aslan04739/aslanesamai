@@ -39,15 +39,14 @@
          padding: 60px 0;
          text-align: center;
       }
-      .heroText {
-         z-index: 2;
-         position: relative;
-      }
       .hero img {
+         position: absolute;
+         top: 0;
+         left: 0;
          width: 100%;
-         height: auto;
-         max-height: 400px;
+         height: 100%;
          object-fit: cover;
+         z-index: 1;
       }
       .hero .overlay {
          position: absolute;
@@ -56,7 +55,11 @@
          width: 100%;
          height: 100%;
          background: rgba(0, 0, 0, 0.5);
-         z-index: 1;
+         z-index: 2;
+      }
+      .heroText {
+         z-index: 3;
+         position: relative;
       }
       .news-detail h2.custom-h2 {
          font-size: 1.75rem;
@@ -103,8 +106,6 @@
          <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>     
          <div class="heroText">
             <h1 class="news-detail-title text-white mt-lg-5 mb-lg-4">Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals</h1>
-         </div>
-         <div class="videoWrapper">    
          </div>
          <div class="overlay"></div>
       </section>
@@ -153,19 +154,46 @@
                   <p>We recognize this transition requires significant work by many participants and will have an impact on publishers, advertisers, and everyone involved in online advertising.</p>
                </li>
                <li>
-                  <strong>Previous tests revealed concerning results</strong>
-                  <p>According to Google, removing 3rd party cookies didn’t have the impact we expected on reducing individual tracking.</p>
+                  <strong>The UK’s Competition and Markets Authority finally gave the final blow</strong>
+                  <p>As we move to phase out third-party cookies, we will work closely with the UK’s Competition and Markets Authority (CMA) to ensure that this transition is conducted in a way that ensures the competition in digital advertising remains fair and open.</p>
                </li>
             </ol>
-            <p>The debate over online privacy and cookies is far from over, but this move signifies a substantial shift in Google's approach and the digital advertising landscape.</p>
+            <p>What does that actually mean for online advertising and SEO?</p>
+            <h2 class="custom-h2">Long live the king: How to adapt to this change</h2>
+            <p>For many SEO experts and digital marketers, the key takeaway from Google’s latest announcement is clear: third-party cookies are here to stay for the foreseeable future.</p>
+            <p>Instead of scrambling to adapt to a cookieless future, we should focus on refining our strategies around the existing cookie-based model. This involves:</p>
+            <ol>
+               <li>
+                  <strong>Rethinking user consent and data transparency</strong>
+                  <p>Embrace GDPR and other privacy regulations as a standard practice. Make sure users are fully informed about how their data is being used and offer easy options to manage their preferences.</p>
+               </li>
+               <li>
+                  <strong>Enhancing first-party data collection</strong>
+                  <p>Invest in strategies to collect first-party data. This can include improving user engagement, offering valuable content, and encouraging direct interactions through email subscriptions, memberships, and more.</p>
+               </li>
+               <li>
+                  <strong>Leverage AI and machine learning</strong>
+                  <p>Use advanced analytics tools to gain insights from your first-party data. Machine learning algorithms can help predict user behavior, optimize ad targeting, and personalize user experiences.</p>
+               </li>
+            </ol>
          </div>
       </section>
       <footer class="site-footer">
          <div class="container">
             <div class="row">
-               <div class="col-lg-3 mx-lg-auto col-md-6 col-12">
-                  <h4 class="mb-4"><strong>Contact Info</strong></h4>
-                  <p><a href="contact@alanesamai.com" class="custom-link">contact@aslanesamai.com</a></p>
+               <div class="col-lg-6 me-auto col-12">
+                  <h5 class="text-white mb-3">About Me</h5>
+                  <p class="text-white-50">I'm Aslane Samai, an SEO expert and blogger. Follow my blog for the latest updates and insights on SEO, digital marketing, and online privacy.</p>
+                  <p class="text-white-50">© 2024 Aslane Samai. All rights reserved.</p>
+               </div>
+               <div class="col-lg-6 col-12">
+                  <h5 class="text-white mb-3">Follow Me</h5>
+                  <ul class="social-icon">
+                     <li><a href="#" class="bi bi-facebook"></a></li>
+                     <li><a href="#" class="bi bi-twitter"></a></li>
+                     <li><a href="#" class="bi bi-instagram"></a></li>
+                     <li><a href="#" class="bi bi-linkedin"></a></li>
+                  </ul>
                </div>
             </div>
          </div>
@@ -173,8 +201,8 @@
    </main>
    <script src="../../js/jquery.min.js"></script>
    <script src="../../js/bootstrap.bundle.min.js"></script>
-   <script src="../../js/jquery.magnific-popup.min.js"></script>
    <script src="../../js/aos.js"></script>
+   <script src="../../js/jquery.magnific-popup.min.js"></script>
    <script src="../../js/custom.js"></script>
 </body>
 </html>
