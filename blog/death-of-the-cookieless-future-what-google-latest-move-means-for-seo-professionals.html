@@ -38,16 +38,23 @@
          color: #fff;
          padding: 60px 0;
          text-align: center;
+         overflow: hidden; /* Ensure contents do not overflow */
       }
       .heroText {
-         z-index: 2;
          position: relative;
+         z-index: 2; /* Ensure this is above the image and overlay */
+         padding: 0 20px;
       }
       .hero img {
          width: 100%;
          height: auto;
          max-height: 400px;
          object-fit: cover;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 1; /* Ensure this is below the text and overlay */
+         display: block; /* Ensure image displays properly */
       }
       .hero .overlay {
          position: absolute;
@@ -56,7 +63,7 @@
          width: 100%;
          height: 100%;
          background: rgba(0, 0, 0, 0.5);
-         z-index: 1;
+         z-index: 1; /* Ensure this is above the image but below the text */
       }
       .news-detail h2.custom-h2 {
          font-size: 1.75rem;
@@ -99,14 +106,11 @@
 <body>
    <main>
       <section class="hero" id="hero">
+         <img class="Sirv" data-src="https://misinate.sirv.com/perso/blog/Google%20Cookies.jpg" alt="Google Cookies">
+         <div class="overlay"></div>
          <div class="heroText">
             <h1 class="news-detail-title text-white mt-lg-5 mb-lg-4">Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals</h1>
          </div>
-         <div class="videoWrapper">
-            <img class="Sirv" data-src="https://misinate.sirv.com/perso/blog/Google%20Cookies.jpg" alt="google cookies">
-            <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>         
-         </div>
-         <div class="overlay"></div>
       </section>
       <nav class="navbar navbar-expand-lg bg-light shadow-lg">
          <div class="container">
@@ -165,7 +169,7 @@
             <div class="row">
                <div class="col-lg-3 mx-lg-auto col-md-6 col-12">
                   <h4 class="mb-4"><strong>Contact Info</strong></h4>
-                  <p><a href="contact@alanesamai.com" class="custom-link">contact@aslanesamai.com</a></p>
+                  <p><a href="mailto:contact@aslanesamai.com" class="custom-link">contact@aslanesamai.com</a></p>
                </div>
             </div>
          </div>
@@ -178,3 +182,4 @@
    <script src="../../js/custom.js"></script>
 </body>
 </html>
+
