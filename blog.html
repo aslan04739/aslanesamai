@@ -381,21 +381,21 @@
       <script src="/js/magnific-popup.js"></script>
       <script src="/js/custom.js"></script>
       <script>
-         // Get references to the input field and blog cardsconst searchInput = document.getElementById("searchInput")
-         onst blogCards = document.querySelectorAll(".card");
-         // Add an event listener to the input fieldsearchInput.addEventListener("input", function () {
-         	const searchText = searchInput.value.toLowerCase();
-         	// Loop through the blog cards and hide/show based on search textblogCards.forEach((card) => {
-         		const cardTitle = card.querySelector("h3.portfolio-title");
-         		if (cardTitle.textContent.toLowerCase().includes(searchText)) {
-         			card.style.display = "";
-         		}
-         		 else {
-         			card.style.display = "none";
-         		}
-         	});
+         const searchInput = document.getElementById("searchInput");
+         const blogCards = document.querySelectorAll(".card");
+     
+         searchInput.addEventListener("input", function () {
+             const searchText = searchInput.value.toLowerCase();
+             
+             blogCards.forEach((card) => {
+                 const cardTitle = card.querySelector("h3.portfolio-title");
+                 if (cardTitle.textContent.toLowerCase().includes(searchText)) {
+                     card.style.display = "";
+                 } else {
+                     card.style.display = "none";
+                 }
+             });
          });
-         ;
-      </script>
+     </script>     
    </body>
 </html>
