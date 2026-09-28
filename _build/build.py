@@ -137,6 +137,7 @@ def content(path):
     body = re.sub(r"<img\b[^>]*>", _sized_img, (SRC / "content" / path).read_text(encoding="utf-8"))
     if "<!-- chart:aioseo -->" in body:
         body = (body.replace("<!-- stats:aioseo -->", aioseo_stats_html()).replace("<!-- chart:aioseo -->", aioseo_chart())
+                .replace("<!-- genai:aioseo -->", aioseo_genai_html() if AIO.get("genai") else "")
                 .replace("<!-- milestones:aioseo -->", aioseo_milestones()))
     return body
 
@@ -200,6 +201,57 @@ def aioseo_chart():
 <figcaption><span class="lg lg-bar"></span>Monthly impressions (left axis) <span class="lg lg-line"></span>Average position (right axis, 1 at the top). September 2026 runs to the 27th.</figcaption>
 <details><summary>Show the data</summary><table><thead><tr><th>Month</th><th>Impressions</th><th>Avg. position</th></tr></thead><tbody>{rows}</tbody></table></details>
 </figure>"""
+
+
+GENAI_TOP_PAGES = [  # most visible pages in AI Overviews / AI Mode (public articles)
+    ("Generative AI report in Google Search Console: how to analyze it", "https://aioseo.fr/en/google-search-console-generative-ai-report-how-to-analyze-it/"),
+    ("Top 10 GEO tools to track your AI position (English and French versions)", "https://aioseo.fr/en/top-10-tools-geo-to-track-your-position-ia-2025/"),
+    ("Comment connaître son positionnement sur Google AI Mode et AI Overviews ?", "https://aioseo.fr/comment-connaitre-son-positionnement-sur-ai-mode/"),
+    ("Google AI Overviews arrives in France", "https://aioseo.fr/en/en-google-ai-overviews-arrive-en-france/"),
+]
+
+
+def _day_label(d):
+    y, m, day = d.split("-")
+    return f"{MONTHS['en'][int(m) - 1]} {int(day)}, {y}"
+
+
+def aioseo_genai_html():
+    g = AIO["genai"]
+    full = [m for m in g["monthly"] if not m["partial"] and m["month"] != g["last_day"][:7]]
+    shares = [m["share_of_site"] * 100 for m in full]
+    fc = ", ".join(f"{c['country']} {c['share'] * 100:.0f}%" for c in g["top_countries"][:2])
+    cards = [
+        (f"{g['impressions']:,}", f"impressions in AI Overviews and AI Mode, {_day_label(g['first_day'])} to {_day_label(g['last_day'])}"),
+        (f"{min(shares):.0f}–{max(shares):.0f}%", f"of all the site's Google impressions each month ({_month_label(full[0]['month'], False)} to {_month_label(full[-1]['month'], False)})"),
+        (f"{g['daily_avg_last_week'] / g['daily_avg_first_week']:.1f}×", f"daily AI impressions, about {g['daily_avg_first_week']} a day in the first week to {g['daily_avg_last_week']} in the last"),
+        (f"{g['pages']}", "pages shown in AI answers"),
+        (f"{g['countries']}", f"countries ({fc})"),
+        (f"{g['en_share'] * 100:.0f}%", "of AI impressions go to the English versions"),
+    ]
+    stats = "".join(f"<div><b>{v}</b><span>{e(t)}</span></div>" for v, t in cards)
+    wk = g["weekly"]
+    W, H, L, R, T, B = 720, 220, 56, 16, 16, 34
+    iw, ih = W - L - R, H - T - B
+    top = 500 * -(-max(w["impressions"] for w in wk) // 500)
+    bw = iw / len(wk)
+    bars = "".join(
+        f'<rect class="ch-bar ch-bar-ai" x="{L + i * bw + bw * .18:.1f}" y="{T + ih - ih * w["impressions"] / top:.1f}" width="{bw * .64:.1f}" height="{ih * w["impressions"] / top:.1f}"><title>Week of {_day_label(w["week"])}: {w["impressions"]:,} impressions</title></rect>'
+        for i, w in enumerate(wk))
+    labels = "".join(f'<text class="ch-x" x="{L + i * bw + bw / 2:.1f}" y="{H - 10}" text-anchor="middle">{MONTHS["en"][int(w["week"][5:7]) - 1][:3]} {int(w["week"][8:])}</text>'
+                     for i, w in enumerate(wk) if i % 4 == 0 or (i == len(wk) - 1 and i % 4 > 2))
+    grid = "".join(f'<line class="ch-grid" x1="{L}" x2="{W - R}" y1="{T + ih - ih * k / 4:.1f}" y2="{T + ih - ih * k / 4:.1f}"/><text class="ch-y" x="{L - 8}" y="{T + ih - ih * k / 4 + 4:.1f}" text-anchor="end">{top * k / 4:,.0f}</text>' for k in range(5))
+    rows = "".join(f"<tr><td>{_day_label(w['week'])}</td><td>{w['impressions']:,}</td></tr>" for w in wk)
+    tops = "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{e(x)}</a></li>' for x, u in GENAI_TOP_PAGES)
+    return f"""<div class="case-stats">{stats}</div>
+<figure class="case-chart">
+<svg viewBox="0 0 {W} {H}" role="img" aria-label="aioseo.fr: weekly impressions in Google AI Overviews and AI Mode">{grid}{bars}{labels}</svg>
+<figcaption><span class="lg lg-bar lg-ai"></span>Weekly impressions in AI Overviews and AI Mode (full weeks, Monday to Sunday).</figcaption>
+<details><summary>Show the data</summary><table><thead><tr><th>Week of</th><th>AI impressions</th></tr></thead><tbody>{rows}</tbody></table></details>
+</figure>
+<p>The pages most often shown in AI answers are the practical, reference-style ones:</p>
+<ul>{tops}</ul>
+<p class="case-source">Source: Google Search Console, generative AI features report, {g['first_day']} to {g['last_day']}.</p>"""
 
 
 def aioseo_cover():

@@ -112,5 +112,136 @@
   "queries_with_impressions": 3784,
   "en_click_share": 0.6874051593323217,
   "nonbrand_click_share": 0.9357798165137615
+ },
+ "genai": {
+  "source": "Google Search Console, Generative AI features report (AI Overviews and AI Mode), export 2026-09-28",
+  "first_day": "2026-05-18",
+  "last_day": "2026-09-26",
+  "impressions": 14765,
+  "pages": 87,
+  "countries": 159,
+  "top_countries": [
+   {
+    "country": "France",
+    "share": 0.245
+   },
+   {
+    "country": "United States",
+    "share": 0.184
+   },
+   {
+    "country": "Spain",
+    "share": 0.058
+   }
+  ],
+  "en_share": 0.685,
+  "daily_avg_first_week": 54,
+  "daily_avg_last_week": 129,
+  "monthly": [
+   {
+    "month": "2026-05",
+    "impressions": 903,
+    "share_of_site": 0.041,
+    "partial": true
+   },
+   {
+    "month": "2026-06",
+    "impressions": 2573,
+    "share_of_site": 0.118,
+    "partial": false
+   },
+   {
+    "month": "2026-07",
+    "impressions": 3275,
+    "share_of_site": 0.137,
+    "partial": false
+   },
+   {
+    "month": "2026-08",
+    "impressions": 4788,
+    "share_of_site": 0.132,
+    "partial": false
+   },
+   {
+    "month": "2026-09",
+    "impressions": 3226,
+    "share_of_site": 0.111,
+    "partial": false
+   }
+  ],
+  "weekly": [
+   {
+    "week": "2026-05-18",
+    "impressions": 375
+   },
+   {
+    "week": "2026-05-25",
+    "impressions": 528
+   },
+   {
+    "week": "2026-06-01",
+    "impressions": 443
+   },
+   {
+    "week": "2026-06-08",
+    "impressions": 638
+   },
+   {
+    "week": "2026-06-15",
+    "impressions": 691
+   },
+   {
+    "week": "2026-06-22",
+    "impressions": 581
+   },
+   {
+    "week": "2026-06-29",
+    "impressions": 594
+   },
+   {
+    "week": "2026-07-06",
+    "impressions": 589
+   },
+   {
+    "week": "2026-07-13",
+    "impressions": 517
+   },
+   {
+    "week": "2026-07-20",
+    "impressions": 1084
+   },
+   {
+    "week": "2026-07-27",
+    "impressions": 939
+   },
+   {
+    "week": "2026-08-03",
+    "impressions": 976
+   },
+   {
+    "week": "2026-08-10",
+    "impressions": 1530
+   },
+   {
+    "week": "2026-08-17",
+    "impressions": 1011
+   },
+   {
+    "week": "2026-08-24",
+    "impressions": 896
+   },
+   {
+    "week": "2026-08-31",
+    "impressions": 943
+   },
+   {
+    "week": "2026-09-07",
+    "impressions": 807
+   },
+   {
+    "week": "2026-09-14",
+    "impressions": 791
+   }
+  ]
  }
 }

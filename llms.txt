@@ -48,7 +48,7 @@ Key facts:
 
 ## Case studies
 
-- [SEO & GEO Case Study: aioseo.fr, a GEO Blog Built from Scratch](https://aslanesamai.com/ressources/seo-case-study-aioseo.html): How aioseo.fr grew from about 1,000 to 36,000 monthly Google impressions and an average position of 40 to 11: niche, news speed, field reporting, tools, FR/EN.
+- [SEO & GEO Case Study: aioseo.fr, a GEO Blog Built from Scratch](https://aslanesamai.com/ressources/seo-case-study-aioseo.html): How aioseo.fr went from 1,000 to 36,000 monthly Google impressions and earned 14,765 impressions in AI Overviews and AI Mode: niche, news speed, tools, FR/EN.
 - [SEO Case Study: REKHILA Promotion, Real Estate in Algiers](https://aslanesamai.com/ressources/seo-case-study-rekhila-.html): How a new real estate website in Algiers, REKHILA Promotion, built SEO from scratch: indexing, authority, content, backlinks and technical setup.
 - [SEO Case Study: MMT, Mobile Medical Team in Riyadh](https://aslanesamai.com/ressources/seo-case-study-mmt-mobile-medical-team.html): How technical SEO and a focused strategy took MMT, a mobile medical team startup in Riyadh, from invisible to a trusted name in its market.
 - [SEO Case Study: InterFast, Construction Software](https://aslanesamai.com/ressources/seo-case-study-interfast.html): How a targeted SEO strategy fixed 404s, a wrong lang attribute and template pages for InterFast, a construction software company, and grew visibility.

@@ -297,6 +297,41 @@ Source: Google Search Console, 2025-05-31 to 2026-09-27.
 | Aug 2026 | 36,182 | 17.6 |
 | Sep 2026 | 28,999 | 14.1 |
 
+## Visibility in Google's AI features
+
+Search Console's generative AI report shows how often the site appears in Google's AI Overviews and AI Mode. For a site about GEO, this is the number that matters most. **14,765**impressions in AI Overviews and AI Mode, May 18, 2026 to September 26, 2026**12–14%**of all the site's Google impressions each month (Jun 2026 to Aug 2026)**2.4×**daily AI impressions, about 54 a day in the first week to 129 in the last**87**pages shown in AI answers**159**countries (France 24%, United States 18%)**68%**of AI impressions go to the English versions
+
+05001,0001,5002,000Week of May 18, 2026: 375 impressionsWeek of May 25, 2026: 528 impressionsWeek of June 1, 2026: 443 impressionsWeek of June 8, 2026: 638 impressionsWeek of June 15, 2026: 691 impressionsWeek of June 22, 2026: 581 impressionsWeek of June 29, 2026: 594 impressionsWeek of July 6, 2026: 589 impressionsWeek of July 13, 2026: 517 impressionsWeek of July 20, 2026: 1,084 impressionsWeek of July 27, 2026: 939 impressionsWeek of August 3, 2026: 976 impressionsWeek of August 10, 2026: 1,530 impressionsWeek of August 17, 2026: 1,011 impressionsWeek of August 24, 2026: 896 impressionsWeek of August 31, 2026: 943 impressionsWeek of September 7, 2026: 807 impressionsWeek of September 14, 2026: 791 impressionsMay 18Jun 15Jul 13Aug 10Sep 7 Weekly impressions in AI Overviews and AI Mode (full weeks, Monday to Sunday). Show the data
+
+| Week of | AI impressions |
+| May 18, 2026 | 375 |
+| May 25, 2026 | 528 |
+| June 1, 2026 | 443 |
+| June 8, 2026 | 638 |
+| June 15, 2026 | 691 |
+| June 22, 2026 | 581 |
+| June 29, 2026 | 594 |
+| July 6, 2026 | 589 |
+| July 13, 2026 | 517 |
+| July 20, 2026 | 1,084 |
+| July 27, 2026 | 939 |
+| August 3, 2026 | 976 |
+| August 10, 2026 | 1,530 |
+| August 17, 2026 | 1,011 |
+| August 24, 2026 | 896 |
+| August 31, 2026 | 943 |
+| September 7, 2026 | 807 |
+| September 14, 2026 | 791 |
+
+The pages most often shown in AI answers are the practical, reference-style ones:
+
+- [Generative AI report in Google Search Console: how to analyze it](https://aioseo.fr/en/google-search-console-generative-ai-report-how-to-analyze-it/)
+- [Top 10 GEO tools to track your AI position (English and French versions)](https://aioseo.fr/en/top-10-tools-geo-to-track-your-position-ia-2025/)
+- [Comment connaître son positionnement sur Google AI Mode et AI Overviews ?](https://aioseo.fr/comment-connaitre-son-positionnement-sur-ai-mode/)
+- [Google AI Overviews arrives in France](https://aioseo.fr/en/en-google-ai-overviews-arrive-en-france/)
+
+Source: Google Search Console, generative AI features report, 2026-05-18 to 2026-09-26.
+
 ## What I did
 
 ### 1. Pick a narrow, fast-moving topic

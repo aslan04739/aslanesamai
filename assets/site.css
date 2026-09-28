@@ -414,3 +414,4 @@ a.card-media:hover .thumb.logo img { transform: scale(1.04); }
 .milestones b { display: block; color: var(--ink); }
 .milestones span { color: var(--ink-2); }
 .card-media .thumb img[src^="/assets/case-"] { object-position: left center; }
+.ch-bar-ai, .lg-ai { fill: var(--accent-2); background: var(--accent-2); }
