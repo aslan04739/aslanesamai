@@ -41,10 +41,11 @@ Key facts:
 
 ## Services
 
-- [SEO and GEO consultant: audits, technical SEO and strategy](https://aslanesamai.com/services/seo-the-driving-force-behind-my-passion.html): Search engine optimization services by Aslane Samai: technical audits, on-page and off-page SEO, with Semrush Pro and Screaming Frog.
-- [Data analysis for SEO with SQL and Python](https://aslanesamai.com/services/data-analysis.html): Data-driven SEO with SQL and Python, by a Google Data Analytics certified consultant: find where traffic is won or lost and what to fix first.
-- [Data visualization: Tableau dashboards](https://aslanesamai.com/services/data-visualization.html): Tableau dashboards by Aslane Samai: LinkedIn interactions, Netflix data worldwide, Walmart performance across the US and Covid deaths per country.
-- [SEO content writing in English and French](https://aslanesamai.com/services/seo-content-writing.html): SEO content writing that combines search intent, strategic optimization and storytelling to rank on Google and get cited in AI answers.
+- [SEO audit and SEO consulting](https://aslanesamai.com/services/seo-the-driving-force-behind-my-passion.html): SEO audit and consulting by Aslane Samai, SEO consultant in Paris: technical, semantic, competitive and off-site audits, and a prioritized roadmap.
+- [GEO consulting: get cited in AI answers](https://aslanesamai.com/services/geo-consulting.html): GEO consulting by Aslane Samai: GEO audits, LLM citation tests, entity optimization and AI-ready content to get cited in ChatGPT, Gemini and AI Overviews.
+- [SEO and GEO content writing](https://aslanesamai.com/services/seo-content-writing.html): SEO and GEO content by Aslane Samai: keyword research, semantic clustering, content briefs and articles in English and French that rank and get cited by AI.
+- [SEO data analysis with Python and SQL](https://aslanesamai.com/services/data-analysis.html): SEO data analysis by Aslane Samai: Search Console and analytics data in Python, SQL and BigQuery to find where traffic is won or lost, plus traffic forecasts.
+- [SEO dashboards and data visualization](https://aslanesamai.com/services/data-visualization.html): SEO dashboards by Aslane Samai: Looker Studio and Tableau reports that combine Search Console, GA4 and SEA data into clear, shareable decisions.
 
 ## Case studies
 

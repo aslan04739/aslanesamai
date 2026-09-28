@@ -109,157 +109,576 @@ Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées
 
 ---
 
-## SEO and GEO consultant: audits, technical SEO and strategy
+## SEO audit and SEO consulting
 
 URL: https://aslanesamai.com/services/seo-the-driving-force-behind-my-passion.html
 
-Search engine optimization, also known as SEO, is the driving force behind my passion and dedication to this field. I'm not kidding when I say that SEO is the reason I'm on this journey.
+## Why it matters
 
-My ultimate goal is to be referenced on Google and to appear on the Search Engine Results Page (SERP) for all the right reasons! Let me clarify - I'm not seeking fame or recognition for personal reasons; my aim is to provide value and make a positive impact through my work.
+Most sites lose traffic to problems nobody sees: pages Google can't crawl or chooses not to index, content that competes with itself, weak internal linking, slow templates, or authority that never reaches the pages that sell.
 
-Having been involved in SEO for a considerable period, I can confidently say that I have learned a lot, but I'm well aware that there's still much more to explore and discover. Nevertheless, I believe there's no better time to continue this exciting journey than now.
+An audit finds these problems, measures what each one costs you, and puts them in the order that will move your numbers first. It's the starting point for everything else, including visibility in AI answers.
 
-As an SEO specialist, I rely on a powerful stack of tools to optimize websites and enhance their performance. My go-to combo includes the trusted Semrush Pro and Screaming Frog, along with a bunch of other tools that I'd be more than happy to discuss in detail on another occasion.
+## What's included01
 
-One key aspect that I've learned throughout my SEO journey is the significance of trust in this industry. People trust people, and in the realm of SEO, this holds true. Building trust with clients and colleagues is a priority for me, and it's something I strive for in every project I take on.
+### Crawl and indexing
 
-I'm grateful for the opportunity to work with remarkable individuals and businesses, and I'm humbled by the kind words and feedback they have shared about our collaborations. To see the positive impact of my work through the eyes of those I've worked with is truly rewarding and motivates me to continually improve and deliver outstanding results.
+How Google discovers, crawls and indexes your pages: robots.txt, sitemaps, canonicals, status codes, redirects, JavaScript rendering, crawl budget.02
 
-As part of my commitment to transparency and sharing knowledge, I will soon be publishing an in-depth SEO case study. In this study, I will delve into the strategies, techniques, and results of a specific SEO project I undertook. Stay tuned for the upcoming case study, where I'll provide valuable insights and real-world examples of [successful SEO implementation.](https://l.facebook.com/l.php?u=http%3A%2F%2Fdigiseine.fr%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR0NmwlGZW9ynt-RQzteKgF6GQHudJbnEfQ3yfG2eqmWSjmGUGLJLKBfN3c_aem_AZJvXasCR0nPtTdhKAIM4BTLtLIErEIPfDJSDPRvFdKLHo1nfv8pabyDKBcJerbHs_TaU_tlH8LpneV65zImQK5Y&h=AT1IIOoUT2Tl_jHEqHSdne9aUB0Y9XMTO1fEIkFSQ4wSFhXrXdRhnh2louxwQxPoNRT9o6t0FdnjnHjyh3u8HHyKE2On1uiP3Ie1Ol7DuYhlvIOT2XyU1m7vQvu75UCYpGQwtncPLdEXr8I)
+### Site architecture and internal linking
 
-Thank you for being a part of my journey, and I'm excited to share more about my experiences and knowledge in the fascinating world of SEO. Together, we can achieve great things and make a meaningful impact in the digital landscape. Let's continue to grow and learn together on this SEO adventure!
+Depth, orphan pages, link equity and navigation, so your important pages get the attention they need.03
 
-Check out my [SEO portfolio here; you will find SEO case studies, SEO audits, SEO progress sheets, and much more. ](https://drive.google.com/drive/folders/1tCuOFpOOyVAZyFguRmhR4G-om5sdxBNI?usp=share_link)
+### Performance and Core Web Vitals
 
-Interested in an SEO Audit? Reach out to me by sending me an email here [contact@aslanesamai.com](mailto:contact@aslanesamai.com) or by [filing the calendly form](https://aslanesamai.com/#contact)
+LCP, INP and CLS on real templates, with fixes your developers can act on.04
+
+### Semantic coverage
+
+Which queries you rank for, which you miss, cannibalization, and how well each page matches its search intent.05
+
+### Competitive analysis
+
+Where the competitors that matter beat you, on content, authority and features, and where you can win.06
+
+### Authority and backlinks
+
+Your link profile compared with competitors, toxic patterns, and a realistic netlinking plan.
+
+## How it works
+
+1. 1
+
+### 30-minute call
+
+We look at your site together: your goals, what's blocking you, and the scope of the work.
+2. 2
+
+### Access and data
+
+Read access to Search Console, Analytics and, when useful, Bing Webmaster Tools. I crawl the site and gather the data.
+3. 3
+
+### Analysis
+
+I audit, measure and compare you with the competitors that matter, then turn findings into priorities.
+4. 4
+
+### Roadmap and walkthrough
+
+You get a prioritized action plan, presented live so your team knows exactly what to do and why.
+5. 5
+
+### Follow-up
+
+I can support implementation with your developers and writers, and track the results over time.
+
+## What you get
+
+- An audit report with every issue explained, measured and illustrated
+- A roadmap ordered by impact and effort
+- Technical specifications your developers can use directly
+- Content and internal linking recommendations
+- A live walkthrough with your team
+
+## Tools I use
+
+- Screaming Frog
+- Sitebulb
+- Oncrawl
+- Semrush
+- Ahrefs
+- Google Search Console
+- Bing Webmaster Tools
+- Google Analytics 4
+- PageSpeed Insights
+- Chrome DevTools
+
+## Results and feedback
+
+>
+
+I highly recommend Aslane for anyone looking for a skilled and detail-oriented SEO consultant. Aslane recently conducted an SEO audit for me and I was thoroughly impressed with his level of expertise and attention to detail. Not only did he provide a comprehensive report, but he also went above and beyond to answer all of my questions and ensure that I fully understood the findings of the audit. Aslane's willingness to go the extra mile truly sets him apart and I would highly recommend him to anyone looking to improve their SEO strategy.**Mat Gargano** · Agency Founder, Software architect, Adjacent Professor[Case study
+
+### SEO Case Study: RADCO, Construction Company in Algiers
+
+How RADCO, a construction company in Algiers, went from a blank slate to strong online visibility: technical fixes, indexing, content and…Read the case study](https://aslanesamai.com/ressources/seo-case-study-radco.html)[Case study
+
+### SEO Case Study: InterFast, Construction Software
+
+How a targeted SEO strategy fixed 404s, a wrong lang attribute and template pages for InterFast, a construction software company, and grew…Read the case study](https://aslanesamai.com/ressources/seo-case-study-interfast.html)[Case study
+
+### SEO Case Study: MMT, Mobile Medical Team in Riyadh
+
+How technical SEO and a focused strategy took MMT, a mobile medical team startup in Riyadh, from invisible to a trusted name in its market.Read the case study](https://aslanesamai.com/ressources/seo-case-study-mmt-mobile-medical-team.html)
+
+## Questions about this service
+
+### What does an SEO audit include?
+
+Crawl and indexing, architecture and internal linking, performance and Core Web Vitals, semantic coverage, competition and backlinks. Each finding comes with its impact and a clear fix, ordered in a roadmap.
+
+### How long does an SEO audit take?
+
+It depends on the size and complexity of the site. We agree on the scope and the timeline during the first 30-minute call.
+
+### Do you also implement the recommendations?
+
+I can support implementation with your developers and writers, review changes before they go live, and track the results.
 
 ---
 
-## Data analysis for SEO with SQL and Python
+## GEO consulting: get cited in AI answers
 
-URL: https://aslanesamai.com/services/data-analysis.html
+URL: https://aslanesamai.com/services/geo-consulting.html
 
-Besides SEO, I have a passion for diving deep into the world of data analysis to unlock the true potential of your online presence. My mission is to help businesses like yours succeed in the vast and ever-evolving digital landscape.
+## Why it matters
 
-## Unlocking the Power of Data
+Generative engines don't show ten blue links. They pick a few sources, quote them and move on. If your content isn't crawlable by AI bots, easy to extract, backed by clear facts and consistent about who you are, someone else gets cited.
 
-In the realm of SEO, data is more than just numbers; it's the key that unlocks the door to success. With a keen eye for data-driven insights, I can uncover the hidden stories within your website's analytics. Every click, every keyword, and every user journey tells a unique tale, and I'm here to decipher them for you.
+Good GEO is good SEO: the foundations are the same. GEO adds what AI systems need on top: entities, citability, structured data, and measurement of where and how often you're actually cited.
 
-Whether you're a budding startup or an established enterprise, understanding your data is vital for making informed decisions. By delving deep into the data, I can identify what drives traffic to your site, what keeps users engaged, and how to optimize content for better search engine rankings.
+## What's included01
 
-## Google Data Analytics Certified
+### AI crawler access
 
-As a Google Data Analytics certified professional, I'm equipped with the knowledge to harness Google's powerful analytics tools to extract meaningful insights. With Google Analytics as my trusted compass, I can navigate through the vast ocean of data and provide you with a clear roadmap for success.
+Whether GPTBot, ClaudeBot, PerplexityBot, Google-Extended and the others can read your site, through robots.txt, firewalls and rendering.02
 
-From tracking the performance of your website to measuring the impact of marketing campaigns, I leave no stone unturned in understanding user behavior with precision. Let me be your data guide, as we steer your online presence toward growth and success.
+### LLM citation tests
 
-## Corise SQL Advanced Certification
+The questions your customers ask, tested across ChatGPT, Perplexity, Gemini and AI Overviews: who is cited, how often, and why.03
 
-In the realm of data, managing databases is a crucial skill. My Corise SQL Advanced certification showcases my expertise in handling and querying complex datasets with ease and efficiency. SQL is like the magic wand that brings forth the information you seek from the depths of databases.
+### Entities and brand consistency
 
-With Corise SQL Advanced certification, I can craft powerful queries, uncover valuable insights, and present data in a clear and concise manner. The knowledge I've gained allows me to identify trends, discover untapped opportunities, and optimize your website's performance for better search engine visibility.
+How AI systems understand your brand, products and people, and the signals that make that understanding consistent across the web.04
 
-## Your Partner in Digital Growth
+### Citable content
 
-Together, we embark on a data-driven journey that transforms your digital presence. From understanding user behavior to optimizing your content strategy, my expertise in data analysis serves as a guiding light in the vast landscape of SEO.
+Structure, facts, definitions and passages that are easy to extract and quote, without writing for robots.05
 
-Let's not settle for mediocrity; let's empower your business with the magic of data analysis. Unleash the full potential of your online endeavors and watch as your website climbs the ranks, connects with your audience, and achieves the digital success it deserves.
+### Structured data and llms.txt
 
-Contact me today, and let's dive deep into the world of data analysis to make your SEO dreams a reality!
+Schema.org markup, an llms.txt file and clean HTML that help machines read your site correctly.06
 
-Remember, in the digital kingdom, the right data can be the key to unlocking endless possibilities.
+### Measuring AI visibility
 
-Check out my [SEO portfolio here; you will find SEO case studies, SEO audits, SEO progress sheets, and much more. ](https://drive.google.com/drive/folders/1tCuOFpOOyVAZyFguRmhR4G-om5sdxBNI?usp=share_link)
+Search Console's generative AI report, Bing AI Performance and citation tracking, so you can see progress.
 
-Interested in an SEO Audit? Reach out to me by sending me an email here [contact@aslanesamai.com](mailto:contact@aslanesamai.com) or by [filing the calendly form](https://aslanesamai.com/#contact)
+## How it works
+
+1. 1
+
+### 30-minute call
+
+We look at your site together: your goals, what's blocking you, and the scope of the work.
+2. 2
+
+### Access and data
+
+Read access to Search Console, Analytics and, when useful, Bing Webmaster Tools. I crawl the site and gather the data.
+3. 3
+
+### Analysis
+
+I audit, measure and compare you with the competitors that matter, then turn findings into priorities.
+4. 4
+
+### Roadmap and walkthrough
+
+You get a prioritized action plan, presented live so your team knows exactly what to do and why.
+5. 5
+
+### Follow-up
+
+I can support implementation with your developers and writers, and track the results over time.
+
+## What you get
+
+- A GEO audit of your site and your brand
+- Citation tests on your key questions, with competitors
+- Technical and editorial GEO guidelines
+- A prioritized action plan
+- A measurement setup for AI visibility
+
+## Tools I use
+
+- Search Console generative AI report
+- Bing AI Performance
+- ChatGPT
+- Perplexity
+- Gemini
+- Copilot
+- Schema.org
+- llms.txt
+- SEO Entity Analyser
+- Semantic proximity
+
+## Results and feedback
+
+>
+
+…Aslane a pris en charge des missions à forte composante GEO et SEO technique : audit technique de sites web, analyse de données de trafic et de performance, production de recommandations SEO et GEO, et restitutions client.**Julian Cerisier** · Directeur Associé et SEO, Eskimoz[Case study
+
+### SEO & GEO Case Study: aioseo.fr, a GEO Blog Built from Scratch
+
+How aioseo.fr went from 1,000 to 36,000 monthly Google impressions and earned 14,765 impressions in AI Overviews and AI Mode: niche, news…Read the case study](https://aslanesamai.com/ressources/seo-case-study-aioseo.html)
+
+## Questions about this service
+
+### What is GEO?
+
+Generative engine optimization (GEO) is the practice of making a website easy for AI systems such as ChatGPT, Gemini, Perplexity and Google AI Overviews to find, understand and cite when they generate answers.
+
+### Can you guarantee that ChatGPT will cite my site?
+
+No one can guarantee a citation from an AI model. What I can do is remove what prevents it, strengthen the signals that lead to citations, and measure the result.
+
+### Do I still need SEO if I do GEO?
+
+Yes. The pages that AI answers cite are mostly pages that already rank well. GEO builds on SEO rather than replacing it.
 
 ---
 
-## Data visualization: Tableau dashboards
-
-URL: https://aslanesamai.com/services/data-visualization.html
-
-## 1. My Piece de Resistance: My LinkedIn Profile Data
-
-I use [LinkedIn](https://www.linkedin.com/in/aslane-samai/) a lot! Probably more than I should ☹️ Making a dashboard out of my interactions, my connections, and what have you kinda made sense to me.
-
-![LinkedIn data dashboard](https://misinate.sirv.com/perso/linkedin.webp)
-
-## 2. Netflix Around the World
-
-Tv shows are dead, all hail adult movies 🔞🫣 How do I know that? I analyzed Netflix data around the world! Here’s what I found out:
-
-![Netflix Data dashboard aslane samai](https://misinate.sirv.com/perso/netflix.webp?w=1400)
-
-## 3. Walmart Across the US
-
-Talking about juggernauts, Walmart is the biggest retailer in the US ([as of writing this](https://www.investopedia.com/articles/markets/122415/worlds-top-10-retailers-wmt-cost.asp), Amazon is tailgating 😄). But its performance varies across the 50 states.
-
-Here’s a dashboard with its performance between 2012 and 2015 as well as profits per age (Gen Z apparently hasn’t even heard of the retailer. But that’s expected since they prefer, well, [more luxurious items](https://www.cnbc.com/2023/01/17/gen-z-is-driving-luxury-sales-as-wealthy-shoppers-get-younger.html#:~:text=Gen%20Z%20consumers%20are%20starting,millennials%20did%2C%20the%20report%20said.)).
-
-![wallmart data dashbaord aslane samai](https://misinate.sirv.com/perso/wallmart.webp)
-
-## 4. Covid Deaths per Country
-
-In retrospect, this one is kind of ugly. But I’m not changing it because 1) It’s the first dashboard I built, and it holds a special place in my heart. And 2) It’s about Covid deaths, it does not have to be cheerful.
-
-That said, I enjoyed working on it. And I learned a lot about Covid and its impact around the world.
-
-![Covid deaths dashboard](https://misinate.sirv.com/perso/covid-deaths.webp?w=1400)
-
-## 5. Job rejections. My job rejections...
-
-Job rejections are part of the process. But it's hard to not take them personnaly, especially when you get so many of them. Which I did. So intead of feeling bad and rehashing all the NOs I got, I decided to make a Tableau dashboard out of them. Because it's fun and data is beautiful. I also needed a distraction but that's another story for another day.
-
-This dashboard is the initial version, I have no doubt I will be updating it soon.
-
-![Tableau Dashboard, job rejections of Aslane Samai from my LinkedIn profile](https://misinate.sirv.com/perso/WhatsApp%20Image%202023-08-28%20at%2012.17.24.jpg)
-
-All right, that’s a wrap! These are 4 dashboards I’m not completely ashamed of showing to the few stray cats that might come across my website.
-
----
-
-## SEO content writing in English and French
+## SEO and GEO content writing
 
 URL: https://aslanesamai.com/services/seo-content-writing.html
 
-In the vast and ever-evolving Digital Kingdom, there lived a passionate SEO specialist named Aslane. Armed with a mission to help businesses succeed in the realm of online visibility, Aslane embarked on a journey that would forever change the fate of countless websites.
+## Why it matters
 
-Aslane understood that in this competitive kingdom, having a beautiful website alone was not enough. To truly thrive, businesses needed to be discovered by the people they sought to serve. That's where the magic of SEO content writing came into play.
+Publishing more doesn't mean ranking more. Content works when it targets a real search intent, covers the topic better than what already ranks, and fits into a clear structure of pages that support each other.
 
-## The Quest for the Right Words
+The same qualities make content easy for AI systems to quote: clear answers, precise facts and a structure that's easy to extract.
 
-Aslane's quest began with diligent research, traversing the web in search of the perfect keywords that would unlock the gates of search engine rankings. He believed that the right words held the power to summon the attention of mighty search engines and guide them toward his clients' virtual domains.
+## What's included01
 
-Each keyword was like a magical incantation, carefully woven into the fabric of captivating content. Aslane knew that this content must not only captivate the interest of the reader but also enthrall the discerning algorithms of search engines.
+### Keyword research
 
-## Crafting Engaging Tales
+The queries your audience uses, their volume, their intent and the competition behind them.02
 
-Armed with the knowledge of these mystical keywords, Aslane set out to craft stories that would resonate with the hearts of his clients' target audience. Each piece of content was carefully designed to educate, entertain, and enchant, leaving a lasting impression on the minds of readers.
+### Semantic clustering
 
-He believed that great content was like a map that led the way for curious souls, guiding them through a seamless journey on his clients' websites. With every word he penned, Aslane built bridges between businesses and their prospects, forging connections that would stand the test of time.
+Topics grouped into clusters and pillar pages, so each page has one clear job and pages don't compete.03
 
-## A Symphony of Success
+### Content briefs
 
-As time passed, Aslane's reputation grew as more and more businesses experienced the magic of his SEO content writing service. Clients reveled in the delight of increased organic traffic, higher search rankings, and a growing legion of loyal customers.
+For your writers: intent, structure, questions to answer, entities to cover, internal links and sources.04
 
-With a blend of data-driven insights and creative storytelling, Aslane orchestrated a symphony of success for businesses of all sizes. From startups to established enterprises, each found their unique voice amplified across the Digital Kingdom, and their stories became known far and wide.
+### Writing in French and English
 
-## The Everlasting Impact
+Articles and landing pages written for readers first, with search and AI answers in mind.05
 
-Aslane's tale of SEO content writing spread like wildfire, and soon, businesses from distant lands sought his expertise. They marveled at the transformation that took place when their ideas were brought to life through the power of captivating words and strategic optimization.
+### Optimization of existing content
 
-The impact of Aslane's SEO content writing service was everlasting. It wasn't just about climbing the ranks; it was about forging meaningful connections, building trust, and leaving an indelible mark on the hearts of their customers.
+Updating and improving pages that are close to ranking, often the fastest wins.06
 
-## Embrace the Magic of SEO Content Writing
+### GEO-ready formatting
 
-And so, the legend of Aslane, the SEO specialist, lives on, inspiring businesses across the Digital Kingdom to embrace the magic of SEO content writing. Through the fusion of creativity, strategy, and storytelling, businesses discovered the secret to conquering the ever-challenging quest for online visibility.
+Definitions, facts, tables and concise answers that AI systems can extract and cite.
 
-Will you be the next to step into this enchanted world and witness the transformative power of SEO content writing? Let Aslane be your guide and unravel the mysteries of the Digital Kingdom together.
+## How it works
 
-Check out my [SEO portfolio here; you will find SEO case studies, SEO audits, SEO progress sheets, and much more. ](https://drive.google.com/drive/folders/1tCuOFpOOyVAZyFguRmhR4G-om5sdxBNI?usp=share_link)
+1. 1
 
-Interested in an SEO Audit? Reach out to me by sending me an email here [contact@aslanesamai.com](mailto:contact@aslanesamai.com) or by [filing the calendly form](https://aslanesamai.com/#contact)
+### 30-minute call
+
+We look at your site together: your goals, what's blocking you, and the scope of the work.
+2. 2
+
+### Access and data
+
+Read access to Search Console, Analytics and, when useful, Bing Webmaster Tools. I crawl the site and gather the data.
+3. 3
+
+### Analysis
+
+I audit, measure and compare you with the competitors that matter, then turn findings into priorities.
+4. 4
+
+### Roadmap and walkthrough
+
+You get a prioritized action plan, presented live so your team knows exactly what to do and why.
+5. 5
+
+### Follow-up
+
+I can support implementation with your developers and writers, and track the results over time.
+
+## What you get
+
+- A keyword and topic map
+- An editorial plan in priority order
+- Detailed briefs, ready for your writers
+- Articles and landing pages in French or English
+- Editorial follow-up and performance tracking
+
+## Tools I use
+
+- Semrush
+- Ahrefs
+- Google Search Console
+- KeyBERT
+- sentence-transformers
+- WordPress
+
+## Results and feedback
+
+>
+
+I had the opportunity to work together with Aslane to help me identify keyword gaps within my SEO strategy for my organization. He was great at all stages of the project, highly responsive and professional at all times, and able to answer my questions as needed and provide me with great actionable recommendations for my site to rank better compared to my competitors. Would highly recommend him and will be utilizing his services again in the future.**Vincent Leutwiler** · Operations and Marketing Communications Manager | Skills 4 Life Foundation[Case study
+
+### SEO Case Study: MMT, Mobile Medical Team in Riyadh
+
+How technical SEO and a focused strategy took MMT, a mobile medical team startup in Riyadh, from invisible to a trusted name in its market.Read the case study](https://aslanesamai.com/ressources/seo-case-study-mmt-mobile-medical-team.html)[Case study
+
+### SEO Case Study: Unimind, Productivity App
+
+The SEO strategy behind Unimind, a productivity app: competitor research, keyword discovery from a user's perspective, content and results.Read the case study](https://aslanesamai.com/ressources/seo-case-study-unimind.html)[Case study
+
+### SEO & GEO Case Study: aioseo.fr, a GEO Blog Built from Scratch
+
+How aioseo.fr went from 1,000 to 36,000 monthly Google impressions and earned 14,765 impressions in AI Overviews and AI Mode: niche, news…Read the case study](https://aslanesamai.com/ressources/seo-case-study-aioseo.html)
+
+## Questions about this service
+
+### Do you write in French and English?
+
+Yes. I write and produce briefs in both languages.
+
+### Can you work with our existing writers?
+
+Yes. I can write the briefs and review the content your team produces, so your writers focus on what they do best.
+
+### How is SEO content different from GEO content?
+
+The foundations are the same. GEO-ready content adds clear definitions, precise facts and passages that AI systems can extract and quote easily.
+
+---
+
+## SEO data analysis with Python and SQL
+
+URL: https://aslanesamai.com/services/data-analysis.html
+
+## Why it matters
+
+On large sites, intuition doesn't scale. Traffic drops hide in page groups, markets or query types, and the interface of the tools can't show them. Data analysis turns thousands of rows into a few clear decisions.
+
+It also answers the questions that matter to the business: what an update really cost, which sections deserve investment, and what traffic to expect next quarter.
+
+## What's included01
+
+### Search Console at scale
+
+Full exports through the API, beyond the 1,000-row limit of the interface, by page, query, country and device.02
+
+### Drops and anomalies
+
+What changed, where and when: updates, migrations, cannibalization, seasonality or tracking issues.03
+
+### Segmentation
+
+Traffic by template, section, topic cluster, market or intent, to see what really drives results.04
+
+### Semantic proximity
+
+Embeddings to measure how well each page matches the queries it should rank for, compared with competitors.05
+
+### Traffic forecasting
+
+Forecasts of clicks, impressions and positions with Google's TimesFM and Meta's Prophet.06
+
+### Automation
+
+Recurring analyses automated in Python and SQL, so you get the same answers every month without the manual work.
+
+## How it works
+
+1. 1
+
+### 30-minute call
+
+We look at your site together: your goals, what's blocking you, and the scope of the work.
+2. 2
+
+### Access and data
+
+Read access to Search Console, Analytics and, when useful, Bing Webmaster Tools. I crawl the site and gather the data.
+3. 3
+
+### Analysis
+
+I audit, measure and compare you with the competitors that matter, then turn findings into priorities.
+4. 4
+
+### Roadmap and walkthrough
+
+You get a prioritized action plan, presented live so your team knows exactly what to do and why.
+5. 5
+
+### Follow-up
+
+I can support implementation with your developers and writers, and track the results over time.
+
+## What you get
+
+- Clear answers to your business questions
+- Segmented analyses of your search data
+- Traffic forecasts with their assumptions
+- Reusable Python notebooks or SQL queries
+- Recommendations ordered by impact
+
+## Tools I use
+
+- Python (pandas)
+- SQL (BigQuery)
+- Search Console API
+- Ahrefs API
+- sentence-transformers
+- TimesFM
+- Prophet
+
+## Results and feedback
+
+>
+
+La passion de Aslane Samai pour l'analyse des données et son dévouement inébranlable pour maximiser le retour sur investissement de nos campagnes sont vraiment louables. Son expertise en SEO, SEM et réseaux sociaux est remarquable, et il est évident qu'il a une compréhension approfondie de la manière de générer du trafic qualifié vers le site web d'InterFast.**Hedi Marinier** · CEO InterFast[Case study
+
+### SEO & GEO Case Study: aioseo.fr, a GEO Blog Built from Scratch
+
+How aioseo.fr went from 1,000 to 36,000 monthly Google impressions and earned 14,765 impressions in AI Overviews and AI Mode: niche, news…Read the case study](https://aslanesamai.com/ressources/seo-case-study-aioseo.html)[Case study
+
+### SEO Case Study: RADCO, Construction Company in Algiers
+
+How RADCO, a construction company in Algiers, went from a blank slate to strong online visibility: technical fixes, indexing, content and…Read the case study](https://aslanesamai.com/ressources/seo-case-study-radco.html)
+
+## Questions about this service
+
+### What data do you need?
+
+Read access to Search Console, and ideally to Google Analytics 4 or BigQuery exports. I can also work from CSV exports.
+
+### Why not just use the Search Console interface?
+
+The interface samples and limits the data. The API and BigQuery give access to much more detail, which you can segment and combine with other sources.
+
+### Can you forecast our organic traffic?
+
+Yes, with models such as TimesFM and Prophet, based on your history. Forecasts come with their assumptions and limits.
+
+---
+
+## SEO dashboards and data visualization
+
+URL: https://aslanesamai.com/services/data-visualization.html
+
+## Why it matters
+
+Most SEO reports are screenshots of tools: lots of numbers, few answers. A good dashboard starts from the decisions you need to make, shows the few metrics that matter, and updates itself.
+
+It also makes SEO visible to the rest of the company, which is often what unlocks budget and developer time.
+
+## What's included01
+
+### KPI definition
+
+The metrics that match your goals, and the questions each dashboard page must answer.02
+
+### Data connections
+
+Search Console, GA4, BigQuery, SEA and CRM or sales data where it helps.03
+
+### SEO and SEA in one view
+
+Consolidated organic and paid search reporting, so channels are read together.04
+
+### Segmentation
+
+By section, template, market, device or brand versus non-brand queries.05
+
+### Automated refresh
+
+Dashboards that update on their own, with no weekly copy and paste.06
+
+### Handover and training
+
+Your team learns to read, filter and extend the dashboards.
+
+## How it works
+
+1. 1
+
+### 30-minute call
+
+We look at your site together: your goals, what's blocking you, and the scope of the work.
+2. 2
+
+### Access and data
+
+Read access to Search Console, Analytics and, when useful, Bing Webmaster Tools. I crawl the site and gather the data.
+3. 3
+
+### Analysis
+
+I audit, measure and compare you with the competitors that matter, then turn findings into priorities.
+4. 4
+
+### Roadmap and walkthrough
+
+You get a prioritized action plan, presented live so your team knows exactly what to do and why.
+5. 5
+
+### Follow-up
+
+I can support implementation with your developers and writers, and track the results over time.
+
+## What you get
+
+- Looker Studio or Tableau dashboards
+- A clear definition of each KPI
+- Automated data connections
+- Documentation and a training session
+- A reporting routine (monthly or weekly)
+
+## Tools I use
+
+- Looker Studio
+- Tableau
+- Google Analytics 4
+- Google Search Console
+- BigQuery
+
+## Dashboard examples
+
+![LinkedIn profile data](https://misinate.sirv.com/perso/linkedin.webp?w=900)LinkedIn profile data · Tableau
+
+![Netflix around the world](https://misinate.sirv.com/perso/netflix.webp?w=900)Netflix around the world · Tableau
+
+![Walmart across the US](https://misinate.sirv.com/perso/wallmart.webp?w=900)Walmart across the US · Tableau
+
+![Covid deaths per country](https://misinate.sirv.com/perso/covid-deaths.webp?w=900)Covid deaths per country · Tableau
+
+## Results and feedback
+
+>
+
+…il a une grande expérience en matière d'analyse de données et peut facilement interpréter les chiffres pour aider à prendre des décisions stratégiques.**Nazim Zidi** · Fondateur Unimind[Case study
+
+### SEO & GEO Case Study: aioseo.fr, a GEO Blog Built from Scratch
+
+How aioseo.fr went from 1,000 to 36,000 monthly Google impressions and earned 14,765 impressions in AI Overviews and AI Mode: niche, news…Read the case study](https://aslanesamai.com/ressources/seo-case-study-aioseo.html)
+
+## Questions about this service
+
+### Looker Studio or Tableau?
+
+Looker Studio is free and connects natively to Google tools, which suits most SEO reporting. Tableau is useful when you already use it or need heavier analysis.
+
+### Can the dashboards include paid search and sales data?
+
+Yes. I've built consolidated SEO and SEA reports, and data from your CRM or sales tools can be added when it helps answer your questions.
+
+### Who can access the dashboards?
+
+You own them. They can be shared with your team, managers or clients with the access rights you choose.
 
 ---
 

@@ -26,6 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from i18n import (AIOSEO, AIOSEO_ARTICLES, AIOSEO_ARTICLES_EN, AIOSEO_BY_LANG, AIOSEO_TOOLS_BY_LANG, EDUCATION, EXPERIENCE,  # noqa: E402
                   GITHUB, LANGS, META, SKILLS, STREAMLIT, TOOL_URL_EN, TOOLS, T)
 from md import to_markdown  # noqa: E402
+from services import SERVICES as SERVICE_DEFS, UI as SVC_UI  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "_build"
@@ -58,18 +59,6 @@ KNOWS_ABOUT = ["Search engine optimization", "Generative engine optimization", "
                "SEO content writing", "Data analysis", "SQL", "Python", "Data visualization", "Tableau", "Looker Studio"]
 CERTS = [("Google Data Analytics", "Google · Coursera", None), ("SQL", "CoRise", None), ("Technical SEO", "Blue Array", "https://www.bluearray.co.uk/"),
          ("SEO Manager", "Blue Array", "https://www.bluearray.co.uk/")]
-SERVICE_KEYS = {
-    "services/seo-the-driving-force-behind-my-passion.html": "svc_seo",
-    "services/data-analysis.html": "svc_data",
-    "services/data-visualization.html": "svc_viz",
-    "services/seo-content-writing.html": "svc_content",
-}
-SERVICE_LD = {  # from the original service pages' markup (prices as published there)
-    "services/seo-the-driving-force-behind-my-passion.html": ("SEO (Search Engine Optimization) Services", "Comprehensive SEO services including on-page, off-page, and technical optimization.", "Search Engine Optimization", 200, "per month"),
-    "services/data-analysis.html": ("Data Analysis", "Professional data analysis services using SQL, Python, and more.", "Data Analysis", 200, "per project"),
-    "services/data-visualization.html": ("Data Visualization Services", "Professional data visualization services using Tableau and other tools.", "Data Visualization", 200, "per project"),
-    "services/seo-content-writing.html": ("Content Writing", "Professional content writing services in both French and English.", "Writing", 50, "per article"),
-}
 LISTINGS = {"services.html": "services", "ressources.html": "ressources", "blog.html": "blog"}
 REDIRECTS = {  # retired URLs -> current page
     "ressources/seo-case-study.html": "ressources/seo-case-study-interfast.html",
@@ -351,7 +340,12 @@ def ordered(order_key):
 
 BLOG, _seen = ordered("blog_order")
 BLOG += sorted((p for p in PAGES if p.startswith("blog/") and p not in _seen), key=lambda p: post_date(PAGES[p]) or "", reverse=True)
-SERVICES, _ = ordered("services_order")
+# Services come from _build/services.py (one page per language; English keeps the historical URLs)
+SERVICES = [d["paths"]["en"] for d in SERVICE_DEFS]
+SVC_BY_PATH = {d["paths"][l]: d for d in SERVICE_DEFS for l in LANGS}
+for _d in SERVICE_DEFS:  # metadata used by llms.txt, the sitemap and listings
+    PAGES[_d["paths"]["en"]] = {**PAGES.get(_d["paths"]["en"], {}), "path": _d["paths"]["en"], "title": _d["en"]["title"], "h1": _d["en"]["h1"],
+                                "description": _d["en"]["desc"], "jsonld": [], "cover": None, "lead": ""}
 CASES, _ = ordered("cases_order")
 LABELS = {it["path"]: clean_text(it["label"]) for k in ("blog_order", "services_order", "cases_order", "home_blog") for it in data[k]}
 
@@ -551,9 +545,10 @@ def case_card(path, lang="en"):
 
 def service_card(path, lang, i=None):
     t = T[lang]
-    name, text = t[SERVICE_KEYS[path]]
+    d = SVC_BY_PATH[path]
+    name, text = d[lang]["card"]
     num = f'<span class="num">0{i}</span>' if i else ""
-    return f'<a class="card reveal" href="{url_of(path)}" hreflang="en">{num}<h3>{name}</h3><p>{text}</p><span class="foot">{t["learn_more"]}{badge(lang)}</span></a>'
+    return f'<a class="card reveal" href="{url_of(d["paths"][lang])}">{num}<h3>{name}</h3><p>{text}</p><span class="foot">{t["learn_more"]}</span></a>'
 
 
 def testimonials_section(lang):
@@ -699,7 +694,7 @@ def build_home(lang):
                 "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR"}, "knowsAbout": KNOWS_ABOUT, "sameAs": [LINKEDIN],
                 "availableLanguage": ["fr", "en"],
                 "hasOfferCatalog": {"@type": "OfferCatalog", "name": t["nav_services"], "itemListElement": [
-                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": t[SERVICE_KEYS[q]][0], "url": canonical(q)}} for q in SERVICES]}},
+                    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": d[lang]["card"][0], "url": canonical(d["paths"][lang])}} for d in SERVICE_DEFS]}},
                {"@type": "FAQPage", "@id": home_url + "#faq", "inLanguage": lang, "mainEntity": [
                    {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip_tags(a)}} for q, a in t["faq"]]})
     body = f"""<section class="hero">
@@ -727,7 +722,7 @@ def build_home(lang):
 <section class="section" id="services">
   <div class="wrap">
     <div class="section-head"><div><p class="eyebrow">{t['services_eyebrow']}</p><h2>{t['services_h2']}</h2></div><a class="more" href="/{lang}/services.html">{t['services_all']}</a></div>
-    <div class="grid grid-4">{services}</div>
+    <div class="grid grid-3">{services}</div>
   </div>
 </section>
 
@@ -797,7 +792,7 @@ def build_listing(lang, page):
     if section == "blog":
         items, grid = BLOG, f'<div class="grid grid-3">{"".join(post_card(p, lang) for p in BLOG)}</div>'
     elif section == "services":
-        items, grid = SERVICES, f'<div class="grid grid-2">{"".join(service_card(p, lang, i) for i, p in enumerate(SERVICES, 1))}</div>'
+        items, grid = [d["paths"][lang] for d in SERVICE_DEFS], f'<div class="grid grid-3">{"".join(service_card(p, lang, i) for i, p in enumerate(SERVICES, 1))}</div>'
     else:
         items, grid = CASES, f'<div class="grid grid-3">{"".join(case_card(p, lang) for p in CASES)}</div>'
     body = f"""<section class="page-head"><div class="wrap"><p class="eyebrow">{eyebrow}</p><h1>{e(h1)}</h1><p class="lead">{e(lead)}</p></div></section>
@@ -806,7 +801,7 @@ def build_listing(lang, page):
     ld = graph(person_node(), website_node(),
                {"@type": "CollectionPage", "@id": canonical(path) + "#webpage", "url": canonical(path), "name": h1, "description": description, "inLanguage": lang,
                 "isPartOf": {"@id": WEBSITE_ID}, "author": {"@id": PERSON_ID},
-                "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "url": canonical(q), "name": PAGES[q]["h1"]} for i, q in enumerate(items, 1)]}},
+                "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "url": canonical(q), "name": SVC_BY_PATH[q][lang]["h1"] if q in SVC_BY_PATH else PAGES[q]["h1"]} for i, q in enumerate(items, 1)]}},
                breadcrumbs([(t["home_crumb"], f"/{lang}/"), (eyebrow, url_of(path))]))
     write(path, layout(path, title=title, description=description, body=body, lang=lang, active=section, jsonld=[ld], alternates=alternates_for(page)))
 
@@ -850,12 +845,6 @@ def build_page(path):
     elif section == "ressources":
         node.update({"@type": "Article", "articleSection": "SEO case study", "mainEntityOfPage": url, "image": image_obj(p.get("cover") or first_image(path)),
                      "wordCount": words, **({"datePublished": p["added"]} if p.get("added") else {})})
-    elif section == "services" and path in SERVICE_LD:
-        name, desc_, stype, price, unit = SERVICE_LD[path]
-        node = {"@type": "Service", "@id": url + "#service", "url": url, "name": name, "description": desc_, "serviceType": stype,
-                "provider": {"@id": PERSON_ID}, "areaServed": ["FR", "Worldwide"],
-                "offers": {"@type": "Offer", "url": url, "priceCurrency": "USD", "description": f"Starting at ${price} {unit}",
-                           "priceSpecification": {"@type": "PriceSpecification", "minPrice": price, "priceCurrency": "USD"}}}
     else:
         node["@type"] = "WebPage"
     crumb_items = [(t["home_crumb"], f"/{lang}/")] + ([crumbs_map[section]] if section in crumbs_map else []) + [(p["h1"], url_of(canon_path))]
@@ -873,6 +862,76 @@ def build_page(path):
     og_image = p.get("og_image") or (img(p["cover"], 1200) if p.get("cover") else None)
     write(path, layout(path, title=title_with_brand(page_title(p)), description=p["description"] or p["h1"], body=body, lang=lang, active=section,
                        og_type="article" if is_post else "website", og_image=og_image, jsonld=jsonld, canonical_path=canon_path, published=date))
+
+
+def _excerpt(x):
+    return f"…{x}" if x.rstrip().endswith((".", "!", "?")) else f"…{x}…"
+
+
+def find_testimonial(name, excerpt):
+    """(quote paragraphs, name, role, language) for a testimonial, verbatim; an excerpt is shown with ellipses."""
+    f = TESTI["featured"]
+    if name == f["name"]:
+        return ([_excerpt(excerpt) if excerpt else f["excerpt"][0]], f["name"], f"{f['role']}, {f['company']}", "fr")
+    q = next(x for x in TESTI["items"] if x["name"] == name)
+    paras = [_excerpt(excerpt)] if excerpt else [clean_text(x) for x in q["quote"]]
+    return (paras, q["name"], q["role"], lang_of(" ".join(q["quote"])))
+
+
+def service_body(lang, d):
+    """The service content (without hero), also used for llms-full.txt."""
+    t, u, c = T[lang], SVC_UI[lang], d[lang]
+    incl = "".join(f'<div class="card incl reveal"><span class="num">0{i}</span><h3>{x}</h3><p>{y}</p></div>' for i, (x, y) in enumerate(c["incl"], 1))
+    steps = "".join(f'<li class="reveal"><span class="step-n">{i}</span><div><h3>{x}</h3><p>{y}</p></div></li>' for i, (x, y) in enumerate(u["steps"], 1))
+    deliver = "".join(f"<li>{x}</li>" for x in c["deliver"])
+    tools = "".join(f'<li dir="ltr">{e(x)}</li>' for x in d["tools"])
+    paras, name, role, qlang = find_testimonial(*d["testimonial"])
+    quote = f"""<figure class="svc-quote reveal"><blockquote lang="{qlang}" dir="ltr">{''.join(f'<p>{e(x)}</p>' for x in paras)}</blockquote><figcaption><b>{e(name)}</b> · <span>{e(role)}</span></figcaption></figure>"""
+    cases = "".join(case_card(q, lang) for q in d["cases"])
+    gallery = ""
+    if d.get("gallery"):
+        gallery = f"""<section class="section"><div class="wrap"><div class="section-head"><h2>{u['gallery_h2']}</h2></div>
+<div class="gallery">{''.join(f'<figure class="reveal"><img src="{e(img(src, 900))}" alt="{e(cap[lang])}" loading="lazy" decoding="async"{dims(src, 900)}><figcaption>{cap[lang]} · Tableau</figcaption></figure>' for src, cap in d["gallery"])}</div></div></section>"""
+    faq = "".join(f'<details class="faq-item reveal"><summary><h3>{e(q)}</h3></summary><div><p>{a}</p></div></details>' for q, a in c["faq"])
+    return f"""<section class="section"><div class="wrap about"><div><h2>{u['why_h2']}</h2></div><div class="prose-lg">{''.join(f'<p>{x}</p>' for x in c['why'])}</div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><h2>{u['incl_h2']}</h2></div><div class="grid grid-3">{incl}</div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><h2>{u['steps_h2']}</h2></div><ol class="steps">{steps}</ol></div></section>
+<section class="section"><div class="wrap svc-cols">
+  <div><h2>{u['deliver_h2']}</h2><ul class="checklist">{deliver}</ul></div>
+  <div><h2>{u['tools_h2']}</h2><ul class="chips">{tools}</ul></div>
+</div></section>
+{gallery}
+<section class="section"><div class="wrap"><div class="section-head"><h2>{u['proof_h2']}</h2></div>{quote}<div class="grid grid-3" style="margin-top:20px">{cases}</div></div></section>
+<section class="section"><div class="wrap faq"><div><h2>{u['faq_h2']}</h2></div><div class="faq-list">{faq}</div></div></section>"""
+
+
+def build_service(lang, d):
+    t, u, c = T[lang], SVC_UI[lang], d[lang]
+    path = d["paths"][lang]
+    alternates = {l: url_of(d["paths"][l]) for l in LANGS} | {"x-default": url_of(d["paths"]["en"])}
+    crumbs = (f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/{lang}/">{t["home_crumb"]}</a><span aria-hidden="true">/</span>'
+              f'<a href="/{lang}/services.html">{t["nav_services"]}</a></nav>')
+    facts = "".join(f"<div><dt>{k}</dt><dd>{v}</dd></div>" for k, v in ((u["for"], c["for"]), (u["deliverable"], c["deliverable"]), (u["languages"], u["lang_value"])))
+    others = "".join(service_card(o["paths"]["en"], lang) for o in SERVICE_DEFS if o is not d)
+    body = f"""<section class="svc-hero"><div class="wrap">
+  {crumbs}
+  <p class="eyebrow">{u['eyebrow']}</p>
+  <h1>{e(c['h1'])}</h1>
+  <p class="lead">{c['lead']}</p>
+  <div class="actions"><a class="btn btn-primary" href="/{lang}/#contact">{t['hero_cta']}</a><a class="btn btn-ghost" href="/{lang}/ressources.html">{u['cta2']}</a></div>
+  <dl class="svc-facts">{facts}</dl>
+</div></section>
+{service_body(lang, d)}
+{cta_band(lang)}
+<section class="related"><div class="wrap"><div class="section-head"><h2>{u['others_h2']}</h2></div><div class="grid grid-2">{others}</div></div></section>"""
+    url = canonical(path)
+    ld = graph(person_node(), website_node(),
+               {"@type": "Service", "@id": url + "#service", "url": url, "name": c["h1"], "description": c["desc"], "serviceType": d["service_type"],
+                "provider": {"@id": PERSON_ID}, "areaServed": ["FR", "Worldwide"], "availableLanguage": ["fr", "en"], "inLanguage": lang},
+               {"@type": "FAQPage", "@id": url + "#faq", "inLanguage": lang,
+                "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": strip_tags(a)}} for q, a in c["faq"]]},
+               breadcrumbs([(t["home_crumb"], f"/{lang}/"), (t["nav_services"], f"/{lang}/services.html"), (c["h1"], url_of(path))]))
+    write(path, layout(path, title=title_with_brand(c["title"]), description=c["desc"], body=body, lang=lang, active="services", jsonld=[ld], alternates=alternates))
 
 
 def build_root():
@@ -931,7 +990,10 @@ def build_sitemap():
         alts = alternates_for(page)
         for l in LANGS:
             urls += entry(f"{l}/{page}", prio, alts)
-    urls += "".join(entry(p, "0.8") for p in SERVICES + CASES + BLOG)
+    for d in SERVICE_DEFS:
+        alts = {l: url_of(d["paths"][l]) for l in LANGS} | {"x-default": url_of(d["paths"]["en"])}
+        urls += "".join(entry(d["paths"][l], "0.9", alts) for l in LANGS)
+    urls += "".join(entry(p, "0.8") for p in CASES + BLOG)
     urls += entry("privacy-policy.html", "0.3")
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{urls}</urlset>\n')
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User",
@@ -993,7 +1055,8 @@ def build_llms():
     for q in SERVICES + CASES + BLOG:
         p = PAGES[q]
         meta = f"URL: {canonical(q)}" + (f" · Published: {post_date(p)}" if q.startswith("blog/") and post_date(p) else "")
-        full.append(f"---\n\n## {clean_text(p['h1'])}\n\n{meta}\n\n{to_markdown(content(q), SITE)}")
+        body = service_body("en", SVC_BY_PATH[q]) if q in SVC_BY_PATH else content(q)
+        full.append(f"---\n\n## {clean_text(p['h1'])}\n\n{meta}\n\n{to_markdown(body, SITE)}")
     write("llms-full.txt", "\n\n".join(full) + "\n")
 
 
@@ -1031,7 +1094,11 @@ if __name__ == "__main__":
             build_listing(lang, page)
     build_root()
     for path in PAGES:
-        build_page(path)
+        if path not in SVC_BY_PATH:
+            build_page(path)
+    for d in SERVICE_DEFS:
+        for lang in LANGS:
+            build_service(lang, d)
     build_404()
     build_redirects()
     build_sitemap()
@@ -1039,4 +1106,4 @@ if __name__ == "__main__":
     build_feed()
     if AIO:
         aioseo_cover()
-    print(f"built {len(LANGS) * 4 + len(PAGES) + 2} pages ({', '.join(LANGS)}) · blog {len(BLOG)} · services {len(SERVICES)} · cases {len(CASES)} · redirects {len(REDIRECTS)}")
+    print(f"built {len(LANGS) * 4 + len(PAGES) - len(SERVICES) + len(SERVICES) * len(LANGS) + 2} pages ({', '.join(LANGS)}) · blog {len(BLOG)} · services {len(SERVICES)} · cases {len(CASES)} · redirects {len(REDIRECTS)}")
