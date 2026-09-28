@@ -324,7 +324,7 @@ SERVICES = [
         "fr": {
             "card": ("Analyse de données SEO", "Python, SQL et BigQuery pour trouver où le trafic se gagne ou se perd, et prévoir la suite."),
             "title": "Analyse de données SEO avec Python, SQL et BigQuery",
-            "desc": "Analyse de données SEO par Aslane Samai : données Search Console et analytics avec Python, SQL et BigQuery pour trouver où le trafic se gagne ou se perd, et prévisions de trafic.",
+            "desc": "Analyse de données SEO avec Python, SQL et BigQuery : trouver où le trafic se gagne ou se perd dans vos données Search Console, et prévoir la suite.",
             "h1": "Analyse de données SEO avec Python et SQL",
             "lead": "La Search Console ne montre qu'une partie de la réalité. Je croise vos données de recherche, d'analytics et de crawl avec Python, SQL et BigQuery pour trouver où le trafic se gagne ou se perd, et quelles corrections feront vraiment bouger les chiffres.",
             "for": "Sites avec beaucoup de pages, de requêtes ou de marchés", "deliverable": "Analyses, prévisions et recommandations",
