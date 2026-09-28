@@ -1,78 +1,52 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cloudflare&#x27;s Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.</title>
-<meta name="description" content="Cloudflare introduces a new tool to block AI crawlers, helping website owners protect their content from unauthorized scraping. Discover how this feature works and what it means for the future of web security">
+<title>Cloudflare Blocks AI Crawlers: What SEOs Need to Know</title>
+<meta name="description" content="Cloudflare introduces a tool that lets site owners block AI crawlers. How the feature works and what it means for SEO, GEO and visibility in AI answers.">
 <meta name="author" content="Aslane Samai">
 <link rel="canonical" href="https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html">
 <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#121311" media="(prefers-color-scheme: dark)">
 <meta property="og:site_name" content="Aslane Samai">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cloudflare&#x27;s Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.">
-<meta property="og:description" content="Cloudflare introduces a new tool to block AI crawlers, helping website owners protect their content from unauthorized scraping. Discover how this feature works and what it means for the future of web security">
+<meta property="og:title" content="Cloudflare Blocks AI Crawlers: What SEOs Need to Know">
+<meta property="og:description" content="Cloudflare introduces a tool that lets site owners block AI crawlers. How the feature works and what it means for SEO, GEO and visibility in AI answers.">
 <meta property="og:url" content="https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-07-27">
+<meta property="article:author" content="https://aslanesamai.com/">
 <meta property="og:image" content="https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg?scale.option=fill&amp;w=1800&amp;h=0">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@this_is_aslan">
-<meta name="twitter:title" content="Cloudflare&#x27;s Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.">
-<meta name="twitter:description" content="Cloudflare introduces a new tool to block AI crawlers, helping website owners protect their content from unauthorized scraping. Discover how this feature works and what it means for the future of web security">
+<meta name="twitter:title" content="Cloudflare Blocks AI Crawlers: What SEOs Need to Know">
+<meta name="twitter:description" content="Cloudflare introduces a tool that lets site owners block AI crawlers. How the feature works and what it means for SEO, GEO and visibility in AI answers.">
 <meta name="twitter:image" content="https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg?scale.option=fill&amp;w=1800&amp;h=0">
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Aslane Samai · Blog" href="https://aslanesamai.com/feed.xml">
+<link rel="me" href="https://www.linkedin.com/in/aslane-samai">
+<link rel="me" href="https://x.com/this_is_aslan">
 <link rel="preload" href="/assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/site.css?v=d6471c98">
-<script src="/assets/site.js?v=d6471c98" defer></script>
-<script type="application/ld+json">{
-           "@context": "https://schema.org",
-           "@type": "BlogPosting",
-           "mainEntityOfPage": {
-             "@type": "WebPage",
-             "@id": "https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html"
-           },
-           "headline": "Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.",
-           "description": "Google's latest update signals the end of the cookieless future. Learn what this means for SEO experts, including impacts on online advertising strategies and evolving privacy standards.",
-           "image": [
-             "https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg?scale.option=fill&w=1800&h=0",
-             "https://misinate.sirv.com/perso/blog/cloudflare%20article/cloudflare%20ai%20bots%20blocker.png?scale.option=fill&w=1671&h=0",
-             "https://misinate.sirv.com/perso/blog/cloudflare%20article/users%20actions%20vis%20a%20vis%20ai%20bots.png?scale.option=fill&w=1801&h=0",
-             "https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20activity%20-%20cloudflare.png?scale.option=fill&w=2008&h=0&q=60",
-             "https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20blocked%20by%20users%20-%20cloudflare.png?scale.option=fill&w=1866&h=0",
-             "https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20dashboard%20-%20cloudflare.png?scale.option=fill&w=1879&h=0"
-           ],  
-           "author": {
-             "@type": "Person",
-             "name": "Aslane SAMAI",
-             "url": "https://aslanesamai.com/"
-           },  
-           "publisher": {
-             "@type": "Organization",
-             "name": "Aslane SAMAI",
-             "logo": {
-               "@type": "ImageObject",
-               "url": ""
-             }
-           },
-           "datePublished": "2024-07-27"
-         }</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aslanesamai.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aslanesamai.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.", "item": "https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html"}]}</script>
+<link rel="stylesheet" href="/assets/site.css?v=0e259488">
+<script src="/assets/site.js?v=0e259488" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://aslanesamai.com/#person", "name": "Aslane Samai", "alternateName": "Samai Aslane", "url": "https://aslanesamai.com/", "image": "https://aslanesamai.com/aslanesamai.png", "jobTitle": "SEO / GEO consultant", "sameAs": ["https://www.linkedin.com/in/aslane-samai", "https://x.com/this_is_aslan", "https://medium.com/@samaiaslane7", "https://github.com/aslan04739", "https://aioseo.fr/aslane-samai-consultant-seo-technique-expert-geo/"]}, {"@type": "WebSite", "@id": "https://aslanesamai.com/#website", "url": "https://aslanesamai.com/", "name": "Aslane Samai", "inLanguage": ["en", "fr", "ar"], "publisher": {"@id": "https://aslanesamai.com/#person"}}, {"@id": "https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html#webpage", "url": "https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html", "headline": "Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.", "name": "Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.", "description": "Cloudflare introduces a tool that lets site owners block AI crawlers. How the feature works and what it means for SEO, GEO and visibility in AI answers.", "inLanguage": "en", "isPartOf": {"@id": "https://aslanesamai.com/#website"}, "author": {"@id": "https://aslanesamai.com/#person"}, "publisher": {"@id": "https://aslanesamai.com/#person"}, "@type": "BlogPosting", "mainEntityOfPage": "https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html", "datePublished": "2024-07-27", "image": {"@type": "ImageObject", "url": "https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg", "width": 3840, "height": 2160}, "wordCount": 747}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aslanesamai.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aslanesamai.com/en/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.", "item": "https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html"}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header" id="top">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Aslane Samai, home">Aslane Samai<span>.</span></a>
-    <nav class="nav" aria-label="Main"><a href="/services.html">Services</a><a href="/ressources.html">Case studies</a><a href="/blog.html" aria-current="page">Blog</a><a href="/#contact">Contact</a><a class="btn btn-primary" href="/#contact">Free SEO audit</a></nav>
-    <details class="menu"><summary aria-label="Menu"><span></span></summary><nav aria-label="Mobile"><a href="/services.html">Services</a><a href="/ressources.html">Case studies</a><a href="/blog.html" aria-current="page">Blog</a><a href="/#contact">Contact</a><a class="btn btn-primary" href="/#contact">Free SEO audit</a></nav></details>
+    <a class="brand" href="/en/" aria-label="Aslane Samai">Aslane Samai<span>.</span></a>
+    <nav class="nav" aria-label="Main"><a href="/en/services.html">Services</a><a href="/en/#experience">Experience</a><a href="/en/ressources.html">Case studies</a><a href="/en/blog.html" aria-current="page">Blog</a><a href="/en/#contact">Contact</a><div class="langs" role="navigation" aria-label="Language"><a href="/en/" hreflang="en" lang="en" data-lang="en" aria-current=true>EN</a><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">FR</a><a href="/ar/" hreflang="ar" lang="ar" data-lang="ar">AR</a></div><a class="btn btn-primary" href="/en/#contact">Free SEO audit</a></nav>
+    <details class="menu"><summary aria-label="Menu"><span></span></summary><nav aria-label="Mobile"><a href="/en/services.html">Services</a><a href="/en/#experience">Experience</a><a href="/en/ressources.html">Case studies</a><a href="/en/blog.html" aria-current="page">Blog</a><a href="/en/#contact">Contact</a><div class="langs" role="navigation" aria-label="Language"><a href="/en/" hreflang="en" lang="en" data-lang="en" aria-current=true>EN</a><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">FR</a><a href="/ar/" hreflang="ar" lang="ar" data-lang="ar">AR</a></div><a class="btn btn-primary" href="/en/#contact">Free SEO audit</a></nav></details>
   </div>
 </header>
 <main id="main">
 <article>
-<header class="article-head"><div class="wrap"><div class="inner"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog.html">Blog</a></nav><h1>Cloudflare&#x27;s Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.</h1><div class="byline"><img src="/assets/portrait-sm.webp" alt="" width="40" height="40"><div><b>Aslane Samai</b><br>July 27, 2024</div></div></div></div></header>
-<figure class="cover"><img src="https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg?w=1600" alt="" fetchpriority="high"></figure>
+<header class="article-head"><div class="wrap"><div class="inner"><nav class="crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a><span aria-hidden="true">/</span><a href="/en/blog.html">Blog</a></nav><h1>Cloudflare&#x27;s Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.</h1><div class="byline"><img src="/assets/portrait-sm.webp" alt="" width="40" height="40"><div><b>Aslane Samai</b><br>July 27, 2024</div></div></div></div></header>
+<figure class="cover"><img src="https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg?w=1600" alt="" width="1600" height="900" fetchpriority="high"></figure>
 <div class="prose">
 <h2>Cloudflare thinks it knows better. It says it has a better (radical) solution for a problem that has been haunting half of the web. And that will taunt the second half if implemented</h2>
 <p>The company says it has developed the ultimate (my words, not theirs)to block ai crawlers. Let’s deep dive and see what all the hype is about. </p>
@@ -85,19 +59,19 @@
 <h2>Cloudfate is our savor</h2>
 <p>In a blog post shared on their website, the company announced it has figured out a way to, and I quote : “<strong>Declare your AIndependence: block AI bots, scrapers and crawlers with a single click”. </strong></p>
 <p>This comes after the company launched a similar solution to “challenge” ai bots and prevent them from making too many requests . </p>
-<img loading="lazy" decoding="async" alt="ai blocker from cloudflare" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/cloudflare%20ai%20bots%20blocker.png"/>
+<img loading="lazy" decoding="async" width="1400" height="629" alt="ai blocker from cloudflare" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/cloudflare%20ai%20bots%20blocker.png?w=1400"/>
 <p>After doing so, the company noticed the majority of its customers weren’t exactly happy with the performance of the latter. </p>
 <p>In a pull from the company. 85 % of users expressed their desire to completely block ai bots. </p>
-<img loading="lazy" decoding="async" alt="ai bots actions from users" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/users%20actions%20vis%20a%20vis%20ai%20bots.png"/>
+<img loading="lazy" decoding="async" width="1400" height="525" alt="ai bots actions from users" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/users%20actions%20vis%20a%20vis%20ai%20bots.png?w=1400"/>
 <p><strong>Side note : I bet the writer is happy who his title. It’s a good title. I give credit where credit is due. </strong></p>
 <p>More interesting, the company says the tool is free and available to all users. Which makes it all the more appealing…</p>
 <p><strong>What’s all the hype about Cloudlafre ?</strong></p>
 <p>Blocking ai crawlers or crawlers of any kind isn’t a novelty. SEO specialists like myself are taught to manipulate what can search engines crawl (explore) through sitemaps and robots.txt…That said, the instructions we usually put on these files are directives. Not actual instructions. And search engine crawlers (bots) have the freedom to obey or disobey these directives.</p>
 <p>With a noticeable increase in AI bots activity through the web, the company decided to take a (supposedly) more radical step. </p>
-<img loading="lazy" decoding="async" alt="ai bots activity on the web" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20activity%20-%20cloudflare.png"/>
+<img loading="lazy" decoding="async" width="1400" height="884" alt="ai bots activity on the web" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20activity%20-%20cloudflare.png?w=1400"/>
 <p>As we can see, there are four AI bots that dominate the internet: Bytespider, Amazonbot, ClaudeBot, and GPTBot. I’ve coined them the "Big 4 Malicious AI Bots." Proper credit is required if you decide to use this expression… </p>
 <p>Interestingly though,the biggest AI thief isn’t the number one blocked ai bot. Victim of its own success, ChatGPT is the most blocked AI bot by Cloudflare users… </p>
-<img loading="lazy" decoding="async" alt="ai bots blocked from users" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20blocked%20by%20users%20-%20cloudflare.png"/>
+<img loading="lazy" decoding="async" width="1400" height="756" alt="ai bots blocked from users" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20blocked%20by%20users%20-%20cloudflare.png?w=1400"/>
 <h2>This is where cloud fare might have an edge</h2>
 <ol>
 <li>Cloudflare’s solution can be turned on with a toggle. Unlike robots.txt and sitemap files which that necessitate certain technical knowledge and know how. </li>
@@ -105,23 +79,23 @@
 <li>The tech giant pretends the machine learning model it’s using can recognize ai bots. Even if they act like normal browsers. </li>
 <li>They’ve also set up a<a href="https://docs.google.com/forms/d/14bX0RJH_0w17_cAUiihff5b3WLKzfieDO4upRlo5wj8/edit" rel="noopener" target="_blank"> reporting tool</a> where any Cloudflare customer can submit reports of an AI bot scraping websites without permission. Monitor AI bots on their website and submitting feedback. The latter is pretty cool, I must admit… </li>
 </ol>
-<img loading="lazy" decoding="async" alt="ai bots activity monitor" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20dashboard%20-%20cloudflare.png"/>
+<img loading="lazy" decoding="async" width="1400" height="1183" alt="ai bots activity monitor" src="https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20dashboard%20-%20cloudflare.png?w=1400"/>
 <p>Cloudflare is a tech behemoth. With over 7 millions websites(users), the company has a considerable weight in the tech arena. If they walk the walk and talk the talk and their ai blocking solution turns out to work. AI actors will have a hard time scraping any more data. </p>
 <p>Want to know more about the AI bot blocker ? Check out the full article where CloudFlare explains how to <a href="https://blog.cloudflare.com/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click" rel="noopener" target="_blank">Declare your AIndependence: block AI bots, scrapers and crawlers with a single click</a></p>
 
 </div>
-<aside class="author-box"><img src="/assets/portrait-sm.webp" alt="" width="72" height="72" loading="lazy"><p><b>Aslane Samai</b><br>SEO &amp; GEO consultant in Paris. I help businesses get found on Google and cited by AI answers. <a href="/#contact">Get in touch</a>.</p></aside>
+<aside class="author-box"><img src="/assets/portrait-sm.webp" alt="" width="72" height="72" loading="lazy"><p><b>Aslane Samai</b><br>SEO &amp; GEO consultant based in Paris. I help businesses get found on Google and cited by AI answers. <a href="/en/#contact">Contact</a>.</p></aside>
 </article>
-<section class="related"><div class="wrap"><div class="section-head"><h2>Keep reading</h2></div><div class="grid grid-3"><a class="card card-media" href="/blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html"><div class="thumb"><img src="https://misinate.sirv.com/perso/google-unsplash.jpg?w=720" alt="" loading="lazy" decoding="async"></div><div class="body"><span class="tag">September 19, 2023</span><h3>Google Is Paying Publishers to Test an Unreleased Gen AI Platform: what does this mean for SEO?</h3><p>Uncover Google&#x27;s secret AI writer for publishers. Beta details, ethical concerns, and the future of AI in journalism and SEOs</p></div></a><a class="card card-media" href="/blog/free-domain-and-ssl-checker-for-seo-in-2023.html"><div class="thumb"><img src="https://misinate.sirv.com/perso/Blurring.png?w=720" alt="" loading="lazy" decoding="async"></div><div class="body"><span class="tag">September 19, 2023</span><h3>Free domain and SSL checker for SEO freelancers in 2023</h3><p>Empower your SEO strategy with Free Domain Alerts – the tool for seamless domain renewals and SSL checks</p></div></a><a class="card card-media" href="/blog/google-now-supports-rich-results-for-gated-content.html"><div class="thumb"><img src="https://misinate.sirv.com/perso/google-sites-review---sophia-8.png?w=720" alt="" loading="lazy" decoding="async"></div><div class="body"><span class="tag">September 19, 2023</span><h3>Google now supports rich results for gated content</h3><p>Unlocking SEO Potential: Google&#x27;s Latest Update Empowers Gated Content with Rich Results. Discover how this game-changing feature enhances visibility…</p></div></a></div></div></section>
-<section class="section"><div class="wrap"><div class="cta-band reveal"><div><h2>Want to know what's holding your site back?</h2><p>A free 30-minute audit call: what's blocking your visibility on Google and in AI answers, and what to fix first.</p></div><a class="btn btn-primary" href="/#contact">Book a free audit</a></div></div></section>
+<section class="related"><div class="wrap"><div class="section-head"><h2>Keep reading</h2></div><div class="grid grid-3"><a class="card card-media reveal" href="/blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html" hreflang="en"><div class="thumb"><img src="https://misinate.sirv.com/perso/google-unsplash.jpg?w=720" alt="" width="720" height="480" loading="lazy" decoding="async"></div><div class="body"><span class="tag">September 19, 2023</span><h3 lang="en">Google Is Paying Publishers to Test an Unreleased Gen AI Platform: what does this mean for SEO?</h3><p lang="en">Google is paying publishers to test an unreleased generative AI writing platform. What we know, the ethical questions, and what it means for SEO.</p></div></a><a class="card card-media reveal" href="/blog/free-domain-and-ssl-checker-for-seo-in-2023.html" hreflang="en"><div class="thumb"><img src="https://misinate.sirv.com/perso/Blurring.png?w=720" alt="" width="720" height="358" loading="lazy" decoding="async"></div><div class="body"><span class="tag">September 19, 2023</span><h3 lang="en">Free domain and SSL checker for SEO freelancers in 2023</h3><p lang="en">Empower your SEO strategy with Free Domain Alerts – the tool for seamless domain renewals and SSL checks</p></div></a><a class="card card-media reveal" href="/blog/google-now-supports-rich-results-for-gated-content.html" hreflang="en"><div class="thumb"><img src="https://misinate.sirv.com/perso/google-sites-review---sophia-8.png?w=720" alt="" width="720" height="348" loading="lazy" decoding="async"></div><div class="body"><span class="tag">September 19, 2023</span><h3 lang="en">Google now supports rich results for gated content</h3><p lang="en">Google now validates structured data for paywalled content in rich results. Why it helps SEOs and how to implement it with JSON-LD.</p></div></a></div></div></section>
+<section class="section"><div class="wrap"><div class="cta-band reveal"><div><h2>Want to know what's holding your site back?</h2><p>A free 30-minute audit call: what's blocking your visibility on Google and in AI answers, and what to fix first.</p></div><a class="btn btn-primary" href="/en/#contact">Book a free audit</a></div></div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="cols">
-      <div class="f-about"><a class="brand" href="/">Aslane Samai<span>.</span></a><p>SEO &amp; GEO consultant based in Paris. I help businesses get found on Google and cited by AI answers.</p></div>
-      <div><h4>Explore</h4><ul><li><a href="/services.html">Services</a></li><li><a href="/ressources.html">Case studies</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/#testimonials">Testimonials</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="mailto:contact@aslanesamai.com">contact@aslanesamai.com</a></li><li><a href="/#contact">Book a free audit</a></li></ul></div>
-      <div><h4>Follow</h4><ul><li><a href="https://www.linkedin.com/in/aslane-samai" rel="me noopener" target="_blank">LinkedIn</a></li><li><a href="https://x.com/this_is_aslan" rel="me noopener" target="_blank">X / Twitter</a></li><li><a href="https://medium.com/@samaiaslane7" rel="me noopener" target="_blank">Medium</a></li></ul></div>
+      <div class="f-about"><a class="brand" href="/en/">Aslane Samai<span>.</span></a><p>SEO &amp; GEO consultant based in Paris. I help businesses get found on Google and cited by AI answers.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="/en/services.html">Services</a></li><li><a href="/en/ressources.html">Case studies</a></li><li><a href="/en/blog.html">Blog</a></li><li><a href="/en/#testimonials">Testimonials</a></li><li><a href="https://aioseo.fr/" target="_blank" rel="noopener">aioseo.fr</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:contact@aslanesamai.com">contact@aslanesamai.com</a></li><li><a href="/en/#contact">Book a free audit</a></li></ul></div>
+      <div><h4>Follow</h4><ul><li><a href="https://www.linkedin.com/in/aslane-samai" rel="me noopener" target="_blank">LinkedIn</a></li><li><a href="https://x.com/this_is_aslan" rel="me noopener" target="_blank">X / Twitter</a></li><li><a href="https://github.com/aslan04739" rel="me noopener" target="_blank">GitHub</a></li><li><a href="https://medium.com/@samaiaslane7" rel="me noopener" target="_blank">Medium</a></li></ul></div>
     </div>
     <div class="legal"><span>© 2026 Aslane Samai</span><a href="/privacy-policy.html">Privacy policy</a></div>
   </div>

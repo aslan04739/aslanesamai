@@ -1,0 +1,138 @@
+{
+  "_comment": "Per-page SEO overrides: <title> (aim for 60 chars max), meta description (120-160 chars), h1. Anything not listed keeps the extracted value.",
+  "blog/5-seo-podcasts-for-beginners-in-2023.html": {
+    "title": "5 SEO Podcasts for Beginners",
+    "description": "The 5 SEO podcasts every beginner should listen to: expert insights and actionable search engine optimization tips from must-listen shows."
+  },
+  "blog/8-chrome-extensions-for-seo.html": {
+    "title": "8 Chrome Extensions for SEO I Use Every Day",
+    "description": "The 8 Chrome extensions I use daily for SEO: meta descriptions, headings, backlinks, keyword density, writing help and quick-win discovery."
+  },
+  "blog/Geeks-for-geeks-gets-SEO-banned-from-google.html": {
+    "title": "GeeksForGeeks SEO Collapse: What Went Wrong"
+  },
+  "blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html": {
+    "title": "Google Pays Publishers to Test a Gen AI Writer: SEO Impact",
+    "description": "Google is paying publishers to test an unreleased generative AI writing platform. What we know, the ethical questions, and what it means for SEO."
+  },
+  "blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html": {
+    "title": "Cloudflare Blocks AI Crawlers: What SEOs Need to Know",
+    "description": "Cloudflare introduces a tool that lets site owners block AI crawlers. How the feature works and what it means for SEO, GEO and visibility in AI answers."
+  },
+  "blog/death-of-the-cookieless-future-what-google-latest-move-means-for-seo-professionals.html": {
+    "title": "Death of the Cookieless Future: What It Means for SEO",
+    "description": "Google drops its plan to phase out third-party cookies. What it changes for SEO professionals, online advertising and privacy standards."
+  },
+  "blog/google-confirms-google-sites-are-not-ideal-for-seo-purposes.html": {
+    "title": "Google Confirms Google Sites Isn't Ideal for SEO",
+    "description": "John Mueller confirms Google Sites is not ideal for SEO. Its limitations, the pros and cons, and better alternatives for your website."
+  },
+  "blog/google-now-supports-rich-results-for-gated-content.html": {
+    "title": "Google Now Supports Rich Results for Gated Content",
+    "h1": "Google now supports rich results for gated content",
+    "description": "Google now validates structured data for paywalled content in rich results. Why it helps SEOs and how to implement it with JSON-LD."
+  },
+  "blog/google-search-console-page-indexing-issues.html": {
+    "title": "Google Search Console Page Indexing Issues: How to Fix",
+    "description": "Why Google Search Console reports page indexing issues, why manual indexing requests may not work, and how to solve the problem."
+  },
+  "blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html": {
+    "title": "Search Console Update: Indexing Issues in Performance Graphs",
+    "description": "Google Search Console now shows indexing issues directly in Performance graphs. What changes, and how it simplifies diagnosing traffic drops."
+  },
+  "blog/how-to-fix-page-indexing-issues-according-to-google.html": {
+    "title": "Pages Not Indexed? What Googlers Recommend",
+    "description": "Your pages aren't being indexed by Google? Here's what to do, according to people who work at Google, step by step."
+  },
+  "blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html": {
+    "title": "How to Block ChatGPT (GPTBot) from Crawling Your Website",
+    "description": "How to stop ChatGPT from crawling your website with a few lines in robots.txt, and what blocking GPTBot means for your content's visibility."
+  },
+  "blog/i-tried-Google-bard.html": {
+    "title": "I Tried Google Bard: My Honest Impressions",
+    "description": "I tested Google Bard by asking it who I am. It hallucinated a whole career. Here's how it compared with ChatGPT and GPT-4."
+  },
+  "blog/i-tried-google-sge-here-is-what-changes-in-seo.html": {
+    "title": "I Tried Google SGE: What Changes for SEO"
+  },
+  "blog/mastering-inp-for-better-website-performance-a-beginner-guide-to-seo-friendly-Interactions.html": {
+    "title": "INP for Beginners: SEO-Friendly Interactions",
+    "description": "A beginner's guide to Interaction to Next Paint (INP): what it measures, why it matters for Core Web Vitals and SEO, and how to improve it."
+  },
+  "blog/quickly-audit-your-website-with-this-free-seo-audit-tool-for-beginners-from-hubspot.html": {
+    "title": "Free SEO Audit Tool for Beginners: HubSpot Website Grader",
+    "description": "Audit your website in minutes with HubSpot's free Website Grader: performance, SEO, mobile usability and security, explained for beginners."
+  },
+  "blog/seo-games-for-beginners-in-2023.html": {
+    "title": "5 Games to Learn SEO: Gamify Your SEO Learning",
+    "description": "Learning SEO can be tedious. These entertaining games make learning search engine optimization fun for beginners."
+  },
+  "blog/seo-redemption-elevate-your-site-quality-and-regain-google-trust.html": {
+    "title": "SEO Redemption: Regain Google's Trust with Site Quality",
+    "description": "How to improve site quality and regain Google's trust after an SEO setback, with insights from Google's Gary Illyes."
+  },
+  "blog/seo-trend-tools-for-beginners-in-2023-navigating-with-exploding-topics-google-trends-sparktoro-and-glimpse.html": {
+    "title": "SEO Trend Tools: Exploding Topics, Google Trends, SparkToro",
+    "description": "A beginner's guide to SEO trend tools: Exploding Topics, Google Trends, SparkToro and Glimpse, and how to use them to find rising topics."
+  },
+  "blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html": {
+    "title": "7 SEO YouTube Channels for Beginners"
+  },
+  "blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html": {
+    "title": "The Washington Post's Guide to SEO, Decoded",
+    "description": "The Washington Post published a surprisingly good guide to SEO. The strategies it covers, decoded for website owners and SEO beginners."
+  },
+  "blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html": {
+    "title": "Working Remotely? Double Your Productivity with Focusmate",
+    "description": "Need a productivity boost when working remotely? Let strangers watch you work and get things done with Focusmate's virtual coworking sessions."
+  },
+  "ressources/seo-case-study-al-fadjr.html": {
+    "title": "SEO Case Study: Al Fadjr, from Headlines to High Rankings",
+    "description": "How two focused SEO changes improved clicks by 90% for Al Fadjr, a French-language news site: keyword research, technical fixes and content."
+  },
+  "ressources/seo-case-study-finance-heros.html": {
+    "title": "SEO Case Study: Al Fadjr, from Headlines to High Rankings",
+    "description": "How two focused SEO changes improved clicks by 90% for Al Fadjr, a French-language news site: keyword research, technical fixes and content.",
+    "canonical": "ressources/seo-case-study-al-fadjr.html"
+  },
+  "ressources/seo-case-study-interfast.html": {
+    "title": "SEO Case Study: InterFast, and There Was Visibility",
+    "description": "How a targeted SEO strategy fixed 404s, a wrong lang attribute and template pages for InterFast, a construction software company, and grew visibility."
+  },
+  "ressources/seo-case-study-mmt-mobile-medical-team.html": {
+    "title": "SEO Case Study: MMT, from Startup to Industry Player",
+    "description": "How technical SEO and a focused strategy took MMT, a mobile medical team startup in Riyadh, from invisible to a trusted name in its market."
+  },
+  "ressources/seo-case-study-radco.html": {
+    "title": "SEO Case Study: RADCO, SEO in the EPC Landscape",
+    "description": "How RADCO, a construction company in Algiers, went from a blank slate to strong online visibility: technical fixes, indexing, content and links."
+  },
+  "ressources/seo-case-study-rekhila-.html": {
+    "title": "SEO Case Study: REKHILA Promotion, Invisible to Indispensable",
+    "description": "How a new real estate website in Algiers, REKHILA Promotion, built SEO from scratch: indexing, authority, content, backlinks and technical setup."
+  },
+  "ressources/seo-case-study-unimind.html": {
+    "title": "SEO Case Study: Unimind, the Beginning and the End",
+    "description": "The SEO strategy behind Unimind, a productivity app: competitor research, keyword discovery from a user's perspective, content and results."
+  },
+  "services/data-analysis.html": {
+    "title": "Data Analysis for SEO with SQL and Python",
+    "description": "Data-driven SEO with SQL and Python, by a Google Data Analytics certified consultant: find where traffic is won or lost and what to fix first."
+  },
+  "services/data-visualization.html": {
+    "title": "Data Visualization: Tableau Dashboards by Aslane Samai",
+    "description": "Tableau dashboards by Aslane Samai: LinkedIn interactions, Netflix data worldwide, Walmart performance across the US and Covid deaths per country."
+  },
+  "services/seo-content-writing.html": {
+    "title": "SEO Content Writing Services",
+    "description": "SEO content writing that combines search intent, strategic optimization and storytelling to rank on Google and get cited in AI answers."
+  },
+  "services/seo-the-driving-force-behind-my-passion.html": {
+    "title": "SEO Services: Audits, Technical SEO and Strategy",
+    "description": "Search engine optimization services by Aslane Samai: technical audits, on-page and off-page SEO, with Semrush Pro and Screaming Frog."
+  },
+  "privacy-policy.html": {
+    "title": "Privacy Policy · Aslane Samai",
+    "description": "How aslanesamai.com collects, uses and shares your personal information when you visit the site or contact me."
+  }
+}

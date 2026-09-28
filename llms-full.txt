@@ -1,0 +1,1873 @@
+# Aslane Samai: full site content
+
+> Aslane Samai is an SEO and GEO (generative engine optimization) consultant based in Paris, France. He helps businesses get found on Google and cited in AI answers (ChatGPT, Gemini, Google AI Overviews) through technical SEO audits, data analysis and content. He writes aioseo.fr, a French blog about AI search.
+
+Key facts:
+
+- Name: Aslane Samai (also written Samai Aslane)
+- Role: SEO / GEO consultant, based in Paris, France; works in French and English
+- Experience:
+  - Eskimoz (2025 – 2026): SEO & GEO consultant (work-study). Complete SEO audits (technical, semantic, competitive, off-site) and GEO audits, netlinking campaigns, briefs for writers and roadmaps adapted to each client's tech stack, for accounts such as Sunelia, Manpower, Engie My Power and Riverly.
+  - Finance Héros (2025): SEO. SEO audit and technical optimization, internal linking, a Google AI Overviews roadmap, WordPress, organic backlinks from Reddit and forums (about 10 a month) and an in-house Looker Studio dashboard.
+  - Voices For Animal Welfare: SEO & analytics lead. A complete SEO strategy built from scratch for an animal welfare NGO: technical and analytics foundations, advanced Google Analytics and Search Console setup, link acquisition.
+  - MMT · Mobile Medical Team (2023 – 2024): SEO specialist. SEO audit, website management, backlink acquisition, copywriting and web content for a mobile medical team in Riyadh.
+  - RADCO (2023): SEO traffic manager. SEO and analytics from scratch for a construction company in Algiers: Google Analytics, Search Console and Google Ads, a full site redesign and a backlink strategy. Google impressions went from 0 to 45,000.
+  - InterFast: SEO content manager. Website management, backlink acquisition, web content, data analysis, email marketing and video editing for a construction software company.
+- Education:
+  - Université Paris Dauphine – PSL, Master 2 IREN (2025 – 2026): Advanced analytics, data science, econometrics and web strategy
+  - Université Paris-Saclay, Master IES (2024 – 2025): Digital economics, data analysis and web analytics
+  - EHEC, Master 2 Marketing (2018 – 2021): Digital marketing, strategic management and entrepreneurship
+  - ESGCI (2016 – 2018): Preparatory classes: economics and mathematics
+- Skills and tools: Technical SEO, On-page SEO, Off-page SEO & netlinking, SEO & GEO audits, Google AI Overviews, Content briefs & writing, Reporting; Screaming Frog, Sitebulb, Oncrawl, Semrush, Ahrefs, Google Search Console, Bing Webmaster Tools; SQL, Python (pandas), sentence-transformers, KeyBERT, TimesFM, Prophet, HTML, CSS; Tableau, Looker Studio, Google Analytics 4; WordPress, Webflow, Angular, Livewire
+- Certifications: Google Data Analytics (Google / Coursera), SQL (CoRise), Technical SEO (Blue Array), SEO Manager (Blue Array)
+- Tools built (free):
+  - [Bulk semantic proximity](https://semantic-proximity-analyzer-5ds58ihtyvktcvyxcijrku.streamlit.app): Match your priority keywords with Search Console data and score the semantic proximity of every ranking URL, in bulk.
+  - [SEO Entity Analyser](https://seo-entity-checker.streamlit.app/): Extract and check the entities of a page or a whole list of URLs with the GPT API, to see what AI engines understand.
+  - [Semantic auditor (URL vs URL)](https://semanticproximity-seo.streamlit.app/): Compare your page with a competitor's for a target query: cosine proximity score and the entities you're missing.
+  - [SEO Forecaster · Google TimesFM](https://python-seo-analyzer-xbmrhkkvwav6dvoqsq298c.streamlit.app/): Forecast clicks, impressions, CTR and position from a Search Console export with Google's TimesFM foundation model.
+  - [SEO Forecaster · Meta Prophet](https://seoforcastmetapropeht.streamlit.app/): Forecast Search Console traffic with Meta's Prophet: trend, weekly and yearly seasonality, holidays.
+  - [Multimodal GEO audit · Gemini-Embedding-2](https://aioseo.fr/audit-geo-multimodal-avec-gemini-embedding-2/): Audit how text, images and video line up with queries using Google's multimodal Gemini-Embedding-2 model.
+- Also writes: [aioseo.fr](https://aioseo.fr/), "AIO SEO · Good GEO is good SEO!", a French-language blog about GEO and AI search (Google AI Overviews, AI Mode, query fan-out, GEO tools)
+- Contact: contact@aslanesamai.com · free 30-minute SEO audit call: https://calendly.com/samaiaslane/free-seo-audit
+- Profiles: LinkedIn https://www.linkedin.com/in/aslane-samai · X https://x.com/this_is_aslan · GitHub https://github.com/aslan04739 · Medium https://medium.com/@samaiaslane7
+
+## About
+
+As an SEO professional, my goal is to help businesses succeed online. I offer a range of services, including SEO audits, technical optimization, on-page and off-page SEO, content creation, and backlink acquisition.
+
+## Frequently asked questions
+
+### Who is Aslane Samai?
+
+I'm Aslane Samai, an SEO and GEO consultant based in Paris, France. I help businesses get found on Google and cited in AI answers such as ChatGPT, Gemini and Google AI Overviews, through technical SEO audits, data analysis and content. I previously spent a year as an SEO & GEO consultant at Eskimoz, one of France's leading SEO agencies, I write the French GEO blog aioseo.fr, and I hold certifications in Google Data Analytics, SQL, Technical SEO and SEO management.
+
+### What is GEO (generative engine optimization)?
+
+Generative engine optimization (GEO) is the practice of making a website easy for AI systems such as ChatGPT, Gemini, Perplexity and Google AI Overviews to find, understand and cite when they generate answers.
+
+### How is GEO different from SEO?
+
+SEO aims to rank your pages in search results; GEO aims to get your brand quoted or recommended inside AI-generated answers. They share the same foundations (crawlable, fast, well-structured pages and trustworthy content), but GEO puts more weight on clear, citable facts, structured data and a consistent identity for your brand across the web.
+
+### Can you help my website appear in ChatGPT, Gemini or Google AI Overviews?
+
+Yes. I audit how AI crawlers access your site, how your content and brand are understood, and what's missing for you to be cited, then prioritize the fixes. Nobody can guarantee a citation from an AI model, but these are the same levers that improve your Google rankings.
+
+### What happens during the free SEO audit?
+
+It's a free 30-minute video call, booked through my calendar. We look at your site together: what is holding back its visibility on Google and in AI answers, and what to fix first.
+
+### Do you work in French and English?
+
+Yes. I work with clients in both French and English, including SEO content writing in both languages.
+
+## Testimonials
+
+### Recommendation letter from Julian Cerisier, Directeur Associé et SEO, Eskimoz (24/06/2026)
+
+Madame, Monsieur,
+
+Je me permets de vous recommander chaleureusement Aslane Samai, que j'ai encadré au sein d'Eskimoz, agence d’acquisition Global Search (www.eskimoz.fr), en alternance pendant 1 an en tant que consultant SEO/GEO. Durant cette période, Aslane a démontré des compétences solides et un sérieux qui ont contribué activement au succès de nos projets clients.
+
+Aslane a pris en charge des missions à forte composante GEO et SEO technique : audit technique de sites web, analyse de données de trafic et de performance, production de recommandations SEO et GEO, et restitutions client. Dans chacune de ces tâches, il a su faire preuve d'une grande rigueur méthodologique, d'une capacité d'analyse fine et d'une aptitude remarquable à vulgariser des données complexes pour les rendre accessibles à des interlocuteurs non techniques.
+
+Ce qui distingue particulièrement le parcours de Aslane, c'est sa passion pour le SEO et le GEO. Il a participé tous au long de l’année aux événements de Google sur ces sujets. En binôme avec son manager direct, il a contribué activement aux stratégies SEO et GEO de grands groupes tels que Sunelia, Manpower, Engie My Power et Riverly. Ces environnements, à la fois complexes sur le plan technique, exigeants en termes de volumétrie de données et soumis à de fortes contraintes organisationnelles, lui ont permis de développer une maturité professionnelle et une capacité d'adaptation que l'on ne rencontre pas souvent chez des profils débutants.
+
+Sa capacité d'apprentissage est l'une de ses qualités les plus marquantes : dans un secteur en perpétuelle évolution, Aslane assimilait rapidement de nouvelles méthodologies, maîtrisait de nouveaux outils et s'adaptait avec aisance à la complexité des environnements sur lesquels il intervenait. Son engagement et son sérieux ont été constants tout au long de son parcours chez Eskimoz.
+
+Je recommande donc vivement la candidature d’Aslane Samai.
+
+N'hésitez pas à me contacter si vous souhaitez de plus amples informations.
+
+Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+> I had the opportunity to work together with Aslane to help me identify keyword gaps within my SEO strategy for my organization. He was great at all stages of the project, highly responsive and professional at all times, and able to answer my questions as needed and provide me with great actionable recommendations for my site to rank better compared to my competitors. Would highly recommend him and will be utilizing his services again in the future.
+>
+> — Vincent Leutwiler, Operations and Marketing Communications Manager | Skills 4 Life Foundation
+
+> I highly recommend Aslane for anyone looking for a skilled and detail-oriented SEO consultant. Aslane recently conducted an SEO audit for me and I was thoroughly impressed with his level of expertise and attention to detail. Not only did he provide a comprehensive report, but he also went above and beyond to answer all of my questions and ensure that I fully understood the findings of the audit. Aslane's willingness to go the extra mile truly sets him apart and I would highly recommend him to anyone looking to improve their SEO strategy.
+>
+> — Mat Gargano, Agency Founder, Software architect, Adjacent Professor
+
+> Aslane is a true linchpin. Armed with a unique set of skills in his specialty (SEO) and a hunger for mastery, his work delivers nothing but excellence. What impressed me the most about him during our collaboration, is his embodiment of a rare combination of professional proficiency and an admirable set of principles, ethics and values. I'd recommend his services to anyone who values quality work and win-win collaborations
+>
+> — Ibrahim Cheurfa, CEO Udzers
+
+> La passion de Aslane Samai pour l'analyse des données et son dévouement inébranlable pour maximiser le retour sur investissement de nos campagnes sont vraiment louables. Son expertise en SEO, SEM et réseaux sociaux est remarquable, et il est évident qu'il a une compréhension approfondie de la manière de générer du trafic qualifié vers le site web d'InterFast.
+>
+> — Hedi Marinier, CEO InterFast
+
+> Aslane possède une combinaison de soft et hard skills qui font de lui un excellent candidat pour le poste de Traffic Manager. Tout d'abord, il est très organisé et peut gérer plusieurs projets simultanément sans sacrifier la qualité du travail. De plus, il a une grande expérience en matière d'analyse de données et peut facilement interpréter les chiffres pour aider à prendre des décisions stratégiques. En outre, il est très doué pour la communication, tant à l'interne qu'à l'externe, et peut travailler efficacement avec différents départements pour atteindre les objectifs de l'entreprise. En plus de ces compétences professionnelles, Aslane est également une personne très agréable avec qui travailler. Il est toujours prêt à aider ses collègues et à partager ses connaissances. Il a une attitude positive et est très motivé pour réussir dans tout ce qu'il entreprend.
+>
+> — Nazim Zidi, Fondateur Unimind
+
+> I had the pleasure of working with Aslane in my marketing team where he shined as an SEO Specialist. His expertise in SEO drove noticeable improvements in our website's traffic and rankings. Aslane's proactive approach coupled with his deep knowledge and collaborative spirit made him an invaluable team member. I highly recommend Aslane for any role in SEO, he's truly a standout professional.
+>
+> — Mohamed Anas Takerdoust, Marketing Manager - MMT
+
+---
+
+## Search Engine Optimization - The Driving Force Behind My Passion
+
+URL: https://aslanesamai.com/services/seo-the-driving-force-behind-my-passion.html
+
+Search engine optimization, also known as SEO, is the driving force behind my passion and dedication to this field. I'm not kidding when I say that SEO is the reason I'm on this journey.
+
+My ultimate goal is to be referenced on Google and to appear on the Search Engine Results Page (SERP) for all the right reasons! Let me clarify - I'm not seeking fame or recognition for personal reasons; my aim is to provide value and make a positive impact through my work.
+
+Having been involved in SEO for a considerable period, I can confidently say that I have learned a lot, but I'm well aware that there's still much more to explore and discover. Nevertheless, I believe there's no better time to continue this exciting journey than now.
+
+As an SEO specialist, I rely on a powerful stack of tools to optimize websites and enhance their performance. My go-to combo includes the trusted Semrush Pro and Screaming Frog, along with a bunch of other tools that I'd be more than happy to discuss in detail on another occasion.
+
+One key aspect that I've learned throughout my SEO journey is the significance of trust in this industry. People trust people, and in the realm of SEO, this holds true. Building trust with clients and colleagues is a priority for me, and it's something I strive for in every project I take on.
+
+I'm grateful for the opportunity to work with remarkable individuals and businesses, and I'm humbled by the kind words and feedback they have shared about our collaborations. To see the positive impact of my work through the eyes of those I've worked with is truly rewarding and motivates me to continually improve and deliver outstanding results.
+
+As part of my commitment to transparency and sharing knowledge, I will soon be publishing an in-depth SEO case study. In this study, I will delve into the strategies, techniques, and results of a specific SEO project I undertook. Stay tuned for the upcoming case study, where I'll provide valuable insights and real-world examples of [successful SEO implementation.](https://l.facebook.com/l.php?u=http%3A%2F%2Fdigiseine.fr%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAAR0NmwlGZW9ynt-RQzteKgF6GQHudJbnEfQ3yfG2eqmWSjmGUGLJLKBfN3c_aem_AZJvXasCR0nPtTdhKAIM4BTLtLIErEIPfDJSDPRvFdKLHo1nfv8pabyDKBcJerbHs_TaU_tlH8LpneV65zImQK5Y&h=AT1IIOoUT2Tl_jHEqHSdne9aUB0Y9XMTO1fEIkFSQ4wSFhXrXdRhnh2louxwQxPoNRT9o6t0FdnjnHjyh3u8HHyKE2On1uiP3Ie1Ol7DuYhlvIOT2XyU1m7vQvu75UCYpGQwtncPLdEXr8I)
+
+Thank you for being a part of my journey, and I'm excited to share more about my experiences and knowledge in the fascinating world of SEO. Together, we can achieve great things and make a meaningful impact in the digital landscape. Let's continue to grow and learn together on this SEO adventure!
+
+Check out my [SEO portfolio here; you will find SEO case studies, SEO audits, SEO progress sheets, and much more. ](https://drive.google.com/drive/folders/1tCuOFpOOyVAZyFguRmhR4G-om5sdxBNI?usp=share_link)
+
+Interested in an SEO Audit? Reach out to me by sending me an email here [contact@aslanesamai.com](mailto:contact@aslanesamai.com) or by [filing the calendly form](https://aslanesamai.com/#contact)
+
+---
+
+## Data Analysis for SEO - Empowering Search engine Optimization with SQL and Python
+
+URL: https://aslanesamai.com/services/data-analysis.html
+
+Besides SEO, I have a passion for diving deep into the world of data analysis to unlock the true potential of your online presence. My mission is to help businesses like yours succeed in the vast and ever-evolving digital landscape.
+
+## Unlocking the Power of Data
+
+In the realm of SEO, data is more than just numbers; it's the key that unlocks the door to success. With a keen eye for data-driven insights, I can uncover the hidden stories within your website's analytics. Every click, every keyword, and every user journey tells a unique tale, and I'm here to decipher them for you.
+
+Whether you're a budding startup or an established enterprise, understanding your data is vital for making informed decisions. By delving deep into the data, I can identify what drives traffic to your site, what keeps users engaged, and how to optimize content for better search engine rankings.
+
+## Google Data Analytics Certified
+
+As a Google Data Analytics certified professional, I'm equipped with the knowledge to harness Google's powerful analytics tools to extract meaningful insights. With Google Analytics as my trusted compass, I can navigate through the vast ocean of data and provide you with a clear roadmap for success.
+
+From tracking the performance of your website to measuring the impact of marketing campaigns, I leave no stone unturned in understanding user behavior with precision. Let me be your data guide, as we steer your online presence toward growth and success.
+
+## Corise SQL Advanced Certification
+
+In the realm of data, managing databases is a crucial skill. My Corise SQL Advanced certification showcases my expertise in handling and querying complex datasets with ease and efficiency. SQL is like the magic wand that brings forth the information you seek from the depths of databases.
+
+With Corise SQL Advanced certification, I can craft powerful queries, uncover valuable insights, and present data in a clear and concise manner. The knowledge I've gained allows me to identify trends, discover untapped opportunities, and optimize your website's performance for better search engine visibility.
+
+## Your Partner in Digital Growth
+
+Together, we embark on a data-driven journey that transforms your digital presence. From understanding user behavior to optimizing your content strategy, my expertise in data analysis serves as a guiding light in the vast landscape of SEO.
+
+Let's not settle for mediocrity; let's empower your business with the magic of data analysis. Unleash the full potential of your online endeavors and watch as your website climbs the ranks, connects with your audience, and achieves the digital success it deserves.
+
+Contact me today, and let's dive deep into the world of data analysis to make your SEO dreams a reality!
+
+Remember, in the digital kingdom, the right data can be the key to unlocking endless possibilities.
+
+Check out my [SEO portfolio here; you will find SEO case studies, SEO audits, SEO progress sheets, and much more. ](https://drive.google.com/drive/folders/1tCuOFpOOyVAZyFguRmhR4G-om5sdxBNI?usp=share_link)
+
+Interested in an SEO Audit? Reach out to me by sending me an email here [contact@aslanesamai.com](mailto:contact@aslanesamai.com) or by [filing the calendly form](https://aslanesamai.com/#contact)
+
+---
+
+## Tableau dashboards by Aslane Samai
+
+URL: https://aslanesamai.com/services/data-visualization.html
+
+## 1. My Piece de Resistance: My LinkedIn Profile Data
+
+I use [LinkedIn](https://www.linkedin.com/in/aslane-samai/) a lot! Probably more than I should ☹️ Making a dashboard out of my interactions, my connections, and what have you kinda made sense to me.
+
+![LinkedIn data dashboard](https://misinate.sirv.com/perso/linkedin.webp)
+
+## 2. Netflix Around the World
+
+Tv shows are dead, all hail adult movies 🔞🫣 How do I know that? I analyzed Netflix data around the world! Here’s what I found out:
+
+![Netflix Data dashboard aslane samai](https://misinate.sirv.com/perso/netflix.webp?w=1400)
+
+## 3. Walmart Across the US
+
+Talking about juggernauts, Walmart is the biggest retailer in the US ([as of writing this](https://www.investopedia.com/articles/markets/122415/worlds-top-10-retailers-wmt-cost.asp), Amazon is tailgating 😄). But its performance varies across the 50 states.
+
+Here’s a dashboard with its performance between 2012 and 2015 as well as profits per age (Gen Z apparently hasn’t even heard of the retailer. But that’s expected since they prefer, well, [more luxurious items](https://www.cnbc.com/2023/01/17/gen-z-is-driving-luxury-sales-as-wealthy-shoppers-get-younger.html#:~:text=Gen%20Z%20consumers%20are%20starting,millennials%20did%2C%20the%20report%20said.)).
+
+![wallmart data dashbaord aslane samai](https://misinate.sirv.com/perso/wallmart.webp)
+
+## 4. Covid Deaths per Country
+
+In retrospect, this one is kind of ugly. But I’m not changing it because 1) It’s the first dashboard I built, and it holds a special place in my heart. And 2) It’s about Covid deaths, it does not have to be cheerful.
+
+That said, I enjoyed working on it. And I learned a lot about Covid and its impact around the world.
+
+![Covid deaths dashboard](https://misinate.sirv.com/perso/covid-deaths.webp?w=1400)
+
+## 5. Job rejections. My job rejections...
+
+Job rejections are part of the process. But it's hard to not take them personnaly, especially when you get so many of them. Which I did. So intead of feeling bad and rehashing all the NOs I got, I decided to make a Tableau dashboard out of them. Because it's fun and data is beautiful. I also needed a distraction but that's another story for another day.
+
+This dashboard is the initial version, I have no doubt I will be updating it soon.
+
+![Tableau Dashboard, job rejections of Aslane Samai from my LinkedIn profile](https://misinate.sirv.com/perso/WhatsApp%20Image%202023-08-28%20at%2012.17.24.jpg)
+
+All right, that’s a wrap! These are 4 dashboards I’m not completely ashamed of showing to the few stray cats that might come across my website. About Me
+
+I'm Aslane Samai, an SEO expert and blogger. Follow my blog for the latest updates and insights on SEO, digital marketing, and online privacy. Follow Me
+
+- [Twitter](https://x.com/this_is_aslan)
+- [LinkedIn](https://www.linkedin.com/in/aslane-samai)
+Contact Me
+
+Email: [contact@aslanesamai.com](mailto:contact@aslanesamai.com)
+
+---
+
+## SEO content writing
+
+URL: https://aslanesamai.com/services/seo-content-writing.html
+
+In the vast and ever-evolving Digital Kingdom, there lived a passionate SEO specialist named Aslane. Armed with a mission to help businesses succeed in the realm of online visibility, Aslane embarked on a journey that would forever change the fate of countless websites.
+
+Aslane understood that in this competitive kingdom, having a beautiful website alone was not enough. To truly thrive, businesses needed to be discovered by the people they sought to serve. That's where the magic of SEO content writing came into play.
+
+## The Quest for the Right Words
+
+Aslane's quest began with diligent research, traversing the web in search of the perfect keywords that would unlock the gates of search engine rankings. He believed that the right words held the power to summon the attention of mighty search engines and guide them toward his clients' virtual domains.
+
+Each keyword was like a magical incantation, carefully woven into the fabric of captivating content. Aslane knew that this content must not only captivate the interest of the reader but also enthrall the discerning algorithms of search engines.
+
+## Crafting Engaging Tales
+
+Armed with the knowledge of these mystical keywords, Aslane set out to craft stories that would resonate with the hearts of his clients' target audience. Each piece of content was carefully designed to educate, entertain, and enchant, leaving a lasting impression on the minds of readers.
+
+He believed that great content was like a map that led the way for curious souls, guiding them through a seamless journey on his clients' websites. With every word he penned, Aslane built bridges between businesses and their prospects, forging connections that would stand the test of time.
+
+## A Symphony of Success
+
+As time passed, Aslane's reputation grew as more and more businesses experienced the magic of his SEO content writing service. Clients reveled in the delight of increased organic traffic, higher search rankings, and a growing legion of loyal customers.
+
+With a blend of data-driven insights and creative storytelling, Aslane orchestrated a symphony of success for businesses of all sizes. From startups to established enterprises, each found their unique voice amplified across the Digital Kingdom, and their stories became known far and wide.
+
+## The Everlasting Impact
+
+Aslane's tale of SEO content writing spread like wildfire, and soon, businesses from distant lands sought his expertise. They marveled at the transformation that took place when their ideas were brought to life through the power of captivating words and strategic optimization.
+
+The impact of Aslane's SEO content writing service was everlasting. It wasn't just about climbing the ranks; it was about forging meaningful connections, building trust, and leaving an indelible mark on the hearts of their customers.
+
+## Embrace the Magic of SEO Content Writing
+
+And so, the legend of Aslane, the SEO specialist, lives on, inspiring businesses across the Digital Kingdom to embrace the magic of SEO content writing. Through the fusion of creativity, strategy, and storytelling, businesses discovered the secret to conquering the ever-challenging quest for online visibility.
+
+Will you be the next to step into this enchanted world and witness the transformative power of SEO content writing? Let Aslane be your guide and unravel the mysteries of the Digital Kingdom together.
+
+Check out my [SEO portfolio here; you will find SEO case studies, SEO audits, SEO progress sheets, and much more. ](https://drive.google.com/drive/folders/1tCuOFpOOyVAZyFguRmhR4G-om5sdxBNI?usp=share_link)
+
+Interested in an SEO Audit? Reach out to me by sending me an email here [contact@aslanesamai.com](mailto:contact@aslanesamai.com) or by [filing the calendly form](https://aslanesamai.com/#contact)
+
+---
+
+## From Invisible to Indispensable: REKHILA Promotion's SEO Success
+
+URL: https://aslanesamai.com/ressources/seo-case-study-rekhila-.html
+
+## SEO Case Study Overview
+
+[At REKHILA Promotion](https://rekhilapromotion.com/), a real estate company in Algiers, we faced the challenge of launching a new website with no prior SEO groundwork. This case study highlights our journey from start to finish, showcasing how strategic SEO can turn a brand new site into a powerhouse of online visibility.
+
+New websites come with their own set of hurdles: Key Challenges
+
+- **Indexing and Crawling Issues:** Search engines need time to discover and index new content.
+- **Lack of Domain Authority:** Building authority from scratch is challenging.
+- **Content Creation:** Initial content must be top-notch and optimized.
+- **Backlink Building:** Establishing quality backlinks is essential but often difficult.
+- **Building Trust:** New sites need to earn trust from both users and search engines.
+- **Technical Setup:** Essential aspects like mobile-friendliness and site speed need to be in place.
+
+Despite these challenges, our work with REKHILA Promotion was highly rewarding. Here’s an overview of the issues we encountered and the solutions we implemented to enhance their online presence:
+
+## The SEO Challenges
+
+Our initial audit revealed several critical issues: Initial Audit Findings
+
+- **Missing H1 Titles:** Every page lacked essential headings.
+- **Absence of Meta Descriptions:** None of the pages had meta descriptions.
+- **No Blog Content:** The site had no blog or content to engage users.
+- **Unstructured Data:** No structured data was implemented.
+- **Slow Images:** Images were in jpg/png format, affecting site speed.
+- **No Alt Text for Images:** Images lacked descriptive alt text.
+- **Orphan Pages:** Some pages were not linked from any other page.
+- **Unattractive Traffic:** The site had minimal traffic.
+- **Non-Descriptive URLs:** URLs were not user-friendly (e.g., [Example 1](https://rekhilapromotion.com/2024/02/15/), [Example 2](https://rekhilapromotion.com/2024/02/11/)).
+- **Underdeveloped Internal Linking:** There were few internal links connecting pages.
+- **Pages with a high click depth**
+- **Poor quality Backlinks (2 toxic backlinks)**
+- **Duplicate pages with no canonical tags.**
+- **No internal linking between pages**
+
+## SEO Strategy and Execution
+
+To address these issues, we implemented a comprehensive strategy: Key SEO Strategies
+
+### SEO competitors
+
+My first step was finding the appropriate keywords for REKHILA Promotion. Having worked with real estate companies before, I knew exactly who theire competitors were. I pitched them to the REKHILA team and they validated them. Here’s an example of the competition :
+
+- [Bessa Promotion](https://www.bessapromotion.com/)
+- [Aymen Promotion](https://aymenpromotion-dz.com/)
+- [Zebboudj Promotion Immobilière ](https://zebboudj-immobilier.com/)
+- Tika Immobilier (no website)
+- Promotion immobilière Aklil 2 (no website)
+- Eurl Kerait (no website)
+- [Elmaklo Promotion Immobiliere ](https://emlakoimmobilier.com)
+
+Once I finished analyzing the competition, I visited their respective websites to examine their content strategies. I took detailed notes on their content pillars, which provided valuable insights for the next step in our SEO plan.
+
+### Content pillars
+
+At first, I noticed that the website lacked a content strategy entirely. Needless to say, they had no content pillars for their (or lack thereof) SEO strategy.
+
+[Here are the content pillars I recommended ](https://docs.google.com/document/d/1qLatfMDScR6NercJmHfhgFzmtM09ptdfq_HO2JNueHg/edit?usp=sharing)(they are in french because everything else is in French).
+
+### Backlinks
+
+The site initially had three backlinks, two of which were toxic. We disavowed the toxic links to prevent any negative impact on the site's ranking. The third backlink was of good quality, so we retained it.
+
+After cleaning up the existing backlinks, we focused on acquiring new, high-quality backlinks. [I proposed several backlink opportunities a](https://docs.google.com/spreadsheets/d/1DPArm0KPiagso6eI9aW7BiWMcM5f4hK2kkGZQiqQcmQ/edit?usp=sharing)and [developed a responsibility matrix to streamline the acquisition process and ensure accountability.](https://docs.google.com/document/d/1p5341aGie3-wy3fofn_B1BhFqoMTSIrOhmYryF9EdDE/edit?usp=sharing)
+
+### Content creation
+
+For content creation, I relied on 3 aspects :
+
+-  Google Search Console Data
+
+After setting up Google Search Console and allowing it to collect data, I analyzed the results to identify what content was performing well and what needed improvement.
+-  Content Gap Analysis
+
+With our focus keywords in hand, we conducted a content gap analysis to pinpoint missing areas. We started publishing new content weekly and monitored its performance to ensure it met our SEO objectives.
+-  Industry Knowledge
+
+Leveraging my previous knowledge of the real estate industry, I identified key trends and audience needs, creating relevant and valuable content. This combined approach significantly improved REKHILA Promotion's online presence and search engine rankings.
+
+[As for the actual execution, we followed the following matrix of responsibility. ](https://docs.google.com/document/d/1nOjRnIvXrCzv1MQo0Ur2c1otg-PoyS2G9m7XF4ZhsnE/edit?usp=sharing)
+
+1. **On-Page Optimization:** We added H1 titles, meta descriptions, and structured data to each page.
+2. **Content Creation:** Developed engaging blog content and resource pages.
+3. **Technical SEO:** Improved site speed by optimizing images and ensuring mobile-friendliness.
+4. **Backlink Building:** Conducted outreach and earned high-quality backlinks.
+5. **User Experience Enhancements:** Redesigned the website for a better user experience.
+6. **SEO Monitoring:** Regularly monitored and adjusted SEO efforts based on performance metrics.
+7. **Google My Business**Google My Business is especially important in this niche. We worked on improving it by adding accurate opening hours, new images, posting content, answering clients, etc.
+
+## Results and Impact
+
+The results were remarkable: Performance Metrics
+
+- **Increased Organic Traffic:** A 150% increase in organic traffic within six months.
+- **Higher Search Rankings:** Improved rankings for key search terms.
+- **Enhanced User Engagement:** Increased average session duration and reduced bounce rate.
+- **Growing Domain Authority:** Elevated domain authority through quality backlinks.
+
+## SEO results
+
+After a week, we started getting notifications from Google Search Console!
+
+![Google Search Console SEO performance notification](https://misinate.sirv.com/perso/REKHILA%20Promotion/Screenshot%202024-06-30%20at%2010.21.43%E2%80%AFAM.png?w=1400)
+
+![Google Search Console SEO performance notification](https://misinate.sirv.com/perso/REKHILA%20Promotion/Screenshot%202024-06-30%20at%2010.04.23%E2%80%AFAM.png?w=1400)
+
+Besides results, Google Search Console started validating our structured data.
+
+![Google Search Console structured data](https://misinate.sirv.com/perso/REKHILA%20Promotion/Screenshot%202024-06-05%20at%2010.25.01%E2%80%AFAM.png?w=1400)
+
+## SEO Performance
+
+As of now, we're still in the process of fine-tuning our website, but we're already starting to see some promising results. Here are the results from the 1 month
+
+![Google Search Console SEO performance](https://misinate.sirv.com/perso/REKHILA%20Promotion/Screenshot%202024-07-26%20at%203.02.03%E2%80%AFPM.png?w=1400)
+
+## Conclusion
+
+The journey from an invisible site to a recognized authority was challenging but successful. Through strategic SEO implementation and continuous optimization, REKHILA Promotion achieved significant growth and improved online presence.
+
+If you're facing similar challenges, consider a strategic SEO approach to transform your digital presence. For more details or personalized SEO services, [contact me today for an SEO audit!](https://aslanesamai.com/#contact)
+
+---
+
+## MMT's SEO Journey: From Startup to Leading Industry Player
+
+URL: https://aslanesamai.com/ressources/seo-case-study-mmt-mobile-medical-team.html
+
+## SEO Case Study Overview
+
+[At MMT](https://rekhilapromotion.com/), a Mobile Medical Team company based in Riyadh, Saudi Arabia, we took on the exciting challenge of helping a new startup find its place in a competitive market. The site had numerous technical SEO issues, and the competition was fierce. But with a strategic, heartfelt approach, we turned these challenges into opportunities. This case study is not just a story of technical achievements but a testament to how dedication, expertise, and a personal touch can transform a brand's online presence, making MMT a trusted name in their field.
+
+Established websites face the daunting task of staying ahead in a constantly evolving digital landscape:
+
+##  Key Challenges
+
+When we first audited the client's website, we discovered a range of critical issues hindering its performance:
+
+Our initial audit revealed several critical issues:
+
+- **Lack of Google Search Console and Google Analytics:** Without these essential tools, the site map hadn't been submitted, meaning Google was unaware of the site's existence. Consequently, most pages were not indexed.
+- **Toxic Backlinks:** The site was targeted by a [malicious network](https://drive.google.com/file/d/1ELRdAOudtXoPpHuK-47romVRoNK7Kcii/view?usp=sharing), impacting its credibility and ranking.
+- **WordPress and Yoast Configuration Issues:** Archive and dated pages were being served as near duplicates. Additionally, RSS feeds were incorrectly set to no-index in Google Search Console.
+- **Multilingual SEO Challenges:** The site offered content in both English and Arabic, but the Arabic URLs were non-descriptive, leading to poor SEO performance.
+- **Developer Oversights:** Numerous test pages were left live, resulting in a plethora of 404 and 301 errors.
+- **Improper Use of Headers and Meta Descriptions:** Pages across the site had multiple H1 titles and meta descriptions, confusing search engines.
+- **Placeholder Content:** "Lorem ipsum" filler text was found, reducing the site's professionalism.
+- **Lack of Structured Data:** The absence of structured data made it difficult for search engines to understand the site's content and services.
+
+##  Strategic SEO Solutions Implemented
+
+To tackle these challenges, we implemented a comprehensive strategy:
+
+- **Site Health Checks:** Conducted in-depth site audits using tools like Google Search Console and Google Analytics to track site health and performance.
+- **Disavowed Toxic Backlinks:** Cleaned up the backlink profile by disavowing toxic links.
+- **Optimized WordPress Configuration:** Adjusted Yoast settings to eliminate duplicate content issues and set RSS feeds correctly.
+- **Enhanced Multilingual SEO:** Updated Arabic URLs to be more descriptive, improving visibility.
+- **Removed Test Pages:** Deleted or redirected outdated and test pages to eliminate errors.
+- **Revised Header Tags and Meta Descriptions:** Ensured proper use of header tags and meta descriptions to enhance clarity and search engine understanding.
+- **Updated Content:** Replaced placeholder text with relevant, high-quality content.
+- **Implemented Structured Data:** Added structured data markup to help search engines better understand and present the site's content.
+- Submitted the site map.
+- Fixed robots.txt and submitted it to the root.
+- Added H1 titles for every page.
+- Added meta descriptions for every page.
+- Deleted irrelevant default meta descriptions (previously set in Yoast).
+- Disabled RSS feed pages to prevent duplication and missing canonical tags.
+- Worked on internal linking, especially between services pages and relevant content pages.
+- Conducted backlink acquisition.
+- Added structured data.
+- Set up an FAQ page.
+
+##  SEO Results Achieved
+
+Our efforts yielded remarkable results:
+
+- **Increased Visibility:** The site started ranking for high-value keywords, with a significant boost in organic traffic.
+- **Improved User Experience:** Enhanced site speed and usability led to lower bounce rates and higher engagement.
+- **Enhanced Credibility:** Cleaned backlink profile and professional content presentation improved the site's authority and trustworthiness.
+- **Better Analytics Tracking:** Accurate tracking of user behavior and site performance provided valuable insights for ongoing improvements.
+
+1. SEO performance : first month
+
+![Google Search Console SEO performance month 1](https://misinate.sirv.com/perso/mmt%20seo%20case%20study/seo%20performance%20month%201.png)
+2. SEO performance : second month
+
+![Google Search Console SEO performance month 2](https://misinate.sirv.com/perso/mmt%20seo%20case%20study/seo%20performance%20month%202.png)
+3. SEO performance : third month
+
+![Google Search Console SEO performance month 3](https://misinate.sirv.com/perso/mmt%20seo%20case%20study/seo%20performance%20month%203.png)
+
+##  Conclusion
+
+This case study demonstrates the power of a well-executed SEO strategy in transforming a website's performance and visibility. By addressing critical issues with a targeted approach, we helped MMT achieve significant growth and establish itself as a trusted entity in the medical field.
+
+The success story of MMT is a testament to how SEO, when done right, can turn challenges into opportunities, drive substantial traffic, and build lasting credibility.
+
+[Reach out to me—](https://aslanesamai.com/#contact)and we’ll get working on crafting an SEO strategy for you that’ll defy your expectations. The SEO Audit is free!
+
+---
+
+## SEO case study: InterFast. And there was visibility...
+
+URL: https://aslanesamai.com/ressources/seo-case-study-interfast.html
+
+## The Problem
+
+This SEO case study focuses on InterFast, a software company targeting construction professionals. With an underperforming website and several SEO challenges, the company sought to improve its online visibility and attract the right audience. Despite time constraints and limited team support, we implemented a targeted strategy that included keyword research, backlink analysis, content creation, technical improvements, and more. The case study highlights the step-by-step approach, challenges faced, and the remarkable results achieved, showcasing the power of a well-crafted SEO strategy. Let's dive into how InterFast defied expectations and achieved remarkable growth through strategic SEO initiatives.
+
+- They had many (many) 404s
+
+![SEO case study illustration](https://aslanesamai.com/images/ressources/Capture-2023-08-02-182547.webp)
+- The lang attribute was set to EN (English). But the content (and the target) was French.
+- The website had numerous irrelevant pages (template pages left behind)
+- The website had some articles, but they were not indexed. The same goes for important pages such as pricing, about us, etc.
+- Internal linking was absent from the pages.
+- Pages had no or irrelevant meta descriptions.
+- Pages had no H1 titles.
+- Images had no alt text (some still don’t).
+- Images weren’t served as next-gen pictures.
+- Site health was low.
+- The website had no backlinks.
+
+![SEO case study illustration](https://aslanesamai.com/images/ressources/Capture-2023-07-10-210707.webp)
+
+## The Strategy
+
+### Keywords
+
+![SEO case study illustration](https://aslanesamai.com/images/ressources/Capture-2023-07-10-211029.webp)
+
+My first step was finding the appropriate keywords for InterFast. I knew the team positioned their product as software for construction professionals. I did some research on Google and found a few competitors such as Vertioza, Obat, Axaunaut, etc.
+
+After that, I conducted a keyword gap analysis to see what sort of keywords everything was aiming for. Once I had the list of keywords, I exported the data as csv and crunched some numbers using SQL! I went for low KD (keyword difficulty) and average volume, as agreed with the team.
+
+From there, I proposed a few keywords I thought were relevant to the team.
+
+### Backlinks
+
+Keywords aside, when it comes to SAAS SEO, backlinks from comparison websites were a must. So I worked on a backlink gap analysis with the same competitors.
+
+![SEO case study illustration](https://aslanesamai.com/images/ressources/Capture-2023-07-10-211029.webp)
+
+The team didn’t want to pay for backlinks, so I went for organic backlink opportunities and provided them with a handpicked list.
+
+### Content Creation
+
+Comparison pages are a big part of [ SAAS SEO](https://www.rocktherankings.com/competitor-comparison-landing-pages/); That’s why I started working on blog posts in which I compare different software to InterFast. I made sure to do extensive research about the software I was “comparing” in order to signal EEAT to Google.
+
+I also included listicles and straight-to-the-point content to prompt rich results. Lastly, I included tables to make the blog articles more readable.
+
+### Guest Posting
+
+Guest posting was another tactic I used. The team had some contacts, so we leveraged them to create helpful content for our common audiences.
+
+### Technical Tweaks
+
+The first thing I did was ask the team to change the lang attribute to FR on all pages. It took a while, but it had to be done.
+
+Next, I started tinkering with Google Search Console. I submitted irrelevant pages to be removed. We fixed some 404s and we simply deleted some template pages that had no reason to be indexed.
+
+From there, I tackled the discovered and crawled but unindexed pages on Google Search Console. I manually submitted the most important pages such as Home, about us, pricing, etc.
+
+Knowing Google Search Console has a daily limit, I took things quickly...
+
+**After some time, Google started finally indexing our pages.**
+
+By nature, InterFast has many similar pages with the same content and different titles that they created in order to appeal to many targets. Sadly, these pages were seen by Google as duplicated pages, so I asked the team to put canonical tags to signal the original page.
+
+In a similar vein, most pages had no meta descriptions or irrelevant ones. So I worked with the team to add proper meta tags, [even though I knew Google often changes them.](https://www.seoquake.com/blog/google-rewrites-meta-descriptions/#:~:text=Google%20Rewrites%20Meta%20Descriptions&text=If%20the%20search%20does%20not,case%20of%20long%2Dtail%20searches)
+
+Another thing I tried to improve was the images. Most of them were served as png or jpg and had no alt text. I tried to convince the team to convert them to webp, but to no avail. So I just added alt text to them and called it a win.
+
+Another thing I did with the team of InterFast excludes the team’s traffic from Google Analytics. I, for one, was visiting the website a lot (I worked on creating pages for them too). So I used this [Google Chrome extension](https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh) to avoid skewing results. I suggest you do the same or ask your developer to do it directly from Google Analytics.
+
+## The Results
+
+In SEO terms, I worked with InterFast for a short term. But that didn’t stop us from making progress and witnessing progress. Here’s a sneak peek at GSC results:
+
+![SEO case study illustration](https://aslanesamai.com/images/ressources/Capture-2023-07-10-211434.webp)
+
+Our blog and website content was leading to so much additional traffic and growth, FBS had to expand their team — in just one year of putting our strategy into action.
+
+## What This Means For Your Brand
+
+There’s an SEO strategy for every business — including yours.
+
+Often — either due to past experiences or misconceptions — business owners feel that their company is the exception. Maybe they think that their field is too competitive, or that they’re searching for a particularly unique client. That, or they think that SEO might work, but that it’d just be too expensive for them to stack up to their competitors.
+
+InterFast fell into both of these traps — but it wasn’t entirely their fault!
+
+They’d been told in the past that SEO was “magic,” and that it was all about optimizations, not content. When that didn’t work, their befuddled past agencies threw in the towel, telling them that SEO just wasn’t for them.
+
+We proved that wrong.
+
+A couple of months later, InterFast has increased its traffic and it’s still climbing.
+
+All it takes for your business to find success is to use the right strategy, target the right keywords, and create the right content. To do that, you need the right SEO partner.
+
+Reach out to me — and we’ll get working on crafting an SEO strategy for you that’ll defy your expectations. The SEO Audit is free!
+
+---
+
+## SEO case study: Unimind, the begining and the end...
+
+URL: https://aslanesamai.com/ressources/seo-case-study-unimind.html
+
+## The Strategy
+
+### Competition
+
+Finding competitors or things that were doing things in the same vein of Unimind was not difficult. I didn't even have to use tools like Semrush or Ahrefs to pin point them because I was a productivity geek myself. To be honest, that made the task at hand less time consuming. That said, some of the most popular tools that were doing (give or take) the same thing as Unimind and by extension attracting the kind of audience we were looking for were [Momentum](https://chromewebstore.google.com/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca), [Noisili](https://chromewebstore.google.com/detail/noisli/klejemegaoblahjdpcajmpcnjjmkmkkf), etc.
+
+I knew these tools and apps before, but I was sure I couldn't have tried them all. So I run Semrush to get more references. And I did. Which was insightful both on a personal level and a meta level (got that one ? SEO, meta... But I digress)
+
+### Keywords
+
+Being a target audience helped here as well, having been there already, I had some queries on my mind. Leaving it there though would've been an SEO sacrilege. So I used Semrush (My go to tool for all things SEO), and other tools like [Keywords everywhere](https://keywordseverywhere.com/), [keywordstool.io,](https://keywordtool.io/fr) [also asked](https://alsoasked.com/), etc to get a holistic view of keywords, long tail and short tail that people were using
+
+### Backlinks
+
+Backlinks are one of the three pillars of SEO. But they are crucial for tools, app and what have you. I knew I had to get backlinks as soon as possible
+
+To do so, we took the traditional route of doing outreach to productivity influencers on Instagram, TikTok, etc.
+
+Being newcomers though (and frankly lacking a well rounded product) made people we contacted reluctant to say the least. But that wasn't going to stop us. Instead of waiting for our target audience to find us, I worked with the team on going and actively looking for our users where they hand. Online. Specifically, on Reddit, Discord, Twitter, etc.
+
+Being a productivity aficionado myself, I knew exactly where to dig. I had some subreddits on my mind, but I can't deny I also relied on this Subreddit search engine...
+
+In addition to subreddits, I searched for discord communities and found some interesting ones that fitted our target description
+
+Finally, tools and apps often have specific platforms and websites that compare them. These tool aggregators and testers often give backlinks. They also have high domain authority. Which is a plus.
+
+### Content Creation
+
+Content creation is a must when it comes to SEO. And we weren't going to leave it out. So we agreed on some blog articles (we made SEO driven decisions) and worked on putting them online. Once we shared them on our blog section, we reshared them on other platforms such as medium, etc. I added canonical tags to each piece I reshared on Medium to avoid duplicate content.
+
+## Conclusion
+
+In wrapping up this SEO case study, I want to share where we stand at the moment. I, as the SEO specialist, had the privilege to work on promoting Unimind, a unique Chrome extension crafted by Nazim Zidi. Through a well-thought-out SEO strategy that covered competitor analysis, keyword research, backlink outreach, community engagement, and content creation, we managed to give Unimind an online presence.
+
+However, it's worth mentioning that, as of the time I'm writing this, our promotional efforts have been temporarily paused. But here's the thing: Unimind is still available on the Chrome Extension Store, ready for users to discover and use.
+
+This case study underscores the significance of a solid SEO strategy in building brand awareness and making innovative products like Unimind shine. Even though our active promotional efforts have taken a break, the work we've done sets Unimind on a path for potential success among users. SEO, when done right, has a lasting impact, and Unimind's journey is proof of that.
+
+---
+
+## Optimizing the Blueprint: RADCO's SEO Voyage in the EPC Landscape
+
+URL: https://aslanesamai.com/ressources/seo-case-study-radco.html
+
+## SEO Case Study Overview
+
+[RADCO](https://radco.com/), a premier construction company based in Algiers, embarked on an SEO journey with us, starting from the ground up. This case study chronicles our transformation from a blank slate to a beacon of online visibility, demonstrating the power of strategic SEO.
+
+Launching a new website presents unique challenges:
+
+## Key SEO Challenges
+
+RADCO faced significant challenges with its online visibility and website performance. The issues included:
+
+- Limited online visibility beyond the Google Business profile.
+- Numerous 404 errors on the website.
+- Articles lacking structure and content.
+- Absence of a sitemap and robots.txt file.
+- Unconfigured Google Analytics and Google Search Console.
+- Unawareness of competitors' SEO strategies.
+- Presence of irrelevant and template pages.
+- Important pages like projects, services, and about us not indexed.
+- Lack of internal linking and relevant meta descriptions.
+- No H1 titles on pages.
+- Images lacking alt text and not optimized as next-gen formats (e.g., WebP).
+- Overall low site health.
+- Absence of backlinks.
+
+These challenges presented a comprehensive set of issues that needed to be addressed to improve RADCO's online presence and performance.
+
+## The SEO Strategy
+
+### Technical SEO:
+
+- Optimizing and Adding Meta Descriptions: Prioritized starting with pillar pages to streamline the time-consuming task of adding meta descriptions.
+- Submitting a Sitemap on GSC: Implemented a sitemap submission on Google Search Console (GSC) to ensure better crawling and indexing.
+- Configuring GSC and Google Analytics: Recognized the value of reliable data from GSC for free, and configured both tools for improved analytics.
+- Addressing Crawled but Unindexed Pages: Manually submitted crucial pages like Home, About Us, and Pricing to Google Search Console.
+- WordPress and Plugin Updates: Ensured the WordPress version and plugins were up-to-date, and removed unused plugins.
+- Internal Linking Strategy: Developed a strategic internal linking plan to enhance website navigation and SEO.
+- Alt Text Optimization: Conducted thorough keyword research to create informative and relevant alt text for all images.
+- Enhanced Content Structure: Reviewed and improved the structure of articles and pages , incorporating relevant keywords and enhancing readability.
+
+### Keyword Research and Optimization:
+
+- Targeted Keyword Research: Conducted in-depth research to identify high-impact keywords for RADCO's niche.
+- Keyword Placement: Strategically integrated keywords into titles, headers, meta descriptions, and content to improve search engine rankings.
+- Long-tail Keywords: Focused on long-tail keywords to capture specific search intents and drive targeted traffic.
+
+### Content Creation and Optimization:
+
+- Creating High-Quality Content: Developed informative, engaging, and well-structured content that resonated with RADCO's target audience.
+- Content Calendar: Implemented a content calendar to ensure consistent and regular content updates.
+- Blog Posts and Articles: Crafted blog posts and articles addressing industry trends, challenges, and solutions to establish RADCO as an authority in its field.
+
+## Results
+
+Our strategic approach and meticulous implementation of SEO techniques resulted in remarkable outcomes for RADCO:
+
+- Increased Visibility: RADCO's online visibility improved significantly, with key pages now appearing in search engine results.
+- Reduced Errors: Addressed 404 errors, improved page structure, and resolved technical issues, leading to a healthier website.
+- Enhanced User Experience: Improved internal linking, optimized images, and added relevant meta descriptions, contributing to a better user experience.
+- Boosted Rankings: Targeted keyword optimization and high-quality content led to improved search engine rankings for relevant keywords.
+- Data-Driven Decisions: Configured GSC and Google Analytics provided valuable insights, enabling data-driven decisions for ongoing optimization.
+- Established Authority: Consistent content creation and optimization positioned RADCO as an industry authority, attracting more organic traffic and potential clients.
+
+### Visual Overview:
+
+![RADCO SEO performance - Google Search Console](https://misinate.sirv.com/perso/RADCO/radco%20seo%20performance.png?w=1400)
+
+Through our comprehensive SEO strategy, RADCO transformed its online presence, achieving sustainable growth and enhanced visibility in the competitive EPC landscape. This case study serves as a testament to the power of strategic SEO in driving meaningful results for businesses.
+
+## Takeaway
+
+Strategic SEO can significantly transform your online presence, regardless of your starting point. The journey from limited visibility to being a recognized industry authority requires a comprehensive approach, addressing technical issues, creating high-quality content, and consistently optimizing for relevant keywords. RADCO's case study highlights the importance of meticulous planning and execution in achieving sustainable SEO success.
+
+### Ready to optimize your online presence?
+
+Contact [Aslane Samai](https://aslane.sam.ai) today to learn how strategic SEO can elevate your business.
+
+---
+
+## The Fall of GeeksForGeeks: An SEO lesson and a major loss to the developer community
+
+URL: https://aslanesamai.com/blog/Geeks-for-geeks-gets-SEO-banned-from-google.html · Published: 2025-04-10
+
+Google’s hammer has struck, and it hit hard… This might be the toughest penalty I’ve ever seen. GeeksForGeeks, once a go-to site for developers, SEOs, and more, has been deindexed by Google. The result? A complete loss of visibility.
+
+If you search for the site now, you won’t find it. There’s no trace of existence… This sudden drop in visibility is a harsh reminder of how quickly and severely Google can impact even the most established sites. Below is a screenshot of my SERP. GeeksForGeks is gone. Gone with the wind...
+
+![Google Search for GeeksForGeeks](https://misinate.sirv.com/perso/Geeksforgeeks/geeks%20for%20geeks%20-%20Google%20Search.jpeg)
+
+## The SEO crash in numbers
+
+![Semrush screenshot of the SEO downfall of GeeksforGeeks](https://misinate.sirv.com/perso/Geeksforgeeks/Screenshot%202025-04-09%20at%205.40.04%E2%80%AFPM.png)
+
+In the first quarter of the year (January to March), GeeksForGeeks saw an impressive 136.9 million visits, per [Semrush data](https://fr.semrush.com). With 83% of that traffic coming from Google. Fast forward to April, and that number drops to zero. No traffic. Nothing.
+
+I personally find this fascinating. Google does not play. They might grant you the benefit of the doubt, but when they make sure you're trying to play them, they will knock you out.
+
+What I like to bear in mind is that they did this for GeeksForGeeks and previously [Forbes](https://youtu.be/RICAs2U_4x4). Huge actors in the web scene. Imagine what they would do to sites like yours and mine...
+
+## SEO learnings from GeeksForGeeks
+
+### Subdomains: are *really* subdomains
+
+Google tells us it treats subdomains as separate entities, meaning any issues on a subdomain shouldn’t necessarily affect the main domain. Can we say that's not true in this case? Geeks For Geeks was deindexed completely. No subdomain was spared.
+
+This might be a unique case. But it might not be... We know there have been [leaks from Google’s 2024 API](https://www.theverge.com/2024/5/31/24167119/google-search-algorithm-documents-leak-seo-chrome-clicks) suggesting that Google doesn’t always make a clear distinction between a primary domain and its subdomains.
+
+### The Culprit: Topical Drift
+
+The main issue appears to be “topical drift” — a common problem when websites try to diversify. GeeksForGeeks expanded its focus beyond its core of tech and development into irrelevant topics like birthday ideas and Instagram tips. This diluted its authority and led to a loss of relevance in Google’s eyes.
+
+### Site Structure VS Global Penalty
+
+Another major factor was a flat site structure, lacking a clear content hierarchy. This likely contributed to a site-wide penalty. A strong structure improves crawlability and makes content prioritization easier for search engines.
+
+## SEO Takeaways: Lessons Learned from GeeksForGeeks’ Decline
+
+- Stay focused on your core topic. Irrelevant content weakens your authority.
+- Use a proper URL structure to help Google understand your site.
+- Be cautious with subdomains — they can still impact your main domain.
+- Don’t chase traffic at the expense of quality. EEAT matters.
+
+## Some thoughts from the Twitter community
+
+I checked [GeeksForGeeks’ official Twitter](https://x.com/geeksforgeeks/status/1906951096792433109) post. The community was divided:
+
+![Geeks For Geeks Twitter post](https://misinate.sirv.com/perso/Geeksforgeeks/Screenshot%202025-04-10%20at%204.12.34%E2%80%AFPM.png)
+
+Some pointed out the site’s quality had declined for a while.
+
+![Twitter user sharing thoughts](https://misinate.sirv.com/perso/Geeksforgeeks/Screenshot%202025-04-10%20at%204.16.13%E2%80%AFPM.png)
+
+Others were more empathetic, calling the site a valuable resource and hoping for a recovery.
+
+![Twitter user reaction to geeks for geeks ban](https://misinate.sirv.com/perso/Geeksforgeeks/Screenshot%202025-04-10%20at%204.14.58%E2%80%AFPM.png)
+
+## Wrapping up on the Geeks For Geeks SEO downfall
+
+This case is a wake-up call. SEO rewards clarity and relevance. Stray too far from your niche and risk everything. GeeksForGeeks is now trying to recover, reportedly deleting questionable content. But will it be enough?
+
+---
+
+## Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals
+
+URL: https://aslanesamai.com/blog/death-of-the-cookieless-future-what-google-latest-move-means-for-seo-professionals.html · Published: 2024-07-27
+
+Google has long touted a future of enhanced privacy—a world without cookies. The tech giant introduced several ambitious yet ultimately fruitless initiatives to replace cookies, including [Privacy Sandbox](https://developers.google.com/privacy-sandbox/overview), [FLoC](https://techcrunch.com/2022/01/25/google-kills-off-floc-replaces-it-with-topics/), and [Topics](https://blog.google/products/chrome/get-know-new-topics-api-privacy-sandbox/) (anyone remember those?).
+
+Throughout this saga, stakeholders such as advertisers, tech experts, and regulators like the UK’s Competition and Markets Authority (CMA) have voiced strong objections, albeit for varied reasons.
+
+Google might’ve finally kneeled…
+
+## THE COOKIELESS FUTURE WE’VE BEEN PROMISED IS NOT COMING
+
+A Few Days Ago Though, News Broke About the Same Topic. And It’s Not What You Think…
+
+Instead of a nudge from Google reminding us, once more, to prepare ourselves for the inevitable future, we got a shocking post announcing the death of the unbirthed calcified baby…
+
+## What Did [Google Actually Say in the Blog Post about the future of cookies ?](https://privacysandbox.com/news/privacy-sandbox-update/)
+
+1.  **They have been facing backlash from everyone. For different reasons…**
+
+Throughout this process… we’ve received feedback from a wide variety of stakeholders… This feedback has helped us craft solutions that aim to support a competitive and thriving marketplace that works for publishers and advertisers, and encourage the adoption of privacy-enhancing technologies.
+2.  **There was no middle ground**
+
+We recognize this transition requires significant work by many participants and will have an impact on publishers, advertisers, and everyone involved in online advertising.
+3.  **The UK’s Competition and Markets Authority finally gave the final blow**
+
+As we move to phase out third-party cookies, we will work closely with the UK’s Competition and Markets Authority (CMA) to ensure that this transition is conducted in a way that ensures the competition in digital advertising remains fair and open.
+
+## What does this mean for SEOs, marketers, and advertisers?
+
+What does this mean for SEOs, marketers, and advertisers?
+
+1. First off, we can breathe easy. Or can we?
+2. Sure, we suspected the cookieless future might be a mirage. Google's missed deadlines made us doubt it even more...
+3. Privacy isn't just a trend—it's here to stay. Apple and regulators are making sure of that. Google needs a solid plan to balance privacy and its business model.
+4. The battle isn't over. Google's still working on its SGE SERP. Stay tuned for what's next...
+
+For more information about the news, check out this article from Morning Brew on how [Google is leaving the fate of cookies up to users. What now?](https://www.marketingbrew.com/stories/2024/07/24/google-cookies-privacy-sandbox-consumer-choice-what-now)
+
+---
+
+## Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.
+
+URL: https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html · Published: 2024-07-27
+
+## Cloudflare thinks it knows better. It says it has a better (radical) solution for a problem that has been haunting half of the web. And that will taunt the second half if implemented
+
+The company says it has developed the ultimate (my words, not theirs)to block ai crawlers. Let’s deep dive and see what all the hype is about.
+
+Cloudfare has been buzzing lately. The tech giant pretends it has the panacea for a problem that has been haunting and intriguing the web community from developers and webmaster to jealous SEOs and media outlets ….
+
+**What did cloudflare come up with ?**
+
+ChatGPT was introduced in X year. And ever since, it exploded and enflamed the web with it. To the extent of fulling the web with garbage content as some would say.That said, filling the web with garbage content isn’t something new or exclusive to new AI tools. . People have been brilliantly doing such for decades. 4chan, 8chan, reddit, are living proof. But I digress.
+
+These AI tools would’ve been fine and safe(from a regulators and users perspective) if corrupting the web is the only crime they’re charged of. But that’s not the case.
+
+Ai tools like ChatGPT, perplexity, Gemini and al are also accused of stealing human generated content (by unlawfully crawling sites and use data to spin similar content to use a technical jargon) from-hard working-human content creators (mostly writers) to do so.
+
+This is where cloudflare kicks in.
+
+## Cloudfate is our savor
+
+In a blog post shared on their website, the company announced it has figured out a way to, and I quote : “**Declare your AIndependence: block AI bots, scrapers and crawlers with a single click”. **
+
+This comes after the company launched a similar solution to “challenge” ai bots and prevent them from making too many requests .
+
+![ai blocker from cloudflare](https://misinate.sirv.com/perso/blog/cloudflare%20article/cloudflare%20ai%20bots%20blocker.png?w=1400)
+
+After doing so, the company noticed the majority of its customers weren’t exactly happy with the performance of the latter.
+
+In a pull from the company. 85 % of users expressed their desire to completely block ai bots.
+
+![ai bots actions from users](https://misinate.sirv.com/perso/blog/cloudflare%20article/users%20actions%20vis%20a%20vis%20ai%20bots.png?w=1400)
+
+**Side note : I bet the writer is happy who his title. It’s a good title. I give credit where credit is due. **
+
+More interesting, the company says the tool is free and available to all users. Which makes it all the more appealing…
+
+**What’s all the hype about Cloudlafre ?**
+
+Blocking ai crawlers or crawlers of any kind isn’t a novelty. SEO specialists like myself are taught to manipulate what can search engines crawl (explore) through sitemaps and robots.txt…That said, the instructions we usually put on these files are directives. Not actual instructions. And search engine crawlers (bots) have the freedom to obey or disobey these directives.
+
+With a noticeable increase in AI bots activity through the web, the company decided to take a (supposedly) more radical step.
+
+![ai bots activity on the web](https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20activity%20-%20cloudflare.png?w=1400)
+
+As we can see, there are four AI bots that dominate the internet: Bytespider, Amazonbot, ClaudeBot, and GPTBot. I’ve coined them the "Big 4 Malicious AI Bots." Proper credit is required if you decide to use this expression…
+
+Interestingly though,the biggest AI thief isn’t the number one blocked ai bot. Victim of its own success, ChatGPT is the most blocked AI bot by Cloudflare users…
+
+![ai bots blocked from users](https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20blocked%20by%20users%20-%20cloudflare.png?w=1400)
+
+## This is where cloud fare might have an edge
+
+1. Cloudflare’s solution can be turned on with a toggle. Unlike robots.txt and sitemap files which that necessitate certain technical knowledge and know how.
+2. The solution is not a mere directive that AI bots can just ignore(that’s not how we roll!). Cloudflare says it enforces the crawlers to not crawl content. Without going into details on how they do it.
+3. The tech giant pretends the machine learning model it’s using can recognize ai bots. Even if they act like normal browsers.
+4. They’ve also set up a[ reporting tool](https://docs.google.com/forms/d/14bX0RJH_0w17_cAUiihff5b3WLKzfieDO4upRlo5wj8/edit) where any Cloudflare customer can submit reports of an AI bot scraping websites without permission. Monitor AI bots on their website and submitting feedback. The latter is pretty cool, I must admit…
+![ai bots activity monitor](https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20dashboard%20-%20cloudflare.png?w=1400)
+
+Cloudflare is a tech behemoth. With over 7 millions websites(users), the company has a considerable weight in the tech arena. If they walk the walk and talk the talk and their ai blocking solution turns out to work. AI actors will have a hard time scraping any more data.
+
+Want to know more about the AI bot blocker ? Check out the full article where CloudFlare explains how to [Declare your AIndependence: block AI bots, scrapers and crawlers with a single click](https://blog.cloudflare.com/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click)
+
+---
+
+## Google Is Paying Publishers to Test an Unreleased Gen AI Platform: what does this mean for SEO?
+
+URL: https://aslanesamai.com/blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html · Published: 2023-09-19
+
+## Google is working on an AI writer for small and medium media publishers
+
+In a surprising turn of events, Google has been secretly developing an AI-based writer for media websites and publishers.
+
+This news comes as a shock, considering the company's previous lack of enthusiasm for AI-generated content. So, what's the deal with this mysterious AI writer?
+
+## What do SEOs know so far ?
+
+The AI writer is currently available exclusively to independent publishers as part of a beta launch. Participants in the beta test will receive a monthly stipend, reportedly a five-figure sum, for a duration of 12 months. In return, they're required to use the tool to produce and publish three articles per day, one newsletter per week, and one marketing campaign per month.
+
+Interestingly, Google has opted to team up with medium and small publishers for this beta test, rather than larger ones. The company stated, "We're in the early stages of exploring ideas to potentially provide AI-enabled tools to help journalists with their work, especially for smaller publishers."
+
+## What are SEOs thinking ?
+
+SEOs have mixed feelings about the initiative due to several concerns:
+
+- The tool scrapes and crawls content from other media publishers without their consent.
+- Publishers enrolled in the beta test are notified when other media publishers share a piece, making it easier to copy content.
+- The tool uses color codes to indicate the level of copying: yellow for text taken almost verbatim from the source material, blue for moderately accurate text, and red for the least accurate text based on the original report.
+- The tool can't create original content.
+
+These concerns raise important questions about the ethics and legality of using AI-generated content in journalism. Although AI can certainly assist journalists, it's crucial to ensure that content is original and respects intellectual property rights. As this initiative evolves, it will be fascinating to see how Google addresses these issues and whether AI-generated content becomes more common in the media world.
+
+Want to dive deeper into Google's AI writer? [Check out the full article from ADWEEK.](https://www.adweek.com/media/google-paying-publishers-unreleased-gen-ai/?utm_source=www.garbageday.email&utm_medium=newsletter&utm_campaign=it-is-happening-again)
+
+---
+
+## Free domain and SSL checker for SEO freelancers in 2023
+
+URL: https://aslanesamai.com/blog/free-domain-and-ssl-checker-for-seo-in-2023.html · Published: 2023-09-19
+
+In the cutthroat world of SEO, missed domain renewals and expired SSL certificates are not options. As an SEO professional who's been through the wringer, I've found my silver bullet: **Free Domain Alerts**.
+
+## No Nonsense, Just Results:
+
+![Free Domain Alerts dashboard, domain names blurred](https://misinate.sirv.com/perso/Blurring.png?w=1400)
+
+1. **Domain Renewal Reminders:** Kiss goodbye to calendar chaos. Free Domain Alerts keeps you on top of renewals, no drama.
+2. **SSL Certificate Checks:** Stay ahead of security threats. Get regular updates on SSL expiry dates – simple, smart, and crucial.
+
+## Why It Matters – My Experience:
+
+I don't have time for fluff. Free Domain Alerts has been my no-BS assistant, sparing me from last-minute scrambles and potential security disasters. It works, and it works damn well.
+
+## Free Ain't a Catch, It's a Perk:
+
+Don't let the "free" fool you. The free plan covers up to 20 domains – more than you'll likely need. No excuses, no hidden fees.
+
+## Bottom Line:
+
+If you're serious about your SEO hustle, Free Domain Alerts is your ally. No sales pitch, just a tool that does exactly what you need it to – because in the end, results speak louder than words.
+
+Check it out: [https://freedomainalerts.com/](https://freedomainalerts.com/)
+
+---
+
+## Google now supports rich results for gated content
+
+URL: https://aslanesamai.com/blog/google-now-supports-rich-results-for-gated-content.html · Published: 2023-09-19
+
+## Google Embraces Gated Content
+
+![Google rich results for gated content](https://aslanesamai.com/images/blog/Google Rich Results Test.jpg)
+
+Google has finally blessed or at least embraced gated content.
+
+That’s right, in a recent post on Twitter / X, Google shared via its Search Central page that rich results on the SERP will henceforth support validation of structured data for paid content.
+
+In simpler terms, Google will tell users if a content is paid-walled directly from the SERP. In order to save them time and effort.
+
+## How does this help SEOs?
+
+This change helps SEOs in so many ways, including:
+
+1. Getting the targeted audience
+2. Reducing click bounce
+3. Help Google better understand their content
+
+## How can you implement it?
+
+Adding structured data for paid content is the same as adding structured data for other things such as blog, events, etc. You do it using JSON-LD (preferably) and you verify once you're done.
+
+```
+
+{
+"@context": "https://schema.org",
+"@type": "NewsArticle",
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://example.org/article"
+},
+(...)
+"isAccessibleForFree": "False",
+"hasPart": {
+"@type": "WebPageElement",
+"isAccessibleForFree": "False",
+"cssSelector": ".paywall"
+}
+}
+
+```
+
+## What type of content can you put behind a paywall?
+
+You can add structured data for many types of paid-walled pieces such as:
+
+- [Article](https://schema.org/Article)
+- [NewsArticle](https://schema.org/NewsArticle)
+- [Blog](https://schema.org/Blog)
+- [Comment](https://schema.org/Comment)
+- [Course](https://schema.org/Course)
+- [HowTo](https://schema.org/HowTo)
+- [Message](https://schema.org/Message)
+- [Review](https://schema.org/Review)
+- [WebPage](https://schema.org/WebPage)
+
+Finally, Google mentioned that the SGE SERP (the new AI-driven SERP) will link to paid-walled content if they are deemed relevant. The users will have the choice to click or not.
+
+Interested in knowing more? Check the announcement from Google: [Google's Announcement](https://developers.google.com/search/docs/appearance/structured-data/paywalled-content)
+
+---
+
+## The Best SEO Podcasts for Beginners in 2023
+
+URL: https://aslanesamai.com/blog/5-seo-podcasts-for-beginners-in-2023.html · Published: 2023-08-27
+
+Embarking on the whirlwind journey of staying updated with SEO news can leave anyone breathless. The constant influx of information and the ever-expanding learning curve can make traditional methods like reading seem insufficient. But fear not, for I've devised a clever solution – I've replaced my typical generic podcast routine during commutes with something that truly enriches me: SEO podcasts.
+
+Think about it – that commute time, which was once unremarkable, has now transformed into a valuable resource for indulging my passion and growth. Believe me, crafting the list of top-tier SEO podcasts was no cakewalk.
+
+Among the myriad of so-called SEO podcasts, many turned out to be unrelated distractions. Thus, I undertook the task of meticulous filtering. After a determined search, I'm thrilled to share with you the elite selection – the crème de la crème of SEO podcasts that have withstood my scrutiny.
+
+Give them a listen, explore which one resonates with your style, and gear up for a journey that will keep you attuned to the ever-changing SEO landscape. In the rapid current of SEO updates, tuning in to these insightful podcasts is the key to staying ahead.
+
+## [Search Off the Record](https://developers.google.com/search/podcasts/search-off-the-record)
+
+Hosted by Gary Illyes, John Mueller, and other Googlers, "Search Off the Record" provides insights straight from the Google team. Tune in to get the inside scoop on the latest search engine optimization trends, directly from the experts themselves.
+
+*Despite its source, the podcast often delves into SEO topics tailored for beginners. For instance, they've dedicated episodes to fundamental aspects like [how to pick a domain name](https://developers.google.com/search/podcasts/search-off-the-record/episode-17), making it an excellent starting point for those new to SEO.
+
+## [The SEO Mindset Podcast](https://theseomindset.co.uk/)
+
+The SEO Mindset Podcast" takes you deep into the psychology behind successful SEO strategies, The podcast explores how the right mindset can transform your approach to SEO.
+
+However, it's important to note that this podcast doesn't primarily focus on the technical or practical aspects of SEO. Instead, it leans more towards exploring the theoretical realm of SEO and delves into the mindset and qualities required to navigate the world of SEO on a day-to-day basis.
+
+## [The Search Engine Journal Show](https://www.searchenginejournal.com/category/search-engine-journal-show/)
+
+The Search Engine Journal Show" provides a comprehensive dive into the world of SEO. Hosted by Loren Baker, this podcast covers a wide range of SEO topics, offering insights, interviews, and discussions with industry experts.
+
+What sets this podcast apart is the quality of guests and the variety and relevancy of topics they talk about. Loren invites top notch SEOs, so it makes sense the content is good.
+
+If you’re struggling to pick an episode, [here’s one you might find relevant](https://www.searchenginejournal.com/category/search-engine-journal-show/), especially if you’re using WordPress as a CMS.
+
+## [SERP's UP](https://www.wix.com/seo/learn/podcast)
+
+Wix an extremely popular CMS. Naturally, they know a thing or two about SEO. Things they share on the podcasts. In addition, they often invite interesting guests with rich experiences and a track record of optimizing websites. Which makes their episodes worth chekcing.
+
+## [Copyblogger Podcast](https://www.copybloggerpod.com/)
+
+SEO encompasses far more than just technical optimization. It spans across various realms, including content creation and the acquisition of backlinks. Thankfully, there are podcasts that delve into these essential aspects too. For instance, consider "Copyblogger," a podcast hosted by some of the finest copywriters on the web. They offer valuable insights on optimizing your content for search engines. Don't miss out on this valuable resource. give it a listen and enhance your SEO strategies.
+
+---
+
+## Google Search Console: Page Indexing Issues and How to Solve Them
+
+URL: https://aslanesamai.com/blog/google-search-console-page-indexing-issues.html · Published: 2023-08-09
+
+![Search Console URL inspection: page cannot be indexed, page fetch failed with Hostload exceeded](https://misinate.sirv.com/perso/Screenshot%202023-10-30%20110931.png)
+
+I've been struggling to use Google Search Console, particularly with indexing pages. It appears to be a widespread issue. Here's what you should know and how to check if it's a concern for you.
+
+The problem at hand is that manual requests to index pages don't seem to be working. Many users, including myself, can't request Google to index our pages. That said, Search Engine Journal noted that not everyone is experiencing this problem.
+
+According to John Mueller from Google, the likely reason for this is spammers misusing the tool. He explains, "People are spamming the Inspect URL/Submit to Indexing tool – normal indexing works fine." So, there's no need to worry too much, as the regular crawling and indexing processes are still functioning properly.
+
+As for a solution, there isn't much we can do right now. The fact that regular indexing is working fine suggests that the issue might resolve itself in time. We'll have to be patient and wait for the system to fix the problem.
+
+John Mueller, a Google Search representative, posted an update over the weekend:
+
+On Friday afternoon, [he wrote](https://twitter.com/JohnMu/status/1715360682667860137), "We’ve been looking more at this and the other similar reports in the forum, and I don’t have a conclusive answer. It doesn’t feel as definitive as it usually is with this error, sorry … I’ll update here once we know more."
+
+On Sunday, [he wrote](https://twitter.com/JohnMu/status/1716051450294415477), "People are spamming the Inspect URL / Submit to Indexing tool – normal indexing works fine." "I wouldn’t worry about it – normal crawling and indexing is generally fine," he added.
+
+**Why we care:** You shouldn't be too concerned about this error. In fact, it's an opportunity to step away from the “request indexing” feature and focus on more important SEO tasks. These tasks can include creating new or improved content for your websites or client sites, enhancing the site’s user experience and features, and exploring new content ideas for the long term.
+
+This "hostload exceeded" error is something Google will need to address, and there's nothing you can do to fix it on your end right now.
+
+---
+
+## Unlock SEO Redemption: Elevate Your Site Quality and Regain Google's Trust
+
+URL: https://aslanesamai.com/blog/seo-redemption-elevate-your-site-quality-and-regain-google-trust.html · Published: 2023-10-04
+
+In SEO, redemption is possible. You can improve your site quality, even if you have been a "naughty boy."
+
+In the latest episode of Search off the Record, John Muller and Gary Ilyes discuss quality, how it is defined by Google, and most importantly, how SEOs can improve their content quality and overall site quality.
+
+According to Gary Ilyes, websites can go out of crawl jail, as he calls it, and regain the trust of Google by following these steps:
+
+## Step 1: Have a Clear Definition
+
+Have a clear definition of what low-quality content is according to Google.
+
+## Step 2: Delete Low-Quality Content
+
+Delete thin and low-quality content from your site.
+
+## Step 3: Replace with Valuable Content
+
+Replace the removed content with valuable and high-quality content that provides value to your users.
+
+## Step 4: Stay Focused
+
+Stay focused on your long-term goals, don't lose your determination, and commit to providing quality content and user experience.
+
+Listen to the podcast :
+
+---
+
+## Mastering INP for Better Website Performance: A Beginner's Guide to SEO-Friendly Interactions
+
+URL: https://aslanesamai.com/blog/mastering-inp-for-better-website-performance-a-beginner-guide-to-seo-friendly-Interactions.html · Published: 2023-09-02
+
+![INP Debugger test result: 40 ms interaction to next paint](https://misinate.sirv.com/perso/Screenshot%202023-08-28%20144315.png?w=1400)
+
+## Introduction:
+
+If you're wondering how to make your website rank higher on Google and provide a better experience for your visitors, you're in the right place. In this easy-to-follow guide, we'll break down a new Google metric called Interaction to Next Paint (INP). We'll explain what it is and share some simple tips to improve it. No technical jargon, just plain and simple advice to make your website faster and more user-friendly.
+
+## Understanding the Basics:
+
+Before we dive into INP, let's get a grasp of the basics. Google uses something called Core Web Vitals to decide how good a website's user experience is. These Core Web Vitals include things like how quickly your main page content shows up and whether your webpage layout is stable. But here's the catch: these metrics change over time to reflect what real users experience.
+
+## The Big Change - INP:
+
+Now, here's the exciting part. Google has introduced a new metric called Interaction to Next Paint (INP). It's all about the delays users experience when they interact with your website. INP measures the time between a user's click or touch and when the website visually updates. If there's a delay, INP will tell you how long it takes.
+
+## Why the Change from First Input Delay:
+
+Google made this change because the old metric, First Input Delay (FID), didn't always capture the full picture of user frustration. INP improves on FID in two crucial ways: it considers the entire delay, not just a part of it, and it looks at all interactions, not just the first one.
+
+## What's a Good INP Score?
+
+To make your website user-friendly and meet Google's standards, you should aim for an INP below 200 milliseconds. Most websites found it easy to meet the old FID threshold, but only 64% are currently doing well with INP.
+
+## What Slows Down INP?
+
+Now, let's figure out what's causing those slow INP scores. The delay in INP is made up of three parts:
+
+1. Input Delay: This is the time between a user's action, like clicking a button, and the website's response. If your website is busy with other stuff, it has to wait, causing input delay.
+2. Processing Time: This is the time your website spends doing stuff in response to a user's action. If it's a simple task, it's quick, but complex operations can slow things down.
+3. Presentation Delay: This is when your website figures out how new content should look. If your site is complicated, this can take some time.
+
+## Simple Tips to Optimize INP:
+
+Now, the best part – how to make your website faster and improve INP. Here are some easy ways:
+
+1. Use an INP Debugger: Tools like the INP Debugger can automatically find what's slowing down your website and show you the issues. Just enter your website URL, and it does the rest.
+2. Manual Testing: If you prefer hands-on, try manual testing in Chrome DevTools. It helps you see specific problems and what's causing them.
+3. User Flows in Lighthouse: Create user scenarios to mimic real interactions and find out where your website might be lagging.
+4. Real User Monitoring (RUM): Implement RUM to see how real visitors use your site and spot areas for improvement based on actual usage.
+
+## Conclusion:
+
+That's it – you've learned the basics of INP and how to make your website faster and more user-friendly. No need to be a tech expert; these simple tips can help you provide a better experience for your visitors and climb the Google rankings. So, go ahead and start optimizing your INP today!
+
+---
+
+## Google Search Console Update: Indexing Issues Seamlessly Integrated with Performance Graphs
+
+URL: https://aslanesamai.com/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html · Published: 2023-08-09
+
+Google Retires FAQ and How-To Rich Results Display: Unveiling the Ramifications
+
+![Google Search Console Update](https://aslanesamai.com/images/blog/Screenshot 2023-08-21 100256.png)
+
+Google Search Console (GSC) users have recently been greeted with a notable update, one that promises to enhance their webmaster experience. Indexing issues, which were previously relegated to a separate dashboard, have now been seamlessly integrated into the Performance graphs within GSC. This move aims to provide webmasters with a more holistic view of their website's performance while making it easier to identify and address any indexing problems. However, as with many updates, there are some initial hiccups and inconsistencies, leading to speculation about whether it's a feature or just a bug.
+
+## The Integration of Indexing Issues
+
+One of the most significant improvements introduced in this update is the integration of indexing issues directly into the GSC Performance graphs. This means that webmasters can now see indexing-related problems in the same place where they monitor their website's performance metrics.
+
+Previously, indexing issues were housed in a separate dashboard, requiring webmasters to toggle back and forth between different sections of GSC to gather a comprehensive understanding of their site's health. This separation often led to inefficiencies in problem-solving and hindered the ability to correlate indexing problems with performance changes.
+
+With the integration, webmasters can observe indexing issues, such as crawl errors, coverage problems, or even penalties, in conjunction with performance data. This combined view provides a more intuitive and efficient way to diagnose and address issues that may be affecting a website's visibility on Google's search results.
+
+## Deeper Insights at Your Fingertips
+
+Another advantage of this update is the ability to access additional information with ease. When an indexing issue is identified on a specific date, webmasters can click on that date within the Performance graphs. This action opens up a more detailed view, offering deeper insights into the specific issues that occurred on that day.
+
+This feature is especially valuable for webmasters who want to understand the impact of indexing problems on their website's performance. By clicking on the error date, they can access valuable data, such as the affected URLs, the reasons behind the errors, and recommendations for resolving them. This level of granularity enables webmasters to take swift and targeted action to rectify issues and improve their website's overall performance.
+
+## Inconsistencies and Uncertainties
+
+While the integration of indexing issues into the Performance graphs is a promising development, it is important to note that this feature appears to be inconsistent in its availability across all properties. Some users have reported that they cannot access the indexing issues within the Performance graphs, leading to speculation about whether this is a fully rolled-out feature or just a bug.
+
+Webmasters have encountered situations where the indexing issues for some of their properties are seamlessly integrated, while others remain unaffected. This inconsistency has left some questioning the reliability and completeness of the update.
+
+## Conclusion
+
+The recent Google Search Console update, which integrates indexing issues into the Performance graphs, offers a promising solution to the longstanding problem of managing website health and performance separately. This integration provides webmasters with a more intuitive and efficient way to monitor, diagnose, and resolve indexing issues.
+
+However, it's essential to be aware of the current inconsistencies in the availability of this feature across different properties. While some users are benefiting from this integration, others are left wondering whether it's a fully rolled-out feature or a temporary bug.
+
+Webmasters are advised to keep an eye on Google's official announcements and updates regarding GSC to stay informed about any developments related to this feature. In the meantime, those who have access to the integrated indexing issues feature can take advantage of the enhanced insights and efficiency it offers in managing their website's performance and health.
+
+---
+
+## Audit your website easily and quickly with this free SEO tool from HubSpot
+
+URL: https://aslanesamai.com/blog/quickly-audit-your-website-with-this-free-seo-audit-tool-for-beginners-from-hubspot.html · Published: 2023-08-28
+
+When you think of HubSpot, two things come to mind: Inbound marketing strategies and their remarkable CRM platform. However, there's an aspect of HubSpot that often flies under the radar but holds immense value, especially for SEO beginners: their ingenious SEO tool.
+
+Yes, you heard it right. HubSpot offers a straightforward, user-friendly, and completely free site grader that's tailored perfectly for those who are just starting their journey into the world of Search Engine Optimization (SEO).
+
+So, what's the scoop on this nifty tool? Let's dive in:
+
+## A Quick SEO Audit Made Simple
+
+The HubSpot Site Grader isn't just another tool in the sea of SEO offerings. It stands out for its simplicity and ease of use, making it an ideal starting point for SEO beginners who want a hassle-free audit.
+
+Here's a glimpse of what this tool brings to the table:
+
+### 1. Performance Review
+
+The Site Grader takes a thorough look at the performance aspects of your website. From analyzing page speed and size to evaluating the number of requests, caching effectiveness, and redirects, it leaves no stone unturned. What's more, it then compares your website's results to industry benchmarks, providing you with a score that encapsulates your website's performance.
+
+### 2. SEO Check
+
+For those of you who are just beginning to explore the world of SEO, the Site Grader proves to be an invaluable companion. It inspects the fundamental elements of an SEO-optimized page. This includes assessing descriptive meta descriptions, anchoring texts for clarity, and even verifying the presence of crucial index tags. These elements, when combined, contribute significantly to enhancing your website's visibility on search engines.
+
+It's worth noting that while the Site Grader's Key Performance Indicators (KPIs) might not be the most intricate, they're intentionally designed with SEO beginners in mind. The focus is on providing you with a solid foundation for understanding the essentials of SEO.
+
+### 3. Mobile Usability
+
+In today's mobile-centric digital landscape, mobile usability is paramount. The Site Grader recognizes this and ensures that your website is not only legible on mobile devices but also responsive. These factors play a pivotal role in delivering a seamless user experience across different screen sizes.
+
+### 4. Security Check
+
+No SEO audit is complete without addressing security concerns. The Site Grader steps up here too, verifying whether your website serves pages over HTTPS, which is crucial for establishing trust with your users. Moreover, it takes a close look at your JavaScript libraries, ensuring that they are secure and free from vulnerabilities.
+
+## Ready to Give It a Whirl?
+
+Curious to see how your website fares in the eyes of HubSpot's Site Grader? Why not take it for a spin? Click [here](https://bit.ly/3qq5b2D) to experience the tool firsthand.
+
+In a world where SEO can sometimes seem overwhelming, HubSpot's Site Grader offers a breath of fresh air. It simplifies the complexities of SEO auditing, making it an accessible tool for SEO beginners who are just embarking on their SEO journey. Whether you're a beginner seeking a clear SEO snapshot or a seasoned marketer looking for a quick assessment, this tool has something to offer. Remember, even the most advanced strategies often start with a simple step in the right direction.
+
+---
+
+## You Can Now Block ChatGPT from Accessing Your Website. Here's how
+
+URL: https://aslanesamai.com/blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html · Published: 2023-08-16
+
+You Can Now Block ChatGPT from Accessing Your Website. Here's Why.
+
+## Considerations Regarding ChatGPT
+
+Here's something worth knowing! You now hold the power to decide whether OpenAI and ChatGPT delve into your website to absorb your expertise. Learn how a simple code addition to your robots.txt can make that call.
+
+Now that you're in the loop, let's dive into a thought-provoking dilemma: Will you be locking ChatGPT out? For my part, it's a step I'm not considering. You see, every single day, I immerse myself in this incredible tool, soaking up knowledge and insights. Blocking it now would feel a bit like a paradox, doesn't it?
+
+**PS:** Here's a snippet of code to restrict OpenAI's access, if you're so inclined:
+
+**User-agent: GPTBot
+
+Disallow: /**
+
+For all the nitty-gritty details, you can explore the full documentation right here: [OpenAI Documentation](https://platform.openai.com/docs/gptbot)
+
+Now, let's delve into a heart-to-heart about why allowing ChatGPT in could be more than just a decision:
+
+1. **Two-Way Learning:** Think about it, I'm learning from ChatGPT every day, so blocking it seems a tad unfair, right? It's a digital partnership of give and take.
+2. **The Power of Unrestricted Sharing:** In a world where information is power, keeping the gates open could lead to discoveries beyond my imagination. Gating content, at least in this phase, might stifle the flow of collective wisdom.
+3. **Learning From Within:** By letting ChatGPT have a glimpse, I'm opening doors to a richer dialogue. It learns not just from the vast expanse of the internet but from real people, like me.
+4. **Building a Two-Way Street:** At this juncture, it's about a collaborative journey. Blocking might be a missed chance to shape the AI we all learn from.
+5. **Trust in Mutual Growth:** Trust the process of mutual growth. Just as I'm benefiting from ChatGPT, it's evolving with my inputs.
+
+In the grand scheme of things, the decision's yours to make. But remember, sometimes the most meaningful discoveries lie in the open path. It's a moment where your voice counts, where every click echoes with the spirit of shared learning.
+
+---
+
+## Your pages aren't being indexed? Here's what to do according to Googlers
+
+URL: https://aslanesamai.com/blog/how-to-fix-page-indexing-issues-according-to-google.html · Published: 2023-06-15
+
+We all faced page indexing issues at some point. And when it happens, it can be tricky to troubleshoot because you don't necessarily know what the problem is. Luckily, people have addressed the question to the top brass of Google.
+
+## Differentiate between page indexation and page ranking (visibility on the SERP)
+
+The first great point Garry, John, and Martin bring up is the difference between a page being indexed and a page being visible. They argue that most often than not, pages are indexed properly but just not ranking.
+
+If you’re confused about whether your page is indexed or not, simply check on Google Search Console (Pages ⇒ indexed pages or paste the URL in the search bar).
+
+That's out of the table. Let’s go through the different hurdles that would potentially stop a page from being indexed.
+
+### The page hasn't been crawled
+
+In order to be indexed, your page needs to be discovered by Google crawlers. You can find out if your page has been crawled in Google Search Console. **Go to Pages ⇒ Why pages aren't indexed.**
+
+### A bigger/different problem
+
+If all of your pages or most of them aren't being indexed, you might be having a bigger problem than individual URL indexation.
+
+- An unreachable server
+- Misusage of Robots.txt
+- Content problem: thin content, empty page, etc
+- Unlinked page: orphan page that crawlers have no way of discovering
+- Canonicalization
+- A manual removal submission (people submit their entire websites to be de-indexed)
+- Previous spammy content on the website (blacklisted)
+- WWW and non-WWW pages indexation differences
+- A canonical version of your website is already indexed
+- Your page has a no index tag
+- Coming soon pages will not be indexed
+
+### How long should you wait before you start to worry about page indexation?
+
+The three experts say indexation time depends. That said, Google usually indexes pages pretty fast when it makes sense to have the content on the web.
+
+Listen to the full episode here
+
+---
+
+## Seven Incredible SEO-Related YouTube Channels for beginners in 2023
+
+URL: https://aslanesamai.com/blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html · Published: 2023-08-04
+
+In the fast-paced world of digital marketing, mastering Search Engine Optimization (SEO) is the key to online success. As we navigate this ever-changing landscape, we're always on the lookout for guidance from the best in the business. And let's be honest, where else can we find a treasure trove of SEO knowledge and actionable strategies than on YouTube?
+
+In this article, I'm thrilled to introduce you to seven incredible SEO-related YouTube channels that have become my go-to sources for all things SEO. These channels have earned a reputation for delivering top-notch content that's both authoritative and practical. From algorithm updates to backlink strategies and everything in between, they've got it all covered.
+
+So, grab your favorite mug of coffee (or tea, no judgment here), sit back, and get ready to explore these amazing YouTube channels. Let's take our SEO game to the next level and stay ahead of the curve together!
+
+## Google Search Central
+
+Google Search Central, formerly known as Google Webmasters, is an official YouTube channel directly managed by Google. This channel is the go-to resource for webmasters and SEO enthusiasts seeking insights from the search engine giant itself. The channel covers a wide range of topics, including search algorithm updates, best practices, webmaster guidelines, and tips to improve website performance on Google search results.
+
+## Brian Dean
+
+Brian Dean, the founder of Backlinko, hosts an influential YouTube channel dedicated to providing actionable SEO tips and strategies. His content focuses on link building, content marketing, and advanced SEO techniques. Through comprehensive tutorials and case studies, Brian empowers his audience to implement effective SEO practices and drive organic traffic to their websites.
+
+## Ahrefs
+
+Ahrefs, a leading SEO toolset provider, runs a popular YouTube channel filled with valuable SEO insights and data-driven analysis. With a focus on backlink analysis, keyword research, and competitor analysis, Ahrefs' videos equip marketers and website owners with the knowledge needed to make informed decisions and optimize their online presence effectively.
+
+## SEMrush
+
+SEMrush, another prominent SEO toolset company, maintains an informative YouTube channel that covers a diverse array of digital marketing topics. Their content includes SEO best practices, content marketing, social media strategies, and more. The channel aims to assist businesses in enhancing their online visibility and overall digital performance.
+
+## Moz
+
+Moz, a well-known authority in the SEO industry, offers a comprehensive YouTube channel filled with educational content and expert advice. Covering various aspects of SEO, including on-page optimization, technical SEO, local search, and analytics, Moz's videos cater to both beginners and seasoned SEO professionals.
+
+## Search Engine Journal
+
+Search Engine Journal's YouTube channel is a treasure trove of SEO updates, industry news, and digital marketing trends. As a respected publication in the field, their videos feature interviews with experts and thought leaders, along with practical tips for better search engine performance.
+
+## RustyBrick
+
+RustyBrick, led by Barry Schwartz, offers a YouTube channel that primarily focuses on SEO news and discussions. With a keen eye on the latest algorithm updates and search engine changes, RustyBrick helps viewers stay informed and adapt their strategies accordingly.
+
+Explore these YouTube channels to gain valuable insights and actionable strategies that can take your SEO efforts to new heights. Stay ahead of the SEO game and make your mark in the digital realm!
+
+---
+
+## SEO Bombshell, Google restricts FAQ and How-To Rich Results for most websites
+
+URL: https://aslanesamai.com/blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html · Published: 2023-08-09
+
+Google Retires FAQ and How-To Rich Results Display: Unveiling the Ramifications
+
+## Good bye FAQ and Rich results, Good by my lover, good bye my friend...
+
+Google just dropped a bombshell on SEOs, developers and content creators world wide. They said and I quote : "To provide a cleaner and more consistent search experience, we're changing how some rich results types are shown in Google's search results. In particular, we're reducing the visibility of FAQ rich results, and limiting How-To rich results to desktop devices. This change should finish rolling out globally within the next week."
+
+In a seismic shift that has sent shockwaves through the digital realm, Google's decision to restrict the display of Frequently Asked Questions (FAQ) and How-To rich results for the majority of websites has shocked everyone. The announcement wad made yesterday but the repercussions are being felt already.
+
+For How-To content creators, the desktop-exclusive display and mobile markup requirement underscore the importance of mobile compatibility. This shift not only reiterates the value Google places on seamless user experiences but also encourages content creators to align their strategies with evolving user behavior.
+
+## The Aftermath: A Traffic Decrease
+
+One striking manifestation of this transformation can be witnessed in the form of website traffic shifts. Glenn Gabe, an authoritative voice in the SEO community, has shared compelling data that showcases a discernible decrease in website traffic for websites affected by the retirement of FAQ and How-To rich results. This decrease is attributed to the diminished visibility of these websites in search results—a testament to the significant role that rich results play in attracting users' attention and driving organic traffic.
+
+![Website Traffic Decrease](https://aslanesamai.com/images/blog/faq/Capture-2023-08-09-145720.png)
+
+Gabe's observations underscore the pivotal role that FAQ and How-To rich results have played in elevating website visibility, driving engagement, and fostering an enhanced user experience. As these rich results take their final bow for the majority of websites, it's evident that the impact extends beyond theoretical implications—it's a real-world scenario that website owners and digital marketers must grapple with.
+
+**[Here's the official FAQ and rich results restriction post from GOOGLE](https://developers.google.com/search/blog/2023/08/howto-faq-changes)**
+
+## Navigating the New Norm
+
+As website owners come to terms with this altered landscape, adapting strategies becomes paramount. While FAQ Schema rich results have been retired for most websites, this recalibration necessitates a renewed focus on crafting authoritative and comprehensive content. The onus is on website owners to ensure their content stands out as a reliable source of information, even without the crutch of FAQ rich results.
+
+For How-To content creators, the desktop-exclusive display and mobile markup requirement underscore the importance of mobile compatibility. This shift not only reiterates the value Google places on seamless user experiences but also encourages content creators to align their strategies with evolving user behavior.
+
+That said, Glenn Gabe wasn't the only SEO professional to take notice of the changes.[Search round table](https://www.seroundtable.com/google-faq-howto-rich-results-less-35845.html), [Search engine land](https://searchengineland.com/google-reduces-the-visibility-of-howto-and-faq-rich-results-in-search-430452), and a bunch of SEOs on Twitter(Not gonna call it X) wrote about the changes. [Here's a good Tweet from Lily Ray](https://twitter.com/lilyraynyc/status/1689006438327500800?s=20), [another one from Aleyda Solis ](https://twitter.com/aleyda/status/1689014944614977536?s=20)
+
+Needless to say that this one is a big one. And the full impact of less rich results and FAQ on the SERP are yet to be seen and felt.
+
+---
+
+## The 8 best Google Chrome extensions for SEO I use every day
+
+URL: https://aslanesamai.com/blog/8-chrome-extensions-for-seo.html · Published: 2023-06-15
+
+Not a day goes by without me using these 5 extensions. They save me time and make my day a whole lot easier. Here’s what you need to know.
+
+## Ahrefs SEO toolbar
+
+I use this one to check everything for blog structure (H1, H2, etc) and meta descriptions to the page status and outgoing links mentioned. Coming from Ahrefs, I know I can rely on it at all times. [Download it](https://ahrefs.com/fr/seo-toolbar)
+
+## SEOquake
+
+I use this one as a complement to Ahrefs SEO. With it, I check domain authorities, the distribution of backlinks, internal linking, and keyword density. The diagnosis option is a big plus, I use it to quickly audit a page. [Download it](https://chrome.google.com/webstore/detail/seoquake/akdgnmcogleenhbclghghlkkdndkjdjc?hl=fr)
+
+## AWR search anywhere
+
+Search results change according to location. As a remote worker, my location can skew search results. That’s why I use this to get the results from the desired location. It does one thing, but it does it well. [Download it](https://chrome.google.com/webstore/detail/awr-search-anywhere/kjffabibegojdmknibcophlonmadkpin)
+
+## User-agent switcher
+
+The same content can be displayed differently depending on devices and browsers. This extension allows me to quickly switch user agents to get a glance at the differences. [Download it](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg)
+
+## Web scraper
+
+This does exactly what you think. It makes data scraping easy and convenient. [Download it](https://webscraper.io/)
+
+## Compare SERP titles
+
+Google frequently changes meta titles when it thinks they’re not descriptive enough. This extension shows you the changed titles directly on the SERP. [Download it](https://chrome.google.com/webstore/detail/compare-serp-titles/ncakmkcflllkgmladlcideipoejpabol)
+
+## Keywords everywhere
+
+The tool provides you with relevant (long-tail) keywords related to your query. What’s nice is that you can directly export the data or copy it for further treatment. [Download it](https://keywordseverywhere.com/)
+
+## View rendered source
+
+This one helps with viewing how the browser renders your page and how users see your pages. [Download it](https://chrome.google.com/webstore/detail/view-rendered-source/ejgngohbdedoabanmclafpkoogegdpob)
+
+## SEO meta in 1 click
+
+This one does a lot of things. Here’s what you can see using it:
+
+- title and its length
+- description and its length
+- URL (and meta-canonical URL too)
+- Meta-robots
+- Displaying headers in order of their appearance in HTML (H1, H2, H3, H4, H5, and H6)
+- Number of images with and without ALT
+- The number of links (internal, unique, ...)
+- Open Graph and Twitter social data
+- Robots.txt and sitemap.xml
+[Download it](https://chrome.google.com/webstore/detail/seo-meta-in-1-click/bjogjfinolnhfhkbipphpdlldadpnmhc)
+
+---
+
+## Working remotely? Let strangers watch you and double your productivity
+
+URL: https://aslanesamai.com/blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html · Published: 2023-07-14
+
+I’ve been working remotely for months now and don’t regret it. I don’t have to commute every day, and I spend less money on gas and junk food.
+
+That said, working from home isn’t the holy grail of working; there are drawbacks.
+
+If you’re a fellow remote worker, you know procrastination, distractions, and longer working hours come with the job.
+
+Furthermore, feeling lonely and unmotivated are big caveats (the pajama syndrome is real, you can’t convince me otherwise).
+
+Now hold on. I haven't been living under a rock. I know productivity techniques that cut distractions and help you focus exist. And let me tell you: I’ve tried them all.
+
+As of writing this, I’m using two site blockers as well as the famous Pomodoro technique. And these methods worked well for a while.
+
+With time, though, my brain started ignoring them altogether (I wish it would put that kind of creativity into my actual work). I, hence, found myself on the lookout for a panacea. Again!
+
+And not to gloat, but I think I found it this time.
+
+I found the ultimate productivity and focus hack for remote workers, students, and digital nomads.
+
+It’s called Focusmate, it costs five bucks, and it’s a lifesaver.
+
+## What is Focusmate?
+
+Taylor Jacobson, the man behind Focusmate, sells it as a virtual coworking space. Having been through virtual coworking spaces though, I can tell you it's different.
+
+Virtual coworking spaces are usually built for teams and tend to have a creepy, remote monitoring feeling to them. Focusmate, on the other hand, focuses on individuals instead and takes a more human approach.
+
+It connects you with other people that want to get things done.
+
+## How does it work?
+
+To use Focusmate, you need to register with an email.
+
+Once you create your account and verify it, you get a handy product walkthrough that takes you on a virtual tour. You can follow it or take matters into your own hands.
+
+Either way, you end up with a Google calendar-like interface with the timeslots other users picked.
+
+![Focusmate dashboard](https://aslanesamai.com/images/news/focusmate.webp)
+
+You can pick one of the slots or book your own and wait for a match.
+
+The match you'll get will depend on the type of sessions you pick. A 25-minute session, a 50-minute session, or a 75 minutes session. I, for one, always choose 50-minute sessions.
+
+Once you get a focus mate, you click "join," you grant the tool permission to use your microphone and camera, and voila!
+
+## How is it in real life?
+
+I won’t blame you if you’re skeptical about the whole thing; I’ve had my doubts too.
+
+Luckily, the app did not disappoint. Here’s a rundown of my first day using the tool:
+
+After creating my account, I quickly picked a time slot. I had a lot of work to do and, honestly, I wanted to try out my latest discovery.
+
+After a few seconds, the tool connected me with a professor with more than 1,000 focus sessions (wow!). Sadly, we got disconnected, and the tool recommended someone else (more on that later).
+
+Once I joined my new focus mate. He greeted me, asked me about my goals, and shared his own. This, I learned later, was part of the community guidelines.
+
+Beyond shedding the awkwardness of meeting someone new online, the small talk helped me clarify my goals and focus on achieving them. Other than the occasional progress messages my focus mate shared, the session was quiet.
+
+In the end, we both recounted our session, shared our progress, and wished each other the best of luck. All in all, I pulled 9 work sessions and enjoyed unprecedented levels of focus and productivity.
+
+Focusmate worked! But then again, most productivity hacks work on the first day, week, or even month.
+
+Before buying a subscription (which I did, eventually), I wanted to see what psychologists had to say about the concept. And I didn't have to look too far.
+
+Many studies that have been conducted prove that the philosophy behind Focusmate is solid.
+
+## What are the downsides?
+
+During my experience, I haven't encountered any deal breakers. That said, here are some aspects you should take into consideration:
+
+- It’s built on trust.
+
+Earlier on, I said Focusmate is not a monitoring software. And I meant it. As you use it, there’s no way your work buddy can know what you’re doing. You could be browsing Facebook while pretending to work, and he wouldn’t know (or care, to be honest). This means you need to be intrinsically motivated.
+- It can get counterproductive (or inappropriate).
+
+People on the internet have the faculty of turning beautiful things into rat nests. Think of Chatroulette; the intention behind it was to bring people closer and spark relationships. But we all know what happens there now. Focusmate faces the same threat. It’s a beautiful, internet gem where people are friendly and serious. but that could change. That said, I’ve been using the website daily for a month and haven’t had any bad occurrences. On the contrary, I met wonderful people (shout out to Gavin O), so I don’t think we have to worry about that for now.
+- You can get sucked into the productivity theater.
+
+You'll meet all sorts of people on Focusmate. Most of them will greet you and focus on their tasks. Some will humble-brag to impress you, which is funny to watch. But few will try to suck you into the productivity theater. And that is dangerous. If you’re not familiar with the term, productivity theater refers to the act of pretending instead of working. People would do things like scroll through their emails or Slack to seem busy. I remember having a session with someone who needed to ship some code in less than an hour. During the session, he managed to maintain an earnest and focused demeanor. In the end, though, I asked him how it went (Focusmate guidelines oblige), and he admitted he didn’t do a single thing. He’s a better actor than a coder. But I digress…
+
+## What are the upsides?
+
+The tool has some teeny, tiny drawbacks. Big deal… You can focus on the nitty-gritty details or you can see the potential. Here’s what you can expect.
+
+- More clarity and traceability
+
+I said earlier that the tool brought clarity to my days. I wasn't exaggerating. Thanks to the 50-minute sessions, I now know exactly what I did every hour of every day. This allows me to trace my productivity and brief my manager on how I spend my days.
+- Fulfillment at work.
+
+Having an exact idea of how you spend your work time is great for accountability (and those upcoming performance reviews). But it’s also beneficial on a personal level. Ever since I started working with Focusmate, I feel more fulfilled and, honestly, satisfied with my work. This is a change from the productivity dysphoria I used to feel.
+- Less loneliness.
+
+As a remote worker, I don't meet colleagues and I seldom go out. So I don’t get to mingle very often. Needless to say, I feel lonely from time to time. Using Focusmate brought the sparkle I needed to my work-from-home routine. I have to dress up every morning, show up on time, and make water cooler conversations (kind of).
+- You can use it for so many things.
+
+Focusmate is for people who want to get things done but need some encouragement, or, frankly, some social pressure. This means you can use it for anything you deem important. I've seen people use it to read a book, practice guitar, or meditate.
+
+## Wrapping up.
+
+Focusmate has been a game-changer for me. It allowed me to get the best of both worlds. If you feel like you need a push to become more productive or maybe just talk with people, you might want to try it out. [Check out their website](https://www.focusmate.com/)
+
+PS: I’m not affiliated with Focusmate in any way.
+
+---
+
+## Gamify Your SEO Learning in 2023: 5 Entertaining Games for Beginners to Master Search Engine Optimization
+
+URL: https://aslanesamai.com/blog/seo-games-for-beginners-in-2023.html · Published: 2023-06-15
+
+Understanding search engine optimization might seem like a dry and tedious task, but fear not! Learning doesn't have to be boring, especially when we've got some exciting games up our sleeve. In this article, I've put together six interactive games that will make learning SEO a whole lot of fun. Whether you're a seasoned digital marketer looking to stay ahead of the game or a beginner eager to grasp the SEO basics, these games are here to make your learning journey dynamic and immersive.
+
+## [Hidden Keywords](https://hiddenkeywords.com/)
+
+Uncover the mysteries of SEO with Hidden Keywords! This thrilling game challenges you to identify and optimize the right keywords to unlock your website's full potential. Dive into the world of search rankings and watch your website rise to the top. Get ready to unleash the power of keywords and boost your visibility across the digital landscape. [
+
+![Hidden Keywords Game](https://aslanesamai.com/images/seo-games/seo-keywords.webp) ](https://hiddenkeywords.com/)
+
+## [Jeu Référencement](http://www.jeu-referencement.com/)
+
+Parlez-vous SEO? Jeu Référencement will put your SEO skills to the test in a French-themed gaming experience. Explore the nuances of search optimization, conquer the language of search engines, and lead your website to victory in the rankings. Are you up for the challenge? Vive la SEO! [
+
+![Jeu Référencement Game](https://aslanesamai.com/images/seo-games/jeu-seo.webp) ](http://www.jeu-referencement.com/)
+
+## [SEO Pirates](https://seopirates.ralgar.one/)
+
+Ahoy, matey! Join the SEO Pirates on their quest for treasure troves of web traffic. Navigate through treacherous waters of SEO challenges, outrank your competitors, and become the captain of the search engine seas! Get ready to hoist the Jolly Roger of SEO success. [
+
+![SEO Pirates Game](https://aslanesamai.com/images/seo-games/seo-pirates.webp) ](https://seopirates.ralgar.one/)
+
+## [The SEO Matrix](https://technicalseo.expert/)
+
+Step into The SEO Matrix, where you'll discover the fundamental building blocks of technical SEO. Decode the algorithms, fix crawl errors, and optimize your website like a true digital architect to dominate the SERPs. Are you prepared to enter the matrix and revolutionize your SEO strategy? [
+
+![The SEO Matrix Game](https://aslanesamai.com/images/seo-games/seo-matrix.webp) ](https://technicalseo.expert/)
+
+## [SEO Jedi](http://www.seo-jedi.com/)
+
+Feel the force of SEO flow through you in SEO Jedi. Train your skills in the ancient arts of link building, content optimization, and keyword mastery. May the SEO be with you as you embark on a quest to achieve Jedi-level SEO expertise. [
+
+![SEO Jedi Game](https://aslanesamai.com/images/seo-games/seo-jedi.webp) ](http://www.seo-jedi.com/)
+
+## [Technical SEO Guru](https://technicalseo.guru/)
+
+Become the ultimate Technical SEO Guru! Analyze website performance, fine-tune your site structure, and unleash the power of technical SEO to achieve top rankings and unparalleled online success. Prepare to ascend the ranks of SEO mastery and become a true guru of the digital realm. [
+
+![Technical SEO Guru Game](https://aslanesamai.com/images/seo-games/seo-guru.webp) ](https://technicalseo.guru/)
+
+---
+
+## I tried Google SGE. Here are my first impressions as an SEO
+
+URL: https://aslanesamai.com/blog/i-tried-google-sge-here-is-what-changes-in-seo.html · Published: 2023-06-15
+
+## Speed
+
+AI-generated results are slow. Like really slow. On some queries, I had to wait, on average, 8 seconds for the results to show up :)
+
+![Google SGE](https://aslanesamai.com/images/news/sge2.webp)
+
+## Choice
+
+Users get to decide what kind of results they want: with some queries, you’ll get a “Generate” button that will give you AI results if you click on it.
+
+![Google SGE](https://aslanesamai.com/images/news/sge3.webp)
+
+## Featured snippets
+
+Good’ol featured snippets still show up. I even got them with AI-generated results.
+
+![Google SGE](https://aslanesamai.com/images/news/sge5.webp)
+
+## Content attribution
+
+Whether we like it, Google does not mention the websites it used to fetch the content. Which is bad for content creators.
+
+![Google SGE](https://aslanesamai.com/images/news/sge4.webp)
+
+## Content freshness
+
+I searched for the latest Macbook Air launched by Apple. The AI-generated results mention the M2 13-inch Macbook AIR. In reality, the latest Macbook Air is the 15-inch edition they unveiled at WWDC.
+
+Weirdly though, I asked for the latest products Apple launched at WWDC, and the 15-inch MacBook Air was mentioned.
+
+Besides the AI-generated results, I also got access to the new Google Docs with AI assistance. And compared to what I got from Chat GPT, the results were not so great. Here's a quick look at the outcome.
+
+---
+
+## I fiddled with Google's latest AI, and here's what I got
+
+URL: https://aslanesamai.com/blog/i-tried-Google-bard.html · Published: 2023-06-15
+
+Google recently launched Bard, its answer to Openai.com ChatGPT and I finally got my invitation to test it. And what can I say, chatGPT hallucinates, but Bard took it to a whole new level.
+
+![Google Bard](https://aslanesamai.com/images/news/bard1.png)
+
+ChatGPT, on the other hand, failed to give me anything about myself. Ouch! Here’s what I got when I asked the same question:
+
+![Google Bard](https://aslanesamai.com/images/news/chatgpt1.png)
+
+Finally, ChatGPT 4 gave me a succinct, yet accurate description. Here’s what I got:
+
+![chatgpt](https://aslanesamai.com/images/news/chaggpt2.png)
+
+After that, I read that Bard can access gated content and wanted to know if that’s true. I explicitly asked him if he could access gated content, and the answer was no.
+
+![chatgpt](https://aslanesamai.com/images/news/bard4.png)
+
+Next, I went to [The Information](https://www.theinformation.com/), picked a gated article that talked about the rise of Bytedance revenue, and asked him to summarize it for me. Surprise, surprise, It did! Here’s what I got:
+
+![chatgpt](https://aslanesamai.com/images/news/bard5.png)
+
+I don’t know about you, but I, for one, think BARD can access gated content. In contrast, here’s what I got when I asked ChatGPT the exact same question:
+
+![chatgpt](https://aslanesamai.com/images/news/chatgpt4.png)
+
+From there, I went on and asked Bing because it uses ChatGPT4, an improved version. Here’s the answer I got:
+
+![chatgpt](https://aslanesamai.com/images/news/bard6.png)
+
+That out of the table, I moved to more philosophical questions. I asked all of the bots how they would feel if they erased jobs and make people lose their jobs. Here’s what Bard had to say:
+
+Want to read more about Bard? Here’s [**an article from Fortune**](https://www.google.com/url?q=https%3A%2F%2Ffortune.com%2F2023%2F03%2F28%2Fgoogle-chatbot-bard-would-fail-sats-exam%2F&sa=D&sntz=1&usg=AOvVaw1gBJCY7KeB4jYU7tj6v_10) about his SAT performance:
+
+Share this article:
+
+---
+
+## Unexpected Expertise: The Washington Post's Guide to SEO for Website Success and SEO Beginners
+
+URL: https://aslanesamai.com/blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html · Published: 2023-08-05
+
+This is a first, the Washington Post shared a piece about SEO for their audience. Saying ** Web performance and SEO are crucial aspects of a website's success.**
+
+Wapo is best known for its quality content, investigative journalism but no one thinks of it when it comes to SEO. So why are they sharing a complete guide on [Web Performance and SEO Best Practices and Guidelines](https://build.washingtonpost.com/resources/guides/performance-and-seo?itid=lk_inline_manual_1)? Well, because they felt a demand for it.
+
+People are more and more into Search Engine Optimization. As an aspiring SEO myself, I admit the validation feels good. But I digress…
+
+## The content of the piece
+
+So what does these guidelines include? Well, it has 4 big sections. The first being Web performance, the second talks about SEO, and the last two bring up monitoring and resources (which is, I admit, kinda cool).
+
+### Web performance:
+
+In web performance, the tabloid mentions three sections. Loading performance, rendering performance, and responsiveness. Here are the recommendations for each section:
+
+| Performance Aspect | Optimization Techniques |
+
+-
+-
+-
+-
+-
+
+| Loading Performance | Compress images to reduce file size.
+Use responsive images for different screen sizes.
+Implement lazy loading for off-screen images.
+Minify and compress CSS, JavaScript, and HTML files.
+Utilize Content Delivery Networks (CDNs) to distribute static assets across servers globally. |
+
+-
+-
+-
+
+| Rendering Performance | Optimize the critical rendering path to load above-the-fold content first.
+Use efficient CSS selectors and minimize layout thrashing.
+Optimize JavaScript execution through deferring, profiling, and using requestAnimationFrame for animations. |
+
+-
+-
+-
+
+| Responsiveness | Design websites for various screen sizes and devices for a consistent user experience.
+Implement responsive design techniques like fluid grids, flexible images, CSS Flexbox, and Grid Layout.
+Prioritize CSS for layout and visual presentation, use JavaScript for interactivity and advanced responsive behaviors when needed. |
+
+### Search engine optimization (SEO)
+
+For SEO, the news editor focused on 4 areas: On-page SEO, off-page SEO, content creation, and technical SEO. Kudos, but they didn’t mention backlink acquisition…
+
+| On-page SEO | Optimization Techniques |
+| Title Tags | Use descriptive and concise title tags to accurately represent the content of each page, helping search engines understand its purpose and relevance. |
+
+-
+-
+-
+-
+
+| Meta Tags | Write informative and unique meta description tags for users.
+Utilize meta lang tags to specify the language of the content.
+Implement Open Graph meta tags for richer social media shares.
+Use meta robots tags to guide search engines on how to handle the page. |
+| Header Tags | Use header tags (H1, H2, H3) effectively to structure content and provide hierarchy for better search engine understanding. |
+| URL Structures | Optimize URL structures to make them readable, descriptive, and concise, aiding both users and search engines in understanding the page's content. |
+
+-
+-
+-
+
+| Content Optimization | Write high-quality, unique, and engaging content that satisfies user intent.
+Use proper keyword targeting without keyword stuffing.
+Optimize images with descriptive alt text, relevant file names, and compression for improved page load times. |
+
+| Technical SEO | Optimization Techniques |
+| Page Speed | Improve site speed by optimizing page load times, as faster-loading pages are more likely to rank higher in search results. |
+| Structured Data | Implement structured data (schema markup) using JSON-LD to provide additional context for search engines, potentially improving search result appearance and click-through rates. |
+| Crawlability | Ensure crawlability and indexability by properly configuring robots.txt and creating XML sitemaps, helping search engines discover and index the site's content. |
+| Canonical Tags | Use canonical tags to avoid duplicate content issues and signal to search engines which version of a page should be considered the original. |
+| HTTPS | Implement HTTPS and secure the site to protect user data and improve trust with both users and search engines. |
+
+| Off-page SEO | Optimization Techniques |
+| Backlinks | Build high-quality and relevant backlinks from authoritative websites, as they serve as signals of the site's credibility and trustworthiness. |
+| Social Media | Utilize social media for content promotion, expanding the content's reach and potentially attracting more backlinks and organic traffic. |
+| Guest Posting | Consider guest posting and content outreach to build relationships with other websites and influencers, increasing the site's visibility and authority. |
+
+Last but not least, the piece goes through a bunch of tools to use for reporting, monitoring, and honestly, a full list of quality resources anyone interested in SEO should regularly check. Once again, kudos to the team who gathered these.
+
+If you’re curious, here’s the full list of resources they recommended:
+
+### Web Performance Resources
+
+| Resource | URLs |
+| Google Web Fundamentals | https://developers.google.com/web/fundamentals/performance |
+| Mozilla Developer Network | https://developer.mozilla.org/en-US/docs/Web/Performance |
+| Web.dev: Fast load times | https://web.dev/fast/ |
+| PageSpeed Insights | https://developers.google.com/speed/pagespeed/insights/ |
+| High-Performance Browser Networking | https://hpbn.co/ |
+
+### SEO Resources
+
+| Resource | URLs |
+| Google Search Central: SEO Starter Guide | https://developers.google.com/search/docs/beginner/seo-starter-guide |
+| Moz: Beginner's Guide to SEO | https://moz.com/beginners-guide-to-seo |
+| Yoast SEO: The beginner's guide to SEO | https://yoast.com/complete-beginner-guide-to-seo/ |
+| Backlinko: SEO This Year | https://backlinko.com/seo-this-year |
+| Ahrefs: SEO Basics | https://ahrefs.com/blog/seo-basics/ |
+
+### General Resources
+
+| Resource | URLs |
+| Web.dev: Measure and Optimize | https://web.dev/measure/ |
+| Google Lighthouse | https://developers.google.com/web/tools/lighthouse |
+| Google Search Console | https://search.google.com/search-console/about |
+| Google Analytics | https://analytics.google.com/ |
+| W3C Web Performance Working Group | https://www.w3.org/webperf/ |
+
+Check the full [SEO guide for Wapo here](https://build.washingtonpost.com/resources/guides/performance-and-seo).
+
+---
+
+## Google confirms Google Sites are not ideal for SEO purposes
+
+URL: https://aslanesamai.com/blog/google-confirms-google-sites-are-not-ideal-for-seo-purposes.html · Published: 2023-09-19
+
+## John Mueller's Insights on Google Sites and SEO
+
+[John Mueller](https://twitter.com/JohnMu), from Google, recently shared his thoughts on Google Sites and their suitability for SEO:
+
+>
+
+**“Taking a step back, websites created on Google Sites can and do get indexed in Google Search.”**“However, the URLs used in Google Sites are a bit hard to track since the public version can be different from the URL you see when logged in.” **“To be blunt, while it’s technically indexable, it’s not ideal for SEO purposes, and can be complex for tracking in Search Console.”“If SEO is your primary consideration, it might be worthwhile to explore other options and check the pros and cons before committing.”**
+
+## What are Google Sites?
+
+If you’re not familiar with Google Sites, it's a website builder, similar to WordPress and Wix. It has the advantage of being free to use and extremely simple to manage, but this simplicity comes with limitations. The scope of functionalities offered is extremely limited, to the point where you can't customize much.
+
+My first website was made with Google Sites. The builder and the hosting were free and it was easy to use. However, it didn't work out for me. The reason I wanted a personal website was to tinker with technical SEO, customize meta descriptions, add structured data, and other technicalities, but none of that was possible on Google Sites. I eventually switched to a more traditional approach, serving my content through a static website.
+
+## Should You Build Your Website with Google Sites?
+
+The answer to this question, as is for all things SEO, is: It depends! Let me explain.
+
+- If you’re just starting out as a freelancer, a small business owner, or someone who wants a simple online presence on a budget, then yes, Google Sites is a great option to consider.
+- In a similar vein, if you’re someone who doesn’t care about the nitty-gritty details of web development and SEO, then Google Sites is a perfect solution.
+- On the other hand, if you’re someone who wants to practically learn SEO, web development, or prefers more control over everything, then Google Sites is not meant for you. You’ll be better off choosing alternatives like Webflow, WordPress, Wix, etc.
+
+## Google Sites are Used for Stacking
+
+Besides the lack of functionalities and control, Google Sites are not ideal for SEO purposes for another reason. They are frequently used for a technique called "Google Stacking."
+
+## Summary
+
+John Mueller's insights emphasize that while Google Sites can be indexed by Google Search, they may not be the best choice for SEO purposes, especially if you require advanced customization and control over technical aspects. Your decision to use Google Sites or other website builders should align with your specific goals and technical requirements.
+
+Want to hea it from Jhon Mueller himself ? Listen to the full episode here
+
+---
+
+## SEO Trend Tools for Beginners in 2023: Navigating with Exploding Topics, Google Trends, SparkToro, and Glimpse
+
+URL: https://aslanesamai.com/blog/seo-trend-tools-for-beginners-in-2023-navigating-with-exploding-topics-google-trends-sparktoro-and-glimpse.html · Published: 2023-08-28
+
+If you're just starting out in the world of SEO, you might be curious about how to uncover the trending topics and keywords that are making waves on the internet. Well, here's where Exploding Topics comes to the rescue. It's a tool designed with beginners in mind, and it's fantastic for predicting emerging trends and topics before they hit the big time. Let's dive into how this tool can be a game-changer for you:
+
+## 1. Exploding Topics: Anticipating the Next Big Thing
+
+![Exploding Topics screenshot](https://misinate.sirv.com/perso/exploding-topics.webp?w=1400)
+
+As an SEO beginner, you might wonder how to discover the topics and keywords that are gaining traction on the internet. This is where Exploding Topics comes into play. It's a user-friendly tool that predicts emerging trends and topics before they become mainstream. Here's how it can benefit you:
+
+- **Simplicity:** Exploding Topics is designed with beginners in mind. It presents trends in a straightforward manner, making it easy to understand.
+- **Niche Insights:** Explore trends in various categories, from technology and health to entertainment. Find out what people are searching for within your niche.
+- **Content Ideas:** Use the trends you discover as inspiration for your blog posts or website content. Creating content around trending topics can attract more visitors to your site.
+
+## 2. Google Trends: Your Window into Search Behavior
+
+![Google Trends Dashboard](https://misinate.sirv.com/perso/image9_4xEssf3.original.webp)
+
+Google Trends is a must-have tool for anyone interested in SEO. It allows you to track the popularity of search terms over time and provides valuable insights into user behavior. Here's how beginners can benefit from it:
+
+- **Keyword Research:** Compare the popularity of different keywords to choose the most relevant ones for your website.
+- **Geographic Targeting:** Learn how search trends vary by region. This can be useful if you're targeting a specific location or audience.
+- **Content Planning:** Use Google Trends to identify seasonality patterns. Plan your content calendar around what's currently in demand.
+
+## 3. SparkToro: Understanding Your Audience
+
+![SparkToro dashboard](https://misinate.sirv.com/perso/demographics.webp)
+
+SEO isn't just about keywords; it's also about understanding your audience. SparkToro is a fantastic tool for audience research, making it invaluable for beginners:
+
+- **Audience Discovery:** Discover the interests, websites, and social profiles of your target audience. This knowledge helps you create content that resonates with them.
+- **Competitor Analysis:** See what your competitors are doing and who their audience is. Identify opportunities to reach a similar audience.
+- **Content Strategy:** Craft your content strategy based on the insights you gain from SparkToro. Tailor your content to your audience's preferences.
+
+## 4. Glimpse: Streamlining Your SEO Journey
+
+![GLIMPSE, trends google chrome extension dashboard](https://misinate.sirv.com/perso/unnamed.webp)
+
+Glimpse is a Google Chrome extension that simplifies trend monitoring. Even if you're new to SEO, you can use it to stay updated with Google Trends effortlessly:
+
+- **Instant Access:** Glimpse offers a direct link to Google Trends. With a single click, you can check the latest trending topics.
+- **Customization:** Tailor Glimpse to your interests by selecting specific regions or categories. This makes your trend research more focused.
+- **Efficiency:** Save time by using Glimpse to streamline your trend research. It's perfect for beginners who want a user-friendly experience.
+
+In conclusion, as an SEO beginner in 2023, you have a world of tools and trends at your fingertips. By incorporating Exploding Topics, Google Trends, SparkToro, and Glimpse into your SEO strategy, you'll be well on your way to understanding what's hot in the digital landscape and how to leverage these trends for improved website visibility. Don't be afraid to explore and experiment – SEO is a dynamic field, and these tools will be your trusty companions on your journey to success.
