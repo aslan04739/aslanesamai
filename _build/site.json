@@ -1,0 +1,661 @@
+{
+  "pages": {
+    "privacy-policy.html": {
+      "path": "privacy-policy.html",
+      "title": "Privacy Policy - Aslane Samai, Your On-Demand SEO Specialist<",
+      "h1": "Privacy Policy for Aslane Samai, Your On-Demand SEO Specialist",
+      "description": " Check out the best SEO resources I came across and upscale your game. These include SEO case studies, SEO tools, tips, and much more! ",
+      "lead": "Hi there, I'm Aslane, your on-demand SEO specialist",
+      "og_image": null,
+      "cover": "/images/news/pontus-wellgraf-X5YJrIIBKdI-unsplash-_1_.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-06-19"
+    },
+    "blog/5-seo-podcasts-for-beginners-in-2023.html": {
+      "path": "blog/5-seo-podcasts-for-beginners-in-2023.html",
+      "title": "5 SEO podcasts for beginners in 2023",
+      "h1": "The Best SEO Podcasts for Beginners in 2023",
+      "description": "Discover the top 5 SEO podcasts every beginner must tune into in 2023! Master the art of search engine optimization with expert insights and actionable tips from these must-listen shows.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/harry-cunningham-_1J2AioiNC0-unsplash.jpg",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-27"
+    },
+    "blog/8-chrome-extensions-for-seo.html": {
+      "path": "blog/8-chrome-extensions-for-seo.html",
+      "title": "The 8 best Google Chrome extensions for SEO I use every day",
+      "h1": "The 8 best Google Chrome extensions for SEO I use every day",
+      "description": " 8 SEO chrome extensions you should use in 2023. These help check meta descriptions, H1 titles, backlinks, keyword density, and all the good stuff you know. But some take it further and assist me with my writing process, and inspire me to find low-hanging fruits.",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/ressources/solen-feyissa-TaOGbz_S-Qw-unsplash.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-06-15"
+    },
+    "blog/Geeks-for-geeks-gets-SEO-banned-from-google.html": {
+      "path": "blog/Geeks-for-geeks-gets-SEO-banned-from-google.html",
+      "title": "GeeksForGeeks SEO Collapse: What Went Wrong and What We Can Learn",
+      "h1": "The Fall of GeeksForGeeks: An SEO lesson and a major loss to the developer community",
+      "description": "The SEO downfall of GeeksForGeeks, a once-thriving resource for developers. Here's what every site owner can learn from their penalty.",
+      "lead": "",
+      "og_image": "https://misinate.sirv.com/perso/Geeksforgeeks/Screenshot%202025-04-09%20at%205.40.04%E2%80%AFPM.png",
+      "cover": "https://misinate.sirv.com/perso/Geeksforgeeks/GeeksForGeeks_logo.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2025-04-10"
+    },
+    "blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html": {
+      "path": "blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html",
+      "title": "Google Is Paying Publishers to Test an Unreleased Gen AI Platform : what does this mean for SEO ?",
+      "h1": "Google Is Paying Publishers to Test an Unreleased Gen AI Platform : what does this mean for SEO ?",
+      "description": "Uncover Google's secret AI writer for publishers. Beta details, ethical concerns, and the future of AI in journalism and SEOs",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/google-unsplash.jpg",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-09-19"
+    },
+    "blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html": {
+      "path": "blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html",
+      "title": "Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.",
+      "h1": "Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.",
+      "description": "Cloudflare introduces a new tool to block AI crawlers, helping website owners protect their content from unauthorized scraping. Discover how this feature works and what it means for the future of web security",
+      "lead": "",
+      "og_image": "https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg?scale.option=fill&w=1800&h=0",
+      "cover": "https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg",
+      "jsonld": [
+        "{\n           \"@context\": \"https://schema.org\",\n           \"@type\": \"BlogPosting\",\n           \"mainEntityOfPage\": {\n             \"@type\": \"WebPage\",\n             \"@id\": \"https://aslanesamai.com/blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html\"\n           },\n           \"headline\": \"Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know.\",\n           \"description\": \"Google's latest update signals the end of the cookieless future. Learn what this means for SEO experts, including impacts on online advertising strategies and evolving privacy standards.\",\n           \"image\": [\n             \"https://misinate.sirv.com/perso/blog/cloudflare%20article/White%20robot%20with%20magnifying%20glass.jpg?scale.option=fill&w=1800&h=0\",\n             \"https://misinate.sirv.com/perso/blog/cloudflare%20article/cloudflare%20ai%20bots%20blocker.png?scale.option=fill&w=1671&h=0\",\n             \"https://misinate.sirv.com/perso/blog/cloudflare%20article/users%20actions%20vis%20a%20vis%20ai%20bots.png?scale.option=fill&w=1801&h=0\",\n             \"https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20activity%20-%20cloudflare.png?scale.option=fill&w=2008&h=0&q=60\",\n             \"https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20blocked%20by%20users%20-%20cloudflare.png?scale.option=fill&w=1866&h=0\",\n             \"https://misinate.sirv.com/perso/blog/cloudflare%20article/ai%20bots%20dashboard%20-%20cloudflare.png?scale.option=fill&w=1879&h=0\"\n           ],  \n           \"author\": {\n             \"@type\": \"Person\",\n             \"name\": \"Aslane SAMAI\",\n             \"url\": \"https://aslanesamai.com/\"\n           },  \n           \"publisher\": {\n             \"@type\": \"Organization\",\n             \"name\": \"Aslane SAMAI\",\n             \"logo\": {\n               \"@type\": \"ImageObject\",\n               \"url\": \"\"\n             }\n           },\n           \"datePublished\": \"2024-07-27\"\n         }"
+      ],
+      "date_published": "2024-07-27",
+      "added": "2024-07-27"
+    },
+    "blog/death-of-the-cookieless-future-what-google-latest-move-means-for-seo-professionals.html": {
+      "path": "blog/death-of-the-cookieless-future-what-google-latest-move-means-for-seo-professionals.html",
+      "title": "Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals",
+      "h1": "Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals",
+      "description": "Google's latest update signals the end of the cookieless future. Learn what this means for SEO experts, including impacts on online advertising strategies and evolving privacy standards.",
+      "lead": "",
+      "og_image": "https://misinate.sirv.com/perso/blog/Google%20Cookies.jpg",
+      "cover": "https://misinate.sirv.com/perso/blog/Google%20Cookies.jpg",
+      "jsonld": [
+        "{\n           \"@context\": \"https://schema.org\",\n           \"@type\": \"BlogPosting\",\n           \"mainEntityOfPage\": {\n             \"@type\": \"WebPage\",\n             \"@id\": \"https://aslanesamai.com/blog/death-of-the-cookieless-future-what-google-latest-move-means-for-seo-professionals.html\"\n           },\n           \"headline\": \"Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals\",\n           \"description\": \"Google's latest update signals the end of the cookieless future. Learn what this means for SEO experts, including impacts on online advertising strategies and evolving privacy standards.\",\n           \"image\": \"https://misinate.sirv.com/perso/blog/Google%20Cookies.jpg?scale.option=fill&w=1800&h=0\",  \n           \"author\": {\n             \"@type\": \"Person\",\n             \"name\": \"ASLANE SAMAI\",\n             \"url\": \"https://aslanesamai.com/\"\n           },  \n           \"publisher\": {\n             \"@type\": \"Organization\",\n             \"name\": \"aslane samai\",\n             \"logo\": {\n               \"@type\": \"ImageObject\",\n               \"url\": \"https://aslanesamai.com/\"\n             }\n           },\n           \"datePublished\": \"2024-07-27\"\n         }"
+      ],
+      "date_published": "2024-07-27",
+      "added": "2024-07-27"
+    },
+    "blog/free-domain-and-ssl-checker-for-seo-in-2023.html": {
+      "path": "blog/free-domain-and-ssl-checker-for-seo-in-2023.html",
+      "title": "Free domain and SSL checker for SEO freelancers in 2023",
+      "h1": "Free domain and SSL checker for SEO freelancers in 2023",
+      "description": "Empower your SEO strategy with Free Domain Alerts – the tool for seamless domain renewals and SSL checks",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/Blurring.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-09-19"
+    },
+    "blog/google-confirms-google-sites-are-not-ideal-for-seo-purposes.html": {
+      "path": "blog/google-confirms-google-sites-are-not-ideal-for-seo-purposes.html",
+      "title": "Google confirms Google Sites are not ideal for SEO purposes",
+      "h1": "Google confirms Google Sites are not ideal for SEO purposes",
+      "description": "Learn Google Sites' SEO limitations & alternatives. Is it right for you? Explore pros & cons with insights from Google's John Mueller",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/google-sites-review---sophia-8.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-09-19"
+    },
+    "blog/google-now-supports-rich-results-for-gated-content.html": {
+      "path": "blog/google-now-supports-rich-results-for-gated-content.html",
+      "title": "Google confirms Google Sites are not ideal for SEO purposes",
+      "h1": "",
+      "description": "Unlocking SEO Potential: Google's Latest Update Empowers Gated Content with Rich Results. Discover how this game-changing feature enhances visibility for exclusive content, driving traffic and engagement. Stay ahead in the digital landscape with insights on optimizing your gated content strategy for improved search engine rankings.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/google-sites-review---sophia-8.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-09-19"
+    },
+    "blog/google-search-console-page-indexing-issues.html": {
+      "path": "blog/google-search-console-page-indexing-issues.html",
+      "title": "Google Search Console: Page Indexing Issues and How to Solve Them",
+      "h1": "Google Search Console: Page Indexing Issues and How to Solve Them",
+      "description": "Dealing with Google Search Console Problems: Understanding Indexing Issues and Solutions. Learn why manual requests may not be working and how to address the problem.",
+      "lead": "",
+      "og_image": null,
+      "cover": null,
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-09"
+    },
+    "blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html": {
+      "path": "blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html",
+      "title": "Google Search Console Update: Indexing Issues Seamlessly Integrated with Performance Graphs",
+      "h1": "Google Search Console Update: Indexing Issues Seamlessly Integrated with Performance Graphs",
+      "description": "Explore the latest Google Search Console update, where indexing issues are seamlessly integrated into Performance graphs. Discover how this integration simplifies website management, provides deeper insights, and stay tuned for updates on its availability across all properties.",
+      "lead": "",
+      "og_image": null,
+      "cover": null,
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-09"
+    },
+    "blog/how-to-fix-page-indexing-issues-according-to-google.html": {
+      "path": "blog/how-to-fix-page-indexing-issues-according-to-google.html",
+      "title": "Your pages aren't being indexed? Here's what to do according to Googlers",
+      "h1": "Your pages aren't being indexed? Here's what to do according to Googlers",
+      "description": "Your pages aren't being indexed on Google SERP? Here's what to do according to people from Google",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/news/google-index.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-06-15"
+    },
+    "blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html": {
+      "path": "blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html",
+      "title": "You Can Now Block ChatGPT from Accessing Your Website. Here's how",
+      "h1": "You Can Now Block ChatGPT from Accessing Your Website. Here's how",
+      "description": "Blocking ChatGPT Crawling: Your Guide to Restricting Access. Discover how to prevent ChatGPT from crawling your site. Implement easy code in robots.txt. Take control of your content's visibility.",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/blog/jonathan-kemper-N8AYH8R2rWQ-unsplash.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-16"
+    },
+    "blog/i-tried-Google-bard.html": {
+      "path": "blog/i-tried-Google-bard.html",
+      "title": "My blog",
+      "h1": "I fiddled with Google's latest AI, and here's what I got",
+      "description": "I tried Google BARD. Here are my impressions",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/news/bard1.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-06-15"
+    },
+    "blog/i-tried-google-sge-here-is-what-changes-in-seo.html": {
+      "path": "blog/i-tried-google-sge-here-is-what-changes-in-seo.html",
+      "title": "I tried Google SGE. Here are my first impressions.",
+      "h1": "I tried Google SGE. Here are my first impressions as an SEO",
+      "description": "I tried Google SGE or search generative experience. Here's what you need to know as an SEO. ",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/news/sge1.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-06-15"
+    },
+    "blog/mastering-inp-for-better-website-performance-a-beginner-guide-to-seo-friendly-Interactions.html": {
+      "path": "blog/mastering-inp-for-better-website-performance-a-beginner-guide-to-seo-friendly-Interactions.html",
+      "title": "Mastering INP for Better Website Performance: A Beginner's Guide to SEO-Friendly Interactions",
+      "h1": "Mastering INP for Better Website Performance: A Beginner's Guide to SEO-Friendly Interactions",
+      "description": "Unlock the secrets to faster, user-friendly websites with our beginner's guide to INP (Interaction to Next Paint). Learn how to improve your site's performance and climb the Google rankings effortlessly. Dive into SEO success today!",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/google-inp-1024x269.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-09-02"
+    },
+    "blog/quickly-audit-your-website-with-this-free-seo-audit-tool-for-beginners-from-hubspot.html": {
+      "path": "blog/quickly-audit-your-website-with-this-free-seo-audit-tool-for-beginners-from-hubspot.html",
+      "title": "Audit your website easily and quickly with this free SEO tool from HubSpot",
+      "h1": "Audit your website easily and quickly with this free SEO tool from HubSpot",
+      "description": "Crank up your website's SEO game with HubSpot's beginner-friendly Site Grader. Discover how this user-friendly tool simplifies the world of SEO auditing, making it easy for beginners to unlock their website's potential. Get insights on performance, SEO, mobile usability, and security in minutes. Dive into SEO with confidence, even if you're just starting your journey!",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/t%C3%A9l%C3%A9chargement.jpeg",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-28"
+    },
+    "blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html": {
+      "path": "blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html",
+      "title": "SEO Bombshell, Google restricts FAQ and How-To Rich Results",
+      "h1": "SEO Bombshell, Google restricts FAQ and How-To Rich Results for most websites",
+      "description": "Big News in SEO: Google Limits FAQ and How-To Rich Results for Most Websites. Explore the details of this important change in search engine optimization",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/blog/the-washington-post3353.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-09"
+    },
+    "blog/seo-games-for-beginners-in-2023.html": {
+      "path": "blog/seo-games-for-beginners-in-2023.html",
+      "title": "Gamify Your SEO Learning in 2023: 5 Entertaining Games for Beginners to Master Search Engine Optimization",
+      "h1": "Gamify Your SEO Learning in 2023: 5 Entertaining Games for Beginners to Master Search Engine Optimization",
+      "description": "Learning SEO can be tedious, here are 6 games to make learning about search engine optimization more fun.",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/seo-games/lorenzo-herrera-p0j-mE6mGo4-unsplash.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-06-15"
+    },
+    "blog/seo-redemption-elevate-your-site-quality-and-regain-google-trust.html": {
+      "path": "blog/seo-redemption-elevate-your-site-quality-and-regain-google-trust.html",
+      "title": "Unlock SEO Redemption: Elevate Your Site Quality and Regain Google's Trust",
+      "h1": "Unlock SEO Redemption: Elevate Your Site Quality and Regain Google's Trust",
+      "description": "Discover how to redeem your SEO strategy and improve site quality, even after setbacks. Gary Ilyes shares insights on regaining Google's trust.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/images.jpeg",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-10-04"
+    },
+    "blog/seo-trend-tools-for-beginners-in-2023-navigating-with-exploding-topics-google-trends-sparktoro-and-glimpse.html": {
+      "path": "blog/seo-trend-tools-for-beginners-in-2023-navigating-with-exploding-topics-google-trends-sparktoro-and-glimpse.html",
+      "title": "SEO Trend Tools for Beginners in 2023: Navigating with Exploding Topics, Google Trends, SparkToro, and Glimpse",
+      "h1": "SEO Trend Tools for Beginners in 2023: Navigating with Exploding Topics, Google Trends, SparkToro, and Glimpse",
+      "description": "Unlock SEO Success in 2023 with Our Beginner's Guide to Trend Tools: Discover Exploding Topics, Google Trends, SparkToro, and Glimpse for a Boost in Online Visibility.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/image9_4xEssf3.original.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-28"
+    },
+    "blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html": {
+      "path": "blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html",
+      "title": "Seven Incredible SEO-Related YouTube Channels for beginners in 2023",
+      "h1": "Seven Incredible SEO-Related YouTube Channels for beginners in 2023",
+      "description": "Discover the Top YouTube Channels for SEO Beginners in 2023. Dive into foundational insights of search engine optimization with these seven YouTube channels.",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/seo-youtube/szabo-viktor-4QmSdCP4bhM-unsplash.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-04"
+    },
+    "blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html": {
+      "path": "blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html",
+      "title": "Unexpected Expertise: The Washington Post's Guide to SEO for Website Success and SEO beginners",
+      "h1": "Unexpected Expertise: The Washington Post's Guide to SEO for Website Success and SEO Beginners",
+      "description": "Decoding The Washington Post's Comprehensive Guide to SEO: Uncovering the strategies that drive website success through search engine optimization, as detailed by WAPO.",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/blog/the-washington-post3353.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-05"
+    },
+    "blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html": {
+      "path": "blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html",
+      "title": "Working remotely? Let strangers watch you and double your productivity",
+      "h1": "Working remotely? Let strangers watch you and double your productivity",
+      "description": " You need a productivity boost? Let strangers watch you and get things done thanks to Focusmate",
+      "lead": "",
+      "og_image": null,
+      "cover": "/images/news/focusmate.webp",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-07-14"
+    },
+    "ressources/seo-case-study-al-fadjr.html": {
+      "path": "ressources/seo-case-study-al-fadjr.html",
+      "title": "Prescribing Success: How We Healed MMT’s SEO Woes and Boosted Their Online Health",
+      "h1": "Al Fadjr: From Headlines to High Rankings with SEO",
+      "description": "Explore how strategic SEO transformed MMT (Mobile Medical Team)’s online presence. This case study details the journey from an invisible start to significant growth, offering insights and actionable strategies for your own SEO success.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/Alfadjr/Screenshot%202024-10-11%20at%201.24.47%E2%80%AFPM.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2024-10-11"
+    },
+    "ressources/seo-case-study-finance-heros.html": {
+      "path": "ressources/seo-case-study-finance-heros.html",
+      "title": "Finance Heros, a multimodal search SEO internship",
+      "h1": "Al Fadjr: From Headlines to High Rankings with SEO",
+      "description": "Explore how strategic SEO transformed MMT (Mobile Medical Team)’s online presence. This case study details the journey from an invisible start to significant growth, offering insights and actionable strategies for your own SEO success.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/Alfadjr/Screenshot%202024-10-11%20at%201.24.47%E2%80%AFPM.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2024-10-11"
+    },
+    "ressources/seo-case-study-interfast.html": {
+      "path": "ressources/seo-case-study-interfast.html",
+      "title": "SEO case study: InterFast. And there was visibility...",
+      "h1": "SEO case study: InterFast. And there was visibility...",
+      "description": "Discover the impact of effective SEO strategies through a compelling case study. Unveil the journey of a website's transformation, showcasing how targeted optimizations and techniques led to significant improvements in search engine rankings and organic traffic. Gain valuable insights and inspiration for your own SEO efforts, and learn how to achieve remarkable results through proven strategies and best practices. Explore this SEO case study and unlock the secrets to success in optimizing your online presence.",
+      "lead": "",
+      "og_image": null,
+      "cover": null,
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-08-02"
+    },
+    "ressources/seo-case-study-mmt-mobile-medical-team.html": {
+      "path": "ressources/seo-case-study-mmt-mobile-medical-team.html",
+      "title": "Prescribing Success: How We Healed MMT’s SEO Woes and Boosted Their Online Health",
+      "h1": "MMT's SEO Journey: From Startup to Leading Industry Player",
+      "description": "Explore how strategic SEO transformed MMT (Mobile Medical Team)’s online presence. This case study details the journey from an invisible start to significant growth, offering insights and actionable strategies for your own SEO success.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/mmt%20seo%20case%20study/Asset-1.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2024-07-25"
+    },
+    "ressources/seo-case-study-radco.html": {
+      "path": "ressources/seo-case-study-radco.html",
+      "title": "Optimizing the Blueprint: SEO Voyage in the EPC Landscape",
+      "h1": "Optimizing the Blueprint: RADCO's SEO Voyage in the EPC Landscape",
+      "description": "Explore how strategic SEO transformed RADCO's online presence. This case study details the journey from an invisible start to significant growth, offering insights and actionable strategies for your own SEO success.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/RADCO/RADCO%20logo.png",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2024-07-25"
+    },
+    "ressources/seo-case-study-rekhila-.html": {
+      "path": "ressources/seo-case-study-rekhila-.html",
+      "title": "From Invisible to Indispensable: REKHILA's SEO Success",
+      "h1": "From Invisible to Indispensable: REKHILA Promotion's SEO Success",
+      "description": "Explore how strategic SEO transformed REKHILA Promotion’s online presence. This case study details the journey from an invisible start to significant growth, offering insights and actionable strategies for your own SEO success.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/REKHILA%20Promotion/Rekhila-Logo.jpg",
+      "jsonld": [],
+      "date_published": null,
+      "added": "2024-07-25"
+    },
+    "ressources/seo-case-study-unimind.html": {
+      "path": "ressources/seo-case-study-unimind.html",
+      "title": "SEO case study: Unimind, the begining...",
+      "h1": "SEO case study: Unimind, the begining and the end...",
+      "description": "Discover the impact of effective SEO strategies through a compelling case study. Unveil the journey of a website's transformation, showcasing how targeted optimizations and techniques led to significant improvements in search engine rankings and organic traffic. Gain valuable insights and inspiration for your own SEO efforts, and learn how to achieve remarkable results through proven strategies and best practices. Explore this SEO case study and unlock the secrets to success in optimizing your online presence.",
+      "lead": "",
+      "og_image": null,
+      "cover": null,
+      "jsonld": [],
+      "date_published": null,
+      "added": "2023-09-11"
+    },
+    "services/data-analysis.html": {
+      "path": "services/data-analysis.html",
+      "title": "Data Analysis for SEO - Empowering Search engine Optimization with SQL and Python",
+      "h1": "Data Analysis for SEO - Empowering Search engine Optimization with SQL and Python",
+      "description": "Unlock the full potential of SEO with data-driven insights. As a Google Data Analytics certified professional, I delve into the world of SQL and Python to empower your search engine optimization. Discover how data analysis can elevate your online presence and drive digital growth.",
+      "lead": "",
+      "og_image": null,
+      "cover": null,
+      "jsonld": [
+        "{\n           \"@context\": \"http://schema.org\",\n           \"@type\": \"Service\",\n           \"name\": \"Data Analysis\",\n           \"description\": \"Professional data analysis services using SQL, Python, and more.\",\n           \"serviceType\": \"Data Analysis\",\n           \"provider\": {\n             \"@type\": \"Organization\",\n             \"name\": \"Aslane Samai\",\n             \"description\": \"Experienced data analyst\",\n             \"url\": \"https://aslane-samai.com/\",\n             \"sameAs\": [\n               \"http://www.linkedin.com/in/aslane-samai\",\n               \"https://twitter.com/this_is_aslan\",\n               \"https://medium.com/@samaiaslane7\"\n             ]\n           },\n           \"offers\": {\n             \"@type\": \"Offer\",\n             \"price\": \"Starting at $200 per project\",\n             \"priceCurrency\": \"USD\",\n             \"availability\": \"http://schema.org/InStock\",\n             \"url\": \"https://www.yourwebsite.com/services/data-analysis\"\n           }\n         }"
+      ],
+      "date_published": null,
+      "added": "2023-07-10"
+    },
+    "services/data-visualization.html": {
+      "path": "services/data-visualization.html",
+      "title": "Tableau Dashboards by Aslane Samai",
+      "h1": "Tableau dashboards by Aslane Samai",
+      "description": "Explore Tableau dashboards by Aslane Samai, showcasing data analysis on LinkedIn interactions, Netflix data worldwide, Walmart's performance across the US, and Covid deaths per country. Get inspired by data visualizations and insights.",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/luke-chesser-JKUTrJ4vK00-unsplash.webp",
+      "jsonld": [
+        "{\n          \"@context\": \"http://schema.org\",\n          \"@type\": \"Service\",\n          \"name\": \"Data Visualization Services\",\n          \"description\": \"Professional data visualization services using Tableau and other tools.\",\n          \"serviceType\": \"Data Visualization\",\n          \"provider\": {\n            \"@type\": \"Organization\",\n            \"name\": \"Aslane Samai\",\n            \"description\": \"Experienced data visualization specialist\",\n            \"url\": \"https://aslanesamai.com/\",\n            \"sameAs\": [\n              \"http://www.linkedin.com/in/aslane-samai\",\n              \"https://twitter.com/this_is_aslan\",\n              \"https://medium.com/@samaiaslane7\"\n            ]\n          },\n          \"offers\": {\n            \"@type\": \"Offer\",\n            \"price\": \"Starting at $200 per project\",\n            \"priceCurrency\": \"USD\",\n            \"availability\": \"http://schema.org/InStock\",\n            \"url\": \"https://www.yourwebsite.com/services/data-visualization\"\n          }\n        }"
+      ],
+      "date_published": null,
+      "added": "2023-07-10"
+    },
+    "services/seo-content-writing.html": {
+      "path": "services/seo-content-writing.html",
+      "title": "SEO content writing",
+      "h1": "SEO content writing",
+      "description": "Discover the art of SEO content writing with Aslane Samai. Unleash the power of strategic optimization and creative storytelling to conquer the Digital Kingdom and enhance your online visibility. Join us on this enchanted journey today!",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/myriam-jessier-eveI7MOcSmw-unsplash.webp",
+      "jsonld": [
+        "{\n           \"@context\": \"http://schema.org\",\n           \"@type\": \"Service\",\n           \"name\": \"Content Writing\",\n           \"description\": \"Professional content writing services in both French and English.\",\n           \"serviceType\": \"Writing\",\n           \"provider\": {\n             \"@type\": \"Organization\",\n             \"name\": \"Aslane Samai\",\n             \"description\": \"Experienced freelance content writer\",\n             \"url\": \"https://aslanesamai.com/\",\n             \"sameAs\": [\n               \"http://www.linkedin.com/in/aslane-samai\",\n               \"https://twitter.com/this_is_aslan\",\n               \"https://medium.com/@samaiaslane7\"\n             ]\n           },\n           \"offers\": {\n             \"@type\": \"Offer\",\n             \"price\": \"Starting at $50 per article\",\n             \"priceCurrency\": \"USD\",\n             \"availability\": \"http://schema.org/InStock\",\n             \"url\": \"https://www.yourwebsite.com/services/content-writing\"\n           }\n         }"
+      ],
+      "date_published": null,
+      "added": "2023-07-10"
+    },
+    "services/seo-the-driving-force-behind-my-passion.html": {
+      "path": "services/seo-the-driving-force-behind-my-passion.html",
+      "title": "Search Engine Optimization - The Driving Force Behind My Passion",
+      "h1": "Search Engine Optimization - The Driving Force Behind My Passion",
+      "description": " You need a productivity boost? Let strangers watch you and get things done thanks to Focusmate",
+      "lead": "",
+      "og_image": null,
+      "cover": "https://misinate.sirv.com/perso/RADCO/radco%20seo%20performance.png",
+      "jsonld": [
+        "{\n           \"@context\": \"http://schema.org\",\n           \"@type\": \"Service\",\n           \"name\": \"SEO (Search Engine Optimization) Services\",\n           \"description\": \"Comprehensive SEO services including on-page, off-page, and technical optimization.\",\n           \"serviceType\": \"Search Engine Optimization\",\n           \"provider\": {\n             \"@type\": \"Organization\",\n             \"name\": \"Aslane Samai\",\n             \"description\": \"Experienced SEO specialist\",\n             \"url\": \"https://aslanesamai.com/\",\n             \"sameAs\": [\n               \"http://www.linkedin.com/in/aslane-samai\",\n               \"https://twitter.com/this_is_aslan\",\n               \"https://medium.com/@samaiaslane7\"\n             ]\n           },\n           \"offers\": {\n             \"@type\": \"Offer\",\n             \"price\": \"Starting at $200 per month\",\n             \"priceCurrency\": \"USD\",\n             \"availability\": \"http://schema.org/InStock\",\n             \"url\": \"https://www.yourwebsite.com/services/seo\"\n           }\n         }"
+      ],
+      "date_published": null,
+      "added": "2023-07-10"
+    }
+  },
+  "blog_order": [
+    {
+      "path": "blog/Geeks-for-geeks-gets-SEO-banned-from-google.html",
+      "image": null,
+      "label": "GeeksForGeeks SEO Collapse: what went wrong and what we can learn"
+    },
+    {
+      "path": "blog/death-of-the-cookieless-future-what-google-latest-move-means-for-seo-professionals.html",
+      "image": null,
+      "label": "Death of the Cookieless Future: What Google's Latest Move Means for SEO Professionals"
+    },
+    {
+      "path": "blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html",
+      "image": null,
+      "label": "Cloudflare's Radical Fix: Haunting Half the Web, Taunting the Other Half. What SEOs need to know."
+    },
+    {
+      "path": "blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html",
+      "image": null,
+      "label": "Google Is Paying Publishers to Test an Unreleased Gen AI Platform : what does this mean for SEO ?"
+    },
+    {
+      "path": "blog/free-domain-and-ssl-checker-for-seo-in-2023.html",
+      "image": null,
+      "label": "Free domain and SSL checker for SEO freelancers in 2023"
+    },
+    {
+      "path": "blog/google-now-supports-rich-results-for-gated-content.html",
+      "image": null,
+      "label": "Google now supports rich results for gated content"
+    },
+    {
+      "path": "blog/5-seo-podcasts-for-beginners-in-2023.html",
+      "image": null,
+      "label": "5 SEO podcasts for beginners in 2023"
+    },
+    {
+      "path": "blog/google-search-console-page-indexing-issues.html",
+      "image": null,
+      "label": "Google Search Console: page indexing issues and how to solve them"
+    },
+    {
+      "path": "blog/seo-redemption-elevate-your-site-quality-and-regain-google-trust.html",
+      "image": null,
+      "label": "Unlock SEO Redemption: Elevate Your Site Quality and Regain Google's Trust"
+    },
+    {
+      "path": "blog/mastering-inp-for-better-website-performance-a-beginner-guide-to-seo-friendly-Interactions.html",
+      "image": null,
+      "label": "Mastering INP for Better Website Performance: A Beginner's Guide to SEO-Friendly Interactions"
+    },
+    {
+      "path": "blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html",
+      "image": null,
+      "label": "Google Search Console Update: Indexing Issues Seamlessly Integrated with Performance Graphs"
+    },
+    {
+      "path": "blog/quickly-audit-your-website-with-this-free-seo-audit-tool-for-beginners-from-hubspot.html",
+      "image": null,
+      "label": "Audit your website easily and quickly with this free SEO tool from HubSpot"
+    },
+    {
+      "path": "blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html",
+      "image": null,
+      "label": "You Can Now Block ChatGPT from Accessing Your Website. Here's how"
+    },
+    {
+      "path": "blog/how-to-fix-page-indexing-issues-according-to-google.html",
+      "image": null,
+      "label": "Your pages aren't being indexed? Here's what to do according to Googlers"
+    },
+    {
+      "path": "blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html",
+      "image": null,
+      "label": "Seven Incredible SEO-Related YouTube Channels for beginners in 2023"
+    },
+    {
+      "path": "blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html",
+      "image": null,
+      "label": "SEO Bombshell, Google restricts FAQ and How-To Rich Results for most websites"
+    },
+    {
+      "path": "blog/8-chrome-extensions-for-seo.html",
+      "image": null,
+      "label": "The 8 best Google Chrome extensions for SEO I use every day"
+    },
+    {
+      "path": "blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html",
+      "image": null,
+      "label": "Working remotely? Let strangers watch you and double your productivity"
+    },
+    {
+      "path": "blog/seo-games-for-beginners-in-2023.html",
+      "image": null,
+      "label": "Gamify Your SEO Learning in 2023: 5 Entertaining Games for Beginners to Master Search Engine Optimization"
+    },
+    {
+      "path": "blog/i-tried-google-sge-here-is-what-changes-in-seo.html",
+      "image": null,
+      "label": "I tried Google SGE. Here are my first impressions as an SEO Speed"
+    },
+    {
+      "path": "blog/i-tried-Google-bard.html",
+      "image": null,
+      "label": "I tried Google Bard. Here are my thoughts."
+    },
+    {
+      "path": "blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html",
+      "image": null,
+      "label": "Unexpected Expertise: The Washington Post's Guide to SEO for Website Success and SEO Beginners"
+    }
+  ],
+  "services_order": [
+    {
+      "path": "services/seo-the-driving-force-behind-my-passion.html",
+      "image": null,
+      "label": "Search Engine Optimization"
+    },
+    {
+      "path": "services/data-analysis.html",
+      "image": null,
+      "label": "Data analytics"
+    },
+    {
+      "path": "services/data-visualization.html",
+      "image": null,
+      "label": "Data visualization"
+    },
+    {
+      "path": "services/seo-content-writing.html",
+      "image": null,
+      "label": "Content writing"
+    }
+  ],
+  "cases_order": [
+    {
+      "path": "ressources/seo-case-study-rekhila-.html",
+      "image": null,
+      "label": "Finance Heros"
+    },
+    {
+      "path": "ressources/seo-case-study-mmt-mobile-medical-team.html",
+      "image": null,
+      "label": "From Invisible to Indispensable: MMT's SEO Transformation"
+    },
+    {
+      "path": "ressources/seo-case-study-interfast.html",
+      "image": null,
+      "label": "SEO case study: InterFast. And there was visibility..."
+    },
+    {
+      "path": "ressources/seo-case-study-unimind.html",
+      "image": null,
+      "label": "SEO case study: Unimind, the beginnings."
+    },
+    {
+      "path": "ressources/seo-case-study-radco.html",
+      "image": null,
+      "label": "SEO case study: RADCO,Optimizing the Blueprint: SEO Voyage in the EPC Landscape"
+    }
+  ],
+  "home_blog": [
+    {
+      "path": "blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html",
+      "image": null,
+      "label": "Google Is Paying Publishers to Test an Unreleased Gen AI Platform : what does this mean for SEO ?"
+    },
+    {
+      "path": "blog/5-seo-podcasts-for-beginners-in-2023.html",
+      "image": null,
+      "label": "5 SEO podcasts for beginners in 2023"
+    },
+    {
+      "path": "blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html",
+      "image": null,
+      "label": "Google Search Console Update: Indexing Issues Seamlessly Integrated with Performance Graphs"
+    },
+    {
+      "path": "blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html",
+      "image": null,
+      "label": "You Can Now Block ChatGPT from Accessing Your Website. Here's how"
+    },
+    {
+      "path": "blog/how-to-fix-page-indexing-issues-according-to-google.html",
+      "image": null,
+      "label": "Your pages aren't being indexed? Here's what to do according to Googlers"
+    },
+    {
+      "path": "blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html",
+      "image": null,
+      "label": "Seven Incredible SEO-Related YouTube Channels for beginners in 2023"
+    },
+    {
+      "path": "blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html",
+      "image": null,
+      "label": "SEO Bombshell, Google restricts FAQ and How-To Rich Results for most websites"
+    },
+    {
+      "path": "blog/8-chrome-extensions-for-seo.html",
+      "image": null,
+      "label": "The 8 best Google Chrome extensions for SEO I use every day"
+    },
+    {
+      "path": "blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html",
+      "image": null,
+      "label": "Working remotely? Let strangers watch you and double your productivity"
+    },
+    {
+      "path": "blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html",
+      "image": null,
+      "label": "Unexpected Expertise: The Washington Post's Guide to SEO for Website Success and SEO Beginners"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<h2>Google Embraces Gated Content</h2>
+<img alt="Google rich results for gated content" src="/blog/aslan04739/aslanesamai/images/blog/Google Rich Results Test.jpg"/>
+<p>Google has finally blessed or at least embraced gated content.</p>
+<p>That’s right, in a recent post on Twitter / X, Google shared via its Search Central page that rich results on the SERP will henceforth support validation of structured data for paid content.</p>
+<p>In simpler terms, Google will tell users if a content is paid-walled directly from the SERP. In order to save them time and effort.</p>
+<h2>How does this help SEOs?</h2>
+<p>This change helps SEOs in so many ways, including:</p>
+<ol>
+<li>Getting the targeted audience</li>
+<li>Reducing click bounce</li>
+<li>Help Google better understand their content</li>
+</ol>
+<h2>How can you implement it?</h2>
+<p>Adding structured data for paid content is the same as adding structured data for other things such as blog, events, etc. You do it using JSON-LD (preferably) and you verify once you're done.</p>
+<pre>
+                   {
+                   "@context": "https://schema.org",
+                   "@type": "NewsArticle",
+                   "mainEntityOfPage": {
+                   "@type": "WebPage",
+                   "@id": "https://example.org/article"
+                   },
+                   (...)
+                   "isAccessibleForFree": "False",
+                   "hasPart": {
+                   "@type": "WebPageElement",
+                   "isAccessibleForFree": "False",
+                   "cssSelector": ".paywall"
+                   }
+                   }
+               </pre>
+<h2>What type of content can you put behind a paywall?</h2>
+<p>You can add structured data for many types of paid-walled pieces such as:</p>
+<ul>
+<li><a href="https://schema.org/Article" rel="noopener" target="_blank">Article</a></li>
+<li><a href="https://schema.org/NewsArticle" rel="noopener" target="_blank">NewsArticle</a></li>
+<li><a href="https://schema.org/Blog" rel="noopener" target="_blank">Blog</a></li>
+<li><a href="https://schema.org/Comment" rel="noopener" target="_blank">Comment</a></li>
+<li><a href="https://schema.org/Course" rel="noopener" target="_blank">Course</a></li>
+<li><a href="https://schema.org/HowTo" rel="noopener" target="_blank">HowTo</a></li>
+<li><a href="https://schema.org/Message" rel="noopener" target="_blank">Message</a></li>
+<li><a href="https://schema.org/Review" rel="noopener" target="_blank">Review</a></li>
+<li><a href="https://schema.org/WebPage" rel="noopener" target="_blank">WebPage</a></li>
+</ul>
+<p>Finally, Google mentioned that the SGE SERP (the new AI-driven SERP) will link to paid-walled content if they are deemed relevant. The users will have the choice to click or not.</p>
+<p>Interested in knowing more? Check the announcement from Google: <a href="https://developers.google.com/search/docs/appearance/structured-data/paywalled-content" rel="noopener" target="_blank">Google's Announcement</a></p>
