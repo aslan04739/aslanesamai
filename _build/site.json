@@ -386,7 +386,8 @@
       "cover": null,
       "jsonld": [],
       "date_published": null,
-      "added": "2023-09-11"
+      "added": "2023-09-11",
+      "card_image": "/assets/logos/unimind.svg"
     },
     "services/data-analysis.html": {
       "path": "services/data-analysis.html",

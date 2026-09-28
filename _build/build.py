@@ -535,18 +535,18 @@ def post_card(path, lang="en", width=720):
     cover = img(p.get("cover"), width)
     thumb = f'<div class="thumb"><img src="{e(cover)}" alt=""{dims(p.get("cover"), width)} loading="lazy" decoding="async"></div>' if cover else ""
     return (f'<a class="card card-media reveal" href="{url_of(path)}" hreflang="{plang}">{thumb}<div class="body"><span class="tag">{fmt_date(post_date(p), lang)}{badge(lang, plang)}</span>'
-            f'<h3 lang="{plang}">{e(LABELS.get(path) or p["h1"])}</h3><p lang="{plang}">{e(clip(p["description"], 150))}</p></div></a>')
+            f'<h3 lang="{plang}" dir="ltr">{e(LABELS.get(path) or p["h1"])}</h3><p lang="{plang}" dir="ltr">{e(clip(p["description"], 150))}</p></div></a>')
 
 
 def case_card(path, lang="en"):
     p = PAGES[path]
     t = T[lang]
-    raw = p.get("cover") or first_image(path)
+    raw = p.get("card_image") or p.get("cover") or first_image(path)  # card_image: a logo for the card only, not shown on the page
     cover = img(raw, 720)
     frame = "thumb" if (raw or "").startswith("/assets/case-") else "thumb logo"  # generated covers are full-bleed, client logos sit on white
     thumb = f'<div class="{frame}"><img src="{e(cover)}" alt=""{dims(raw, 720)} loading="lazy" decoding="async"></div>' if cover else ""
     return (f'<a class="card card-media reveal" href="{url_of(path)}" hreflang="en">{thumb}<div class="body"><span class="tag">{t["case_tag"]}{badge(lang)}</span>'
-            f'<h3 lang="en">{e(p["h1"])}</h3><p lang="en">{e(clip(p["description"], 140))}</p><span class="foot">{t["case_read"]}</span></div></a>')
+            f'<h3 lang="en" dir="ltr">{e(p["h1"])}</h3><p lang="en" dir="ltr">{e(clip(p["description"], 140))}</p><span class="foot">{t["case_read"]}</span></div></a>')
 
 
 def service_card(path, lang, i=None):
@@ -682,7 +682,7 @@ def build_home(lang):
     services = "".join(service_card(p, lang, i) for i, p in enumerate(SERVICES, 1))
     cases = "".join(case_card(p, lang) for p in CASES[:3])
     posts = "".join(post_card(p, lang) for p in BLOG[:3])
-    more_posts = "".join(f'<a href="{url_of(p)}" hreflang="en"><h3 lang="en">{e(LABELS.get(p) or PAGES[p]["h1"])}</h3><span>{fmt_date(post_date(PAGES[p]), lang)}</span></a>' for p in BLOG[3:8])
+    more_posts = "".join(f'<a href="{url_of(p)}" hreflang="en"><h3 lang="en" dir="ltr">{e(LABELS.get(p) or PAGES[p]["h1"])}</h3><span>{fmt_date(post_date(PAGES[p]), lang)}</span></a>' for p in BLOG[3:8])
     certs_html = "".join(f'<div class="cert reveal"><b dir="ltr">{x}</b><span>{ext(u, o) if u else o}</span></div>' for x, o, u in CERTS)
     faq_html = "".join(f'<details class="faq-item reveal"><summary><h3>{e(q)}</h3></summary><div><p>{a}</p></div></details>' for q, a in t["faq"])
     about = [t["about_p1"],
