@@ -501,9 +501,24 @@ def layout(path, *, title, description, body, lang="en", ui=None, active="", og_
 """
 
 
+LASTMOD_FILE = SRC / "lastmod.json"
+LASTMOD = json.loads(LASTMOD_FILE.read_text()) if LASTMOD_FILE.exists() else {}  # path -> [content hash, date it last changed]
+
+
 def write(rel, text):
     (ROOT / rel).parent.mkdir(parents=True, exist_ok=True)
     (ROOT / rel).write_text(text, encoding="utf-8")
+    if rel.endswith(".html"):
+        # The sitemap's lastmod only moves when the page's own content changes (title, description or <main>), not on every build.
+        m = re.search(r"<main[^>]*>(.*)</main>", text, re.S)
+        head = re.findall(r"<title>.*?</title>|<meta name=\"description\"[^>]*>", text)
+        digest = hashlib.sha1(("".join(head) + (m.group(1) if m else text)).encode()).hexdigest()[:16]
+        if LASTMOD.get(rel, [None])[0] != digest:
+            LASTMOD[rel] = [digest, TODAY]
+
+
+def lastmod(rel):
+    return LASTMOD.get(rel, [None, TODAY])[1]
 
 
 def alternates_for(page):
@@ -982,20 +997,32 @@ def build_redirects():
 
 # ---------------------------------------------------------------- sitemap, robots, feeds, llms.txt
 def build_sitemap():
-    def entry(path, prio, alts=None):
+    """sitemap.xml is an index of one sitemap per language (Search Console reports indexing per sitemap).
+    Every URL lists its translations (hreflang), including those that live in another language's sitemap."""
+    per_lang = {l: [] for l in LANGS}
+
+    def entry(path, alts=None):
         links = "".join(f'\n    <xhtml:link rel="alternate" hreflang="{l}" href="{SITE}{u}"/>' for l, u in (alts or {}).items())
-        return f"  <url>\n    <loc>{canonical(path)}</loc>\n    <lastmod>{TODAY}</lastmod>\n    <priority>{prio}</priority>{links}\n  </url>\n"
-    urls = ""
-    for page, prio in [("index.html", "1.0"), ("services.html", "0.9"), ("ressources.html", "0.9"), ("blog.html", "0.9")]:
+        return f"  <url>\n    <loc>{canonical(path)}</loc>\n    <lastmod>{lastmod(path)}</lastmod>{links}\n  </url>\n"
+    for page in ("index.html", "services.html", "ressources.html", "blog.html"):
         alts = alternates_for(page)
         for l in LANGS:
-            urls += entry(f"{l}/{page}", prio, alts)
+            per_lang[l].append((f"{l}/{page}", alts))
     for d in SERVICE_DEFS:
         alts = {l: url_of(d["paths"][l]) for l in LANGS} | {"x-default": url_of(d["paths"]["en"])}
-        urls += "".join(entry(d["paths"][l], "0.9", alts) for l in LANGS)
-    urls += "".join(entry(p, "0.8") for p in CASES + BLOG)
-    urls += entry("privacy-policy.html", "0.3")
-    write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{urls}</urlset>\n')
+        for l in LANGS:
+            per_lang[l].append((d["paths"][l], alts))
+    for p in CASES + BLOG + ["privacy-policy.html"]:  # articles and case studies exist in their original language only
+        lang = lang_of(PAGES[p]["h1"] + " " + PAGES[p].get("description", "")) if p in PAGES else "en"
+        per_lang[lang if lang in LANGS else "en"].append((p, None))
+    index = ""
+    for l, items in per_lang.items():
+        urls = "".join(entry(p, a) for p, a in items)
+        write(f"sitemap-{l}.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n{urls}</urlset>\n')
+        newest = max(lastmod(p) for p, _ in items)
+        index += f"  <sitemap>\n    <loc>{SITE}/sitemap-{l}.xml</loc>\n    <lastmod>{newest}</lastmod>\n  </sitemap>\n"
+    write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{index}</sitemapindex>\n')
+    LASTMOD_FILE.write_text(json.dumps(dict(sorted(LASTMOD.items())), indent=0))
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User",
             "Google-Extended", "Applebot-Extended", "Bingbot", "Googlebot", "CCBot", "Meta-ExternalAgent", "MistralAI-User", "DuckAssistBot"]
     robots = "# Search engines and AI assistants are welcome: this site wants to be read, cited and linked.\n"
