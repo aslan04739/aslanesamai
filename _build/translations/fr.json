@@ -1,0 +1,184 @@
+{
+ "blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html": {
+  "path": "fr/blog/bloquer-chatgpt-gptbot-robots-txt.html",
+  "title": "Bloquer ChatGPT (GPTBot) sur votre site avec robots.txt",
+  "h1": "Vous pouvez désormais bloquer ChatGPT sur votre site : voici comment",
+  "description": "Comment empêcher ChatGPT d'explorer votre site avec quelques lignes dans le robots.txt, et ce que bloquer GPTBot change pour la visibilité de vos contenus."
+ },
+ "blog/5-seo-podcasts-for-beginners-in-2023.html": {
+  "path": "fr/blog/podcasts-seo-pour-debutants.html",
+  "title": "5 podcasts SEO pour débutants",
+  "h1": "Les meilleurs podcasts SEO pour débutants en 2023",
+  "description": "Les 5 podcasts SEO à écouter quand on débute : conseils d'experts et astuces concrètes en référencement naturel, par des émissions incontournables."
+ },
+ "blog/8-chrome-extensions-for-seo.html": {
+  "path": "fr/blog/extensions-chrome-seo.html",
+  "title": "Les extensions Chrome SEO que j'utilise chaque jour",
+  "h1": "Les 8 meilleures extensions Google Chrome pour le SEO que j'utilise chaque jour",
+  "description": "Les extensions Chrome que j'utilise chaque jour en SEO : meta descriptions, titres, backlinks, densité de mots-clés, aide à la rédaction et opportunités rapides."
+ },
+ "blog/Geeks-for-geeks-gets-SEO-banned-from-google.html": {
+  "path": "fr/blog/geeksforgeeks-desindexe-google-lecons-seo.html",
+  "title": "GeeksForGeeks désindexé par Google : les leçons SEO",
+  "h1": "La chute de GeeksForGeeks : une leçon de SEO et une grande perte pour les développeurs",
+  "description": "GeeksForGeeks, site phare des développeurs, a été désindexé par Google. Ce qui s'est passé, et ce que tout propriétaire de site peut en retenir."
+ },
+ "blog/Google-is-working-on-a-new-ai-writer-What-SEOs-need-to-know.html": {
+  "path": "fr/blog/google-ia-redaction-editeurs-seo.html",
+  "title": "Google paie des éditeurs pour tester une IA de rédaction",
+  "h1": "Google paie des éditeurs pour tester une plateforme d'IA générative inédite : quel impact pour le SEO ?",
+  "description": "Google paie des éditeurs pour tester un outil de rédaction par IA encore inédit. Ce que l'on sait, les questions éthiques, et ce que cela change pour le SEO."
+ },
+ "blog/cloudflare-radical-fix-haunting-half-the-web-taunting-the-other-half-what-seos-need-to-know..html": {
+  "path": "fr/blog/cloudflare-bloque-robots-ia-seo.html",
+  "title": "Cloudflare bloque les robots d'IA : l'impact SEO",
+  "h1": "La solution radicale de Cloudflare contre les robots d'IA : ce que les SEO doivent savoir",
+  "description": "Cloudflare lance un outil pour bloquer les robots d'IA. Comment il fonctionne et ce qu'il change pour le SEO, le GEO et la visibilité dans les IA."
+ },
+ "blog/death-of-the-cookieless-future-what-google-latest-move-means-for-seo-professionals.html": {
+  "path": "fr/blog/fin-futur-sans-cookies-google-seo.html",
+  "title": "Fin du futur sans cookies : ce que ça change pour le SEO",
+  "h1": "La fin du futur sans cookies : ce que la décision de Google change pour les professionnels du SEO",
+  "description": "Google renonce à supprimer les cookies tiers. Ce que cela change pour les professionnels du SEO, la publicité en ligne et les normes de confidentialité."
+ },
+ "blog/free-domain-and-ssl-checker-for-seo-in-2023.html": {
+  "path": "fr/blog/alertes-domaine-ssl-gratuites-seo.html",
+  "title": "Alertes gratuites de domaine et de SSL pour les SEO",
+  "h1": "Un outil gratuit de suivi des domaines et des certificats SSL pour les SEO freelances",
+  "description": "Ne ratez plus un renouvellement de domaine ou un certificat SSL expiré : mon avis sur Free Domain Alerts, un outil gratuit jusqu'à 20 domaines."
+ },
+ "blog/google-confirms-google-sites-are-not-ideal-for-seo-purposes.html": {
+  "path": "fr/blog/google-sites-seo-john-mueller.html",
+  "title": "Google Sites n'est pas idéal pour le SEO, confirme Google",
+  "h1": "Google confirme que Google Sites n'est pas idéal pour le SEO",
+  "description": "John Mueller confirme que Google Sites n'est pas idéal pour le SEO. Ses limites, ses avantages et inconvénients, et de meilleures alternatives pour votre site."
+ },
+ "blog/google-now-supports-rich-results-for-gated-content.html": {
+  "path": "fr/blog/resultats-enrichis-contenus-payants-google.html",
+  "title": "Résultats enrichis pour les contenus payants sur Google",
+  "h1": "Google prend désormais en charge les résultats enrichis pour les contenus payants",
+  "description": "Google valide désormais les données structurées des contenus payants. Pourquoi c'est utile pour le SEO, et comment le mettre en place en JSON-LD."
+ },
+ "blog/google-search-console-page-indexing-issues.html": {
+  "path": "fr/blog/search-console-problemes-indexation-pages.html",
+  "title": "Search Console : problèmes d'indexation des pages",
+  "h1": "Google Search Console : les problèmes d'indexation des pages et comment les résoudre",
+  "description": "Pourquoi la Google Search Console signale des problèmes d'indexation, pourquoi les demandes d'indexation manuelles peuvent échouer, et comment réagir."
+ },
+ "blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html": {
+  "path": "fr/blog/search-console-indexation-graphiques-performances.html",
+  "title": "Search Console : l'indexation dans les performances",
+  "h1": "Mise à jour de la Search Console : les problèmes d'indexation intégrés aux graphiques de performances",
+  "description": "La Google Search Console affiche désormais les problèmes d'indexation dans les graphiques de performances. Ce qui change, et comment ça simplifie le diagnostic."
+ },
+ "blog/how-to-fix-page-indexing-issues-according-to-google.html": {
+  "path": "fr/blog/pages-non-indexees-conseils-google.html",
+  "title": "Pages non indexées ? Les conseils des équipes de Google",
+  "h1": "Vos pages ne sont pas indexées ? Voici ce que recommandent les équipes de Google",
+  "description": "Vos pages ne sont pas indexées par Google ? Voici ce qu'il faut faire, étape par étape, selon Gary Illyes, John Mueller et Martin Splitt."
+ },
+ "blog/i-tried-Google-bard.html": {
+  "path": "fr/blog/test-google-bard.html",
+  "title": "J'ai testé Google Bard : mon avis honnête",
+  "h1": "J'ai testé la dernière IA de Google, et voici ce que j'ai obtenu",
+  "description": "J'ai testé Google Bard en lui demandant qui je suis. Il m'a inventé toute une carrière. Voici comment il s'en sort face à ChatGPT et GPT-4."
+ },
+ "blog/i-tried-google-sge-here-is-what-changes-in-seo.html": {
+  "path": "fr/blog/test-google-sge-impact-seo.html",
+  "title": "J'ai testé Google SGE : ce qui change pour le SEO",
+  "h1": "J'ai testé Google SGE : mes premières impressions de SEO",
+  "description": "Mon test de Google SGE (Search Generative Experience) : lenteur, bouton Générer, featured snippets, attribution des sources et fraîcheur des contenus."
+ },
+ "blog/mastering-inp-for-better-website-performance-a-beginner-guide-to-seo-friendly-Interactions.html": {
+  "path": "fr/blog/inp-guide-debutants-seo.html",
+  "title": "L'INP pour les débutants : un guide SEO",
+  "h1": "Maîtriser l'INP pour un site plus performant : le guide du débutant",
+  "description": "Guide de l'Interaction to Next Paint (INP) pour débutants : ce qu'elle mesure, pourquoi elle compte pour les Core Web Vitals et le SEO, et comment l'améliorer."
+ },
+ "blog/quickly-audit-your-website-with-this-free-seo-audit-tool-for-beginners-from-hubspot.html": {
+  "path": "fr/blog/audit-seo-gratuit-hubspot-website-grader.html",
+  "title": "Audit SEO gratuit pour débutants : HubSpot Website Grader",
+  "h1": "Auditez votre site facilement et rapidement avec cet outil SEO gratuit de HubSpot",
+  "description": "Auditez votre site en quelques minutes avec le Website Grader gratuit de HubSpot : performances, SEO, ergonomie mobile et sécurité, expliqués aux débutants."
+ },
+ "blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html": {
+  "path": "fr/blog/google-restreint-resultats-enrichis-faq-howto.html",
+  "title": "Google restreint les résultats enrichis FAQ et How-To",
+  "h1": "Coup de tonnerre SEO : Google restreint les résultats enrichis FAQ et How-To pour la plupart des sites",
+  "description": "Google réduit la visibilité des résultats enrichis FAQ et limite les How-To aux ordinateurs. L'impact sur le trafic, et comment adapter votre stratégie SEO."
+ },
+ "blog/seo-games-for-beginners-in-2023.html": {
+  "path": "fr/blog/jeux-pour-apprendre-le-seo.html",
+  "title": "6 jeux pour apprendre le SEO en s'amusant",
+  "h1": "Apprendre le SEO en jouant : 6 jeux divertissants pour débutants",
+  "description": "Apprendre le SEO peut être fastidieux. Ces six jeux rendent l'apprentissage du référencement naturel amusant pour les débutants."
+ },
+ "blog/seo-redemption-elevate-your-site-quality-and-regain-google-trust.html": {
+  "path": "fr/blog/regagner-confiance-google-qualite-site.html",
+  "title": "Regagner la confiance de Google grâce à la qualité",
+  "h1": "La rédemption en SEO : améliorer la qualité de votre site et regagner la confiance de Google",
+  "description": "Comment améliorer la qualité de votre site et regagner la confiance de Google après un revers SEO, avec les conseils de Gary Illyes."
+ },
+ "blog/seo-trend-tools-for-beginners-in-2023-navigating-with-exploding-topics-google-trends-sparktoro-and-glimpse.html": {
+  "path": "fr/blog/outils-tendances-seo-exploding-topics-google-trends-sparktoro.html",
+  "title": "Outils de tendances SEO : Exploding Topics, Google Trends",
+  "h1": "Outils de tendances SEO pour débutants : Exploding Topics, Google Trends, SparkToro et Glimpse",
+  "description": "Les outils de tendances SEO pour débutants : Exploding Topics, Google Trends, SparkToro et Glimpse, et comment repérer les sujets qui montent."
+ },
+ "blog/seven-incredible-seo-related-youtube-channels-for-beginners-in-2023.html": {
+  "path": "fr/blog/chaines-youtube-seo-debutants.html",
+  "title": "7 chaînes YouTube SEO pour débutants",
+  "h1": "Sept chaînes YouTube incroyables pour apprendre le SEO quand on débute",
+  "description": "Les meilleures chaînes YouTube pour apprendre le SEO : Google Search Central, Brian Dean, Ahrefs, Semrush, Moz, Search Engine Journal et RustyBrick."
+ },
+ "blog/unexpected-expertise-the-washington-post-guide-to-seo-for-website-success-and-seo-beginners.html": {
+  "path": "fr/blog/guide-seo-washington-post.html",
+  "title": "Le guide SEO du Washington Post décrypté",
+  "h1": "Une expertise inattendue : le guide SEO du Washington Post pour réussir son site",
+  "description": "Le Washington Post a publié un guide SEO étonnamment complet. Ses recommandations en performance web, SEO on-page, technique et off-page, décryptées."
+ },
+ "blog/working-remotely-let-strangers-watch-you-and-double-your-productivity-thanks-to-focusmate.html": {
+  "path": "fr/blog/teletravail-productivite-focusmate.html",
+  "title": "Télétravail : doublez votre productivité avec Focusmate",
+  "h1": "En télétravail ? Laissez des inconnus vous regarder et doublez votre productivité",
+  "description": "Besoin d'un coup de pouce en télétravail ? Laissez des inconnus vous regarder travailler et avancez grâce aux sessions de coworking virtuel de Focusmate."
+ },
+ "ressources/seo-case-study-aioseo.html": {
+  "path": "fr/ressources/etude-de-cas-seo-geo-aioseo.html",
+  "title": "Étude de cas SEO et GEO : aioseo.fr, un blog GEO parti de zéro",
+  "h1": "Étude de cas SEO et GEO : aioseo.fr, un blog GEO parti de zéro",
+  "description": "Comment aioseo.fr est passé de 1 000 à 36 000 impressions Google par mois et 14 765 impressions dans les AI Overviews : niche, actualité, outils, FR/EN.",
+  "cover": "/assets/case-aioseo-fr.svg",
+  "og_image": "https://aslanesamai.com/assets/case-aioseo-fr.png"
+ },
+ "ressources/seo-case-study-rekhila-.html": {
+  "path": "fr/ressources/etude-de-cas-seo-rekhila-promotion.html",
+  "title": "Étude de cas SEO : REKHILA Promotion, immobilier à Alger",
+  "h1": "Étude de cas SEO : REKHILA Promotion, immobilier à Alger",
+  "description": "Comment un nouveau site immobilier à Alger, REKHILA Promotion, a construit son SEO de zéro : indexation, autorité, contenus, backlinks et socle technique."
+ },
+ "ressources/seo-case-study-mmt-mobile-medical-team.html": {
+  "path": "fr/ressources/etude-de-cas-seo-mmt-mobile-medical-team.html",
+  "title": "Étude de cas SEO : MMT, équipe médicale mobile à Riyad",
+  "h1": "Étude de cas SEO : MMT, équipe médicale mobile à Riyad",
+  "description": "Comment le SEO technique et une stratégie ciblée ont fait passer MMT, startup médicale à Riyad, de l'invisibilité au statut de référence de confiance."
+ },
+ "ressources/seo-case-study-interfast.html": {
+  "path": "fr/ressources/etude-de-cas-seo-interfast.html",
+  "title": "Étude de cas SEO : InterFast, logiciel pour le BTP",
+  "h1": "Étude de cas SEO : InterFast, logiciel pour le BTP",
+  "description": "Comment une stratégie SEO ciblée a corrigé les 404, l'attribut lang et les pages de template d'InterFast, éditeur de logiciel du BTP, et fait grimper son trafic."
+ },
+ "ressources/seo-case-study-unimind.html": {
+  "path": "fr/ressources/etude-de-cas-seo-unimind.html",
+  "title": "Étude de cas SEO : Unimind, application de productivité",
+  "h1": "Étude de cas SEO : Unimind, application de productivité",
+  "description": "La stratégie SEO d'Unimind, une extension de productivité : analyse de la concurrence, recherche de mots-clés, backlinks, communautés et contenus."
+ },
+ "ressources/seo-case-study-radco.html": {
+  "path": "fr/ressources/etude-de-cas-seo-radco.html",
+  "title": "Étude de cas SEO : RADCO, construction à Alger",
+  "h1": "Étude de cas SEO : RADCO, entreprise de construction à Alger",
+  "description": "Comment RADCO, entreprise de construction à Alger, est passée d'une page blanche à une vraie visibilité : technique, indexation, contenus et liens."
+ }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search Console: l&#x27;indexation dans les performances</title>
+<meta name="description" content="La Google Search Console affiche désormais les problèmes d&#x27;indexation dans les graphiques de performances. Ce qui change, et comment ça simplifie le diagnostic.">
+<meta name="author" content="Aslane Samai">
+<link rel="canonical" href="https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html">
+<link rel="alternate" hreflang="en" href="https://aslanesamai.com/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html">
+<link rel="alternate" hreflang="fr" href="https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html">
+<link rel="alternate" hreflang="x-default" href="https://aslanesamai.com/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html">
+<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121311" media="(prefers-color-scheme: dark)">
+<meta property="og:site_name" content="Aslane Samai">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Search Console: l&#x27;indexation dans les performances">
+<meta property="og:description" content="La Google Search Console affiche désormais les problèmes d&#x27;indexation dans les graphiques de performances. Ce qui change, et comment ça simplifie le diagnostic.">
+<meta property="og:url" content="https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2023-08-09">
+<meta property="article:author" content="https://aslanesamai.com/">
+<meta property="og:image" content="https://aslanesamai.com/aslanesamai.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Search Console: l&#x27;indexation dans les performances">
+<meta name="twitter:description" content="La Google Search Console affiche désormais les problèmes d&#x27;indexation dans les graphiques de performances. Ce qui change, et comment ça simplifie le diagnostic.">
+<meta name="twitter:image" content="https://aslanesamai.com/aslanesamai.png">
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Aslane Samai · Blog" href="https://aslanesamai.com/fr/feed.xml">
+<link rel="me" href="https://www.linkedin.com/in/aslane-samai">
+<link rel="preload" href="/assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="/assets/site.css?v=07448eca">
+<script src="/assets/site.js?v=07448eca" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://aslanesamai.com/#person", "name": "Aslane Samai", "alternateName": "Samai Aslane", "url": "https://aslanesamai.com/", "image": "https://aslanesamai.com/aslanesamai.png", "jobTitle": "SEO / GEO consultant", "sameAs": ["https://www.linkedin.com/in/aslane-samai", "https://medium.com/@samaiaslane7", "https://github.com/aslan04739", "https://aioseo.fr/aslane-samai-consultant-seo-technique-expert-geo/", "https://aioseo.fr/en/aslane-samai-technical-seo-geo-expert/"]}, {"@type": "WebSite", "@id": "https://aslanesamai.com/#website", "url": "https://aslanesamai.com/", "name": "Aslane Samai", "inLanguage": ["en", "fr", "ar"], "publisher": {"@id": "https://aslanesamai.com/#person"}}, {"@id": "https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html#webpage", "url": "https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html", "headline": "Mise à jour de la Search Console : les problèmes d'indexation intégrés aux graphiques de performances", "name": "Mise à jour de la Search Console : les problèmes d'indexation intégrés aux graphiques de performances", "description": "La Google Search Console affiche désormais les problèmes d'indexation dans les graphiques de performances. Ce qui change, et comment ça simplifie le diagnostic.", "inLanguage": "fr", "isPartOf": {"@id": "https://aslanesamai.com/#website"}, "author": {"@id": "https://aslanesamai.com/#person"}, "publisher": {"@id": "https://aslanesamai.com/#person"}, "@type": "BlogPosting", "mainEntityOfPage": "https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html", "datePublished": "2023-08-09", "image": "https://aslanesamai.com/aslanesamai.png", "wordCount": 591, "translationOfWork": {"@id": "https://aslanesamai.com/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html#webpage"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://aslanesamai.com/fr/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aslanesamai.com/fr/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Mise à jour de la Search Console : les problèmes d'indexation intégrés aux graphiques de performances", "item": "https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html"}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="/fr/" aria-label="Aslane Samai">Aslane Samai<span>.</span></a>
+    <div class="header-tools">
+      <nav class="nav" aria-label="Main"><a href="/fr/services.html">Services</a><a href="/fr/#experience">Expérience</a><a href="/fr/ressources.html">Études de cas</a><a href="/fr/blog.html" aria-current="page">Blog</a><a href="/fr/#contact">Contact</a><div class="langs" role="navigation" aria-label="Langue"><a href="/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html" hreflang="en" lang="en" data-lang="en">EN</a><a href="/fr/blog/search-console-indexation-graphiques-performances.html" hreflang="fr" lang="fr" data-lang="fr" aria-current=true>FR</a><a href="/ar/" hreflang="ar" lang="ar" data-lang="ar">AR</a></div><a class="btn btn-primary" href="/fr/#contact">Votre audit SEO / GEO</a></nav>
+      <button class="theme-toggle" type="button" aria-label="Basculer entre mode clair et mode sombre" title="Basculer entre mode clair et mode sombre"><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7Z"/></svg></button>
+      <details class="menu"><summary aria-label="Menu"><span></span></summary><nav aria-label="Mobile"><a href="/fr/services.html">Services</a><a href="/fr/#experience">Expérience</a><a href="/fr/ressources.html">Études de cas</a><a href="/fr/blog.html" aria-current="page">Blog</a><a href="/fr/#contact">Contact</a><div class="langs" role="navigation" aria-label="Langue"><a href="/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html" hreflang="en" lang="en" data-lang="en">EN</a><a href="/fr/blog/search-console-indexation-graphiques-performances.html" hreflang="fr" lang="fr" data-lang="fr" aria-current=true>FR</a><a href="/ar/" hreflang="ar" lang="ar" data-lang="ar">AR</a></div><a class="btn btn-primary" href="/fr/#contact">Votre audit SEO / GEO</a></nav></details>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article>
+<header class="article-head"><div class="wrap"><div class="inner"><nav class="crumbs" aria-label="Breadcrumb"><a href="/fr/">Accueil</a><span aria-hidden="true">/</span><a href="/fr/blog.html">Blog</a></nav><h1>Mise à jour de la Search Console : les problèmes d&#x27;indexation intégrés aux graphiques de performances</h1><div class="byline"><img src="/assets/portrait-sm.webp" alt="" width="40" height="40"><div><b>Aslane Samai</b><br>9 août 2023</div></div></div></div></header>
+
+<div class="prose">
+<img loading="lazy" decoding="async" alt="Mise à jour de la Google Search Console" src="/images/blog/Screenshot 2023-08-21 100256.png" width="400"/>
+<br/><br/>
+<p>Les utilisateurs de la Google Search Console (GSC) ont récemment eu droit à une mise à jour notable, censée améliorer leur quotidien de webmaster. Les problèmes d'indexation, jusqu'ici relégués dans un tableau de bord séparé, sont désormais intégrés directement aux graphiques de performances de la GSC. L'objectif : donner aux webmasters une vue plus globale des performances de leur site, tout en facilitant l'identification et la correction des problèmes d'indexation. Mais comme souvent avec les mises à jour, il y a quelques ratés et incohérences au départ, au point qu'on se demande s'il s'agit d'une fonctionnalité ou d'un simple bug.</p>
+<h2>L'intégration des problèmes d'indexation</h2>
+<p>L'une des améliorations les plus importantes de cette mise à jour est l'intégration des problèmes d'indexation directement dans les graphiques de performances de la GSC. Les webmasters voient donc les problèmes liés à l'indexation au même endroit que leurs indicateurs de performances.</p>
+<p>Auparavant, les problèmes d'indexation se trouvaient dans un tableau de bord à part : il fallait naviguer entre différentes sections de la GSC pour avoir une vue complète de la santé du site. Cette séparation rendait la résolution des problèmes moins efficace et compliquait la mise en relation entre problèmes d'indexation et variations de performances.</p>
+<p>Avec cette intégration, les webmasters peuvent observer les problèmes d'indexation (erreurs d'exploration, problèmes de couverture, voire sanctions) en parallèle des données de performances. Cette vue combinée permet de diagnostiquer et de corriger plus intuitivement et plus efficacement ce qui pèse sur la visibilité d'un site dans les résultats de Google.</p>
+<h2>Des informations plus détaillées, en un clic</h2>
+<p>Autre avantage de cette mise à jour : l'accès facilité à des informations supplémentaires. Quand un problème d'indexation est repéré à une date donnée, il suffit de cliquer sur cette date dans les graphiques de performances pour ouvrir une vue plus détaillée des problèmes survenus ce jour-là.</p>
+<p>C'est particulièrement utile pour comprendre l'impact des problèmes d'indexation sur les performances d'un site. En cliquant sur la date de l'erreur, on accède à des données précieuses comme les URL concernées, les causes des erreurs et des recommandations pour les résoudre. Ce niveau de détail permet d'agir vite et de façon ciblée pour corriger les problèmes et améliorer les performances globales du site.</p>
+<h2>Incohérences et incertitudes</h2>
+<p>Si l'intégration des problèmes d'indexation dans les graphiques de performances est prometteuse, il faut noter que cette fonctionnalité ne semble pas disponible de façon homogène sur toutes les propriétés. Certains utilisateurs indiquent ne pas y avoir accès, ce qui alimente les doutes : fonctionnalité pleinement déployée ou simple bug ?</p>
+<p>Des webmasters constatent que les problèmes d'indexation sont bien intégrés pour certaines de leurs propriétés, mais pas pour d'autres. Cette incohérence amène certains à s'interroger sur la fiabilité et l'exhaustivité de la mise à jour.</p>
+<h2>Conclusion</h2>
+<p>Cette mise à jour de la Google Search Console, qui intègre les problèmes d'indexation aux graphiques de performances, répond à un problème ancien : devoir gérer séparément la santé et les performances d'un site. Elle offre aux webmasters une façon plus intuitive et plus efficace de surveiller, diagnostiquer et résoudre les problèmes d'indexation.</p>
+<p>Il faut toutefois garder en tête les incohérences actuelles dans la disponibilité de la fonctionnalité selon les propriétés. Certains en profitent déjà, d'autres se demandent encore s'il s'agit d'une fonctionnalité définitive ou d'un bug temporaire.</p>
+<p>Il est conseillé de suivre les annonces officielles de Google sur la GSC pour rester informé des évolutions de cette fonctionnalité. En attendant, ceux qui y ont accès peuvent profiter de ces informations enrichies pour gérer plus efficacement les performances et la santé de leur site.</p>
+
+</div>
+<aside class="author-box"><img src="/assets/portrait-sm.webp" alt="" width="72" height="72" loading="lazy"><p><b>Aslane Samai</b><br>Consultant SEO &amp; GEO basé à Paris. J'aide les entreprises à être trouvées sur Google et citées par les IA. <a href="/fr/#contact">Contact</a>.</p></aside>
+</article>
+<section class="related"><div class="wrap"><div class="section-head"><h2>À lire aussi</h2></div><div class="grid grid-3"><a class="card card-media reveal" href="/fr/blog/audit-seo-gratuit-hubspot-website-grader.html" hreflang="fr"><div class="thumb"><img src="https://misinate.sirv.com/perso/t%C3%A9l%C3%A9chargement.jpeg?w=720" alt="" width="301" height="167" loading="lazy" decoding="async"></div><div class="body"><span class="tag">28 août 2023</span><h3 lang="fr" dir="ltr">Auditez votre site facilement et rapidement avec cet outil SEO gratuit de HubSpot</h3><p lang="fr" dir="ltr">Auditez votre site en quelques minutes avec le Website Grader gratuit de HubSpot: performances, SEO, ergonomie mobile et sécurité, expliqués aux…</p></div></a><a class="card card-media reveal" href="/fr/blog/bloquer-chatgpt-gptbot-robots-txt.html" hreflang="fr"><div class="thumb"><img src="/images/blog/jonathan-kemper-N8AYH8R2rWQ-unsplash.webp" alt="" width="6000" height="4000" loading="lazy" decoding="async"></div><div class="body"><span class="tag">16 août 2023</span><h3 lang="fr" dir="ltr">Vous pouvez désormais bloquer ChatGPT sur votre site : voici comment</h3><p lang="fr" dir="ltr">Comment empêcher ChatGPT d&#x27;explorer votre site avec quelques lignes dans le robots.txt, et ce que bloquer GPTBot change pour la visibilité de vos…</p></div></a><a class="card card-media reveal" href="/fr/blog/pages-non-indexees-conseils-google.html" hreflang="fr"><div class="thumb"><img src="/images/news/google-index.webp" alt="" width="1999" height="1222" loading="lazy" decoding="async"></div><div class="body"><span class="tag">15 juin 2023</span><h3 lang="fr" dir="ltr">Vos pages ne sont pas indexées ? Voici ce que recommandent les équipes de Google</h3><p lang="fr" dir="ltr">Vos pages ne sont pas indexées par Google? Voici ce qu&#x27;il faut faire, étape par étape, selon Gary Illyes, John Mueller et Martin Splitt.</p></div></a></div></div></section>
+<section class="section"><div class="wrap"><div class="cta-band reveal"><div><h2>Audit SEO et GEO</h2><p>Ce qui freine votre visibilité sur Google et dans les réponses des IA, et ce qu'il faut corriger en premier. Tout commence par un appel de 30 minutes.</p></div><a class="btn btn-primary" href="/fr/#contact">Obtenez votre audit SEO / GEO</a></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div class="f-about"><a class="brand" href="/fr/">Aslane Samai<span>.</span></a><p>Consultant SEO &amp; GEO basé à Paris. J'aide les entreprises à être trouvées sur Google et citées par les IA.</p></div>
+      <div><h4>Explorer</h4><ul><li><a href="/fr/services.html">Services</a></li><li><a href="/fr/ressources.html">Études de cas</a></li><li><a href="/fr/blog.html">Blog</a></li><li><a href="/fr/#testimonials">Témoignages</a></li><li><a href="https://aioseo.fr/" target="_blank" rel="noopener">aioseo.fr</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="mailto:contact@aslanesamai.com">contact@aslanesamai.com</a></li><li><a href="/fr/#contact">Obtenez votre audit SEO / GEO</a></li></ul></div>
+      <div><h4>Suivre</h4><ul><li><a href="https://www.linkedin.com/in/aslane-samai" rel="me noopener" target="_blank">LinkedIn</a></li><li><a href="https://github.com/aslan04739" rel="me noopener" target="_blank">GitHub</a></li><li><a href="https://medium.com/@samaiaslane7" rel="me noopener" target="_blank">Medium</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Aslane Samai</span><a href="/privacy-policy.html">Politique de confidentialité</a></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -51,6 +51,9 @@ SEO = {k: v for k, v in json.loads((SRC / "seo.json").read_text(encoding="utf-8"
 for _path, _o in SEO.items():
     PAGES[_path].update({k: v for k, v in _o.items() if k in ("title", "description", "h1", "canonical")})
 TESTI = json.loads((SRC / "testimonials.json").read_text(encoding="utf-8"))
+# Article translations: _build/translations/<lang>.json maps an English page to its translated path, title, h1, description (and lead);
+# the translated body lives at _build/content/<translated path>.
+TR = {l: json.loads((SRC / "translations" / f"{l}.json").read_text(encoding="utf-8")) for l in ("fr",) if (SRC / "translations" / f"{l}.json").exists()}
 IMGSIZE = json.loads((SRC / "imgsize.json").read_text()) if (SRC / "imgsize.json").exists() else {}
 CSS_V = hashlib.sha1((ROOT / "assets/site.css").read_bytes() + (ROOT / "assets/site.js").read_bytes()).hexdigest()[:8]
 
@@ -122,12 +125,47 @@ def _sized_img(m):
     return tag
 
 
+def tr(path, lang):
+    return TR.get(lang, {}).get(path)
+
+
+def local_path(path, lang):
+    m = tr(path, lang)
+    return m["path"] if m else path
+
+
+def page_meta(path, lang):
+    m = tr(path, lang)
+    return {**PAGES[path], **{k: v for k, v in m.items() if k != "path"}} if m else PAGES[path]
+
+
+def article_alternates(path):
+    """hreflang map for an English article and its translations (None when it has none)."""
+    alts = {l: url_of(TR[l][path]["path"]) for l in TR if path in TR[l]}
+    return {"en": url_of(path), **alts, "x-default": url_of(path)} if alts else None
+
+
+def localize_links(html_, lang):
+    """In a translated article, point internal links to the translated pages when they exist."""
+    def sub(m):
+        href = m.group(2)
+        rel = re.sub(r"^https://aslanesamai\.com/", "", href).lstrip("/")
+        base, _, frag = rel.partition("#")
+        if base in TR.get(lang, {}):
+            return f'{m.group(1)}"{url_of(TR[lang][base]["path"])}{"#" + frag if frag else ""}"'
+        if rel.startswith("en/"):
+            return f'{m.group(1)}"/{lang}/{rel[3:]}"'
+        return m.group(0)
+    return re.sub(r'(href=)"((?:https://aslanesamai\.com)?/[^"]*)"', sub, html_)
+
+
 def content(path):
     body = re.sub(r"<img\b[^>]*>", _sized_img, (SRC / "content" / path).read_text(encoding="utf-8"))
     if "<!-- chart:aioseo -->" in body:
-        body = (body.replace("<!-- stats:aioseo -->", aioseo_stats_html()).replace("<!-- chart:aioseo -->", aioseo_chart())
-                .replace("<!-- genai:aioseo -->", aioseo_genai_html() if AIO.get("genai") else "")
-                .replace("<!-- milestones:aioseo -->", aioseo_milestones()))
+        lg = path.split("/")[0] if path.split("/")[0] in AIO_TXT else "en"
+        body = (body.replace("<!-- stats:aioseo -->", aioseo_stats_html(lg)).replace("<!-- chart:aioseo -->", aioseo_chart(lg))
+                .replace("<!-- genai:aioseo -->", aioseo_genai_html(lg) if AIO.get("genai") else "")
+                .replace("<!-- milestones:aioseo -->", aioseo_milestones(lg)))
     return body
 
 
@@ -135,116 +173,195 @@ def content(path):
 AIO = json.loads((SRC / "aioseo_stats.json").read_text()) if (SRC / "aioseo_stats.json").exists() else None
 
 
-def _month_label(m, short=True):
+def _num(n, lang="en", dec=0):
+    """1234.5 -> '1,235' (en) or '1 235' (fr, narrow no-break space); decimals with a comma in French."""
+    txt = f"{n:,.{dec}f}"
+    return txt.replace(",", " ").replace(".", ",") if lang == "fr" else txt
+
+
+def _month_label(m, short=True, lang="en"):
     y, mo = m.split("-")
+    if lang == "fr":
+        return f"{T['fr']['months'][int(mo) - 1]} {y[2:]}" if short else f"{MONTHS['fr'][int(mo) - 1]} {y}"
     return f"{MONTHS['en'][int(mo) - 1][:3]} {y[2:] if short else y}"
 
 
-def aioseo_stats_html():
+def _day_label(d, lang="en"):
+    y, m, day = d.split("-")
+    return f"{int(day)} {MONTHS['fr'][int(m) - 1]} {y}" if lang == "fr" else f"{MONTHS['en'][int(m) - 1]} {int(day)}, {y}"
+
+
+AIO_TXT = {
+    "en": {
+        "s1": "monthly impressions, {a} ({am}) to {b} ({bm})", "s2": "average position, {am} to {bm}", "s3": "impressions and {c} clicks since launch",
+        "s4": "queries and {p} pages with impressions in the last 90 days", "s5": "of clicks go to the English versions (last 90 days)",
+        "s6": "of query clicks are non-brand (last 90 days)", "source": "Source: Google Search Console, {a} to {b}.", "k": "k",
+        "bar_title": "{m}: {i} impressions, average position {p}", "chart_label": "aioseo.fr: monthly Google impressions (bars) and average position (line), {a} to {b}",
+        "legend_bar": "Monthly impressions (left axis)", "legend_line": "Average position (right axis, 1 at the top). September 2026 runs to the 27th.",
+        "show": "Show the data", "th": ("Month", "Impressions", "Avg. position"),
+        "g1": "impressions in AI Overviews and AI Mode, {a} to {b}", "g2": "of all the site's Google impressions each month ({a} to {b})",
+        "g3": "daily AI impressions, about {a} a day in the first week to {b} in the last", "g4": "pages shown in AI answers", "g5": "countries ({c})",
+        "g6": "of AI impressions go to the English versions", "week_title": "Week of {d}: {i} impressions",
+        "ai_label": "aioseo.fr: weekly impressions in Google AI Overviews and AI Mode",
+        "ai_legend": "Weekly impressions in AI Overviews and AI Mode (full weeks, Monday to Sunday).", "ai_th": ("Week of", "AI impressions"),
+        "tops": "The pages most often shown in AI answers are the practical, reference-style ones:",
+        "ai_source": "Source: Google Search Console, generative AI features report, {a} to {b}.",
+        "countries": {"France": "France", "United States": "United States"},
+        "m": [
+            ("December 2025", "First 100-click month; average position improved to {p12}, from {p11} the month before."),
+            ("February 2026", "{i02} impressions in a month, three times January."),
+            ("April – June 2026", "Average position around {p04}, from about 40 a year earlier."),
+            ("June – July 2026", "Best months for clicks ({c06} and {c07}), driven by the AI Overviews France coverage."),
+            ("August – September 2026", "Record impressions ({i08} in August) while click-through rates fell after AI Overviews launched in France: the zero-click shift the blog documents."),
+        ],
+    },
+    "fr": {
+        "s1": "plus d'impressions mensuelles : de {a} ({am}) à {b} ({bm})", "s2": "position moyenne, de {am} à {bm}", "s3": "impressions et {c} clics depuis le lancement",
+        "s4": "requêtes et {p} pages avec des impressions sur les 90 derniers jours", "s5": "des clics vont aux versions anglaises (90 derniers jours)",
+        "s6": "des clics sur requêtes sont hors marque (90 derniers jours)", "source": "Source : Google Search Console, du {a} au {b}.", "k": " k",
+        "bar_title": "{m} : {i} impressions, position moyenne {p}", "chart_label": "aioseo.fr : impressions Google mensuelles (barres) et position moyenne (courbe), de {a} à {b}",
+        "legend_bar": "Impressions mensuelles (axe de gauche)", "legend_line": "Position moyenne (axe de droite, 1 en haut). Septembre 2026 s'arrête au 27.",
+        "show": "Afficher les données", "th": ("Mois", "Impressions", "Position moy."),
+        "g1": "impressions dans les AI Overviews et le mode IA, du {a} au {b}", "g2": "de toutes les impressions Google du site chaque mois (de {a} à {b})",
+        "g3": "plus d'impressions IA par jour : environ {a} la première semaine, {b} la dernière", "g4": "pages affichées dans des réponses d'IA", "g5": "pays ({c})",
+        "g6": "des impressions IA vont aux versions anglaises", "week_title": "Semaine du {d} : {i} impressions",
+        "ai_label": "aioseo.fr : impressions hebdomadaires dans les AI Overviews et le mode IA de Google",
+        "ai_legend": "Impressions hebdomadaires dans les AI Overviews et le mode IA (semaines complètes, du lundi au dimanche).", "ai_th": ("Semaine du", "Impressions IA"),
+        "tops": "Les pages les plus souvent affichées dans les réponses d'IA sont les contenus pratiques, qui font office de référence :",
+        "ai_source": "Source : Google Search Console, rapport sur les fonctionnalités d'IA générative, du {a} au {b}.",
+        "countries": {"France": "France", "United States": "États-Unis"},
+        "m": [
+            ("Décembre 2025", "Premier mois à 100 clics ; la position moyenne passe à {p12}, contre {p11} le mois précédent."),
+            ("Février 2026", "{i02} impressions en un mois, trois fois plus qu'en janvier."),
+            ("Avril – juin 2026", "Position moyenne autour de {p04}, contre environ 40 un an plus tôt."),
+            ("Juin – juillet 2026", "Meilleurs mois en clics ({c06} et {c07}), portés par la couverture du lancement des AI Overviews en France."),
+            ("Août – septembre 2026", "Record d'impressions ({i08} en août), tandis que le taux de clic baisse après le lancement des AI Overviews en France : le basculement vers le zéro clic que documente le blog."),
+        ],
+    },
+}
+
+
+def aioseo_stats_html(lang="en"):
+    x = AIO_TXT[lang]
     mon = [m for m in AIO["monthly"] if m["month"] not in (AIO["first_day"][:7],)]
     first, best = mon[0], max(mon, key=lambda m: m["impressions"])
     best_pos = min((m for m in mon if m["impressions"] > 5000), key=lambda m: m["position"])
     tot_i = sum(m["impressions"] for m in AIO["monthly"])
     tot_c = sum(m["clicks"] for m in AIO["monthly"])
     l90 = AIO["last90"]
+    ml = lambda m: _month_label(m["month"], False, lang)  # noqa: E731
+    pct = " %" if lang == "fr" else "%"
     cards = [
-        (f"{best['impressions'] / first['impressions']:.0f}×", f"monthly impressions, {first['impressions']:,} ({_month_label(first['month'], False)}) to {best['impressions']:,} ({_month_label(best['month'], False)})"),
-        (f"{first['position']:.0f} → {best_pos['position']:.0f}", f"average position, {_month_label(first['month'], False)} to {_month_label(best_pos['month'], False)}"),
-        (f"{tot_i / 1000:.0f}k", f"impressions and {tot_c:,} clicks since launch"),
-        (f"{l90['queries_with_impressions']:,}", f"queries and {l90['pages_with_impressions']} pages with impressions in the last 90 days"),
-        (f"{l90['en_click_share'] * 100:.0f}%", "of clicks go to the English versions (last 90 days)"),
-        (f"{l90['nonbrand_click_share'] * 100:.0f}%", "of query clicks are non-brand (last 90 days)"),
+        (f"{best['impressions'] / first['impressions']:.0f}×", x["s1"].format(a=_num(first["impressions"], lang), am=ml(first), b=_num(best["impressions"], lang), bm=ml(best))),
+        (f"{first['position']:.0f} → {best_pos['position']:.0f}", x["s2"].format(am=ml(first), bm=ml(best_pos))),
+        (f"{tot_i / 1000:.0f}{x['k']}", x["s3"].format(c=_num(tot_c, lang))),
+        (_num(l90["queries_with_impressions"], lang), x["s4"].format(p=l90["pages_with_impressions"])),
+        (f"{l90['en_click_share'] * 100:.0f}{pct}", x["s5"]),
+        (f"{l90['nonbrand_click_share'] * 100:.0f}{pct}", x["s6"]),
     ]
     items = "".join(f"<div><b>{v}</b><span>{e(t)}</span></div>" for v, t in cards)
-    return f'<div class="case-stats">{items}</div><p class="case-source">Source: Google Search Console, {AIO["first_day"]} to {AIO["last_day"]}.</p>'
+    return f'<div class="case-stats">{items}</div><p class="case-source">{x["source"].format(a=AIO["first_day"], b=AIO["last_day"])}</p>'
 
 
-def aioseo_chart():
+def aioseo_chart(lang="en"):
+    x = AIO_TXT[lang]
     mon = [m for m in AIO["monthly"] if m["month"] != AIO["first_day"][:7]]  # launch month has a single day
-    W, H, L, R, T, B = 720, 300, 56, 44, 20, 36
-    iw, ih = W - L - R, H - T - B
+    W, H, L, R, T_, B = 720, 300, 56, 44, 20, 36
+    iw, ih = W - L - R, H - T_ - B
     maxi = max(m["impressions"] for m in mon)
     top = 10000 * -(-maxi // 10000)
     bw = iw / len(mon)
     bars, labels, pts = [], [], []
     for i, m in enumerate(mon):
         h = ih * m["impressions"] / top
-        x = L + i * bw
-        bars.append(f'<rect class="ch-bar" x="{x + bw * .18:.1f}" y="{T + ih - h:.1f}" width="{bw * .64:.1f}" height="{h:.1f}"><title>{_month_label(m["month"], False)}: {m["impressions"]:,} impressions, average position {m["position"]}</title></rect>')
+        x0 = L + i * bw
+        bars.append(f'<rect class="ch-bar" x="{x0 + bw * .18:.1f}" y="{T_ + ih - h:.1f}" width="{bw * .64:.1f}" height="{h:.1f}"><title>'
+                    f'{x["bar_title"].format(m=_month_label(m["month"], False, lang), i=_num(m["impressions"], lang), p=_num(m["position"], lang, 1))}</title></rect>')
         if i % 3 == 0 or i == len(mon) - 1:
-            labels.append(f'<text class="ch-x" x="{x + bw / 2:.1f}" y="{H - 12}" text-anchor="middle">{_month_label(m["month"])}</text>')
-        py = T + ih * (m["position"] - 1) / 49  # position 1 at the top, 50 at the bottom
-        pts.append(f"{x + bw / 2:.1f},{py:.1f}")
+            labels.append(f'<text class="ch-x" x="{x0 + bw / 2:.1f}" y="{H - 12}" text-anchor="middle">{_month_label(m["month"], True, lang)}</text>')
+        py = T_ + ih * (m["position"] - 1) / 49  # position 1 at the top, 50 at the bottom
+        pts.append(f"{x0 + bw / 2:.1f},{py:.1f}")
     grid = ""
     for k in range(5):
         v = top * k / 4
-        y = T + ih - ih * k / 4
-        grid += f'<line class="ch-grid" x1="{L}" x2="{W - R}" y1="{y:.1f}" y2="{y:.1f}"/><text class="ch-y" x="{L - 8}" y="{y + 4:.1f}" text-anchor="end">{v / 1000:.0f}k</text>'
+        y = T_ + ih - ih * k / 4
+        grid += f'<line class="ch-grid" x1="{L}" x2="{W - R}" y1="{y:.1f}" y2="{y:.1f}"/><text class="ch-y" x="{L - 8}" y="{y + 4:.1f}" text-anchor="end">{v / 1000:.0f}{x["k"].strip()}</text>'
     for pos in (1, 10, 25, 50):
-        y = T + ih * (pos - 1) / 49
+        y = T_ + ih * (pos - 1) / 49
         grid += f'<text class="ch-y2" x="{W - R + 8}" y="{y + 4:.1f}">{pos}</text>'
     line = f'<polyline class="ch-line" points="{" ".join(pts)}"/>' + "".join(f'<circle class="ch-dot" cx="{p.split(",")[0]}" cy="{p.split(",")[1]}" r="3"/>' for p in pts)
-    rows = "".join(f"<tr><td>{_month_label(m['month'], False)}</td><td>{m['impressions']:,}</td><td>{m['position']}</td></tr>" for m in mon)
+    rows = "".join(f"<tr><td>{_month_label(m['month'], False, lang)}</td><td>{_num(m['impressions'], lang)}</td><td>{_num(m['position'], lang, 1)}</td></tr>" for m in mon)
+    th = "".join(f"<th>{h}</th>" for h in x["th"])
     return f"""<figure class="case-chart">
-<svg viewBox="0 0 {W} {H}" role="img" aria-label="aioseo.fr: monthly Google impressions (bars) and average position (line), {_month_label(mon[0]['month'], False)} to {_month_label(mon[-1]['month'], False)}">{grid}{''.join(bars)}{line}{''.join(labels)}</svg>
-<figcaption><span class="lg lg-bar"></span>Monthly impressions (left axis) <span class="lg lg-line"></span>Average position (right axis, 1 at the top). September 2026 runs to the 27th.</figcaption>
-<details><summary>Show the data</summary><table><thead><tr><th>Month</th><th>Impressions</th><th>Avg. position</th></tr></thead><tbody>{rows}</tbody></table></details>
+<svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(x['chart_label'].format(a=_month_label(mon[0]['month'], False, lang), b=_month_label(mon[-1]['month'], False, lang)))}">{grid}{''.join(bars)}{line}{''.join(labels)}</svg>
+<figcaption><span class="lg lg-bar"></span>{x['legend_bar']} <span class="lg lg-line"></span>{x['legend_line']}</figcaption>
+<details><summary>{x['show']}</summary><table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table></details>
 </figure>"""
 
 
-GENAI_TOP_PAGES = [  # most visible pages in AI Overviews / AI Mode (public articles)
-    ("Generative AI report in Google Search Console: how to analyze it", "https://aioseo.fr/en/google-search-console-generative-ai-report-how-to-analyze-it/"),
-    ("Top 10 GEO tools to track your AI position (English and French versions)", "https://aioseo.fr/en/top-10-tools-geo-to-track-your-position-ia-2025/"),
-    ("Comment connaître son positionnement sur Google AI Mode et AI Overviews ?", "https://aioseo.fr/comment-connaitre-son-positionnement-sur-ai-mode/"),
-    ("Google AI Overviews arrives in France", "https://aioseo.fr/en/en-google-ai-overviews-arrive-en-france/"),
-]
+GENAI_TOP_PAGES = {  # most visible pages in AI Overviews / AI Mode (public articles), linked in the reader's language
+    "en": [
+        ("Generative AI report in Google Search Console: how to analyze it", "https://aioseo.fr/en/google-search-console-generative-ai-report-how-to-analyze-it/"),
+        ("Top 10 GEO tools to track your AI position (English and French versions)", "https://aioseo.fr/en/top-10-tools-geo-to-track-your-position-ia-2025/"),
+        ("Comment connaître son positionnement sur Google AI Mode et AI Overviews ?", "https://aioseo.fr/comment-connaitre-son-positionnement-sur-ai-mode/"),
+        ("Google AI Overviews arrives in France", "https://aioseo.fr/en/en-google-ai-overviews-arrive-en-france/"),
+    ],
+    "fr": [
+        ("Rapport IA générative Google Search Console : comment l'analyser", "https://aioseo.fr/rapport-ia-generative-google-search-console-comment-analyser/"),
+        ("Top 10 des outils GEO pour suivre votre positionnement IA (versions française et anglaise)", "https://aioseo.fr/top-10-des-outils-geo-pour-suivre-votre-positionnement-ia-2025/"),
+        ("Comment connaître son positionnement sur Google AI Mode et AI Overviews ?", "https://aioseo.fr/comment-connaitre-son-positionnement-sur-ai-mode/"),
+        ("Google AI Overviews arrive en France", "https://aioseo.fr/google-ai-overviews-arrive-en-france/"),
+    ],
+}
 
 
-def _day_label(d):
-    y, m, day = d.split("-")
-    return f"{MONTHS['en'][int(m) - 1]} {int(day)}, {y}"
-
-
-def aioseo_genai_html():
+def aioseo_genai_html(lang="en"):
+    x = AIO_TXT[lang]
     g = AIO["genai"]
     full = [m for m in g["monthly"] if not m["partial"] and m["month"] != g["last_day"][:7]]
     shares = [m["share_of_site"] * 100 for m in full]
-    fc = ", ".join(f"{c['country']} {c['share'] * 100:.0f}%" for c in g["top_countries"][:2])
+    pct = " %" if lang == "fr" else "%"
+    fc = ", ".join(f"{x['countries'].get(c['country'], c['country'])} {c['share'] * 100:.0f}{pct}" for c in g["top_countries"][:2])
     cards = [
-        (f"{g['impressions']:,}", f"impressions in AI Overviews and AI Mode, {_day_label(g['first_day'])} to {_day_label(g['last_day'])}"),
-        (f"{min(shares):.0f}–{max(shares):.0f}%", f"of all the site's Google impressions each month ({_month_label(full[0]['month'], False)} to {_month_label(full[-1]['month'], False)})"),
-        (f"{g['daily_avg_last_week'] / g['daily_avg_first_week']:.1f}×", f"daily AI impressions, about {g['daily_avg_first_week']} a day in the first week to {g['daily_avg_last_week']} in the last"),
-        (f"{g['pages']}", "pages shown in AI answers"),
-        (f"{g['countries']}", f"countries ({fc})"),
-        (f"{g['en_share'] * 100:.0f}%", "of AI impressions go to the English versions"),
+        (_num(g["impressions"], lang), x["g1"].format(a=_day_label(g["first_day"], lang), b=_day_label(g["last_day"], lang))),
+        (f"{min(shares):.0f}–{max(shares):.0f}{pct}", x["g2"].format(a=_month_label(full[0]["month"], False, lang), b=_month_label(full[-1]["month"], False, lang))),
+        (f"{_num(g['daily_avg_last_week'] / g['daily_avg_first_week'], lang, 1)}×", x["g3"].format(a=g["daily_avg_first_week"], b=g["daily_avg_last_week"])),
+        (f"{g['pages']}", x["g4"]),
+        (f"{g['countries']}", x["g5"].format(c=fc)),
+        (f"{g['en_share'] * 100:.0f}{pct}", x["g6"]),
     ]
     stats = "".join(f"<div><b>{v}</b><span>{e(t)}</span></div>" for v, t in cards)
     wk = g["weekly"]
-    W, H, L, R, T, B = 720, 220, 56, 16, 16, 34
-    iw, ih = W - L - R, H - T - B
+    W, H, L, R, T_, B = 720, 220, 56, 16, 16, 34
+    iw, ih = W - L - R, H - T_ - B
     top = 500 * -(-max(w["impressions"] for w in wk) // 500)
     bw = iw / len(wk)
     bars = "".join(
-        f'<rect class="ch-bar ch-bar-ai" x="{L + i * bw + bw * .18:.1f}" y="{T + ih - ih * w["impressions"] / top:.1f}" width="{bw * .64:.1f}" height="{ih * w["impressions"] / top:.1f}"><title>Week of {_day_label(w["week"])}: {w["impressions"]:,} impressions</title></rect>'
+        f'<rect class="ch-bar ch-bar-ai" x="{L + i * bw + bw * .18:.1f}" y="{T_ + ih - ih * w["impressions"] / top:.1f}" width="{bw * .64:.1f}" height="{ih * w["impressions"] / top:.1f}"><title>'
+        f'{x["week_title"].format(d=_day_label(w["week"], lang), i=_num(w["impressions"], lang))}</title></rect>'
         for i, w in enumerate(wk))
-    labels = "".join(f'<text class="ch-x" x="{L + i * bw + bw / 2:.1f}" y="{H - 10}" text-anchor="middle">{MONTHS["en"][int(w["week"][5:7]) - 1][:3]} {int(w["week"][8:])}</text>'
+    def wlabel(w):
+        mo, day = int(w["week"][5:7]), int(w["week"][8:])
+        return f"{day} {T['fr']['months'][mo - 1]}" if lang == "fr" else f"{MONTHS['en'][mo - 1][:3]} {day}"
+    labels = "".join(f'<text class="ch-x" x="{L + i * bw + bw / 2:.1f}" y="{H - 10}" text-anchor="middle">{wlabel(w)}</text>'
                      for i, w in enumerate(wk) if i % 4 == 0 or (i == len(wk) - 1 and i % 4 > 2))
-    grid = "".join(f'<line class="ch-grid" x1="{L}" x2="{W - R}" y1="{T + ih - ih * k / 4:.1f}" y2="{T + ih - ih * k / 4:.1f}"/><text class="ch-y" x="{L - 8}" y="{T + ih - ih * k / 4 + 4:.1f}" text-anchor="end">{top * k / 4:,.0f}</text>' for k in range(5))
-    rows = "".join(f"<tr><td>{_day_label(w['week'])}</td><td>{w['impressions']:,}</td></tr>" for w in wk)
-    tops = "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{e(x)}</a></li>' for x, u in GENAI_TOP_PAGES)
+    grid = "".join(f'<line class="ch-grid" x1="{L}" x2="{W - R}" y1="{T_ + ih - ih * k / 4:.1f}" y2="{T_ + ih - ih * k / 4:.1f}"/><text class="ch-y" x="{L - 8}" y="{T_ + ih - ih * k / 4 + 4:.1f}" text-anchor="end">{_num(top * k / 4, lang)}</text>' for k in range(5))
+    rows = "".join(f"<tr><td>{_day_label(w['week'], lang)}</td><td>{_num(w['impressions'], lang)}</td></tr>" for w in wk)
+    th = "".join(f"<th>{h}</th>" for h in x["ai_th"])
+    tops = "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{e(t)}</a></li>' for t, u in GENAI_TOP_PAGES[lang])
     return f"""<div class="case-stats">{stats}</div>
 <figure class="case-chart">
-<svg viewBox="0 0 {W} {H}" role="img" aria-label="aioseo.fr: weekly impressions in Google AI Overviews and AI Mode">{grid}{bars}{labels}</svg>
-<figcaption><span class="lg lg-bar lg-ai"></span>Weekly impressions in AI Overviews and AI Mode (full weeks, Monday to Sunday).</figcaption>
-<details><summary>Show the data</summary><table><thead><tr><th>Week of</th><th>AI impressions</th></tr></thead><tbody>{rows}</tbody></table></details>
+<svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(x['ai_label'])}">{grid}{bars}{labels}</svg>
+<figcaption><span class="lg lg-bar lg-ai"></span>{x['ai_legend']}</figcaption>
+<details><summary>{x['show']}</summary><table><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table></details>
 </figure>
-<p>The pages most often shown in AI answers are the practical, reference-style ones:</p>
+<p>{x['tops']}</p>
 <ul>{tops}</ul>
-<p class="case-source">Source: Google Search Console, generative AI features report, {g['first_day']} to {g['last_day']}.</p>"""
+<p class="case-source">{x['ai_source'].format(a=g['first_day'], b=g['last_day'])}</p>"""
 
 
-def aioseo_cover():
-    """Card / social image for the case study: the impressions curve on the site's green."""
+def aioseo_cover(lang="en"):
+    """Card / social image for the case study: the impressions curve on the site's green (assets/case-aioseo[-lang].svg)."""
     mon = [m for m in AIO["monthly"] if m["month"] != AIO["first_day"][:7]]
     W, H = 1200, 630
     maxi = max(m["impressions"] for m in mon)
@@ -253,22 +370,17 @@ def aioseo_cover():
     first, best = mon[0], max(mon, key=lambda m: m["impressions"])
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}"><rect width="{W}" height="{H}" fill="#1f4d3a"/>
 <text x="100" y="130" font-family="Georgia, serif" font-size="72" fill="#f6f3ec">aioseo.fr</text>
-<text x="100" y="185" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#cfe0d5">SEO &amp; GEO case study · {best['impressions'] / first['impressions']:.0f}× monthly Google impressions</text>
+<text x="100" y="185" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#cfe0d5">{({"fr": "Étude de cas SEO et GEO · impressions Google mensuelles ×{x}"}.get(lang, "SEO &amp; GEO case study · {x}× monthly Google impressions")).format(x=f"{best['impressions'] / first['impressions']:.0f}")}</text>
 {bars}</svg>"""
-    write("assets/case-aioseo.svg", svg)
+    write("assets/case-aioseo.svg" if lang == "en" else f"assets/case-aioseo-{lang}.svg", svg)
 
 
-def aioseo_milestones():
+def aioseo_milestones(lang="en"):
     by = {m["month"]: m for m in AIO["monthly"]}
     g = lambda k: by.get(k, {"clicks": 0, "impressions": 0, "position": 0})  # noqa: E731
-    items = [
-        ("December 2025", f"First 100-click month; average position improved to {g('2025-12')['position']:.0f}, from {g('2025-11')['position']:.0f} the month before."),
-        ("February 2026", f"{g('2026-02')['impressions']:,} impressions in a month, three times January."),
-        ("April – June 2026", f"Average position around {g('2026-04')['position']:.0f}, from about 40 a year earlier."),
-        ("June – July 2026", f"Best months for clicks ({g('2026-06')['clicks']} and {g('2026-07')['clicks']}), driven by the AI Overviews France coverage."),
-        ("August – September 2026", f"Record impressions ({g('2026-08')['impressions']:,} in August) while click-through rates fell after AI Overviews launched in France: the zero-click shift the blog documents."),
-    ]
-    return '<ol class="milestones">' + "".join(f"<li><b>{w}</b><span>{t}</span></li>" for w, t in items) + "</ol>"
+    v = {"p12": f"{g('2025-12')['position']:.0f}", "p11": f"{g('2025-11')['position']:.0f}", "i02": _num(g("2026-02")["impressions"], lang),
+         "p04": f"{g('2026-04')['position']:.0f}", "c06": g("2026-06")["clicks"], "c07": g("2026-07")["clicks"], "i08": _num(g("2026-08")["impressions"], lang)}
+    return '<ol class="milestones">' + "".join(f"<li><b>{w}</b><span>{t.format(**v)}</span></li>" for w, t in AIO_TXT[lang]["m"]) + "</ol>"
 
 
 def first_image(path):
@@ -343,6 +455,7 @@ BLOG += sorted((p for p in PAGES if p.startswith("blog/") and p not in _seen), k
 # Services come from _build/services.py (one page per language; English keeps the historical URLs)
 SERVICES = [d["paths"]["en"] for d in SERVICE_DEFS]
 SVC_BY_PATH = {d["paths"][l]: d for d in SERVICE_DEFS for l in LANGS}
+TITLE_BY_PATH = {**{k: v["h1"] for k, v in PAGES.items()}, **{m["path"]: m["h1"] for l in TR for m in TR[l].values()}}
 for _d in SERVICE_DEFS:  # metadata used by llms.txt, the sitemap and listings
     PAGES[_d["paths"]["en"]] = {**PAGES.get(_d["paths"]["en"], {}), "path": _d["paths"]["en"], "title": _d["en"]["title"], "h1": _d["en"]["h1"],
                                 "description": _d["en"]["desc"], "jsonld": [], "cover": None, "lead": ""}
@@ -452,7 +565,7 @@ def layout(path, *, title, description, body, lang="en", ui=None, active="", og_
     canon = "" if noindex else f'\n<link rel="canonical" href="{canonical(canonical_path or path)}">'
     hreflang = ""
     if alternates:
-        hreflang = "".join(f'\n<link rel="alternate" hreflang="{l}" href="{SITE}{u}">' for l, u in alternates.items())
+        hreflang = "".join(f'\n<link rel="alternate" hreflang="{l}" href="{SITE}{u}">' for l, u in alternates.items() if l != "x-default")
         hreflang += f'\n<link rel="alternate" hreflang="x-default" href="{SITE}{alternates.get("x-default", alternates["en"])}">'
     article = f'\n<meta property="article:published_time" content="{published}">\n<meta property="article:author" content="{SITE}/">' if published else ""
     locale = META.get(lang, META["en"])["locale"]
@@ -482,7 +595,7 @@ def layout(path, *, title, description, body, lang="en", ui=None, active="", og_
 <meta name="twitter:image" content="{e(og_image)}">
 <link rel="icon" href="/assets/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="alternate" type="application/rss+xml" title="Aslane Samai · Blog" href="{SITE}/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Aslane Samai · Blog" href="{SITE}/{"fr/" if lang == "fr" and "fr" in TR else ""}feed.xml">
 <link rel="me" href="{LINKEDIN}">
 <link rel="preload" href="/assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>{fonts}{pre}
 <script>try{{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
@@ -539,23 +652,27 @@ def badge(lang, page_lang="en"):
 
 
 def post_card(path, lang="en", width=720):
-    p = PAGES[path]
-    plang = lang_of(p["h1"] + " " + p["description"])
+    p = page_meta(path, lang)
+    plang = lang if tr(path, lang) else lang_of(p["h1"] + " " + p["description"])
     cover = img(p.get("cover"), width)
     thumb = f'<div class="thumb"><img src="{e(cover)}" alt=""{dims(p.get("cover"), width)} loading="lazy" decoding="async"></div>' if cover else ""
-    return (f'<a class="card card-media reveal" href="{url_of(path)}" hreflang="{plang}">{thumb}<div class="body"><span class="tag">{fmt_date(post_date(p), lang)}{badge(lang, plang)}</span>'
-            f'<h3 lang="{plang}" dir="ltr">{e(LABELS.get(path) or p["h1"])}</h3><p lang="{plang}" dir="ltr">{e(clip(p["description"], 150))}</p></div></a>')
+    title = p["h1"] if tr(path, lang) else (LABELS.get(path) or p["h1"])
+    ltr = ' dir="ltr"' if plang != "ar" else ""
+    return (f'<a class="card card-media reveal" href="{url_of(local_path(path, lang))}" hreflang="{plang}">{thumb}<div class="body"><span class="tag">{fmt_date(post_date(p), lang)}{badge(lang, plang)}</span>'
+            f'<h3 lang="{plang}"{ltr}>{e(title)}</h3><p lang="{plang}"{ltr}>{e(clip(p["description"], 150))}</p></div></a>')
 
 
 def case_card(path, lang="en"):
-    p = PAGES[path]
+    p = page_meta(path, lang)
+    plang = lang if tr(path, lang) else "en"
     t = T[lang]
     raw = p.get("card_image") or p.get("cover") or first_image(path)  # card_image: a logo for the card only, not shown on the page
     cover = img(raw, 720)
     frame = "thumb" if (raw or "").startswith("/assets/case-") else "thumb logo"  # generated covers are full-bleed, client logos sit on white
     thumb = f'<div class="{frame}"><img src="{e(cover)}" alt=""{dims(raw, 720)} loading="lazy" decoding="async"></div>' if cover else ""
-    return (f'<a class="card card-media reveal" href="{url_of(path)}" hreflang="en">{thumb}<div class="body"><span class="tag">{t["case_tag"]}{badge(lang)}</span>'
-            f'<h3 lang="en" dir="ltr">{e(p["h1"])}</h3><p lang="en" dir="ltr">{e(clip(p["description"], 140))}</p><span class="foot">{t["case_read"]}</span></div></a>')
+    ltr = ' dir="ltr"' if plang != "ar" else ""
+    return (f'<a class="card card-media reveal" href="{url_of(local_path(path, lang))}" hreflang="{plang}">{thumb}<div class="body"><span class="tag">{t["case_tag"]}{badge(lang, plang)}</span>'
+            f'<h3 lang="{plang}"{ltr}>{e(p["h1"])}</h3><p lang="{plang}"{ltr}>{e(clip(p["description"], 140))}</p><span class="foot">{t["case_read"]}</span></div></a>')
 
 
 def service_card(path, lang, i=None):
@@ -692,7 +809,10 @@ def build_home(lang):
     services = "".join(service_card(p, lang, i) for i, p in enumerate(SERVICES, 1))
     cases = "".join(case_card(p, lang) for p in CASES[:3])
     posts = "".join(post_card(p, lang) for p in BLOG[:3])
-    more_posts = "".join(f'<a href="{url_of(p)}" hreflang="en"><h3 lang="en" dir="ltr">{e(LABELS.get(p) or PAGES[p]["h1"])}</h3><span>{fmt_date(post_date(PAGES[p]), lang)}</span></a>' for p in BLOG[3:8])
+    more_posts = "".join(
+        (f'<a href="{url_of(local_path(p, lang))}" hreflang="{lang}"><h3>{e(page_meta(p, lang)["h1"])}</h3>' if tr(p, lang) else
+         f'<a href="{url_of(p)}" hreflang="en"><h3 lang="en" dir="ltr">{e(LABELS.get(p) or PAGES[p]["h1"])}</h3>')
+        + f'<span>{fmt_date(post_date(PAGES[p]), lang)}</span></a>' for p in BLOG[3:8])
     certs_html = "".join(f'<div class="cert reveal"><b dir="ltr">{x}</b><span>{ext(u, o) if u else o}</span></div>' for x, o, u in CERTS)
     faq_html = "".join(f'<details class="faq-item reveal"><summary><h3>{e(q)}</h3></summary><div><p>{a}</p></div></details>' for q, a in t["faq"])
     about = [t["about_p1"],
@@ -805,28 +925,36 @@ def build_listing(lang, page):
     title, description, h1, lead = t[key]
     eyebrow = {"services": t["services_eyebrow"], "ressources": t["cases_eyebrow"], "blog": t["blog_eyebrow"]}[section]
     if section == "blog":
-        items, grid = BLOG, f'<div class="grid grid-3">{"".join(post_card(p, lang) for p in BLOG)}</div>'
+        items, grid = [local_path(p, lang) for p in BLOG], f'<div class="grid grid-3">{"".join(post_card(p, lang) for p in BLOG)}</div>'
     elif section == "services":
         items, grid = [d["paths"][lang] for d in SERVICE_DEFS], f'<div class="grid grid-3">{"".join(service_card(p, lang, i) for i, p in enumerate(SERVICES, 1))}</div>'
     else:
-        items, grid = CASES, f'<div class="grid grid-3">{"".join(case_card(p, lang) for p in CASES)}</div>'
+        items, grid = [local_path(p, lang) for p in CASES], f'<div class="grid grid-3">{"".join(case_card(p, lang) for p in CASES)}</div>'
     body = f"""<section class="page-head"><div class="wrap"><p class="eyebrow">{eyebrow}</p><h1>{e(h1)}</h1><p class="lead">{e(lead)}</p></div></section>
 <section style="padding-bottom:0"><div class="wrap">{grid}</div></section>
 {cta_band(lang)}"""
     ld = graph(person_node(), website_node(),
                {"@type": "CollectionPage", "@id": canonical(path) + "#webpage", "url": canonical(path), "name": h1, "description": description, "inLanguage": lang,
                 "isPartOf": {"@id": WEBSITE_ID}, "author": {"@id": PERSON_ID},
-                "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "url": canonical(q), "name": SVC_BY_PATH[q][lang]["h1"] if q in SVC_BY_PATH else PAGES[q]["h1"]} for i, q in enumerate(items, 1)]}},
+                "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": i, "url": canonical(q), "name": SVC_BY_PATH[q][lang]["h1"] if q in SVC_BY_PATH else TITLE_BY_PATH.get(q, "")} for i, q in enumerate(items, 1)]}},
                breadcrumbs([(t["home_crumb"], f"/{lang}/"), (eyebrow, url_of(path))]))
     write(path, layout(path, title=title, description=description, body=body, lang=lang, active=section, jsonld=[ld], alternates=alternates_for(page)))
 
 
-def build_page(path):
-    p = PAGES[path]
-    body_html = content(path)
-    lang = lang_of(p["h1"] + " " + re.sub(r"<[^>]+>", " ", body_html)[:4000])
+def build_page(path, to=None):
+    """path: the English (original) page. to: a language to build its translation in."""
+    src = path
+    if to:
+        path = tr(src, to)["path"]
+        p = page_meta(src, to)
+        body_html = localize_links(content(path), to)
+        lang = to
+    else:
+        p = PAGES[path]
+        body_html = content(path)
+        lang = lang_of(p["h1"] + " " + re.sub(r"<[^>]+>", " ", body_html)[:4000])
     t = T[lang]
-    section = path.split("/")[0] if "/" in path else ""
+    section = src.split("/")[0] if "/" in src else ""
     crumbs_map = {"blog": (t["nav_blog"], f"/{lang}/blog.html"), "services": (t["nav_services"], f"/{lang}/services.html"), "ressources": (t["nav_cases"], f"/{lang}/ressources.html")}
     is_post = section == "blog"
     date = post_date(p) if is_post else None
@@ -834,7 +962,7 @@ def build_page(path):
     if section in crumbs_map:
         crumbs += f'<a href="{crumbs_map[section][1]}">{crumbs_map[section][0]}</a>'
     crumbs += "</nav>"
-    byline = (f'<div class="byline"><img src="/assets/portrait-sm.webp" alt="" width="40" height="40"><div><b>Aslane Samai</b><br>{fmt_date(date, lang) if date else "SEO / GEO consultant"}</div></div>'
+    byline = (f'<div class="byline"><img src="/assets/portrait-sm.webp" alt="" width="40" height="40"><div><b>Aslane Samai</b><br>{fmt_date(date, lang) if date else {"fr": "Consultant SEO / GEO", "ar": "مستشار SEO / GEO"}.get(lang, "SEO / GEO consultant")}</div></div>'
               if section else "")
     lead = f'<p class="lead">{e(p["lead"])}</p>' if p.get("lead") and path != "privacy-policy.html" else ""
     cover = f'<figure class="cover"><img src="{e(img(p["cover"], 1600))}" alt=""{dims(p["cover"], 1600)} fetchpriority="high"></figure>' if p.get("cover") and path != "privacy-policy.html" else ""
@@ -844,14 +972,15 @@ def build_page(path):
     related = ""
     pool = {"blog": BLOG, "ressources": CASES, "services": SERVICES}.get(section)
     if pool:
-        idx = pool.index(path) if path in pool else -1
-        others = [q for q in pool[idx + 1:] + pool[:max(idx, 0)] if q != path][:3]
+        idx = pool.index(src) if src in pool else -1
+        others = [q for q in pool[idx + 1:] + pool[:max(idx, 0)] if q != src][:3]
         if others:
             card = {"blog": post_card, "ressources": case_card, "services": service_card}[section]
             heading = {"blog": "Keep reading", "ressources": "More case studies", "services": "Other services"}[section] if lang == "en" else {"blog": "À lire aussi", "ressources": "Autres études de cas", "services": "Autres services"}[section]
             related = f'<section class="related"><div class="wrap"><div class="section-head"><h2>{heading}</h2></div><div class="grid grid-3">{"".join(card(q, lang) for q in others)}</div></div></section>'
-    canon_path = p.get("canonical") or path
+    canon_path = (local_path(p["canonical"], to) if to else p["canonical"]) if p.get("canonical") else path
     url = canonical(canon_path)
+    alternates = article_alternates(src)
     words = len(re.sub(r"<[^>]+>", " ", body_html).split())
     node = {"@id": url + "#webpage", "url": url, "headline": p["h1"], "name": p["h1"], "description": clean_text(p["description"]),
             "inLanguage": lang, "isPartOf": {"@id": WEBSITE_ID}, "author": {"@id": PERSON_ID}, "publisher": {"@id": PERSON_ID}}
@@ -862,6 +991,10 @@ def build_page(path):
                      "wordCount": words, **({"datePublished": p["added"]} if p.get("added") else {})})
     else:
         node["@type"] = "WebPage"
+    if alternates and to:
+        node["translationOfWork"] = {"@id": canonical(src) + "#webpage"}
+    elif alternates:
+        node["workTranslation"] = [{"@id": SITE + u + "#webpage"} for l, u in alternates.items() if l not in ("en", "x-default")]
     crumb_items = [(t["home_crumb"], f"/{lang}/")] + ([crumbs_map[section]] if section in crumbs_map else []) + [(p["h1"], url_of(canon_path))]
     jsonld = [graph(person_node(), website_node(), node, breadcrumbs(crumb_items))]
     body = f"""<article>
@@ -876,7 +1009,8 @@ def build_page(path):
 {cta_band(lang)}"""
     og_image = p.get("og_image") or (img(p["cover"], 1200) if p.get("cover") else None)
     write(path, layout(path, title=title_with_brand(page_title(p)), description=p["description"] or p["h1"], body=body, lang=lang, active=section,
-                       og_type="article" if is_post else "website", og_image=og_image, jsonld=jsonld, canonical_path=canon_path, published=date))
+                       og_type="article" if is_post else "website", og_image=og_image, jsonld=jsonld, canonical_path=canon_path, published=date,
+                       alternates=alternates))
 
 
 def _excerpt(x):
@@ -1012,9 +1146,13 @@ def build_sitemap():
         alts = {l: url_of(d["paths"][l]) for l in LANGS} | {"x-default": url_of(d["paths"]["en"])}
         for l in LANGS:
             per_lang[l].append((d["paths"][l], alts))
-    for p in CASES + BLOG + ["privacy-policy.html"]:  # articles and case studies exist in their original language only
+    for p in CASES + BLOG + ["privacy-policy.html"]:
         lang = lang_of(PAGES[p]["h1"] + " " + PAGES[p].get("description", "")) if p in PAGES else "en"
-        per_lang[lang if lang in LANGS else "en"].append((p, None))
+        alts = article_alternates(p)
+        per_lang[lang if lang in LANGS else "en"].append((p, alts))
+        for l in TR:
+            if p in TR[l]:
+                per_lang[l].append((TR[l][p]["path"], alts))
     index = ""
     for l, items in per_lang.items():
         urls = "".join(entry(p, a) for p, a in items)
@@ -1068,6 +1206,7 @@ def build_llms():
              "## Services", "", *[line(q) for q in SERVICES], "",
              "## Case studies", "", *[line(q) for q in CASES], "",
              "## Blog", "", *[line(q) for q in BLOG], "",
+             "## Articles en français (French translations)", "", *[f"- [{m['h1']}]({canonical(m['path'])}): {m['description']}" for m in TR.get("fr", {}).values()], "",
              "## AIO SEO (aioseo.fr, English and French)", "", *[f"- [{x}]({u})" for x, u in AIOSEO_ARTICLES_EN], *[f"- [{x}]({u}) (French)" for x, u in AIOSEO_ARTICLES], "",
              "## Optional", "",
              f"- [Full text of every page]({SITE}/llms-full.txt): services, case studies and articles in Markdown",
@@ -1087,27 +1226,30 @@ def build_llms():
     write("llms-full.txt", "\n\n".join(full) + "\n")
 
 
-def build_feed():
+def build_feed(lang="en"):
     def rfc822(d):
         return dt.datetime.strptime(d, "%Y-%m-%d").strftime("%a, %d %b %Y 12:00:00 +0000")
-    posts = sorted((q for q in BLOG if post_date(PAGES[q])), key=lambda q: post_date(PAGES[q]), reverse=True)
+    posts = sorted((q for q in BLOG if post_date(PAGES[q]) and (lang == "en" or tr(q, lang))), key=lambda q: post_date(PAGES[q]), reverse=True)
     items = "".join(f"""  <item>
-    <title>{e(PAGES[q]['h1'])}</title>
-    <link>{canonical(q)}</link>
-    <guid isPermaLink="true">{canonical(q)}</guid>
+    <title>{e(page_meta(q, lang)['h1'])}</title>
+    <link>{canonical(local_path(q, lang))}</link>
+    <guid isPermaLink="true">{canonical(local_path(q, lang))}</guid>
     <pubDate>{rfc822(post_date(PAGES[q]))}</pubDate>
     <dc:creator>Aslane Samai</dc:creator>
-    <description>{e(clean_text(PAGES[q]['description']))}</description>
+    <description>{e(clean_text(page_meta(q, lang)['description']))}</description>
   </item>
 """ for q in posts)
-    write("feed.xml", f"""<?xml version="1.0" encoding="UTF-8"?>
+    feed = "feed.xml" if lang == "en" else f"{lang}/feed.xml"
+    desc = {"en": "Notes on SEO, GEO, AI search and the web by Aslane Samai, SEO / GEO consultant in Paris.",
+            "fr": "SEO, GEO, recherche IA et web : le blog d'Aslane Samai, consultant SEO / GEO à Paris."}[lang]
+    write(feed, f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel>
-  <title>Aslane Samai · Blog</title>
-  <link>{SITE}/en/blog.html</link>
-  <atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>Notes on SEO, GEO, AI search and the web by Aslane Samai, SEO / GEO consultant in Paris.</description>
-  <language>en</language>
+  <title>Aslane Samai · Blog{"" if lang == "en" else " (" + META[lang]["name"] + ")"}</title>
+  <link>{SITE}/{lang}/blog.html</link>
+  <atom:link href="{SITE}/{feed}" rel="self" type="application/rss+xml"/>
+  <description>{desc}</description>
+  <language>{lang}</language>
   <lastBuildDate>{rfc822(TODAY)}</lastBuildDate>
 {items}</channel>
 </rss>
@@ -1123,6 +1265,9 @@ if __name__ == "__main__":
     for path in PAGES:
         if path not in SVC_BY_PATH:
             build_page(path)
+    for lang_, pages_ in TR.items():
+        for path in pages_:
+            build_page(path, lang_)
     for d in SERVICE_DEFS:
         for lang in LANGS:
             build_service(lang, d)
@@ -1131,6 +1276,9 @@ if __name__ == "__main__":
     build_sitemap()
     build_llms()
     build_feed()
+    for lang_ in TR:
+        build_feed(lang_)
     if AIO:
         aioseo_cover()
+        aioseo_cover("fr")
     print(f"built {len(LANGS) * 4 + len(PAGES) - len(SERVICES) + len(SERVICES) * len(LANGS) + 2} pages ({', '.join(LANGS)}) · blog {len(BLOG)} · services {len(SERVICES)} · cases {len(CASES)} · redirects {len(REDIRECTS)}")

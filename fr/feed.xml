@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>Aslane Samai · Blog (Français)</title>
+  <link>https://aslanesamai.com/fr/blog.html</link>
+  <atom:link href="https://aslanesamai.com/fr/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>SEO, GEO, recherche IA et web : le blog d'Aslane Samai, consultant SEO / GEO à Paris.</description>
+  <language>fr</language>
+  <lastBuildDate>Mon, 28 Sep 2026 12:00:00 +0000</lastBuildDate>
+  <item>
+    <title>La chute de GeeksForGeeks : une leçon de SEO et une grande perte pour les développeurs</title>
+    <link>https://aslanesamai.com/fr/blog/geeksforgeeks-desindexe-google-lecons-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/geeksforgeeks-desindexe-google-lecons-seo.html</guid>
+    <pubDate>Thu, 10 Apr 2025 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>GeeksForGeeks, site phare des développeurs, a été désindexé par Google. Ce qui s&#x27;est passé, et ce que tout propriétaire de site peut en retenir.</description>
+  </item>
+  <item>
+    <title>La fin du futur sans cookies : ce que la décision de Google change pour les professionnels du SEO</title>
+    <link>https://aslanesamai.com/fr/blog/fin-futur-sans-cookies-google-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/fin-futur-sans-cookies-google-seo.html</guid>
+    <pubDate>Sat, 27 Jul 2024 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Google renonce à supprimer les cookies tiers. Ce que cela change pour les professionnels du SEO, la publicité en ligne et les normes de confidentialité.</description>
+  </item>
+  <item>
+    <title>La solution radicale de Cloudflare contre les robots d&#x27;IA : ce que les SEO doivent savoir</title>
+    <link>https://aslanesamai.com/fr/blog/cloudflare-bloque-robots-ia-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/cloudflare-bloque-robots-ia-seo.html</guid>
+    <pubDate>Sat, 27 Jul 2024 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Cloudflare lance un outil pour bloquer les robots d&#x27;IA. Comment il fonctionne et ce qu&#x27;il change pour le SEO, le GEO et la visibilité dans les IA.</description>
+  </item>
+  <item>
+    <title>La rédemption en SEO : améliorer la qualité de votre site et regagner la confiance de Google</title>
+    <link>https://aslanesamai.com/fr/blog/regagner-confiance-google-qualite-site.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/regagner-confiance-google-qualite-site.html</guid>
+    <pubDate>Wed, 04 Oct 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Comment améliorer la qualité de votre site et regagner la confiance de Google après un revers SEO, avec les conseils de Gary Illyes.</description>
+  </item>
+  <item>
+    <title>Google paie des éditeurs pour tester une plateforme d&#x27;IA générative inédite : quel impact pour le SEO ?</title>
+    <link>https://aslanesamai.com/fr/blog/google-ia-redaction-editeurs-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/google-ia-redaction-editeurs-seo.html</guid>
+    <pubDate>Tue, 19 Sep 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Google paie des éditeurs pour tester un outil de rédaction par IA encore inédit. Ce que l&#x27;on sait, les questions éthiques, et ce que cela change pour le SEO.</description>
+  </item>
+  <item>
+    <title>Un outil gratuit de suivi des domaines et des certificats SSL pour les SEO freelances</title>
+    <link>https://aslanesamai.com/fr/blog/alertes-domaine-ssl-gratuites-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/alertes-domaine-ssl-gratuites-seo.html</guid>
+    <pubDate>Tue, 19 Sep 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Ne ratez plus un renouvellement de domaine ou un certificat SSL expiré: mon avis sur Free Domain Alerts, un outil gratuit jusqu&#x27;à 20 domaines.</description>
+  </item>
+  <item>
+    <title>Google prend désormais en charge les résultats enrichis pour les contenus payants</title>
+    <link>https://aslanesamai.com/fr/blog/resultats-enrichis-contenus-payants-google.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/resultats-enrichis-contenus-payants-google.html</guid>
+    <pubDate>Tue, 19 Sep 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Google valide désormais les données structurées des contenus payants. Pourquoi c&#x27;est utile pour le SEO, et comment le mettre en place en JSON-LD.</description>
+  </item>
+  <item>
+    <title>Google confirme que Google Sites n&#x27;est pas idéal pour le SEO</title>
+    <link>https://aslanesamai.com/fr/blog/google-sites-seo-john-mueller.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/google-sites-seo-john-mueller.html</guid>
+    <pubDate>Tue, 19 Sep 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>John Mueller confirme que Google Sites n&#x27;est pas idéal pour le SEO. Ses limites, ses avantages et inconvénients, et de meilleures alternatives pour votre site.</description>
+  </item>
+  <item>
+    <title>Maîtriser l&#x27;INP pour un site plus performant : le guide du débutant</title>
+    <link>https://aslanesamai.com/fr/blog/inp-guide-debutants-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/inp-guide-debutants-seo.html</guid>
+    <pubDate>Sat, 02 Sep 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Guide de l&#x27;Interaction to Next Paint (INP) pour débutants: ce qu&#x27;elle mesure, pourquoi elle compte pour les Core Web Vitals et le SEO, et comment l&#x27;améliorer.</description>
+  </item>
+  <item>
+    <title>Auditez votre site facilement et rapidement avec cet outil SEO gratuit de HubSpot</title>
+    <link>https://aslanesamai.com/fr/blog/audit-seo-gratuit-hubspot-website-grader.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/audit-seo-gratuit-hubspot-website-grader.html</guid>
+    <pubDate>Mon, 28 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Auditez votre site en quelques minutes avec le Website Grader gratuit de HubSpot: performances, SEO, ergonomie mobile et sécurité, expliqués aux débutants.</description>
+  </item>
+  <item>
+    <title>Outils de tendances SEO pour débutants : Exploding Topics, Google Trends, SparkToro et Glimpse</title>
+    <link>https://aslanesamai.com/fr/blog/outils-tendances-seo-exploding-topics-google-trends-sparktoro.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/outils-tendances-seo-exploding-topics-google-trends-sparktoro.html</guid>
+    <pubDate>Mon, 28 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Les outils de tendances SEO pour débutants: Exploding Topics, Google Trends, SparkToro et Glimpse, et comment repérer les sujets qui montent.</description>
+  </item>
+  <item>
+    <title>Les meilleurs podcasts SEO pour débutants en 2023</title>
+    <link>https://aslanesamai.com/fr/blog/podcasts-seo-pour-debutants.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/podcasts-seo-pour-debutants.html</guid>
+    <pubDate>Sun, 27 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Les 5 podcasts SEO à écouter quand on débute: conseils d&#x27;experts et astuces concrètes en référencement naturel, par des émissions incontournables.</description>
+  </item>
+  <item>
+    <title>Vous pouvez désormais bloquer ChatGPT sur votre site : voici comment</title>
+    <link>https://aslanesamai.com/fr/blog/bloquer-chatgpt-gptbot-robots-txt.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/bloquer-chatgpt-gptbot-robots-txt.html</guid>
+    <pubDate>Wed, 16 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Comment empêcher ChatGPT d&#x27;explorer votre site avec quelques lignes dans le robots.txt, et ce que bloquer GPTBot change pour la visibilité de vos contenus.</description>
+  </item>
+  <item>
+    <title>Google Search Console : les problèmes d&#x27;indexation des pages et comment les résoudre</title>
+    <link>https://aslanesamai.com/fr/blog/search-console-problemes-indexation-pages.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/search-console-problemes-indexation-pages.html</guid>
+    <pubDate>Wed, 09 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Pourquoi la Google Search Console signale des problèmes d&#x27;indexation, pourquoi les demandes d&#x27;indexation manuelles peuvent échouer, et comment réagir.</description>
+  </item>
+  <item>
+    <title>Mise à jour de la Search Console : les problèmes d&#x27;indexation intégrés aux graphiques de performances</title>
+    <link>https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/search-console-indexation-graphiques-performances.html</guid>
+    <pubDate>Wed, 09 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>La Google Search Console affiche désormais les problèmes d&#x27;indexation dans les graphiques de performances. Ce qui change, et comment ça simplifie le diagnostic.</description>
+  </item>
+  <item>
+    <title>Coup de tonnerre SEO : Google restreint les résultats enrichis FAQ et How-To pour la plupart des sites</title>
+    <link>https://aslanesamai.com/fr/blog/google-restreint-resultats-enrichis-faq-howto.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/google-restreint-resultats-enrichis-faq-howto.html</guid>
+    <pubDate>Wed, 09 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Google réduit la visibilité des résultats enrichis FAQ et limite les How-To aux ordinateurs. L&#x27;impact sur le trafic, et comment adapter votre stratégie SEO.</description>
+  </item>
+  <item>
+    <title>Une expertise inattendue : le guide SEO du Washington Post pour réussir son site</title>
+    <link>https://aslanesamai.com/fr/blog/guide-seo-washington-post.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/guide-seo-washington-post.html</guid>
+    <pubDate>Sat, 05 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Le Washington Post a publié un guide SEO étonnamment complet. Ses recommandations en performance web, SEO on-page, technique et off-page, décryptées.</description>
+  </item>
+  <item>
+    <title>Sept chaînes YouTube incroyables pour apprendre le SEO quand on débute</title>
+    <link>https://aslanesamai.com/fr/blog/chaines-youtube-seo-debutants.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/chaines-youtube-seo-debutants.html</guid>
+    <pubDate>Fri, 04 Aug 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Les meilleures chaînes YouTube pour apprendre le SEO: Google Search Central, Brian Dean, Ahrefs, Semrush, Moz, Search Engine Journal et RustyBrick.</description>
+  </item>
+  <item>
+    <title>En télétravail ? Laissez des inconnus vous regarder et doublez votre productivité</title>
+    <link>https://aslanesamai.com/fr/blog/teletravail-productivite-focusmate.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/teletravail-productivite-focusmate.html</guid>
+    <pubDate>Fri, 14 Jul 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Besoin d&#x27;un coup de pouce en télétravail? Laissez des inconnus vous regarder travailler et avancez grâce aux sessions de coworking virtuel de Focusmate.</description>
+  </item>
+  <item>
+    <title>Vos pages ne sont pas indexées ? Voici ce que recommandent les équipes de Google</title>
+    <link>https://aslanesamai.com/fr/blog/pages-non-indexees-conseils-google.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/pages-non-indexees-conseils-google.html</guid>
+    <pubDate>Thu, 15 Jun 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Vos pages ne sont pas indexées par Google? Voici ce qu&#x27;il faut faire, étape par étape, selon Gary Illyes, John Mueller et Martin Splitt.</description>
+  </item>
+  <item>
+    <title>Les 8 meilleures extensions Google Chrome pour le SEO que j&#x27;utilise chaque jour</title>
+    <link>https://aslanesamai.com/fr/blog/extensions-chrome-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/extensions-chrome-seo.html</guid>
+    <pubDate>Thu, 15 Jun 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Les extensions Chrome que j&#x27;utilise chaque jour en SEO: meta descriptions, titres, backlinks, densité de mots-clés, aide à la rédaction et opportunités rapides.</description>
+  </item>
+  <item>
+    <title>Apprendre le SEO en jouant : 6 jeux divertissants pour débutants</title>
+    <link>https://aslanesamai.com/fr/blog/jeux-pour-apprendre-le-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/jeux-pour-apprendre-le-seo.html</guid>
+    <pubDate>Thu, 15 Jun 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Apprendre le SEO peut être fastidieux. Ces six jeux rendent l&#x27;apprentissage du référencement naturel amusant pour les débutants.</description>
+  </item>
+  <item>
+    <title>J&#x27;ai testé Google SGE : mes premières impressions de SEO</title>
+    <link>https://aslanesamai.com/fr/blog/test-google-sge-impact-seo.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/test-google-sge-impact-seo.html</guid>
+    <pubDate>Thu, 15 Jun 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>Mon test de Google SGE (Search Generative Experience): lenteur, bouton Générer, featured snippets, attribution des sources et fraîcheur des contenus.</description>
+  </item>
+  <item>
+    <title>J&#x27;ai testé la dernière IA de Google, et voici ce que j&#x27;ai obtenu</title>
+    <link>https://aslanesamai.com/fr/blog/test-google-bard.html</link>
+    <guid isPermaLink="true">https://aslanesamai.com/fr/blog/test-google-bard.html</guid>
+    <pubDate>Thu, 15 Jun 2023 12:00:00 +0000</pubDate>
+    <dc:creator>Aslane Samai</dc:creator>
+    <description>J&#x27;ai testé Google Bard en lui demandant qui je suis. Il m&#x27;a inventé toute une carrière. Voici comment il s&#x27;en sort face à ChatGPT et GPT-4.</description>
+  </item>
+</channel>
+</rss>

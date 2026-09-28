@@ -696,7 +696,7 @@ Source: Google Search Console, 2025-05-31 to 2026-09-27.
 
 ## Monthly impressions and average position
 
-0k10k20k30k40k1102550Jun 2025: 1,000 impressions, average position 40.4Jul 2025: 1,024 impressions, average position 39.9Aug 2025: 657 impressions, average position 38.8Sep 2025: 671 impressions, average position 29.4Oct 2025: 624 impressions, average position 32.5Nov 2025: 1,015 impressions, average position 31Dec 2025: 3,586 impressions, average position 21Jan 2026: 9,697 impressions, average position 19Feb 2026: 31,112 impressions, average position 16.9Mar 2026: 19,728 impressions, average position 13Apr 2026: 21,122 impressions, average position 10.9May 2026: 22,025 impressions, average position 11Jun 2026: 21,866 impressions, average position 11Jul 2026: 23,836 impressions, average position 12.5Aug 2026: 36,182 impressions, average position 17.6Sep 2026: 28,999 impressions, average position 14.1Jun 25Sep 25Dec 25Mar 26Jun 26Sep 26 Monthly impressions (left axis) Average position (right axis, 1 at the top). September 2026 runs to the 27th. Show the data
+0k10k20k30k40k1102550Jun 2025: 1,000 impressions, average position 40.4Jul 2025: 1,024 impressions, average position 39.9Aug 2025: 657 impressions, average position 38.8Sep 2025: 671 impressions, average position 29.4Oct 2025: 624 impressions, average position 32.5Nov 2025: 1,015 impressions, average position 31.0Dec 2025: 3,586 impressions, average position 21.0Jan 2026: 9,697 impressions, average position 19.0Feb 2026: 31,112 impressions, average position 16.9Mar 2026: 19,728 impressions, average position 13.0Apr 2026: 21,122 impressions, average position 10.9May 2026: 22,025 impressions, average position 11.0Jun 2026: 21,866 impressions, average position 11.0Jul 2026: 23,836 impressions, average position 12.5Aug 2026: 36,182 impressions, average position 17.6Sep 2026: 28,999 impressions, average position 14.1Jun 25Sep 25Dec 25Mar 26Jun 26Sep 26 Monthly impressions (left axis) Average position (right axis, 1 at the top). September 2026 runs to the 27th. Show the data
 
 | Month | Impressions | Avg. position |
 | Jun 2025 | 1,000 | 40.4 |
@@ -704,14 +704,14 @@ Source: Google Search Console, 2025-05-31 to 2026-09-27.
 | Aug 2025 | 657 | 38.8 |
 | Sep 2025 | 671 | 29.4 |
 | Oct 2025 | 624 | 32.5 |
-| Nov 2025 | 1,015 | 31 |
-| Dec 2025 | 3,586 | 21 |
-| Jan 2026 | 9,697 | 19 |
+| Nov 2025 | 1,015 | 31.0 |
+| Dec 2025 | 3,586 | 21.0 |
+| Jan 2026 | 9,697 | 19.0 |
 | Feb 2026 | 31,112 | 16.9 |
-| Mar 2026 | 19,728 | 13 |
+| Mar 2026 | 19,728 | 13.0 |
 | Apr 2026 | 21,122 | 10.9 |
-| May 2026 | 22,025 | 11 |
-| Jun 2026 | 21,866 | 11 |
+| May 2026 | 22,025 | 11.0 |
+| Jun 2026 | 21,866 | 11.0 |
 | Jul 2026 | 23,836 | 12.5 |
 | Aug 2026 | 36,182 | 17.6 |
 | Sep 2026 | 28,999 | 14.1 |
@@ -919,7 +919,7 @@ As of now, we're still in the process of fine-tuning our website, but we're alre
 
 The journey from an invisible site to a recognized authority was challenging but successful. Through strategic SEO implementation and continuous optimization, REKHILA Promotion achieved significant growth and improved online presence.
 
-If you're facing similar challenges, consider a strategic SEO approach to transform your digital presence. For more details or personalized SEO services, [contact me today for an SEO audit!](https://aslanesamai.com/#contact)
+If you're facing similar challenges, consider a strategic SEO approach to transform your digital presence. For more details or personalized SEO services, [contact me today for an SEO audit!](https://aslanesamai.com/en/#contact)
 
 ---
 
@@ -929,7 +929,7 @@ URL: https://aslanesamai.com/ressources/seo-case-study-mmt-mobile-medical-team.h
 
 ## SEO Case Study Overview
 
-[At MMT](https://rekhilapromotion.com/), a Mobile Medical Team company based in Riyadh, Saudi Arabia, we took on the exciting challenge of helping a new startup find its place in a competitive market. The site had numerous technical SEO issues, and the competition was fierce. But with a strategic, heartfelt approach, we turned these challenges into opportunities. This case study is not just a story of technical achievements but a testament to how dedication, expertise, and a personal touch can transform a brand's online presence, making MMT a trusted name in their field.
+At [MMT](https://mmt.hrc.sa/), a Mobile Medical Team company based in Riyadh, Saudi Arabia, we took on the exciting challenge of helping a new startup find its place in a competitive market. The site had numerous technical SEO issues, and the competition was fierce. But with a strategic, heartfelt approach, we turned these challenges into opportunities. This case study is not just a story of technical achievements but a testament to how dedication, expertise, and a personal touch can transform a brand's online presence, making MMT a trusted name in their field.
 
 Established websites face the daunting task of staying ahead in a constantly evolving digital landscape:
 
@@ -996,7 +996,7 @@ This case study demonstrates the power of a well-executed SEO strategy in transf
 
 The success story of MMT is a testament to how SEO, when done right, can turn challenges into opportunities, drive substantial traffic, and build lasting credibility.
 
-[Reach out to me—](https://aslanesamai.com/#contact)and we’ll get working on crafting an SEO strategy for you that’ll defy your expectations. The SEO Audit is free!
+[Reach out to me](https://aslanesamai.com/en/#contact) and we’ll get working on crafting an SEO strategy for you that’ll defy your expectations.
 
 ---
 
@@ -1080,8 +1080,6 @@ In SEO terms, I worked with InterFast for a short term. But that didn’t stop u
 
 ![SEO case study illustration](https://aslanesamai.com/images/ressources/Capture-2023-07-10-211434.webp)
 
-Our blog and website content was leading to so much additional traffic and growth, FBS had to expand their team — in just one year of putting our strategy into action.
-
 ## What This Means For Your Brand
 
 There’s an SEO strategy for every business — including yours.
@@ -1098,7 +1096,7 @@ A couple of months later, InterFast has increased its traffic and it’s still c
 
 All it takes for your business to find success is to use the right strategy, target the right keywords, and create the right content. To do that, you need the right SEO partner.
 
-Reach out to me — and we’ll get working on crafting an SEO strategy for you that’ll defy your expectations. The SEO Audit is free!
+[Reach out to me](https://aslanesamai.com/en/#contact) and we’ll get working on crafting an SEO strategy for you that’ll defy your expectations.
 
 ---
 
@@ -1152,7 +1150,7 @@ URL: https://aslanesamai.com/ressources/seo-case-study-radco.html
 
 ## SEO Case Study Overview
 
-[RADCO](https://radco.com/), a premier construction company based in Algiers, embarked on an SEO journey with us, starting from the ground up. This case study chronicles our transformation from a blank slate to a beacon of online visibility, demonstrating the power of strategic SEO.
+[RADCO](https://www.radco-int.com/), a premier construction company based in Algiers, embarked on an SEO journey with us, starting from the ground up. This case study chronicles our transformation from a blank slate to a beacon of online visibility, demonstrating the power of strategic SEO.
 
 Launching a new website presents unique challenges:
 
@@ -1224,7 +1222,7 @@ Strategic SEO can significantly transform your online presence, regardless of yo
 
 ### Ready to optimize your online presence?
 
-Contact [Aslane Samai](https://aslane.sam.ai) today to learn how strategic SEO can elevate your business.
+[Contact me](https://aslanesamai.com/en/#contact) to learn how strategic SEO can elevate your business.
 
 ---
 
@@ -1675,8 +1673,6 @@ That's it – you've learned the basics of INP and how to make your website fast
 
 URL: https://aslanesamai.com/blog/google-search-console-update-indexing-issues-integrated-with-performance-graphs.html · Published: 2023-08-09
 
-Google Retires FAQ and How-To Rich Results Display: Unveiling the Ramifications
-
 ![Google Search Console Update](https://aslanesamai.com/images/blog/Screenshot 2023-08-21 100256.png)
 
 Google Search Console (GSC) users have recently been greeted with a notable update, one that promises to enhance their webmaster experience. Indexing issues, which were previously relegated to a separate dashboard, have now been seamlessly integrated into the Performance graphs within GSC. This move aims to provide webmasters with a more holistic view of their website's performance while making it easier to identify and address any indexing problems. However, as with many updates, there are some initial hiccups and inconsistencies, leading to speculation about whether it's a feature or just a bug.
@@ -1756,8 +1752,6 @@ In a world where SEO can sometimes seem overwhelming, HubSpot's Site Grader offe
 ## You Can Now Block ChatGPT from Accessing Your Website. Here's how
 
 URL: https://aslanesamai.com/blog/how-to-stop-chatgpt-from-crawling-your-website-in-2023.html · Published: 2023-08-16
-
-You Can Now Block ChatGPT from Accessing Your Website. Here's Why.
 
 ## Considerations Regarding ChatGPT
 
@@ -1872,8 +1866,6 @@ Explore these YouTube channels to gain valuable insights and actionable strategi
 ## SEO Bombshell, Google restricts FAQ and How-To Rich Results for most websites
 
 URL: https://aslanesamai.com/blog/seo-bomshell-google-restricts-FAQ-and-how-to-rich-results.html · Published: 2023-08-09
-
-Google Retires FAQ and How-To Rich Results Display: Unveiling the Ramifications
 
 ## Good bye FAQ and Rich results, Good by my lover, good bye my friend...
 
@@ -2186,8 +2178,6 @@ From there, I went on and asked Bing because it uses ChatGPT4, an improved versi
 That out of the table, I moved to more philosophical questions. I asked all of the bots how they would feel if they erased jobs and make people lose their jobs. Here’s what Bard had to say:
 
 Want to read more about Bard? Here’s [**an article from Fortune**](https://www.google.com/url?q=https%3A%2F%2Ffortune.com%2F2023%2F03%2F28%2Fgoogle-chatbot-bard-would-fail-sats-exam%2F&sa=D&sntz=1&usg=AOvVaw1gBJCY7KeB4jYU7tj6v_10) about his SAT performance:
-
-Share this article:
 
 ---
 

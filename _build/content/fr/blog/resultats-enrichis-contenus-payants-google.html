@@ -1,0 +1,46 @@
+<h2>Google adopte les contenus payants</h2>
+<img alt="Résultats enrichis Google pour les contenus payants" src="/images/blog/Google Rich Results Test.jpg"/>
+<p>Google a enfin béni, ou du moins accepté, les contenus payants.</p>
+<p>Eh oui : dans une récente publication sur Twitter / X, Google a annoncé via son compte Search Central que les résultats enrichis de la SERP prendront désormais en charge la validation des données structurées pour les contenus payants.</p>
+<p>En clair, Google indiquera aux internautes, directement dans la SERP, si un contenu est derrière un paywall, pour leur faire gagner du temps et des efforts.</p>
+<h2>En quoi cela aide-t-il les SEO ?</h2>
+<p>Ce changement aide les SEO de plusieurs façons, notamment pour :</p>
+<ol>
+<li>toucher l'audience ciblée ;</li>
+<li>réduire les clics suivis d'un retour immédiat ;</li>
+<li>aider Google à mieux comprendre leurs contenus.</li>
+</ol>
+<h2>Comment le mettre en place ?</h2>
+<p>Ajouter des données structurées pour un contenu payant se fait comme pour d'autres types de contenus (articles de blog, événements, etc.) : de préférence en JSON-LD, puis on vérifie le balisage une fois terminé.</p>
+<pre>
+                   {
+                   "@context": "https://schema.org",
+                   "@type": "NewsArticle",
+                   "mainEntityOfPage": {
+                   "@type": "WebPage",
+                   "@id": "https://example.org/article"
+                   },
+                   (...)
+                   "isAccessibleForFree": "False",
+                   "hasPart": {
+                   "@type": "WebPageElement",
+                   "isAccessibleForFree": "False",
+                   "cssSelector": ".paywall"
+                   }
+                   }
+               </pre>
+<h2>Quels types de contenus peut-on placer derrière un paywall ?</h2>
+<p>Vous pouvez ajouter des données structurées à de nombreux types de contenus payants, par exemple :</p>
+<ul>
+<li><a href="https://schema.org/Article" rel="noopener" target="_blank">Article</a></li>
+<li><a href="https://schema.org/NewsArticle" rel="noopener" target="_blank">NewsArticle</a></li>
+<li><a href="https://schema.org/Blog" rel="noopener" target="_blank">Blog</a></li>
+<li><a href="https://schema.org/Comment" rel="noopener" target="_blank">Comment</a></li>
+<li><a href="https://schema.org/Course" rel="noopener" target="_blank">Course</a></li>
+<li><a href="https://schema.org/HowTo" rel="noopener" target="_blank">HowTo</a></li>
+<li><a href="https://schema.org/Message" rel="noopener" target="_blank">Message</a></li>
+<li><a href="https://schema.org/Review" rel="noopener" target="_blank">Review</a></li>
+<li><a href="https://schema.org/WebPage" rel="noopener" target="_blank">WebPage</a></li>
+</ul>
+<p>Enfin, Google a précisé que la SERP SGE (la nouvelle SERP pilotée par l'IA) renverra vers des contenus payants s'ils sont jugés pertinents. Les internautes auront le choix de cliquer ou non.</p>
+<p>Pour en savoir plus, consultez l'annonce de Google : <a href="https://developers.google.com/search/docs/appearance/structured-data/paywalled-content?hl=fr" rel="noopener" target="_blank">l'annonce de Google</a></p>
