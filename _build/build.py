@@ -274,7 +274,7 @@ def build_home():
       <p class="lead">I help businesses get found: on Google, and in the answers of ChatGPT, Gemini and AI Overviews. Technical audits, data-driven strategy and content that earns its place.</p>
       <div class="actions"><a class="btn btn-primary" href="#contact">Book a free SEO audit</a><a class="btn btn-ghost" href="/ressources.html">See case studies</a></div>
     </div>
-    <figure class="portrait"><img src="{PORTRAIT}" alt="Portrait of Aslane Samai" width="600" height="635" fetchpriority="high"><figcaption><i></i>Based in Paris</figcaption></figure>
+    <figure class="portrait"><img src="{PORTRAIT}" alt="Portrait of Aslane Samai" width="560" height="560" fetchpriority="high"><figcaption><i></i>Based in Paris</figcaption></figure>
   </div>
 </section>
 
