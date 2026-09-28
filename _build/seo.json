@@ -87,49 +87,60 @@
     "description": "Need a productivity boost when working remotely? Let strangers watch you work and get things done with Focusmate's virtual coworking sessions."
   },
   "ressources/seo-case-study-al-fadjr.html": {
-    "title": "SEO Case Study: Al Fadjr, from Headlines to High Rankings",
-    "description": "How two focused SEO changes improved clicks by 90% for Al Fadjr, a French-language news site: keyword research, technical fixes and content."
+    "title": "SEO Case Study: Al Fadjr, French-Language News Site",
+    "description": "How two focused SEO changes improved clicks by 90% for Al Fadjr, a French-language news site: keyword research, technical fixes and content.",
+    "h1": "SEO Case Study: Al Fadjr, French-Language News Site"
   },
   "ressources/seo-case-study-finance-heros.html": {
-    "title": "SEO Case Study: Al Fadjr, from Headlines to High Rankings",
+    "title": "SEO Case Study: Al Fadjr, French-Language News Site",
     "description": "How two focused SEO changes improved clicks by 90% for Al Fadjr, a French-language news site: keyword research, technical fixes and content.",
-    "canonical": "ressources/seo-case-study-al-fadjr.html"
+    "canonical": "ressources/seo-case-study-al-fadjr.html",
+    "h1": "SEO Case Study: Al Fadjr, French-Language News Site"
   },
   "ressources/seo-case-study-interfast.html": {
-    "title": "SEO Case Study: InterFast, and There Was Visibility",
-    "description": "How a targeted SEO strategy fixed 404s, a wrong lang attribute and template pages for InterFast, a construction software company, and grew visibility."
+    "title": "SEO Case Study: InterFast, Construction Software",
+    "description": "How a targeted SEO strategy fixed 404s, a wrong lang attribute and template pages for InterFast, a construction software company, and grew visibility.",
+    "h1": "SEO Case Study: InterFast, Construction Software"
   },
   "ressources/seo-case-study-mmt-mobile-medical-team.html": {
-    "title": "SEO Case Study: MMT, from Startup to Industry Player",
-    "description": "How technical SEO and a focused strategy took MMT, a mobile medical team startup in Riyadh, from invisible to a trusted name in its market."
+    "title": "SEO Case Study: MMT, Mobile Medical Team in Riyadh",
+    "description": "How technical SEO and a focused strategy took MMT, a mobile medical team startup in Riyadh, from invisible to a trusted name in its market.",
+    "h1": "SEO Case Study: MMT, Mobile Medical Team in Riyadh"
   },
   "ressources/seo-case-study-radco.html": {
-    "title": "SEO Case Study: RADCO, SEO in the EPC Landscape",
-    "description": "How RADCO, a construction company in Algiers, went from a blank slate to strong online visibility: technical fixes, indexing, content and links."
+    "title": "SEO Case Study: RADCO, Construction Company in Algiers",
+    "description": "How RADCO, a construction company in Algiers, went from a blank slate to strong online visibility: technical fixes, indexing, content and links.",
+    "h1": "SEO Case Study: RADCO, Construction Company in Algiers"
   },
   "ressources/seo-case-study-rekhila-.html": {
-    "title": "SEO Case Study: REKHILA Promotion, Invisible to Indispensable",
-    "description": "How a new real estate website in Algiers, REKHILA Promotion, built SEO from scratch: indexing, authority, content, backlinks and technical setup."
+    "title": "SEO Case Study: REKHILA Promotion, Real Estate in Algiers",
+    "description": "How a new real estate website in Algiers, REKHILA Promotion, built SEO from scratch: indexing, authority, content, backlinks and technical setup.",
+    "h1": "SEO Case Study: REKHILA Promotion, Real Estate in Algiers"
   },
   "ressources/seo-case-study-unimind.html": {
-    "title": "SEO Case Study: Unimind, the Beginning and the End",
-    "description": "The SEO strategy behind Unimind, a productivity app: competitor research, keyword discovery from a user's perspective, content and results."
+    "title": "SEO Case Study: Unimind, Productivity App",
+    "description": "The SEO strategy behind Unimind, a productivity app: competitor research, keyword discovery from a user's perspective, content and results.",
+    "h1": "SEO Case Study: Unimind, Productivity App"
   },
   "services/data-analysis.html": {
     "title": "Data Analysis for SEO with SQL and Python",
-    "description": "Data-driven SEO with SQL and Python, by a Google Data Analytics certified consultant: find where traffic is won or lost and what to fix first."
+    "description": "Data-driven SEO with SQL and Python, by a Google Data Analytics certified consultant: find where traffic is won or lost and what to fix first.",
+    "h1": "Data analysis for SEO with SQL and Python"
   },
   "services/data-visualization.html": {
-    "title": "Data Visualization: Tableau Dashboards by Aslane Samai",
-    "description": "Tableau dashboards by Aslane Samai: LinkedIn interactions, Netflix data worldwide, Walmart performance across the US and Covid deaths per country."
+    "title": "Data Visualization for SEO: Tableau Dashboards",
+    "description": "Tableau dashboards by Aslane Samai: LinkedIn interactions, Netflix data worldwide, Walmart performance across the US and Covid deaths per country.",
+    "h1": "Data visualization: Tableau dashboards"
   },
   "services/seo-content-writing.html": {
-    "title": "SEO Content Writing Services",
-    "description": "SEO content writing that combines search intent, strategic optimization and storytelling to rank on Google and get cited in AI answers."
+    "title": "SEO Content Writing in English and French",
+    "description": "SEO content writing that combines search intent, strategic optimization and storytelling to rank on Google and get cited in AI answers.",
+    "h1": "SEO content writing in English and French"
   },
   "services/seo-the-driving-force-behind-my-passion.html": {
-    "title": "SEO Services: Audits, Technical SEO and Strategy",
-    "description": "Search engine optimization services by Aslane Samai: technical audits, on-page and off-page SEO, with Semrush Pro and Screaming Frog."
+    "title": "SEO and GEO Consultant: Audits, Technical SEO, Strategy",
+    "description": "Search engine optimization services by Aslane Samai: technical audits, on-page and off-page SEO, with Semrush Pro and Screaming Frog.",
+    "h1": "SEO and GEO consultant: audits, technical SEO and strategy"
   },
   "privacy-policy.html": {
     "title": "Privacy Policy · Aslane Samai",

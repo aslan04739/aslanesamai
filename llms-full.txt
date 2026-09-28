@@ -1,35 +1,37 @@
 # Aslane Samai: full site content
 
-> Aslane Samai is an SEO and GEO (generative engine optimization) consultant based in Paris, France. He helps businesses get found on Google and cited in AI answers (ChatGPT, Gemini, Google AI Overviews) through technical SEO audits, data analysis and content. He writes aioseo.fr, a French blog about AI search.
+> Aslane Samai is an SEO and GEO (generative engine optimization) consultant based in Paris, France. He helps businesses get found on Google and cited in AI answers (ChatGPT, Gemini, Google AI Overviews) through technical SEO audits, data analysis and content. He writes aioseo.fr, a blog about AI search in French and English.
 
 Key facts:
 
 - Name: Aslane Samai (also written Samai Aslane)
 - Role: SEO / GEO consultant, based in Paris, France; works in French and English
 - Experience:
-  - Eskimoz (2025 – 2026): SEO & GEO consultant (work-study). Complete SEO audits (technical, semantic, competitive, off-site) and GEO audits, netlinking campaigns, briefs for writers and roadmaps adapted to each client's tech stack, for accounts such as Sunelia, Manpower, Engie My Power and Riverly.
-  - Finance Héros (2025): SEO. SEO audit and technical optimization, internal linking, a Google AI Overviews roadmap, WordPress, organic backlinks from Reddit and forums (about 10 a month) and an in-house Looker Studio dashboard.
-  - Voices For Animal Welfare: SEO & analytics lead. A complete SEO strategy built from scratch for an animal welfare NGO: technical and analytics foundations, advanced Google Analytics and Search Console setup, link acquisition.
-  - MMT · Mobile Medical Team (2023 – 2024): SEO specialist. SEO audit, website management, backlink acquisition, copywriting and web content for a mobile medical team in Riyadh.
-  - RADCO (2023): SEO traffic manager. SEO and analytics from scratch for a construction company in Algiers: Google Analytics, Search Console and Google Ads, a full site redesign and a backlink strategy. Google impressions went from 0 to 45,000.
-  - InterFast: SEO content manager. Website management, backlink acquisition, web content, data analysis, email marketing and video editing for a construction software company.
+  - Eskimoz (Sep 2025 – 2026): SEO & GEO consultant. Managed a portfolio of about ten accounts across all sectors and sizes, from SMEs to large accounts such as Sunelia, Manpower, Engie My Power and Riverly. High-volume technical, semantic and GEO audits: crawl and indexing, semantic coverage, authority, citability and citations in generative engines (ChatGPT, Perplexity, Gemini, AI Overviews). Semantic clustering, LLM citation tests, technical and editorial GEO guidelines, SEO briefs, and roadmaps tailored to each client's stack (headless CMS, WordPress, JS frameworks).
+  - Voices For Animal Welfare (Oct 2025 – Jan 2026): Head of SEO Analytics. Set up the SEO roadmap and the analytics ecosystem (GA4, Search Console) for the launch of the NGO's website, then led technical optimization and organic link acquisition.
+  - aioseo.fr (Apr 2025 – Present): Founder · independent project. I run the whole SEO / GEO lifecycle of aioseo.fr, a GEO watch blog followed by the French SEO community: content, technical SEO, netlinking, and a WordPress stack driven through MCP.
+  - Finance Héros (Mar 2025 – Sep 2025): Technical SEO & R&D consultant (internship). A GEO roadmap and a Reddit acquisition strategy, a consolidated SEO / SEA Looker Studio report, and the technical overhaul and performance optimization of a network of sites.
+  - RADCO (Aug 2023 – Aug 2024): SEO traffic manager. Redesigned the site architecture, backlink strategy and analytics for a construction company in Algiers. Google visibility went from 0 to 45,000 monthly impressions.
+  - MMT · Mobile Medical Team (Mar 2023 – Aug 2024): SEO specialist. SEO audits, website management and backlink acquisition for a mobile medical team in Riyadh.
+  - InterFast (Feb 2022 – Mar 2023): SEO content manager. Technical audits and data analysis to prioritize organic work, and management of the digital ecosystem and user engagement campaigns for a construction software company.
+  - Unimind (Sep 2021 – Feb 2022): SEO content manager. Technical audits and data analysis to prioritize organic work, and management of the digital ecosystem and user engagement campaigns for a productivity app.
 - Education:
-  - Université Paris Dauphine – PSL, Master 2 IREN (2025 – 2026): Advanced analytics, data science, econometrics and web strategy
-  - Université Paris-Saclay, Master IES (2024 – 2025): Digital economics, data analysis and web analytics
-  - EHEC, Master 2 Marketing (2018 – 2021): Digital marketing, strategic management and entrepreneurship
-  - ESGCI (2016 – 2018): Preparatory classes: economics and mathematics
-- Skills and tools: Technical SEO, On-page SEO, Off-page SEO & netlinking, SEO & GEO audits, Google AI Overviews, Content briefs & writing, Reporting; Screaming Frog, Sitebulb, Oncrawl, Semrush, Ahrefs, Google Search Console, Bing Webmaster Tools; SQL, Python (pandas), sentence-transformers, KeyBERT, TimesFM, Prophet, HTML, CSS; Tableau, Looker Studio, Google Analytics 4; WordPress, Webflow, Angular, Livewire
+  - Université Paris Dauphine – PSL, M2 IREN (Sep 2025 – Sep 2026): Data science and advanced econometrics
+  - Université Paris-Saclay, M1 IES (Sep 2024 – Sep 2025): Digital economics, data analysis and web analytics
+  - EHEC, M2 Marketing (Jan 2018 – Dec 2021): Digital and strategic marketing, entrepreneurship
+  - ESGCI (Sep 2016 – Sep 2018): Preparatory classes: economics, algebra, micro and macroeconomics
+- Skills and tools: Technical SEO, Semantic SEO & clustering, SEO & GEO audits, LLM citation tests, Entity optimization, Core Web Vitals, Edge SEO, Netlinking, Content briefs; Screaming Frog, Sitebulb, Oncrawl, Semrush, Ahrefs, Google Search Console, Bing Webmaster Tools, Chrome DevTools; Python (pandas), SQL (BigQuery), Ahrefs API, Scraping, sentence-transformers, KeyBERT, TimesFM, Prophet; Google Analytics 4, Looker Studio, Tableau; WordPress, HTML, CSS, JavaScript, SSH; French (C2), English (C1)
 - Certifications: Google Data Analytics (Google / Coursera), SQL (CoRise), Technical SEO (Blue Array), SEO Manager (Blue Array)
-- Tools built (free):
+- Tools built (free to use):
   - [Bulk semantic proximity](https://semantic-proximity-analyzer-5ds58ihtyvktcvyxcijrku.streamlit.app): Match your priority keywords with Search Console data and score the semantic proximity of every ranking URL, in bulk.
   - [SEO Entity Analyser](https://seo-entity-checker.streamlit.app/): Extract and check the entities of a page or a whole list of URLs with the GPT API, to see what AI engines understand.
   - [Semantic auditor (URL vs URL)](https://semanticproximity-seo.streamlit.app/): Compare your page with a competitor's for a target query: cosine proximity score and the entities you're missing.
   - [SEO Forecaster · Google TimesFM](https://python-seo-analyzer-xbmrhkkvwav6dvoqsq298c.streamlit.app/): Forecast clicks, impressions, CTR and position from a Search Console export with Google's TimesFM foundation model.
   - [SEO Forecaster · Meta Prophet](https://seoforcastmetapropeht.streamlit.app/): Forecast Search Console traffic with Meta's Prophet: trend, weekly and yearly seasonality, holidays.
   - [Multimodal GEO audit · Gemini-Embedding-2](https://aioseo.fr/audit-geo-multimodal-avec-gemini-embedding-2/): Audit how text, images and video line up with queries using Google's multimodal Gemini-Embedding-2 model.
-- Also writes: [aioseo.fr](https://aioseo.fr/), "AIO SEO · Good GEO is good SEO!", a French-language blog about GEO and AI search (Google AI Overviews, AI Mode, query fan-out, GEO tools)
-- Contact: contact@aslanesamai.com · free 30-minute SEO audit call: https://calendly.com/samaiaslane/free-seo-audit
-- Profiles: LinkedIn https://www.linkedin.com/in/aslane-samai · X https://x.com/this_is_aslan · GitHub https://github.com/aslan04739 · Medium https://medium.com/@samaiaslane7
+- Also writes: [aioseo.fr](https://aioseo.fr/) (English: https://aioseo.fr/en/), "AIO SEO · Good GEO is good SEO!", a blog about GEO and AI search in French and English (Google AI Overviews, AI Mode, query fan-out, GEO tools)
+- Contact: contact@aslanesamai.com · book a 30-minute call to start an SEO / GEO audit: https://calendly.com/samaiaslane/free-seo-audit
+- Profiles: LinkedIn https://www.linkedin.com/in/aslane-samai · GitHub https://github.com/aslan04739 · Medium https://medium.com/@samaiaslane7
 
 ## About
 
@@ -39,7 +41,7 @@ As an SEO professional, my goal is to help businesses succeed online. I offer a 
 
 ### Who is Aslane Samai?
 
-I'm Aslane Samai, an SEO and GEO consultant based in Paris, France. I help businesses get found on Google and cited in AI answers such as ChatGPT, Gemini and Google AI Overviews, through technical SEO audits, data analysis and content. I previously spent a year as an SEO & GEO consultant at Eskimoz, one of France's leading SEO agencies, I write the French GEO blog aioseo.fr, and I hold certifications in Google Data Analytics, SQL, Technical SEO and SEO management.
+I'm Aslane Samai, an SEO and GEO consultant based in Paris, France. I help businesses get found on Google and cited in AI answers such as ChatGPT, Gemini and Google AI Overviews, through technical SEO audits, data analysis and content. I previously spent a year as an SEO & GEO consultant at Eskimoz, one of France's leading SEO agencies, I write the GEO blog aioseo.fr, and I hold certifications in Google Data Analytics, SQL, Technical SEO and SEO management.
 
 ### What is GEO (generative engine optimization)?
 
@@ -53,9 +55,9 @@ SEO aims to rank your pages in search results; GEO aims to get your brand quoted
 
 Yes. I audit how AI crawlers access your site, how your content and brand are understood, and what's missing for you to be cited, then prioritize the fixes. Nobody can guarantee a citation from an AI model, but these are the same levers that improve your Google rankings.
 
-### What happens during the free SEO audit?
+### How does the SEO / GEO audit start?
 
-It's a free 30-minute video call, booked through my calendar. We look at your site together: what is holding back its visibility on Google and in AI answers, and what to fix first.
+With a 30-minute video call, booked through my calendar. We look at your site together: what is holding back its visibility on Google and in AI answers, what to fix first, and the scope of the audit.
 
 ### Do you work in French and English?
 
@@ -107,7 +109,7 @@ Veuillez agréer, Madame, Monsieur, l'expression de mes salutations distinguées
 
 ---
 
-## Search Engine Optimization - The Driving Force Behind My Passion
+## SEO and GEO consultant: audits, technical SEO and strategy
 
 URL: https://aslanesamai.com/services/seo-the-driving-force-behind-my-passion.html
 
@@ -133,7 +135,7 @@ Interested in an SEO Audit? Reach out to me by sending me an email here [contact
 
 ---
 
-## Data Analysis for SEO - Empowering Search engine Optimization with SQL and Python
+## Data analysis for SEO with SQL and Python
 
 URL: https://aslanesamai.com/services/data-analysis.html
 
@@ -173,7 +175,7 @@ Interested in an SEO Audit? Reach out to me by sending me an email here [contact
 
 ---
 
-## Tableau dashboards by Aslane Samai
+## Data visualization: Tableau dashboards
 
 URL: https://aslanesamai.com/services/data-visualization.html
 
@@ -213,19 +215,11 @@ This dashboard is the initial version, I have no doubt I will be updating it soo
 
 ![Tableau Dashboard, job rejections of Aslane Samai from my LinkedIn profile](https://misinate.sirv.com/perso/WhatsApp%20Image%202023-08-28%20at%2012.17.24.jpg)
 
-All right, that’s a wrap! These are 4 dashboards I’m not completely ashamed of showing to the few stray cats that might come across my website. About Me
-
-I'm Aslane Samai, an SEO expert and blogger. Follow my blog for the latest updates and insights on SEO, digital marketing, and online privacy. Follow Me
-
-- [Twitter](https://x.com/this_is_aslan)
-- [LinkedIn](https://www.linkedin.com/in/aslane-samai)
-Contact Me
-
-Email: [contact@aslanesamai.com](mailto:contact@aslanesamai.com)
+All right, that’s a wrap! These are 4 dashboards I’m not completely ashamed of showing to the few stray cats that might come across my website.
 
 ---
 
-## SEO content writing
+## SEO content writing in English and French
 
 URL: https://aslanesamai.com/services/seo-content-writing.html
 
@@ -269,7 +263,7 @@ Interested in an SEO Audit? Reach out to me by sending me an email here [contact
 
 ---
 
-## From Invisible to Indispensable: REKHILA Promotion's SEO Success
+## SEO Case Study: REKHILA Promotion, Real Estate in Algiers
 
 URL: https://aslanesamai.com/ressources/seo-case-study-rekhila-.html
 
@@ -396,7 +390,7 @@ If you're facing similar challenges, consider a strategic SEO approach to transf
 
 ---
 
-## MMT's SEO Journey: From Startup to Leading Industry Player
+## SEO Case Study: MMT, Mobile Medical Team in Riyadh
 
 URL: https://aslanesamai.com/ressources/seo-case-study-mmt-mobile-medical-team.html
 
@@ -473,7 +467,7 @@ The success story of MMT is a testament to how SEO, when done right, can turn ch
 
 ---
 
-## SEO case study: InterFast. And there was visibility...
+## SEO Case Study: InterFast, Construction Software
 
 URL: https://aslanesamai.com/ressources/seo-case-study-interfast.html
 
@@ -575,7 +569,7 @@ Reach out to me — and we’ll get working on crafting an SEO strategy for you 
 
 ---
 
-## SEO case study: Unimind, the begining and the end...
+## SEO Case Study: Unimind, Productivity App
 
 URL: https://aslanesamai.com/ressources/seo-case-study-unimind.html
 
@@ -619,7 +613,7 @@ This case study underscores the significance of a solid SEO strategy in building
 
 ---
 
-## Optimizing the Blueprint: RADCO's SEO Voyage in the EPC Landscape
+## SEO Case Study: RADCO, Construction Company in Algiers
 
 URL: https://aslanesamai.com/ressources/seo-case-study-radco.html
 

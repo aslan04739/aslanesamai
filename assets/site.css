@@ -7,7 +7,7 @@
 @font-face { font-family: "Inter"; font-style: normal; font-weight: 300 700; font-display: swap; src: url("/assets/fonts/inter-normal-latin-ext.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --paper: #f6f3ec;
   --paper-2: #efebe1;
   --card: #fbf9f4;
@@ -25,8 +25,9 @@
   --radius: 14px;
   --gutter: clamp(20px, 5vw, 48px);
 }
+:root[data-theme="dark"] { color-scheme: dark; --paper: #121311; --paper-2: #191a17; --card: #1b1c19; --ink: #efece4; --ink-2: #c3bfb3; --muted: #8f8c82; --line: #2c2d29; --accent: #8fc7a8; --accent-2: #a9d6bd; --accent-soft: #1f2a24; }
 @media (prefers-color-scheme: dark) {
-  :root { --paper: #121311; --paper-2: #191a17; --card: #1b1c19; --ink: #efece4; --ink-2: #c3bfb3; --muted: #8f8c82; --line: #2c2d29; --accent: #8fc7a8; --accent-2: #a9d6bd; --accent-soft: #1f2a24; }
+  :root:not([data-theme="light"]) { color-scheme: dark; --paper: #121311; --paper-2: #191a17; --card: #1b1c19; --ink: #efece4; --ink-2: #c3bfb3; --muted: #8f8c82; --line: #2c2d29; --accent: #8fc7a8; --accent-2: #a9d6bd; --accent-soft: #1f2a24; }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -147,7 +148,7 @@ a.card-media:hover .thumb.logo img { transform: scale(1.04); }
 
 /* ---------- Testimonials ---------- */
 .featured-quote { margin: 0 0 20px; display: grid; grid-template-columns: auto 1fr; gap: clamp(22px, 4vw, 48px); background: var(--ink); color: var(--paper); border-radius: 24px; padding: clamp(28px, 5vw, 64px); margin-bottom: 20px; }
-.featured-quote .mark { font: 400 120px/0.8 var(--serif); color: color-mix(in srgb, var(--paper) 30%, transparent); }
+.featured-quote .mark { font: 400 120px/0.8 var(--serif); color: color-mix(in srgb, currentColor 35%, transparent); }
 .featured-quote blockquote { margin: 0; }
 .featured-quote blockquote p { font: 350 clamp(20px, 2.3vw, 27px)/1.45 var(--serif); letter-spacing: -0.005em; }
 .featured-quote blockquote p + p { margin-top: .9em; }
@@ -164,7 +165,8 @@ a.card-media:hover .thumb.logo img { transform: scale(1.04); }
 .letter-body { margin-top: 20px; font: 400 16px/1.7 var(--sans); max-width: 70ch; }
 .letter-body p + p { margin-top: .9em; }
 .letter-body .meta { opacity: .7; font-size: 14px; }
-@media (prefers-color-scheme: dark) { .featured-quote { background: #20221e; color: var(--ink); border: 1px solid var(--line); } }
+:root[data-theme="dark"] .featured-quote { background: #20221e; color: var(--ink); border: 1px solid var(--line); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .featured-quote { background: #20221e; color: var(--ink); border: 1px solid var(--line); } }
 @media (max-width: 620px) { .featured-quote { grid-template-columns: 1fr; } .featured-quote .mark { font-size: 80px; } }
 
 .quotes { columns: 3 300px; column-gap: 20px; }
@@ -252,7 +254,8 @@ a.card-media:hover .thumb.logo img { transform: scale(1.04); }
 .cta-band p { opacity: .8; margin-top: 12px; max-width: 48ch; }
 .cta-band .btn-primary { background: #f3f1ea; color: #173a2c; }
 .cta-band .btn-primary:hover { background: #fff; color: #173a2c; }
-@media (prefers-color-scheme: dark) { .cta-band { background: #1f3b2e; } }
+:root[data-theme="dark"] .cta-band { background: #1f3b2e; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cta-band { background: #1f3b2e; } }
 .site-footer { margin-top: clamp(72px, 10vw, 128px); border-top: 1px solid var(--line); padding-block: 56px 40px; font-size: 15px; }
 .site-footer .cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
 .site-footer h4 { font: 600 13px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
@@ -357,3 +360,27 @@ a.card-media:hover .thumb.logo img { transform: scale(1.04); }
 [dir="rtl"] .faq-item div { padding: 0 0 24px 48px; }
 [dir="rtl"] .featured-quote blockquote, [dir="rtl"] .quote blockquote, [dir="rtl"] .letter-body { text-align: left; }
 @media (max-width: 860px) { [dir="rtl"] .portrait { justify-self: end; } [dir="rtl"] .menu nav { right: auto; left: 0; } [dir="rtl"] .faq-item div { padding-left: 0; } }
+
+/* ---------- Theme toggle ---------- */
+.theme-toggle { width: 36px; height: 36px; flex: none; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; transition: border-color .15s, background .15s; }
+.theme-toggle:hover { border-color: var(--ink-2); background: var(--paper-2); }
+.theme-toggle svg { width: 17px; height: 17px; }
+.theme-toggle .moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .moon { display: block; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .theme-toggle .sun { display: none; } :root:not([data-theme="light"]) .theme-toggle .moon { display: block; } }
+.header-tools { display: flex; align-items: center; gap: 10px; }
+
+/* ---------- Company logos (experience) ---------- */
+.xp-body { display: flex; gap: 20px; align-items: flex-start; }
+.xp-logo { flex: none; width: 60px; height: 60px; border-radius: 14px; display: grid; place-items: center; padding: 10px; border: 1px solid var(--line); background: #fff; }
+.xp-logo-dark { background: #1c1c1a; border-color: #1c1c1a; padding: 4px; }
+.xp-logo img { width: 100%; height: 100%; object-fit: contain; }
+@media (max-width: 720px) { .xp-logo { width: 48px; height: 48px; padding: 8px; border-radius: 12px; } .xp-body { gap: 14px; } }
+.xp-logo-fill { padding: 0; overflow: hidden; border: 0; }
+.xp-logo-fill img { object-fit: cover; }
+.initials-mark { font: 600 14px/1 var(--sans); letter-spacing: .02em; color: #17171a; }
+.edu ul li { display: flex; gap: 16px; align-items: center; }
+.edu-logo { flex: none; width: 112px; height: 52px; border-radius: 12px; border: 1px solid var(--line); background: #fff; display: grid; place-items: center; padding: 8px 10px; }
+.edu-logo img { width: 100%; height: 100%; object-fit: contain; }
+@media (max-width: 720px) { .edu-logo { width: 88px; height: 44px; } }

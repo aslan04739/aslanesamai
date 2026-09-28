@@ -23,8 +23,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from i18n import (AIOSEO, AIOSEO_ARTICLES, AIOSEO_TOOLS, EDUCATION, EXPERIENCE, GITHUB, LANGS, META, SKILLS, STREAMLIT,  # noqa: E402
-                  TOOLS, T)
+from i18n import (AIOSEO, AIOSEO_ARTICLES, AIOSEO_ARTICLES_EN, AIOSEO_BY_LANG, AIOSEO_TOOLS_BY_LANG, EDUCATION, EXPERIENCE,  # noqa: E402
+                  GITHUB, LANGS, META, SKILLS, STREAMLIT, TOOL_URL_EN, TOOLS, T)
 from md import to_markdown  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -37,9 +37,9 @@ CALENDLY = "https://calendly.com/samaiaslane/free-seo-audit"
 EMAIL = "contact@aslanesamai.com"
 PHONE = "+33651630813"
 LINKEDIN = "https://www.linkedin.com/in/aslane-samai"
-X_URL = "https://x.com/this_is_aslan"
 MEDIUM = "https://medium.com/@samaiaslane7"
 AIOSEO_PROFILE = "https://aioseo.fr/aslane-samai-consultant-seo-technique-expert-geo/"
+AIOSEO_PROFILE_EN = "https://aioseo.fr/en/aslane-samai-technical-seo-geo-expert/"
 TODAY = dt.date.today().isoformat()
 PERSON_ID = f"{SITE}/#person"
 WEBSITE_ID = f"{SITE}/#website"
@@ -214,22 +214,22 @@ LABELS = {it["path"]: clean_text(it["label"]) for k in ("blog_order", "services_
 # ---------------------------------------------------------------- structured data
 def person_node(full=False):
     node = {"@type": "Person", "@id": PERSON_ID, "name": "Aslane Samai", "alternateName": "Samai Aslane", "url": f"{SITE}/",
-            "image": OG_DEFAULT, "jobTitle": "SEO / GEO consultant", "sameAs": [LINKEDIN, X_URL, MEDIUM, GITHUB, AIOSEO_PROFILE]}
+            "image": OG_DEFAULT, "jobTitle": "SEO / GEO consultant", "sameAs": [LINKEDIN, MEDIUM, GITHUB, AIOSEO_PROFILE, AIOSEO_PROFILE_EN]}
     if full:
         node.update({
             "description": ("Aslane Samai is an SEO and GEO (generative engine optimization) consultant based in Paris, France. He helps businesses "
                             "get found on Google and cited in AI answers such as ChatGPT, Gemini and Google AI Overviews, through technical SEO "
                             "audits, data analysis and content. He previously worked for a year as an SEO & GEO consultant at Eskimoz, "
-                            "and writes aioseo.fr, a French-language blog about AI search."),
+                            "and writes aioseo.fr, a blog about AI search in French and English."),
             "email": f"mailto:{EMAIL}", "telephone": PHONE,
             "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressRegion": "Île-de-France", "postalCode": "75000", "addressCountry": "FR"},
             "knowsAbout": KNOWS_ABOUT, "knowsLanguage": ["fr", "en"],
             "hasOccupation": {"@type": "Occupation", "name": "SEO / GEO consultant", "occupationLocation": {"@type": "City", "name": "Paris"},
                               "skills": ", ".join(strip_tags(x) for x in T["en"]["skills_seo_items"] + SKILLS["skills_tools"] + SKILLS["skills_data"][:2] + SKILLS["skills_viz"])},
-            "alumniOf": [{"@type": "CollegeOrUniversity", "name": school} for school, _, _, _ in EDUCATION],
+            "alumniOf": [{"@type": "CollegeOrUniversity", "name": school} for school, *_ in EDUCATION],
             "hasCredential": [{"@type": "EducationalOccupationalCredential", "name": f"{t} certification", "credentialCategory": "certificate",
                                "recognizedBy": {"@type": "Organization", "name": o.split(" · ")[0], **({"url": u} if u else {})}} for t, o, u in CERTS],
-            "subjectOf": {"@type": "WebSite", "name": "AIO SEO · Good GEO is good SEO!", "url": AIOSEO, "inLanguage": "fr", "author": {"@id": PERSON_ID}},
+            "subjectOf": {"@type": "WebSite", "name": "AIO SEO · Good GEO is good SEO!", "url": AIOSEO, "inLanguage": ["fr", "en"], "author": {"@id": PERSON_ID}},
         })
     return node
 
@@ -261,6 +261,10 @@ def lang_switch(lang, alternates):
     return f'<div class="langs" role="navigation" aria-label="{T[lang]["lang_label"]}">{links}</div>'
 
 
+SUN = '<svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>'
+MOON = '<svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 1 1 9.8 3.5a6.8 6.8 0 0 0 10.7 10.7Z"/></svg>'
+
+
 def header(lang, active, alternates):
     t = T[lang]
     items = [(t["nav_services"], f"/{lang}/services.html", "services"), (t["nav_experience"], f"/{lang}/#experience", "experience"),
@@ -271,8 +275,11 @@ def header(lang, active, alternates):
     return f"""<header class="site-header" id="top">
   <div class="wrap">
     <a class="brand" href="/{lang}/" aria-label="Aslane Samai">Aslane Samai<span>.</span></a>
-    <nav class="nav" aria-label="Main">{links}{switch}{cta}</nav>
-    <details class="menu"><summary aria-label="{t['menu']}"><span></span></summary><nav aria-label="Mobile">{links}{switch}{cta}</nav></details>
+    <div class="header-tools">
+      <nav class="nav" aria-label="Main">{links}{switch}{cta}</nav>
+      <button class="theme-toggle" type="button" aria-label="{t['theme']}" title="{t['theme']}">{SUN}{MOON}</button>
+      <details class="menu"><summary aria-label="{t['menu']}"><span></span></summary><nav aria-label="Mobile">{links}{switch}{cta}</nav></details>
+    </div>
   </div>
 </header>"""
 
@@ -283,9 +290,9 @@ def footer(lang):
   <div class="wrap">
     <div class="cols">
       <div class="f-about"><a class="brand" href="/{lang}/">Aslane Samai<span>.</span></a><p>{t['footer_tagline']}</p></div>
-      <div><h4>{t['footer_explore']}</h4><ul><li><a href="/{lang}/services.html">{t['nav_services']}</a></li><li><a href="/{lang}/ressources.html">{t['nav_cases']}</a></li><li><a href="/{lang}/blog.html">{t['nav_blog']}</a></li><li><a href="/{lang}/#testimonials">{t['footer_testimonials']}</a></li><li>{ext(AIOSEO, "aioseo.fr")}</li></ul></div>
+      <div><h4>{t['footer_explore']}</h4><ul><li><a href="/{lang}/services.html">{t['nav_services']}</a></li><li><a href="/{lang}/ressources.html">{t['nav_cases']}</a></li><li><a href="/{lang}/blog.html">{t['nav_blog']}</a></li><li><a href="/{lang}/#testimonials">{t['footer_testimonials']}</a></li><li>{ext(AIOSEO_BY_LANG[lang], "aioseo.fr")}</li></ul></div>
       <div><h4>{t['footer_contact']}</h4><ul><li><a href="mailto:{EMAIL}">{EMAIL}</a></li><li><a href="/{lang}/#contact">{t['footer_book']}</a></li></ul></div>
-      <div><h4>{t['footer_follow']}</h4><ul><li><a href="{LINKEDIN}" rel="me noopener" target="_blank">LinkedIn</a></li><li><a href="{X_URL}" rel="me noopener" target="_blank">X / Twitter</a></li><li><a href="{GITHUB}" rel="me noopener" target="_blank">GitHub</a></li><li><a href="{MEDIUM}" rel="me noopener" target="_blank">Medium</a></li></ul></div>
+      <div><h4>{t['footer_follow']}</h4><ul><li><a href="{LINKEDIN}" rel="me noopener" target="_blank">LinkedIn</a></li><li><a href="{GITHUB}" rel="me noopener" target="_blank">GitHub</a></li><li><a href="{MEDIUM}" rel="me noopener" target="_blank">Medium</a></li></ul></div>
     </div>
     <div class="legal"><span>© {dt.date.today().year} Aslane Samai</span><a href="/privacy-policy.html">{t['footer_privacy']}</a></div>
   </div>
@@ -331,7 +338,6 @@ def layout(path, *, title, description, body, lang="en", ui=None, active="", og_
 <meta property="og:locale" content="{locale}">{og_alt}{article}
 <meta property="og:image" content="{e(og_image)}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@this_is_aslan">
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{desc}">
 <meta name="twitter:image" content="{e(og_image)}">
@@ -339,8 +345,8 @@ def layout(path, *, title, description, body, lang="en", ui=None, active="", og_
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Aslane Samai · Blog" href="{SITE}/feed.xml">
 <link rel="me" href="{LINKEDIN}">
-<link rel="me" href="{X_URL}">
 <link rel="preload" href="/assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>{fonts}{pre}
+<script>try{{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 <link rel="stylesheet" href="/assets/site.css?v={CSS_V}">
 <script src="/assets/site.js?v={CSS_V}" defer></script>{ld}
 </head>
@@ -394,7 +400,7 @@ def case_card(path, lang="en"):
     cover = img(raw, 720)
     thumb = f'<div class="thumb logo"><img src="{e(cover)}" alt=""{dims(raw, 720)} loading="lazy" decoding="async"></div>' if cover else ""
     return (f'<a class="card card-media reveal" href="{url_of(path)}" hreflang="en">{thumb}<div class="body"><span class="tag">{t["case_tag"]}{badge(lang)}</span>'
-            f'<h3 lang="en">{e(LABELS.get(path) or p["h1"])}</h3><p lang="en">{e(clip(p["description"], 140))}</p><span class="foot">{t["case_read"]}</span></div></a>')
+            f'<h3 lang="en">{e(p["h1"])}</h3><p lang="en">{e(clip(p["description"], 140))}</p><span class="foot">{t["case_read"]}</span></div></a>')
 
 
 def service_card(path, lang, i=None):
@@ -439,15 +445,33 @@ def testimonials_section(lang):
 </section>"""
 
 
+def period(lang, start, end):
+    """'2025-09', '2026' / None -> 'Sep 2025 – 2026' in the page language (None = present)."""
+    t = T[lang]
+    def one(d):
+        if d is None:
+            return t["present"]
+        y, _, m = d.partition("-")
+        return f"{t['months'][int(m) - 1]} {y}" if m else y
+    return f"{one(start)} – {one(end)}"
+
+
+def logo_tile(logo, name, tile="light", cls="xp-logo"):
+    if not logo:
+        return f'<span class="{cls} {cls}-light"><span class="initials-mark" aria-hidden="true">{e(name[:5])}</span></span>'
+    return f'<span class="{cls} {cls}-{tile}"><img src="/assets/logos/{logo}" alt="{e(name)} logo" loading="lazy" decoding="async"></span>'
+
+
 def experience_section(lang):
     t = T[lang]
     rows = []
-    for org, url, dates, key in EXPERIENCE:
+    for org, url, start, end, key, logo, tile in EXPERIENCE:
         role, text = t[key]
         name = ext(url, e(org)) if url else e(org)
-        rows.append(f'<li class="xp reveal"><div class="xp-when"><bdi dir="ltr">{dates or ""}</bdi></div><div><h3>{name}</h3><p class="xp-role">{role}</p><p>{text}</p></div></li>')
+        rows.append(f'<li class="xp reveal"><div class="xp-when"><bdi>{period(lang, start, end)}</bdi></div><div class="xp-body">{logo_tile(logo, org, tile)}<div><h3>{name}</h3><p class="xp-role">{role}</p><p>{text}</p></div></div></li>')
     edu = "".join(
-        f'<li><b>{e(school)}</b>{f" · {e(deg)}" if deg else ""}<span><bdi dir="ltr">{dates}</bdi> · {t[key]}</span></li>' for school, deg, dates, key in EDUCATION)
+        f'<li>{logo_tile(logo, school, "light", "edu-logo")}<div><b>{e(school)}</b>{f" · {e(deg)}" if deg else ""}<span><bdi>{period(lang, start, end)}</bdi> · {t[key]}</span></div></li>'
+        for school, deg, start, end, key, logo in EDUCATION)
     return f"""<section class="section" id="experience">
   <div class="wrap">
     <div class="section-head"><div><p class="eyebrow">{t['xp_eyebrow']}</p><h2>{t['xp_h2']}</h2></div><p>{t['xp_intro']}</p></div>
@@ -461,13 +485,13 @@ def skills_section(lang):
     t = T[lang]
     groups = []
     for key, items in SKILLS.items():
-        items = t["skills_seo_items"] if items is None else items
+        items = t[key + "_items"] if items is None else items
         chips = "".join(f"<li>{x}</li>" for x in items)
         groups.append(f'<div class="skill-group reveal"><h3>{t[key]}</h3><ul class="chips">{chips}</ul></div>')
     tools = "".join(
         f'<a class="card tool reveal" href="{e(u)}" target="_blank" rel="noopener"><h3 dir="ltr">{e(name)}</h3><p>{t[key]}</p><span class="foot">{t["tools_open"]}</span></a>'
-        for name, u, key in TOOLS)
-    intro = t["tools_intro"].format(link=ext(AIOSEO_TOOLS, "aioseo.fr"))
+        for name, u, key in ((n, TOOL_URL_EN.get(k, u) if lang == "en" else u, k) for n, u, k in TOOLS))
+    intro = t["tools_intro"].format(link=ext(AIOSEO_TOOLS_BY_LANG[lang], "aioseo.fr"))
     return f"""<section class="section" id="skills">
   <div class="wrap">
     <div class="section-head"><div><p class="eyebrow">{t['skills_eyebrow']}</p><h2>{t['skills_h2']}</h2></div><p>{t['skills_intro']}</p></div>
@@ -479,14 +503,16 @@ def skills_section(lang):
   <div class="wrap">
     <div class="section-head"><div><p class="eyebrow">{t['tools_eyebrow']}</p><h2>{t['tools_h2']}</h2></div><p>{intro}</p></div>
     <div class="grid grid-3">{tools}</div>
-    <p class="section-more">{ext(AIOSEO_TOOLS, t['tools_all'], 'more')} · {ext(STREAMLIT, 'Streamlit', 'more')} · {ext(GITHUB, 'GitHub', 'more')}</p>
+    <p class="section-more">{ext(AIOSEO_TOOLS_BY_LANG[lang], t['tools_all'], 'more')} · {ext(STREAMLIT, 'Streamlit', 'more')} · {ext(GITHUB, 'GitHub', 'more')}</p>
   </div>
 </section>"""
 
 
 def aioseo_section(lang):
     t = T[lang]
-    arts = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener" hreflang="fr" lang="fr">{e(x)}</a></li>' for x, u in AIOSEO_ARTICLES)
+    alang = "en" if lang == "en" else "fr"
+    arts = "".join(f'<li><a href="{e(u)}" target="_blank" rel="noopener" hreflang="{alang}" lang="{alang}">{e(x)}</a></li>'
+                   for x, u in (AIOSEO_ARTICLES_EN if lang == "en" else AIOSEO_ARTICLES))
     note = f'<span class="lang-badge">{t["aioseo_note"]}</span>' if t["aioseo_note"] else ""
     return f"""<section class="section" id="aioseo">
   <div class="wrap">
@@ -495,7 +521,7 @@ def aioseo_section(lang):
         <p class="eyebrow">{t['aioseo_eyebrow']}</p>
         <h2>{t['aioseo_h2']}</h2>
         <p>{t['aioseo_text']}</p>
-        {ext(AIOSEO, t['aioseo_cta'] + ' →', 'btn btn-primary')}
+        {ext(AIOSEO_BY_LANG[lang], t['aioseo_cta'] + ' →', 'btn btn-primary')}
       </div>
       <div><ul class="aioseo-list">{arts}</ul>{note}</div>
     </div>
@@ -516,7 +542,7 @@ def build_home(lang):
     about = [t["about_p1"],
              t["about_p2"].format(eskimoz=ext("https://www.eskimoz.fr", "Eskimoz")),
              t["about_p3"].format(vfaw=ext("https://www.vfaw-ngo.org", "Voices For Animal Welfare"), aio=ext("https://developers.google.com/search/docs/appearance/ai-overviews", "Google AI Overviews")),
-             t["about_p4"].format(aioseo=ext(AIOSEO, "aioseo.fr"))]
+             t["about_p4"].format(aioseo=ext(AIOSEO_BY_LANG[lang], "aioseo.fr"))]
     home_url = canonical(path)
     ld = graph(person_node(full=True), website_node(),
                {"@type": "ProfilePage", "@id": home_url + "#webpage", "url": home_url, "name": t["home_title"], "description": t["home_desc"],
@@ -605,8 +631,7 @@ def build_home(lang):
       <ul>
         <li><a href="mailto:{EMAIL}" dir="ltr">{EMAIL}</a></li>
         <li><a href="{LINKEDIN}" target="_blank" rel="me noopener">LinkedIn</a></li>
-        <li><a href="{X_URL}" target="_blank" rel="me noopener">X / Twitter</a></li>
-        <li>{ext(AIOSEO, "aioseo.fr")}</li>
+        <li>{ext(AIOSEO_BY_LANG[lang], "aioseo.fr")}</li>
       </ul>
     </div>
     <div class="calendly-frame"><div class="calendly-inline-widget" data-url="{CALENDLY}?hide_gdpr_banner=1" data-lazy><div class="calendly-placeholder"><a class="btn btn-ghost" href="{CALENDLY}" target="_blank" rel="noopener">{t['open_calendar']}</a></div></div></div>
@@ -728,7 +753,7 @@ def build_root():
 }})();
 </script>"""
     ld = graph(person_node(full=True), website_node())
-    write("index.html", layout("index.html", title="Aslane Samai, SEO / GEO consultant", description=T["en"]["home_desc"], body=body, lang="en", jsonld=[ld],
+    write("index.html", layout("index.html", title="Aslane Samai · SEO & GEO Consultant · EN / FR / AR", description=T["en"]["home_desc"], body=body, lang="en", jsonld=[ld],
                                alternates=alts))
 
 
@@ -773,10 +798,10 @@ def build_sitemap():
 
 def facts_md():
     t = T["en"]
-    xp = "\n".join(f"  - {org}{f' ({dates})' if dates else ''}: {strip_tags(t[key][0])}. {strip_tags(t[key][1])}" for org, _, dates, key in EXPERIENCE)
-    edu = "\n".join(f"  - {school}{f', {deg}' if deg else ''} ({dates}): {t[key]}" for school, deg, dates, key in EDUCATION)
+    xp = "\n".join(f"  - {org} ({period('en', start, end)}): {strip_tags(t[key][0])}. {strip_tags(t[key][1])}" for org, _, start, end, key, _, _ in EXPERIENCE)
+    edu = "\n".join(f"  - {school}{f', {deg}' if deg else ''} ({period('en', start, end)}): {t[key]}" for school, deg, start, end, key, _ in EDUCATION)
     tools = "\n".join(f"  - [{name}]({u}): {t[key]}" for name, u, key in TOOLS)
-    skills = "; ".join(strip_tags(", ".join(T["en"]["skills_seo_items"] if v is None else v)) for v in SKILLS.values())
+    skills = "; ".join(strip_tags(", ".join(T["en"][k + "_items"] if v is None else v)) for k, v in SKILLS.items())
     return f"""Key facts:
 
 - Name: Aslane Samai (also written Samai Aslane)
@@ -787,16 +812,16 @@ def facts_md():
 {edu}
 - Skills and tools: {skills}
 - Certifications: Google Data Analytics (Google / Coursera), SQL (CoRise), Technical SEO (Blue Array), SEO Manager (Blue Array)
-- Tools built (free):
+- Tools built (free to use):
 {tools}
-- Also writes: [aioseo.fr]({AIOSEO}), "AIO SEO · Good GEO is good SEO!", a French-language blog about GEO and AI search (Google AI Overviews, AI Mode, query fan-out, GEO tools)
-- Contact: {EMAIL} · free 30-minute SEO audit call: {CALENDLY}
-- Profiles: LinkedIn {LINKEDIN} · X {X_URL} · GitHub {GITHUB} · Medium {MEDIUM}"""
+- Also writes: [aioseo.fr]({AIOSEO}) (English: {AIOSEO_BY_LANG["en"]}), "AIO SEO · Good GEO is good SEO!", a blog about GEO and AI search in French and English (Google AI Overviews, AI Mode, query fan-out, GEO tools)
+- Contact: {EMAIL} · book a 30-minute call to start an SEO / GEO audit: {CALENDLY}
+- Profiles: LinkedIn {LINKEDIN} · GitHub {GITHUB} · Medium {MEDIUM}"""
 
 
 INTRO = ("> Aslane Samai is an SEO and GEO (generative engine optimization) consultant based in Paris, France. He helps businesses get found on "
          "Google and cited in AI answers (ChatGPT, Gemini, Google AI Overviews) through technical SEO audits, data analysis and content. "
-         "He writes aioseo.fr, a French blog about AI search.")
+         "He writes aioseo.fr, a blog about AI search in French and English.")
 
 
 def build_llms():
@@ -808,7 +833,7 @@ def build_llms():
              "## Services", "", *[line(q) for q in SERVICES], "",
              "## Case studies", "", *[line(q) for q in CASES], "",
              "## Blog", "", *[line(q) for q in BLOG], "",
-             "## AIO SEO (French articles on aioseo.fr)", "", *[f"- [{x}]({u})" for x, u in AIOSEO_ARTICLES], "",
+             "## AIO SEO (aioseo.fr, English and French)", "", *[f"- [{x}]({u})" for x, u in AIOSEO_ARTICLES_EN], *[f"- [{x}]({u}) (French)" for x, u in AIOSEO_ARTICLES], "",
              "## Optional", "",
              f"- [Full text of every page]({SITE}/llms-full.txt): services, case studies and articles in Markdown",
              f"- [Privacy policy]({canonical('privacy-policy.html')})"]
