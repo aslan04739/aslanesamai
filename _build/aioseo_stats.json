@@ -1,0 +1,116 @@
+{
+ "source": "Google Search Console (aioseo.fr domain property), via Radar",
+ "exported": "2026-09-28",
+ "first_day": "2025-05-31",
+ "last_day": "2026-09-27",
+ "monthly": [
+  {
+   "month": "2025-05",
+   "clicks": 0,
+   "impressions": 23,
+   "position": 33.1
+  },
+  {
+   "month": "2025-06",
+   "clicks": 8,
+   "impressions": 1000,
+   "position": 40.4
+  },
+  {
+   "month": "2025-07",
+   "clicks": 9,
+   "impressions": 1024,
+   "position": 39.9
+  },
+  {
+   "month": "2025-08",
+   "clicks": 3,
+   "impressions": 657,
+   "position": 38.8
+  },
+  {
+   "month": "2025-09",
+   "clicks": 12,
+   "impressions": 671,
+   "position": 29.4
+  },
+  {
+   "month": "2025-10",
+   "clicks": 14,
+   "impressions": 624,
+   "position": 32.5
+  },
+  {
+   "month": "2025-11",
+   "clicks": 20,
+   "impressions": 1015,
+   "position": 31
+  },
+  {
+   "month": "2025-12",
+   "clicks": 100,
+   "impressions": 3586,
+   "position": 21
+  },
+  {
+   "month": "2026-01",
+   "clicks": 70,
+   "impressions": 9697,
+   "position": 19
+  },
+  {
+   "month": "2026-02",
+   "clicks": 151,
+   "impressions": 31112,
+   "position": 16.9
+  },
+  {
+   "month": "2026-03",
+   "clicks": 140,
+   "impressions": 19728,
+   "position": 13
+  },
+  {
+   "month": "2026-04",
+   "clicks": 136,
+   "impressions": 21122,
+   "position": 10.9
+  },
+  {
+   "month": "2026-05",
+   "clicks": 146,
+   "impressions": 22025,
+   "position": 11
+  },
+  {
+   "month": "2026-06",
+   "clicks": 353,
+   "impressions": 21866,
+   "position": 11
+  },
+  {
+   "month": "2026-07",
+   "clicks": 337,
+   "impressions": 23836,
+   "position": 12.5
+  },
+  {
+   "month": "2026-08",
+   "clicks": 141,
+   "impressions": 36182,
+   "position": 17.6
+  },
+  {
+   "month": "2026-09",
+   "clicks": 109,
+   "impressions": 28999,
+   "position": 14.1
+  }
+ ],
+ "last90": {
+  "pages_with_impressions": 194,
+  "queries_with_impressions": 3784,
+  "en_click_share": 0.6874051593323217,
+  "nonbrand_click_share": 0.9357798165137615
+ }
+}

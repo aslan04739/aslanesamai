@@ -134,7 +134,100 @@ def _sized_img(m):
 
 
 def content(path):
-    return re.sub(r"<img\b[^>]*>", _sized_img, (SRC / "content" / path).read_text(encoding="utf-8"))
+    body = re.sub(r"<img\b[^>]*>", _sized_img, (SRC / "content" / path).read_text(encoding="utf-8"))
+    if "<!-- chart:aioseo -->" in body:
+        body = (body.replace("<!-- stats:aioseo -->", aioseo_stats_html()).replace("<!-- chart:aioseo -->", aioseo_chart())
+                .replace("<!-- milestones:aioseo -->", aioseo_milestones()))
+    return body
+
+
+# ---------------------------------------------------------------- aioseo.fr case study (numbers from _build/aioseo_stats.json)
+AIO = json.loads((SRC / "aioseo_stats.json").read_text()) if (SRC / "aioseo_stats.json").exists() else None
+
+
+def _month_label(m, short=True):
+    y, mo = m.split("-")
+    return f"{MONTHS['en'][int(mo) - 1][:3]} {y[2:] if short else y}"
+
+
+def aioseo_stats_html():
+    mon = [m for m in AIO["monthly"] if m["month"] not in (AIO["first_day"][:7],)]
+    first, best = mon[0], max(mon, key=lambda m: m["impressions"])
+    best_pos = min((m for m in mon if m["impressions"] > 5000), key=lambda m: m["position"])
+    tot_i = sum(m["impressions"] for m in AIO["monthly"])
+    tot_c = sum(m["clicks"] for m in AIO["monthly"])
+    l90 = AIO["last90"]
+    cards = [
+        (f"{best['impressions'] / first['impressions']:.0f}×", f"monthly impressions, {first['impressions']:,} ({_month_label(first['month'], False)}) to {best['impressions']:,} ({_month_label(best['month'], False)})"),
+        (f"{first['position']:.0f} → {best_pos['position']:.0f}", f"average position, {_month_label(first['month'], False)} to {_month_label(best_pos['month'], False)}"),
+        (f"{tot_i / 1000:.0f}k", f"impressions and {tot_c:,} clicks since launch"),
+        (f"{l90['queries_with_impressions']:,}", f"queries and {l90['pages_with_impressions']} pages with impressions in the last 90 days"),
+        (f"{l90['en_click_share'] * 100:.0f}%", "of clicks go to the English versions (last 90 days)"),
+        (f"{l90['nonbrand_click_share'] * 100:.0f}%", "of query clicks are non-brand (last 90 days)"),
+    ]
+    items = "".join(f"<div><b>{v}</b><span>{e(t)}</span></div>" for v, t in cards)
+    return f'<div class="case-stats">{items}</div><p class="case-source">Source: Google Search Console, {AIO["first_day"]} to {AIO["last_day"]}.</p>'
+
+
+def aioseo_chart():
+    mon = [m for m in AIO["monthly"] if m["month"] != AIO["first_day"][:7]]  # launch month has a single day
+    W, H, L, R, T, B = 720, 300, 56, 44, 20, 36
+    iw, ih = W - L - R, H - T - B
+    maxi = max(m["impressions"] for m in mon)
+    top = 10000 * -(-maxi // 10000)
+    bw = iw / len(mon)
+    bars, labels, pts = [], [], []
+    for i, m in enumerate(mon):
+        h = ih * m["impressions"] / top
+        x = L + i * bw
+        bars.append(f'<rect class="ch-bar" x="{x + bw * .18:.1f}" y="{T + ih - h:.1f}" width="{bw * .64:.1f}" height="{h:.1f}"><title>{_month_label(m["month"], False)}: {m["impressions"]:,} impressions, average position {m["position"]}</title></rect>')
+        if i % 3 == 0 or i == len(mon) - 1:
+            labels.append(f'<text class="ch-x" x="{x + bw / 2:.1f}" y="{H - 12}" text-anchor="middle">{_month_label(m["month"])}</text>')
+        py = T + ih * (m["position"] - 1) / 49  # position 1 at the top, 50 at the bottom
+        pts.append(f"{x + bw / 2:.1f},{py:.1f}")
+    grid = ""
+    for k in range(5):
+        v = top * k / 4
+        y = T + ih - ih * k / 4
+        grid += f'<line class="ch-grid" x1="{L}" x2="{W - R}" y1="{y:.1f}" y2="{y:.1f}"/><text class="ch-y" x="{L - 8}" y="{y + 4:.1f}" text-anchor="end">{v / 1000:.0f}k</text>'
+    for pos in (1, 10, 25, 50):
+        y = T + ih * (pos - 1) / 49
+        grid += f'<text class="ch-y2" x="{W - R + 8}" y="{y + 4:.1f}">{pos}</text>'
+    line = f'<polyline class="ch-line" points="{" ".join(pts)}"/>' + "".join(f'<circle class="ch-dot" cx="{p.split(",")[0]}" cy="{p.split(",")[1]}" r="3"/>' for p in pts)
+    rows = "".join(f"<tr><td>{_month_label(m['month'], False)}</td><td>{m['impressions']:,}</td><td>{m['position']}</td></tr>" for m in mon)
+    return f"""<figure class="case-chart">
+<svg viewBox="0 0 {W} {H}" role="img" aria-label="aioseo.fr: monthly Google impressions (bars) and average position (line), {_month_label(mon[0]['month'], False)} to {_month_label(mon[-1]['month'], False)}">{grid}{''.join(bars)}{line}{''.join(labels)}</svg>
+<figcaption><span class="lg lg-bar"></span>Monthly impressions (left axis) <span class="lg lg-line"></span>Average position (right axis, 1 at the top). September 2026 runs to the 27th.</figcaption>
+<details><summary>Show the data</summary><table><thead><tr><th>Month</th><th>Impressions</th><th>Avg. position</th></tr></thead><tbody>{rows}</tbody></table></details>
+</figure>"""
+
+
+def aioseo_cover():
+    """Card / social image for the case study: the impressions curve on the site's green."""
+    mon = [m for m in AIO["monthly"] if m["month"] != AIO["first_day"][:7]]
+    W, H = 1200, 630
+    maxi = max(m["impressions"] for m in mon)
+    bw = 1000 / len(mon)
+    bars = "".join(f'<rect x="{100 + i * bw + bw * .15:.1f}" y="{560 - 330 * m["impressions"] / maxi:.1f}" width="{bw * .7:.1f}" height="{330 * m["impressions"] / maxi:.1f}" rx="6" fill="#e3ece5" opacity="{.35 + .65 * m["impressions"] / maxi:.2f}"/>' for i, m in enumerate(mon))
+    first, best = mon[0], max(mon, key=lambda m: m["impressions"])
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}"><rect width="{W}" height="{H}" fill="#1f4d3a"/>
+<text x="100" y="130" font-family="Georgia, serif" font-size="72" fill="#f6f3ec">aioseo.fr</text>
+<text x="100" y="185" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#cfe0d5">SEO &amp; GEO case study · {best['impressions'] / first['impressions']:.0f}× monthly Google impressions</text>
+{bars}</svg>"""
+    write("assets/case-aioseo.svg", svg)
+
+
+def aioseo_milestones():
+    by = {m["month"]: m for m in AIO["monthly"]}
+    g = lambda k: by.get(k, {"clicks": 0, "impressions": 0, "position": 0})  # noqa: E731
+    items = [
+        ("December 2025", f"First 100-click month; average position improved to {g('2025-12')['position']:.0f}, from {g('2025-11')['position']:.0f} the month before."),
+        ("February 2026", f"{g('2026-02')['impressions']:,} impressions in a month, three times January."),
+        ("April – June 2026", f"Average position around {g('2026-04')['position']:.0f}, from about 40 a year earlier."),
+        ("June – July 2026", f"Best months for clicks ({g('2026-06')['clicks']} and {g('2026-07')['clicks']}), driven by the AI Overviews France coverage."),
+        ("August – September 2026", f"Record impressions ({g('2026-08')['impressions']:,} in August) while click-through rates fell after AI Overviews launched in France: the zero-click shift the blog documents."),
+    ]
+    return '<ol class="milestones">' + "".join(f"<li><b>{w}</b><span>{t}</span></li>" for w, t in items) + "</ol>"
 
 
 def first_image(path):
@@ -398,7 +491,8 @@ def case_card(path, lang="en"):
     t = T[lang]
     raw = p.get("cover") or first_image(path)
     cover = img(raw, 720)
-    thumb = f'<div class="thumb logo"><img src="{e(cover)}" alt=""{dims(raw, 720)} loading="lazy" decoding="async"></div>' if cover else ""
+    frame = "thumb" if (raw or "").startswith("/assets/case-") else "thumb logo"  # generated covers are full-bleed, client logos sit on white
+    thumb = f'<div class="{frame}"><img src="{e(cover)}" alt=""{dims(raw, 720)} loading="lazy" decoding="async"></div>' if cover else ""
     return (f'<a class="card card-media reveal" href="{url_of(path)}" hreflang="en">{thumb}<div class="body"><span class="tag">{t["case_tag"]}{badge(lang)}</span>'
             f'<h3 lang="en">{e(p["h1"])}</h3><p lang="en">{e(clip(p["description"], 140))}</p><span class="foot">{t["case_read"]}</span></div></a>')
 
@@ -891,4 +985,6 @@ if __name__ == "__main__":
     build_sitemap()
     build_llms()
     build_feed()
+    if AIO:
+        aioseo_cover()
     print(f"built {len(LANGS) * 4 + len(PAGES) + 2} pages ({', '.join(LANGS)}) · blog {len(BLOG)} · services {len(SERVICES)} · cases {len(CASES)} · redirects {len(REDIRECTS)}")

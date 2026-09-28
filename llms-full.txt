@@ -263,6 +263,85 @@ Interested in an SEO Audit? Reach out to me by sending me an email here [contact
 
 ---
 
+## SEO & GEO Case Study: aioseo.fr, a GEO Blog Built from Scratch
+
+URL: https://aslanesamai.com/ressources/seo-case-study-aioseo.html
+
+## Overview
+
+[aioseo.fr](https://aioseo.fr/en/) (“Good GEO is good SEO!”) is my own site: a blog about generative engine optimization and Google's AI search, launched from scratch in spring 2025. I run every part of it myself: content, technical SEO, netlinking and a WordPress stack I operate through MCP.
+
+It is the case study I can show in full, because it's mine. Every number below comes straight from its Google Search Console property. **36×**monthly impressions, 1,000 (Jun 2025) to 36,182 (Aug 2026)**40 → 11**average position, Jun 2025 to Apr 2026**223k**impressions and 1,749 clicks since launch**3,784**queries and 194 pages with impressions in the last 90 days**69%**of clicks go to the English versions (last 90 days)**94%**of query clicks are non-brand (last 90 days)
+
+Source: Google Search Console, 2025-05-31 to 2026-09-27.
+
+## Monthly impressions and average position
+
+0k10k20k30k40k1102550Jun 2025: 1,000 impressions, average position 40.4Jul 2025: 1,024 impressions, average position 39.9Aug 2025: 657 impressions, average position 38.8Sep 2025: 671 impressions, average position 29.4Oct 2025: 624 impressions, average position 32.5Nov 2025: 1,015 impressions, average position 31Dec 2025: 3,586 impressions, average position 21Jan 2026: 9,697 impressions, average position 19Feb 2026: 31,112 impressions, average position 16.9Mar 2026: 19,728 impressions, average position 13Apr 2026: 21,122 impressions, average position 10.9May 2026: 22,025 impressions, average position 11Jun 2026: 21,866 impressions, average position 11Jul 2026: 23,836 impressions, average position 12.5Aug 2026: 36,182 impressions, average position 17.6Sep 2026: 28,999 impressions, average position 14.1Jun 25Sep 25Dec 25Mar 26Jun 26Sep 26 Monthly impressions (left axis) Average position (right axis, 1 at the top). September 2026 runs to the 27th. Show the data
+
+| Month | Impressions | Avg. position |
+| Jun 2025 | 1,000 | 40.4 |
+| Jul 2025 | 1,024 | 39.9 |
+| Aug 2025 | 657 | 38.8 |
+| Sep 2025 | 671 | 29.4 |
+| Oct 2025 | 624 | 32.5 |
+| Nov 2025 | 1,015 | 31 |
+| Dec 2025 | 3,586 | 21 |
+| Jan 2026 | 9,697 | 19 |
+| Feb 2026 | 31,112 | 16.9 |
+| Mar 2026 | 19,728 | 13 |
+| Apr 2026 | 21,122 | 10.9 |
+| May 2026 | 22,025 | 11 |
+| Jun 2026 | 21,866 | 11 |
+| Jul 2026 | 23,836 | 12.5 |
+| Aug 2026 | 36,182 | 17.6 |
+| Sep 2026 | 28,999 | 14.1 |
+
+## What I did
+
+### 1. Pick a narrow, fast-moving topic
+
+aioseo.fr covers one subject: how AI search (Google AI Overviews, AI Mode, ChatGPT, Gemini, Copilot) changes visibility, written from a practitioner's point of view. A narrow topic lets a new site build topical authority quickly instead of competing head-on with established SEO media.
+
+### 2. Be first on the news that matters to the niche
+
+When Google confirmed, then launched, AI Overviews and AI Mode in France, aioseo.fr covered it right away (the launch article went out on July 22, 2026, launch day) and kept the articles updated. Those articles now rank around positions 5 to 7 and are the site's most-clicked pages.
+
+### 3. Report from the field
+
+Recaps of Google Search Central Live (Zurich 2025, Paris 2026), VivaTech 2026 and industry events bring first-hand information that AI answers and other blogs can't paraphrase from elsewhere.
+
+### 4. Publish original tools and comparisons
+
+GEO tool comparisons, a Google Search Console generative AI report guide, and my own free tools (semantic proximity, entity analysis, TimesFM and Prophet forecasting, a multimodal GEO audit with Gemini-Embedding-2) give people a reason to link to the site and to come back.
+
+### 5. Publish in French and English
+
+Articles are published in French and in English (under `/en/`), linked with hreflang. The English versions now bring the majority of clicks, well beyond what a French-only site could reach.
+
+### 6. Make the site easy for search engines and AI to read
+
+WordPress with clean structured data, an `llms.txt` file, and a robots.txt that explicitly allows search, AI answers and AI training (Content-Signal). The goal is to be crawled, understood and cited by Google and by generative engines alike.
+
+## Results
+
+1. **December 2025**First 100-click month; average position improved to 21, from 31 the month before.
+2. **February 2026**31,112 impressions in a month, three times January.
+3. **April – June 2026**Average position around 11, from about 40 a year earlier.
+4. **June – July 2026**Best months for clicks (353 and 337), driven by the AI Overviews France coverage.
+5. **August – September 2026**Record impressions (36,182 in August) while click-through rates fell after AI Overviews launched in France: the zero-click shift the blog documents.
+
+## Takeaways
+
+- **GEO starts with SEO.** The pages that are cited and clicked are the ones that rank: fast, well-structured, clearly focused.
+- **Freshness and first-hand information win** on topics AI can't summarize from elsewhere yet.
+- **A second language can double a site's reach** for the cost of careful translation and hreflang.
+- **Measure beyond clicks.** As AI answers spread, impressions, positions and citations tell more of the story than clicks alone.
+
+Want the same approach for your site? [Get your SEO / GEO audit](https://aslanesamai.com/en/#contact).
+
+---
+
 ## SEO Case Study: REKHILA Promotion, Real Estate in Algiers
 
 URL: https://aslanesamai.com/ressources/seo-case-study-rekhila-.html

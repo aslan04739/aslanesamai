@@ -384,3 +384,33 @@ a.card-media:hover .thumb.logo img { transform: scale(1.04); }
 .edu-logo { flex: none; width: 112px; height: 52px; border-radius: 12px; border: 1px solid var(--line); background: #fff; display: grid; place-items: center; padding: 8px 10px; }
 .edu-logo img { width: 100%; height: 100%; object-fit: contain; }
 @media (max-width: 720px) { .edu-logo { width: 88px; height: 44px; } }
+
+/* ---------- Case study: stats, chart, milestones ---------- */
+.case-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin: 28px 0 10px; }
+.case-stats div { background: var(--card); padding: 20px; }
+.case-stats b { display: block; font: 450 32px/1.1 var(--serif); color: var(--ink); margin-bottom: 6px; }
+.case-stats span { font-size: 14.5px; color: var(--muted); line-height: 1.45; display: block; }
+.prose .case-source { font-size: 13.5px; color: var(--muted); }
+@media (max-width: 620px) { .case-stats { grid-template-columns: 1fr 1fr; } .case-stats b { font-size: 26px; } }
+.case-chart { margin: 24px 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 14px 14px; }
+.case-chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+.ch-bar { fill: var(--accent); opacity: .85; }
+.ch-bar:hover { opacity: 1; }
+.ch-line { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; }
+.ch-dot { fill: var(--card); stroke: var(--ink); stroke-width: 2; }
+.ch-grid { stroke: var(--line); stroke-width: 1; }
+.ch-x, .ch-y, .ch-y2 { fill: var(--muted); font: 12px var(--sans); }
+.case-chart figcaption { font-size: 13.5px; color: var(--muted); margin-top: 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.lg { display: inline-block; width: 14px; height: 10px; border-radius: 2px; }
+.lg-bar { background: var(--accent); }
+.lg-line { height: 2px; background: var(--ink); }
+.case-chart details { margin-top: 10px; font-size: 14px; }
+.case-chart summary { cursor: pointer; color: var(--accent); }
+.case-chart table { margin-top: 10px; font-size: 14px; }
+.milestones { list-style: none; padding: 0 !important; border-left: 2px solid var(--accent); }
+.milestones li { padding: 4px 0 14px 20px; position: relative; }
+.milestones li::before { content: ""; position: absolute; left: -7px; top: 10px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 2px solid var(--accent); }
+.milestones li::marker { content: none; }
+.milestones b { display: block; color: var(--ink); }
+.milestones span { color: var(--ink-2); }
+.card-media .thumb img[src^="/assets/case-"] { object-position: left center; }
